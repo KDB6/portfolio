@@ -1,0 +1,53 @@
+#about {
+    margin-top: 250px;
+    font-family: var(--font-main);
+}
+.about__title > h2 {
+    color: var(--colorB);
+    font-size: 200px;
+    font-weight: 100;
+}
+.about__title > h2:nth-child(1) {
+    position: absolute;
+    margin-left: 357px;
+}
+.about__title > h2:nth-child(2) {
+    font-size: 180px;
+    font-weight: 100;
+    position: absolute;
+    margin-left: 663px;
+    margin-top: 170px;
+}
+.about__title > h2:nth-child(3) {
+    position: absolute;
+    margin-left: 203px;
+    margin-top: 272px;
+}
+.about__img > img {
+    width: 600px;
+    height: 600px;
+    object-fit: cover;
+    margin-left: 1137px;
+    margin-top: 190px;
+}
+.about__desc {
+    margin-left: 357px;
+    bottom: 100px;
+    position: relative;
+}
+.about__desc::before {
+    content: '';
+    position: absolute;
+    width: 133px;
+    height: 1px;
+    background: #000;
+    left: 0;
+    top: -10px;
+}
+.about__desc > p {
+    font-family: "SCoreDream";
+    font-weight: 200;
+    font-size: 14px;
+    color: var(--colorB);
+    line-height: 1.5;
+}

@@ -1,0 +1,53 @@
+#responsive {
+    font-family: var(--font-main);
+    margin-top: 900px;
+    position: relative;
+}
+.responsive {
+    display: flex;
+    justify-content: flex-end;
+}
+#responsive > h2 {
+    font-size: 800px;
+    font-family: var(--font-main);
+    font-weight: 100;
+    color: var(--colorW);
+    text-shadow: -1px 0 #121212, 0 1px #121212, 1px 0 #121212, 0 -1px #121212;
+    opacity: 0.06;
+    position: absolute;
+    top: -55%;
+    left: 20%;
+    z-index: -1;
+}
+.responsive__img > img {
+    width: 950px;
+    height: 1200px;
+}
+.responsive__desc {
+    margin-right: 50px;
+}
+.responsive__desc > h3 {
+    font-size: 120px;
+    font-weight: 500;
+    color: var(--colorB);
+}
+.responsive__desc > p {
+    font-family: var(--font-kor);
+    font-size: 14px;
+    font-weight: 200;
+    color: var(--colorB);
+    text-align: right;
+}
+.responsive__desc > p:last-child {
+    font-size: 16px;
+    font-weight: 200;
+    font-family: var(--font-main);
+    color: var(--colorB);
+    text-decoration: underline;
+}
+.responsive__desc > p:last-child span {
+    margin-left: 10px;
+}
+.responsive__desc > p:last-child span a {
+    color: var(--colorB);
+}

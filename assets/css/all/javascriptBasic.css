@@ -1,0 +1,59 @@
+#javascriptBasic {
+    width: 100%;
+    height: 1080px;
+    background: #121212;
+    font-family: var(--font-main);
+    color: var(--colorW);
+    display: flex;
+}
+.javascriptBasic__left {
+    width: 45%;
+    padding: 113px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.javascriptBasic__title {
+    margin-left: 50px;
+}
+.javascriptBasic__title > h2 {
+    font-size: 40px;
+    font-weight: 100;
+}
+.javascriptBasic__desc {
+    margin-left: 50px;
+}
+.javascriptBasic__desc > h2 {
+    font-family: var(--font-kor2);
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.javascriptBasic__desc > p {
+    font-family: var(--font-kor);
+    font-size: 14px;
+    font-weight: 200;
+}
+.javascriptBasic__desc > p:last-child {
+    font-size: 16px;
+    font-weight: 200;
+    font-family: var(--font-main);
+    color: var(--colorW);
+    text-decoration: underline;
+}
+.javascriptBasic__desc > p:last-child span {
+    margin-right: 10px;
+}
+.javascriptBasic__desc > p:last-child span a {
+    color: var(--colorW);
+}
+.javascriptBasic__right {
+    width: 55%;
+    display: grid;
+    place-content: center;
+    justify-content: start;
+}
+.javascriptBasic__right > h2 {
+    font-size: 150px;
+    font-weight: 500;
+}
