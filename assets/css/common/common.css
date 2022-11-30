@@ -26,9 +26,21 @@
 }
 @media (max-width: 1200px) {}
 
+/* roof */
+:root {
+    --colorW: #eeeeee;
+    --colorB: #121212;
+
+    --font-main: "PP Eiko";
+    --font-kor: "SCoreDream";
+    --font-kor2: "NanumMyeongjo";
+
+    --font-height: 1.5;
+}
+
 /* 섹션 공통 요소 */
 .section {
-    padding: 120px 0;
+    padding: 50px 0;
 }
 .section > h2 {
     font-size: 50px;
@@ -81,6 +93,12 @@
 /*  폰트 */
 .eiko {
     font-family: "PP Eiko";
+}
+.score {
+    font-family: "SCoreDream";
+}
+.nanum {
+    font-family: "NanumMyeongjo";
 }
 
 /* 배경 */
