@@ -1,0 +1,28 @@
+#searchSliderTum {
+    margin-top: 469px;
+    font-family: var(--font-main);
+    display: grid;
+    place-content: center;
+}
+#searchSliderTum > h2 {
+    color: var(--colorB);
+    font-size: 120px;
+    font-weight: 100;
+}
+#searchSliderTum > p {
+    font-family: var(--font-sub);
+    color: var(--colorB);
+    font-size: 14px;
+    font-weight: 100;
+    position: relative;
+    margin-top: 15px;
+}
+#searchSliderTum > p::before {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 1px;
+    background: var(--colorB);
+    left: 0;
+    top: -15px;
+}

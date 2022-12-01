@@ -43,7 +43,7 @@
     position: absolute;
     width: 133px;
     height: 1px;
-    background: #000;
+    background: var(--colorB);
     left: 0;
     top: -10px;
 }
