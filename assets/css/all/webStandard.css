@@ -5,7 +5,7 @@
 }
 #webStandard > h2 {
     font-family: var(--font-main);
-    text-shadow: -1px 0 #121212, 0 1px #121212, 1px 0 #121212, 0 -1px #121212;
+    text-shadow: -1px 0 var(--colorB), 0 1px var(--colorB), 1px 0 var(--colorB), 0 -1px var(--colorB);
     color: var(--colorW);
     font-weight: 100;
     font-size: 800px;

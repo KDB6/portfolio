@@ -12,7 +12,7 @@
     font-family: var(--font-main);
     font-weight: 100;
     color: var(--colorW);
-    text-shadow: -1px 0 #121212, 0 1px #121212, 1px 0 #121212, 0 -1px #121212;
+    text-shadow: -1px 0 var(--colorB), 0 1px var(--colorB), 1px 0 var(--colorB), 0 -1px var(--colorB);
     opacity: 0.06;
     position: absolute;
     top: -55%;

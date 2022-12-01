@@ -3,8 +3,8 @@
     width: 100%;
     height: 1050px;
     margin-top: 300px;
-    border-top: 1px solid #121212;
-    border-bottom: 1px solid #121212;
+    border-top: 1px solid var(--colorB);
+    border-bottom: 1px solid var(--colorB);
     display: flex;
 }
 .gameMouseTum__left {
@@ -37,7 +37,7 @@
     height: 500px;
 }
 .gameMouseTum__list__one {
-    border-left: 1px solid #121212;
+    border-left: 1px solid var(--colorB);
     padding-left: 20px;
     margin-right: 140px;
 }
@@ -51,7 +51,7 @@
     height: 300px;
 }
 .gameMouseTum__list__two {
-    border-left: 1px solid #121212;
+    border-left: 1px solid var(--colorB);
     padding-left: 20px;
     margin-right: 170px;
     position: relative;

@@ -1,23 +1,30 @@
 #gameList {
     font-family: var(--font-main);
-    margin-top: 150px;
+    margin-top: 270px;
     display: flex;
+    position: relative;
 }
 
 .gameList__left {
-    width: 18%;
+    width: 14%;
+    height: 1800px;
+    border-right: 1px solid var(--colorB);
 }
 .gameList__left > h2 {
+    position: absolute;
     color: var(--colorB);
     font-weight: 100;
     font-size: 40px;
     transform: rotate(-90deg);
+    top: 4%;
+    left: 6.5%;
 }
 
 .gameList__right {
-    width: 82%;
+    width: 86%;
 }
 
+/* music */
 .music > h2 {
     color: var(--colorB);
     font-weight: 100;
@@ -44,6 +51,7 @@
     color: var(--colorB);
 }
 
+/* search */
 .search > h2 {
     color: var(--colorB);
     font-weight: 100;
@@ -70,6 +78,7 @@
     color: var(--colorB);
 }
 
+/* card */
 .card > h2 {
     color: var(--colorB);
     font-weight: 100;
@@ -96,6 +105,7 @@
     color: var(--colorB);
 }
 
+/* tetris */
 .tetris > h2 {
     color: var(--colorB);
     font-weight: 100;
