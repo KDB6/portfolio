@@ -1,0 +1,123 @@
+#gameList {
+    font-family: var(--font-main);
+    margin-top: 150px;
+    display: flex;
+}
+
+.gameList__left {
+    width: 18%;
+}
+.gameList__left > h2 {
+    color: var(--colorB);
+    font-weight: 100;
+    font-size: 40px;
+    transform: rotate(-90deg);
+}
+
+.gameList__right {
+    width: 82%;
+}
+
+.music > h2 {
+    color: var(--colorB);
+    font-weight: 100;
+    font-size: 40px;
+}
+.music > p {
+    font-family: "SCoreDream";
+    color: var(--colorB);
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.music > p:last-child {
+    font-family: var(--font-main);
+    font-size: 16px;
+    font-weight: 100;
+    color: var(--colorB);
+    text-decoration: underline;
+}
+.music > p:last-child span {
+    margin-right: 10px;
+}
+.music > p:last-child span a {
+    color: var(--colorB);
+}
+
+.search > h2 {
+    color: var(--colorB);
+    font-weight: 100;
+    font-size: 40px;
+}
+.search > p {
+    font-family: "SCoreDream";
+    color: var(--colorB);
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.search > p:last-child {
+    font-family: var(--font-main);
+    font-size: 16px;
+    font-weight: 100;
+    color: var(--colorB);
+    text-decoration: underline;
+}
+.search > p:last-child span {
+    margin-right: 10px;
+}
+.search > p:last-child span a {
+    color: var(--colorB);
+}
+
+.card > h2 {
+    color: var(--colorB);
+    font-weight: 100;
+    font-size: 40px;
+}
+.card > p {
+    font-family: "SCoreDream";
+    color: var(--colorB);
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.card > p:last-child {
+    font-family: var(--font-main);
+    font-size: 16px;
+    font-weight: 100;
+    color: var(--colorB);
+    text-decoration: underline;
+}
+.card > p:last-child span {
+    margin-right: 10px;
+}
+.card > p:last-child span a {
+    color: var(--colorB);
+}
+
+.tetris > h2 {
+    color: var(--colorB);
+    font-weight: 100;
+    font-size: 40px;
+}
+.tetris > p {
+    font-family: "SCoreDream";
+    color: var(--colorB);
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.tetris > p:last-child {
+    font-family: var(--font-main);
+    font-size: 16px;
+    font-weight: 100;
+    color: var(--colorB);
+    text-decoration: underline;
+}
+.tetris > p:last-child span {
+    margin-right: 10px;
+}
+.tetris > p:last-child span a {
+    color: var(--colorB);
+}
