@@ -30,6 +30,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    margin-right: 50px;
 }
 .music__desc > h2 {
     color: var(--colorB);
@@ -85,6 +86,7 @@
     justify-content: space-between;
     align-items: flex-end;
     margin-top: 50px;
+    margin-right: 50px;
 }
 .search__desc > h2 {
     color: var(--colorB);
@@ -140,6 +142,7 @@
     justify-content: space-between;
     align-items: flex-end;
     margin-top: 50px;
+    margin-right: 50px;
 }
 .card__desc > h2 {
     color: var(--colorB);
@@ -195,6 +198,7 @@
     justify-content: space-between;
     align-items: flex-end;
     margin-top: 50px;
+    margin-right: 50px;
 }
 .tetris__desc > h2 {
     color: var(--colorB);
