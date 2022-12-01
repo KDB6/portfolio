@@ -1,0 +1,10 @@
+#slider {
+    margin-top: 269px;
+}
+#slider > h2{
+    font-family: var(--font-main);
+    color: var(--colorB);
+    font-weight: 500;
+    font-size: 130px;
+    letter-spacing: 1.09em;
+}
