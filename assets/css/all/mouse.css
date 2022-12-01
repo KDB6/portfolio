@@ -1,3 +1,58 @@
 #mouse {
+    font-family: var(--font-main);
     margin-top: 300px;
+    display: flex;
+}
+.mouse__left {
+    width: 40%;
+}
+.mouse__right {
+    width: 60%;
+}
+.mouse__desc {
+    margin-left: 50px;
+}
+.mouse__desc > h2 {
+    font-weight: 100;
+    font-size: 40px;
+    color: var(--colorB);
+    margin-bottom: 10px;
+}
+.mouse__desc > p {
+    font-family: var(--font-kor);
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.mouse__desc > p:last-child {
+    font-family: var(--font-main);
+    font-size: 16px;
+    font-weight: 100;
+    color: var(--colorB);
+    text-decoration: underline;
+}
+.mouse__desc > p:last-child span {
+    margin-right: 10px;
+}
+.mouse__desc > p:last-child span a {
+    color: var(--colorB);
+}
+.mouse__right > img:nth-child(1) {
+    width: 900px;
+    height: 1200px;
+    position: relative;
+}
+.mouse__right > img:nth-child(2) {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+.mouse__right > h2 {
+    font-size: 120px;
+    font-weight: 500;
+    color: var(--colorW);
+    position: absolute;
+}
+.mouse__right > p {
+    
 }
