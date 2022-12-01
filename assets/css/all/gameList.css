@@ -2,12 +2,13 @@
     font-family: var(--font-main);
     margin-top: 270px;
     display: flex;
+    justify-content: space-between;
     position: relative;
 }
 
 .gameList__left {
     width: 14%;
-    height: 1800px;
+    height: 1750px;
     border-right: 1px solid var(--colorB);
 }
 .gameList__left > h2 {
@@ -21,113 +22,223 @@
 }
 
 .gameList__right {
-    width: 86%;
+    width: 78%;
 }
 
 /* music */
-.music > h2 {
+.music {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.music__desc > h2 {
     color: var(--colorB);
     font-weight: 100;
     font-size: 40px;
+    margin-bottom: 5px;
 }
-.music > p {
+.music__desc > p {
     font-family: "SCoreDream";
     color: var(--colorB);
     font-weight: 200;
     font-size: 14px;
     line-height: 1.5;
 }
-.music > p:last-child {
+.music__desc > p:last-child {
     font-family: var(--font-main);
     font-size: 16px;
     font-weight: 100;
     color: var(--colorB);
     text-decoration: underline;
 }
-.music > p:last-child span {
+.music__desc > p:last-child span {
     margin-right: 10px;
 }
-.music > p:last-child span a {
+.music__desc > p:last-child span a {
     color: var(--colorB);
+}
+.music__window {
+    width: 746px;
+    height: 400px;
+    background: var(--colorB);
+    position: relative;
+}
+.music__window > img {
+    width: 42.66px;
+    height: 80px;
+    position: absolute;
+    bottom: 82px;
+    right: 30px;
+}
+.music__window > h2 {
+    color: var(--colorW);
+    font-size: 60px;
+    font-weight: 100;
+    position: absolute;
+    bottom: 0;
+    right: 30px;
 }
 
 /* search */
-.search > h2 {
+.search {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 50px;
+}
+.search__desc > h2 {
     color: var(--colorB);
     font-weight: 100;
     font-size: 40px;
+    margin-bottom: 5px;
 }
-.search > p {
+.search__desc > p {
     font-family: "SCoreDream";
     color: var(--colorB);
     font-weight: 200;
     font-size: 14px;
     line-height: 1.5;
 }
-.search > p:last-child {
+.search__desc > p:last-child {
     font-family: var(--font-main);
     font-size: 16px;
     font-weight: 100;
     color: var(--colorB);
     text-decoration: underline;
 }
-.search > p:last-child span {
+.search__desc > p:last-child span {
     margin-right: 10px;
 }
-.search > p:last-child span a {
+.search__desc > p:last-child span a {
     color: var(--colorB);
+}
+.search__window {
+    width: 746px;
+    height: 400px;
+    background: var(--colorB);
+    position: relative;
+}
+.search__window > img {
+    width: 200px;
+    height: 24px;
+    position: absolute;
+    bottom: 82px;
+    right: 30px;
+}
+.search__window > h2 {
+    color: var(--colorW);
+    font-size: 60px;
+    font-weight: 100;
+    position: absolute;
+    bottom: 0;
+    right: 30px;
 }
 
 /* card */
-.card > h2 {
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 50px;
+}
+.card__desc > h2 {
     color: var(--colorB);
     font-weight: 100;
     font-size: 40px;
+    margin-bottom: 5px;
 }
-.card > p {
+.card__desc > p {
     font-family: "SCoreDream";
     color: var(--colorB);
     font-weight: 200;
     font-size: 14px;
     line-height: 1.5;
 }
-.card > p:last-child {
+.card__desc > p:last-child {
     font-family: var(--font-main);
     font-size: 16px;
     font-weight: 100;
     color: var(--colorB);
     text-decoration: underline;
 }
-.card > p:last-child span {
+.card__desc > p:last-child span {
     margin-right: 10px;
 }
-.card > p:last-child span a {
+.card__desc > p:last-child span a {
     color: var(--colorB);
+}
+.card__window {
+    width: 746px;
+    height: 400px;
+    background: var(--colorB);
+    position: relative;
+}
+.card__window > img {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    bottom: 82px;
+    right: 30px;
+}
+.card__window > h2 {
+    color: var(--colorW);
+    font-size: 60px;
+    font-weight: 100;
+    position: absolute;
+    bottom: 0;
+    right: 30px;
 }
 
 /* tetris */
-.tetris > h2 {
+.tetris {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 50px;
+}
+.tetris__desc > h2 {
     color: var(--colorB);
     font-weight: 100;
     font-size: 40px;
 }
-.tetris > p {
+.tetris__desc > p {
     font-family: "SCoreDream";
     color: var(--colorB);
     font-weight: 200;
     font-size: 14px;
     line-height: 1.5;
 }
-.tetris > p:last-child {
+.tetris__desc > p:last-child {
     font-family: var(--font-main);
     font-size: 16px;
     font-weight: 100;
     color: var(--colorB);
     text-decoration: underline;
 }
-.tetris > p:last-child span {
+.tetris__desc > p:last-child span {
     margin-right: 10px;
 }
-.tetris > p:last-child span a {
+.tetris__desc > p:last-child span a {
     color: var(--colorB);
+}
+.tetris__window {
+    width: 746px;
+    height: 400px;
+    background: var(--colorB);
+    position: relative;
+}
+.tetris__window > img {
+    width: 80px;
+    height: 120px;
+    position: absolute;
+    bottom: 82px;
+    right: 30px;
+}
+.tetris__window > h2 {
+    color: var(--colorW);
+    font-size: 60px;
+    font-weight: 100;
+    position: absolute;
+    bottom: 0;
+    right: 30px;
 }
