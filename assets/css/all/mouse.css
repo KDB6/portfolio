@@ -2,12 +2,14 @@
     font-family: var(--font-main);
     margin-top: 300px;
     display: flex;
+    align-items: flex-end;
+    position: relative;
 }
 .mouse__left {
-    width: 40%;
+    width: 43%;
 }
 .mouse__right {
-    width: 60%;
+    width: 57%;
 }
 .mouse__desc {
     margin-left: 50px;
@@ -40,19 +42,29 @@
 .mouse__right > img:nth-child(1) {
     width: 900px;
     height: 1200px;
-    position: relative;
 }
 .mouse__right > img:nth-child(2) {
     width: 100px;
     height: 100px;
     position: absolute;
+    top: 50%;
+    right: 20%;
 }
 .mouse__right > h2 {
     font-size: 120px;
     font-weight: 500;
     color: var(--colorW);
     position: absolute;
+    top: -5%;
 }
 .mouse__right > p {
-    
+    font-weight: 500;
+    font-size: 16px;
+    position: absolute;
+    top: 6%;
+    margin-left: 5px;
+}
+.mouse__right > p span a {
+    color: var(--colorW);
+    margin-right: 10px;
 }
