@@ -32,6 +32,7 @@
     --colorB: #121212;
 
     --font-main: "PP Eiko";
+    --font-sub: "PP Neue Montreal";
     --font-kor: "SCoreDream";
     --font-kor2: "NanumMyeongjo";
 
@@ -93,6 +94,9 @@
 /*  폰트 */
 .eiko {
     font-family: "PP Eiko";
+}
+.neue {
+    font-family: "PP Neue Montreal";
 }
 .score {
     font-family: "SCoreDream";
