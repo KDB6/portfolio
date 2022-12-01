@@ -13,7 +13,7 @@
     position: absolute;
     right: 0;
     bottom: 550px;
-    /* z-index: -1; */
+    z-index: -1;
 }
 .webStandard__img > img {
     width: 1737px;
