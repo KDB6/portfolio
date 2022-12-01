@@ -35,6 +35,12 @@
     justify-content: flex-end;
     align-items: flex-end;
 }
+.main__right > div:nth-child(2) {
+    align-self: start;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
 .line__one {
     width: 17%;
     height: 60%;
@@ -50,7 +56,6 @@
     width: 17%;
     border-left: 1px solid #eee;
     color: #eee;
-    
 }
 .line__two > h2 {
     font-size: 20px;
@@ -79,4 +84,9 @@
     font-size: 20px;
     font-weight: 100;
     margin-left: 10px;
+}
+.main__circle {
+    position: absolute;
+    top: 6%;
+    right: 9%;
 }

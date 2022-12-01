@@ -108,6 +108,7 @@
 body {
     overflow: overlay;
     background: #eee;
+    overflow-x: hidden;
 }
 
 /* fixed */
