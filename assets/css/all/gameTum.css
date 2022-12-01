@@ -1,0 +1,20 @@
+#gameTum {
+    margin-top: 300px;
+    position: relative;
+}
+#gameTum > h2 {
+    position: absolute;
+    font-family: var(--font-main);
+    color: var(--colorB);
+    font-weight: 500;
+    font-size: 120px;
+    left: 10%;
+    bottom: -14.5%;
+}
+.gameImg {
+    margin-left: 50px;
+}
+.gameImg > img {
+    width: 1513px;
+    height: 713px;
+}
