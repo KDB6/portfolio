@@ -6,14 +6,14 @@
 #webStandard > h2 {
     font-family: var(--font-main);
     text-shadow: -1px 0 #121212, 0 1px #121212, 1px 0 #121212, 0 -1px #121212;
+    color: var(--colorW);
     font-weight: 100;
     font-size: 800px;
     opacity: 0.06;
-    color: var(--colorW);
     position: absolute;
     right: 0;
     bottom: 550px;
-    z-index: -1;
+    /* z-index: -1; */
 }
 .webStandard__img > img {
     width: 1737px;
