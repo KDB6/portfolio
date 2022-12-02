@@ -1,0 +1,96 @@
+#quizParallax {
+    margin-top: 469px;
+    font-family: var(--font-main);
+    position: relative;
+}
+
+/* quizParallax__tum */
+.quizParallax__tum > h3 {
+    font-size: var(--font-size100);
+    font-weight: 500;
+    color: var(--colorB);
+}
+.quizParallax__tum > h2 {
+    font-size: var(--font-size300);
+    font-weight: 100;
+    color: #ddd;
+}
+.quizParallax__tum > h2 {
+    margin-left: -5vw;
+    margin-top: -3vw;
+}
+.quizParallax__tum > h2:nth-child(3) {
+    margin-top: -5vw;
+}
+.quizParallax__tum > p {
+    font-family: var(--font-sub);
+    font-size: var(--font-size14);
+    color: var(--colorB);
+    line-height: 1.4;
+    position: absolute;
+    right: 0;
+    top: 34%;
+}
+
+/* quiz */
+.quiz {
+    margin-top: 409px;
+    position: relative;
+}
+.quiz__img {
+    width: 80%;
+    position: relative;
+}
+.quiz__desc {
+    text-align: right;
+    position: absolute;
+    right: 21.2%;
+    bottom: -10%;
+}
+.quiz__desc h2 {
+    font-size: var(--font-size60);
+    color: var(--colorB);
+    font-weight: 500;
+}
+.quiz__desc ul li {
+    font-size: var(--font-size14);
+    color: var(--colorB);
+    display: inline;
+    margin-left: 5px;
+}
+
+/* parallax */
+.parallax {
+    margin-top: 380px;
+    position: absolute;
+    right: 0;
+}
+.parallax__img {
+    width: 80%;
+    margin-left: 20%;
+}
+.parallax__desc {
+    text-align: right;
+    position: absolute;
+    right: 6%;
+    bottom: -21%;
+}
+.parallax__desc h2 {
+    font-size: var(--font-size120);
+    color: var(--colorB);
+    font-weight: 500;
+}
+.parallax__desc > p {
+    font-size: var(--font-size14);
+    font-family: var(--font-kor);
+    font-weight: 200;
+    line-height: 1.5;
+}
+.parallax__desc ul li {
+    font-size: var(--font-size16);
+    font-weight: 100;
+    text-decoration: underline;
+    color: var(--colorB);
+    display: inline;
+    margin-left: 5px;
+}

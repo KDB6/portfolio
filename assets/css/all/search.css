@@ -1,5 +1,6 @@
 #search {
     margin-top: 469px;
+    margin-left: 7vw;
 }
 #search > h2 {
     font-family: var(--font-main);
@@ -8,8 +9,40 @@
     font-size: var(--font-size130);
     letter-spacing: 1em;
 }
-#search ul li {
+.search__top {
+    margin-bottom: 20px;
+}
+.search__top div {
     font-family: var(--font-sub);
     font-size: var(--font-size14);
     font-weight: 400;
+    color: var(--colorB);
+}
+.search__top div:nth-child(2) {
+    margin-top: 2px;
+}
+.search__img {
+    width: 1054px;
+    height: 496px;
+    font-family: var(--font-sub);
+    font-size: var(--font-size14);
+    font-weight: 400;
+    color: var(--colorB);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.search__bot__left {
+    margin-top: 20px;
+}
+.search__bot__left > div:nth-child(2) {
+    margin-top: 2px;
+}
+.search__bot__right {
+    margin-top: 20px;
+    text-align: right;
+}
+.search__bot__right > div:nth-child(2) {
+    margin-top: 2px;
 }

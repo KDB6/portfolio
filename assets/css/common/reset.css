@@ -73,7 +73,7 @@ a {
 li,
 ol,
 ul {
-    /* list-style: none; */
+    list-style: none;
 }
 
 /* 제목 초기화 */
