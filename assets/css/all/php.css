@@ -1,0 +1,68 @@
+#phpStart {
+    font-family: var(--font-main);
+    color: var(--colorB);
+    background: var(--colorW);
+    width: 100%;
+    height: 1080px;
+    display: flex;
+    position: relative;
+}
+.phpStart__left {
+    width: 60%;
+    display: grid;
+    place-content: center;
+    align-content: space-between;
+}
+.phpStart__left__top {}
+.phpStart__left__top > h2 {
+    font-size: var(--font-size100);
+    text-decoration-line: line-through;
+    text-decoration-thickness: 5px;
+    font-weight: 100;
+    margin-top: 1vw;
+}
+.phpStart__left__middle {
+    margin-bottom: 6vw;
+}
+.phpStart__left__middle > h3:first-child {
+    font-size: var(--font-size150);
+    font-weight: 100;
+}
+.phpStart__left__middle > h3:last-child {
+    font-size: var(--font-size100);
+    font-weight: 100;
+    position: absolute;
+    left: 15.7%;
+    bottom: 39%;
+}
+.phpStart__left__bot {
+    margin-bottom: 2.5vw;
+}
+.phpStart__left__bot > h2 {
+    font-size: var(--font-size40);
+}
+.phpStart__left__bot > p {
+    font-family: var(--font-sub);
+    font-size: var(--font-size14);
+}
+
+.phpStart__right {
+    width: 40%;
+    border-left: 1px solid var(--colorB);
+    height: 40%;
+    bottom: 0;
+    align-self: end;
+}
+.phpStart__right > p {
+    position: absolute;
+    bottom: 0;
+    font-family: var(--font-sub);
+    font-size: var(--font-size14);
+    margin-bottom: 2.5vw;
+    margin-left: 2.5vw;
+}
+
+#phpView {
+    background: var(--colorB);
+    width: 100%;
+}

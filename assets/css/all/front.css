@@ -3,8 +3,8 @@
     color: var(--colorW);
     margin-top: 500px;
     width: 100%;
-    height: 10000px;
     background: var(--colorB);
+    padding-bottom: 300px;
 }
 
 /* frontStart */
@@ -192,4 +192,148 @@
     font-weight: 100;
     text-align: center;
     margin-top: 3vw;
+}
+
+/* vueView */
+#vueView {
+    margin-top: 276px;
+}
+#vueView > h2 {
+    font-size: var(--font-size100);
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.vueSite__top {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid var(--colorW);
+    border-bottom: 1px solid var(--colorW);
+}
+.vueSite__desc {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-right: 1px solid var(--colorW);
+}
+.vueSite__desc__title {
+    padding: 2vw;
+}
+.vueSite__desc__title > h3 {
+    font-size: var(--font-size20);
+    font-weight: 100;
+}
+.vueSite__desc__info {
+    padding: 2vw;
+}
+.vueSite__desc__info > h2 {
+    font-size: var(--font-size40);
+    font-weight: 500;
+    margin-bottom: 0.7vw;
+}
+.vueSite__desc__info > p {
+    font-family: var(--font-kor);
+    font-size: var(--font-size14);
+    font-weight: 200;
+}
+.vueSite__img {
+    width: 50%;
+}
+.vueSite__bot {
+    display: flex;
+    border-bottom: 1px solid var(--colorW);
+}
+.vueSite__viewSite {
+    width: 50%;
+    border-right: 1px solid var(--colorW);
+}
+.vueSite__viewSite > h2 {
+    padding: 47px 0;
+    text-align: center;
+}
+.vueSite__viewSite > h2 a {
+    font-size: var(--font-size40);
+    color: var(--colorW);
+    font-weight: 100;
+}
+.vueSite__viewCode {
+    width: 50%;
+}
+.vueSite__viewCode > h2 {
+    padding: 47px 0;
+    text-align: center;
+}
+.vueSite__viewCode > h2 a {
+    font-size: var(--font-size40);
+    color: var(--colorW);
+    font-weight: 100;
+}
+.vueApi__top {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid var(--colorW);
+    border-bottom: 1px solid var(--colorW);
+}
+.vueApi__img {
+    width: 50%;
+}
+.vueApi__desc {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-left: 1px solid var(--colorW);
+}
+.vueApi__desc__title {
+    padding: 2vw;
+}
+.vueApi__desc__title > h3 {
+    font-size: var(--font-size20);
+    font-weight: 100;
+}
+.vueApi__desc__info {
+    padding: 2vw;
+}
+.vueApi__desc__info > h2 {
+    font-size: var(--font-size40);
+    font-weight: 500;
+    margin-bottom: 0.7vw;
+    text-align: right;
+}
+.vueApi__desc__info > p {
+    font-family: var(--font-kor);
+    font-size: var(--font-size14);
+    font-weight: 200;
+    text-align: right;
+}
+.vueApi__bot {
+    display: flex;
+    border-bottom: 1px solid var(--colorW);
+}
+.vueApi__viewSite {
+    width: 50%;
+    border-right: 1px solid var(--colorW);
+}
+.vueApi__viewSite > h2 {
+    padding: 47px 0;
+    text-align: center;
+}
+.vueApi__viewSite > h2 a {
+    font-size: var(--font-size40);
+    color: var(--colorW);
+    font-weight: 100;
+}
+.vueApi__viewCode {
+    width: 50%;
+}
+.vueApi__viewCode > h2 {
+    padding: 47px 0;
+    text-align: center;
+}
+.vueApi__viewCode > h2 a {
+    font-size: var(--font-size40);
+    color: var(--colorW);
+    font-weight: 100;
 }
