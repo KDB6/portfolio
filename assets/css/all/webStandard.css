@@ -8,7 +8,7 @@
     text-shadow: -1px 0 var(--colorB), 0 1px var(--colorB), 1px 0 var(--colorB), 0 -1px var(--colorB);
     color: var(--colorW);
     font-weight: 100;
-    font-size: 800px;
+    font-size: 40vw;
     opacity: 0.06;
     position: absolute;
     right: 0;
@@ -25,19 +25,19 @@
     right: 50px;
 }
 .webStandard__desc > h3 {
-    font-size: 120px;
+    font-size: var(--font-size120);
     font-weight: 500;
     color: var(--colorB);
 }
 .webStandard__desc > p {
-    font-size: 14px;
+    font-size: var(--font-size14);
     font-weight: 200;
     font-family: var(--font-kor);
     color: var(--colorB);
     text-align: right;
 }
 .webStandard__desc > p:last-child {
-    font-size: 16px;
+    font-size: var(--font-size16);
     font-weight: 100;
     font-family: var(--font-main);
     color: var(--colorB);

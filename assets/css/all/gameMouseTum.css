@@ -12,7 +12,7 @@
 }
 .gameMouseTum__left > h2 {
     color: var(--colorB);
-    font-size: 120px;
+    font-size: var(--font-size120);
     font-weight: 100;
     padding-top: 50px;
     padding-left: 50px;
@@ -26,7 +26,7 @@
     font-family: var(--font-sub);
     font-weight: 100;
     margin-top: 20px;
-    font-size: 14px;
+    font-size: var(--font-size14);
     padding-left: 50px;
 }
 .gameMouseTum__right {
@@ -43,7 +43,7 @@
 }
 .gameMouseTum__list__one > h2 {
     color: var(--colorB);
-    font-size: 20px;
+    font-size: var(--font-size20);
 }
 .gameMouseTum__list__one > img {
     margin-top: 13px;
@@ -58,7 +58,7 @@
 }
 .gameMouseTum__list__two > h2 {
     color: var(--colorB);
-    font-size: 20px;
+    font-size: var(--font-size20);
 }
 .gameMouseTum__list__two > img {
     width: 300px;

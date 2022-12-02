@@ -7,7 +7,7 @@
     font-family: var(--font-main);
     color: var(--colorB);
     font-weight: 500;
-    font-size: 120px;
+    font-size: var(--font-size120);
     left: 10%;
     bottom: -14.5%;
 }

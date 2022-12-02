@@ -5,7 +5,7 @@
 
 .about__title > h2 {
     color: var(--colorB);
-    font-size: 200px;
+    font-size: var(--font-size200);
     font-weight: 100;
 }
 .about__title > h2:nth-child(1) {
@@ -13,7 +13,7 @@
     margin-left: 357px;
 }
 .about__title > h2:nth-child(2) {
-    font-size: 180px;
+    font-size: var(--font-size180);
     font-weight: 100;
     position: absolute;
     margin-left: 663px;
@@ -50,7 +50,7 @@
 .about__desc > p {
     font-family: "SCoreDream";
     font-weight: 200;
-    font-size: 14px;
+    font-size: var(--font-size14);
     color: var(--colorB);
     line-height: 1.5;
 }

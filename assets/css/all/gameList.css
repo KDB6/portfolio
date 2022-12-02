@@ -15,7 +15,7 @@
     position: absolute;
     color: var(--colorB);
     font-weight: 100;
-    font-size: 40px;
+    font-size: var(--font-size40);
     transform: rotate(-90deg);
     top: 4%;
     left: 6.5%;
@@ -42,12 +42,12 @@
     font-family: "SCoreDream";
     color: var(--colorB);
     font-weight: 200;
-    font-size: 14px;
+    font-size: var(--font-size14);
     line-height: 1.5;
 }
 .music__desc > p:last-child {
     font-family: var(--font-main);
-    font-size: 16px;
+    font-size: var(--font-size16);
     font-weight: 100;
     color: var(--colorB);
     text-decoration: underline;
@@ -73,7 +73,7 @@
 }
 .music__window > h2 {
     color: var(--colorW);
-    font-size: 60px;
+    font-size: var(--font-size60);
     font-weight: 100;
     position: absolute;
     bottom: 0;
@@ -91,19 +91,19 @@
 .search__desc > h2 {
     color: var(--colorB);
     font-weight: 100;
-    font-size: 40px;
+    font-size: var(--font-size40);
     margin-bottom: 5px;
 }
 .search__desc > p {
     font-family: "SCoreDream";
     color: var(--colorB);
     font-weight: 200;
-    font-size: 14px;
+    font-size: var(--font-size14);
     line-height: 1.5;
 }
 .search__desc > p:last-child {
     font-family: var(--font-main);
-    font-size: 16px;
+    font-size: var(--font-size16);
     font-weight: 100;
     color: var(--colorB);
     text-decoration: underline;
@@ -129,7 +129,7 @@
 }
 .search__window > h2 {
     color: var(--colorW);
-    font-size: 60px;
+    font-size: var(--font-size60);
     font-weight: 100;
     position: absolute;
     bottom: 0;
@@ -147,19 +147,19 @@
 .card__desc > h2 {
     color: var(--colorB);
     font-weight: 100;
-    font-size: 40px;
+    font-size: var(--font-size40);
     margin-bottom: 5px;
 }
 .card__desc > p {
     font-family: "SCoreDream";
     color: var(--colorB);
     font-weight: 200;
-    font-size: 14px;
+    font-size: var(--font-size14);
     line-height: 1.5;
 }
 .card__desc > p:last-child {
     font-family: var(--font-main);
-    font-size: 16px;
+    font-size: var(--font-size16);
     font-weight: 100;
     color: var(--colorB);
     text-decoration: underline;
@@ -185,7 +185,7 @@
 }
 .card__window > h2 {
     color: var(--colorW);
-    font-size: 60px;
+    font-size: var(--font-size60);
     font-weight: 100;
     position: absolute;
     bottom: 0;
@@ -203,18 +203,18 @@
 .tetris__desc > h2 {
     color: var(--colorB);
     font-weight: 100;
-    font-size: 40px;
+    font-size: var(--font-size40);
 }
 .tetris__desc > p {
     font-family: "SCoreDream";
     color: var(--colorB);
     font-weight: 200;
-    font-size: 14px;
+    font-size: var(--font-size14);
     line-height: 1.5;
 }
 .tetris__desc > p:last-child {
     font-family: var(--font-main);
-    font-size: 16px;
+    font-size: var(--font-size16);
     font-weight: 100;
     color: var(--colorB);
     text-decoration: underline;
@@ -240,7 +240,7 @@
 }
 .tetris__window > h2 {
     color: var(--colorW);
-    font-size: 60px;
+    font-size: var(--font-size60);
     font-weight: 100;
     position: absolute;
     bottom: 0;

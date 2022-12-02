@@ -8,7 +8,7 @@
     justify-content: flex-end;
 }
 #responsive > h2 {
-    font-size: 800px;
+    font-size: 40vw;
     font-family: var(--font-main);
     font-weight: 100;
     color: var(--colorW);
@@ -27,19 +27,19 @@
     margin-right: 50px;
 }
 .responsive__desc > h3 {
-    font-size: 120px;
+    font-size: var(--font-size120);
     font-weight: 500;
     color: var(--colorB);
 }
 .responsive__desc > p {
     font-family: var(--font-kor);
-    font-size: 14px;
+    font-size: var(--font-size14);
     font-weight: 200;
     color: var(--colorB);
     text-align: right;
 }
 .responsive__desc > p:last-child {
-    font-size: 16px;
+    font-size: var(--font-size16);
     font-weight: 100;
     font-family: var(--font-main);
     color: var(--colorB);

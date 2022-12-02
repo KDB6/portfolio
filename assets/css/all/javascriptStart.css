@@ -7,7 +7,7 @@
 #javascriptStart > h2 {
     margin-top: 192px;
     color: var(--colorB);
-    font-size: 1000px;
+    font-size: var(--font-size1000);
     opacity: 0.02;
     font-weight: 500;
     position: absolute;
@@ -16,7 +16,7 @@
 #javascriptStart > h3 {
     font-weight: 500;
     color: var(--colorB);
-    font-size: 150px;
+    font-size: var(--font-size150);
     position: absolute;
     top: 45%;
     left: 9%;
@@ -24,15 +24,15 @@
 #javascriptStart > h4 {
     font-weight: 100;
     color: var(--colorB);
-    font-size: 100px;
+    font-size: var(--font-size100);
     position: absolute;
     top: 53.5%;
-    left: 21.2%;
+    left: 20.85%;
 }
 #javascriptStart > p {
     font-weight: 100;
     color: var(--colorB);
-    font-size: 40px;
+    font-size: var(--font-size40);
     position: absolute;
     top: 60%;
     left: 16.5%;

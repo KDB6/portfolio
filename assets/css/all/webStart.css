@@ -6,7 +6,7 @@
 }
 #webStart > h2 {
     color: var(--colorB);
-    font-size: 1000px;
+    font-size: var(--font-size1000);
     margin-top: 37px;
     font-weight: 500;
     opacity: 0.02;
@@ -16,14 +16,14 @@
 #webStart > h3 {
     position: absolute;
     color: var(--colorB);
-    font-size: 200px;
+    font-size: var(--font-size200);
     left: 15%;
     top: 62%;
 }
 #webStart > p {
     position: absolute;
     color: var(--colorB);
-    font-size: 60px;
+    font-size: var(--font-size60);
     font-weight: 100;
     left: 9%;
     top: 64%;

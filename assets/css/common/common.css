@@ -37,6 +37,20 @@
     --font-kor2: "NanumMyeongjo";
 
     --font-height: 1.5;
+
+    --font-size1000: 52.1vw;
+    --font-size200: 10.4vw;
+    --font-size180: 9.4vw;
+    --font-size150: 7.81vw;
+    --font-size130: 6.8vw;
+    --font-size120: 6.25vw;
+    --font-size100: 5.21vw;
+    --font-size60: 3.15vw;
+    --font-size40: 2.1vw;
+    --font-size24: 1.3vw;
+    --font-size20: 1.043vw;
+    --font-size16: 0.85vw;
+    --font-size14: 0.73vw;
 }
 
 /* 섹션 공통 요소 */

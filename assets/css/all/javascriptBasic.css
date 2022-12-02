@@ -17,7 +17,7 @@
     margin-left: 50px;
 }
 .javascriptBasic__title > h2 {
-    font-size: 40px;
+    font-size: var(--font-size40);
     font-weight: 100;
 }
 .javascriptBasic__desc {
@@ -25,17 +25,17 @@
 }
 .javascriptBasic__desc > h2 {
     font-family: var(--font-kor2);
-    font-size: 24px;
+    font-size: var(--font-size24);
     font-weight: 400;
     margin-bottom: 10px;
 }
 .javascriptBasic__desc > p {
     font-family: var(--font-kor);
-    font-size: 14px;
+    font-size: var(--font-size14);
     font-weight: 200;
 }
 .javascriptBasic__desc > p:last-child {
-    font-size: 16px;
+    font-size: var(--font-size16);
     font-weight: 200;
     font-family: var(--font-main);
     color: var(--colorW);
@@ -54,6 +54,6 @@
     justify-content: start;
 }
 .javascriptBasic__right > h2 {
-    font-size: 150px;
+    font-size: var(--font-size150);
     font-weight: 500;
 }

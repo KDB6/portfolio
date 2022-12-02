@@ -5,6 +5,6 @@
     font-family: var(--font-main);
     color: var(--colorB);
     font-weight: 500;
-    font-size: 130px;
+    font-size: var(--font-size130);
     letter-spacing: 1.09em;
 }

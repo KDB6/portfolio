@@ -16,19 +16,19 @@
 }
 .mouse__desc > h2 {
     font-weight: 100;
-    font-size: 40px;
+    font-size: var(--font-size40);
     color: var(--colorB);
     margin-bottom: 10px;
 }
 .mouse__desc > p {
     font-family: var(--font-kor);
     font-weight: 200;
-    font-size: 14px;
+    font-size: var(--font-size14);
     line-height: 1.5;
 }
 .mouse__desc > p:last-child {
     font-family: var(--font-main);
-    font-size: 16px;
+    font-size: var(--font-size16);
     font-weight: 100;
     color: var(--colorB);
     text-decoration: underline;
@@ -51,7 +51,7 @@
     right: 20%;
 }
 .mouse__right > h2 {
-    font-size: 120px;
+    font-size: var(--font-size120);
     font-weight: 500;
     color: var(--colorW);
     position: absolute;
@@ -59,7 +59,7 @@
 }
 .mouse__right > p {
     font-weight: 500;
-    font-size: 16px;
+    font-size: var(--font-size16);
     position: absolute;
     top: 6%;
     margin-left: 5px;
