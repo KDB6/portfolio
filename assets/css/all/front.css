@@ -81,3 +81,115 @@
     right: 12.3%;
     bottom: 7.5%;
 }
+
+/* reactView */
+#reactView {
+    margin-top: 300px;
+}
+.react__api {
+    display: flex;
+}
+.react__api__desc {
+    width: 50%;
+    display: grid;
+    place-content: center;
+}
+.react__api__desc > div {
+    font-weight: 500;
+    font-size: var(--font-size60);
+    margin-bottom: 3vw;
+    text-align: center;
+}
+.react__api__desc > h2 {
+    font-weight: 500;
+    font-size: var(--font-size80);
+    position: relative;
+    text-align: center;
+}
+.react__api__desc > h2::before {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 1px;
+    background: var(--colorW);
+    left: 0;
+    top: 160%;
+    left: 33%;
+}
+.react__api__desc > h3 {
+    margin-top: 7vw;
+    text-align: center;
+}
+.react__api__desc > h3 a {
+    color: var(--colorW);
+    font-weight: 100;
+    font-size: var(--font-size40);
+    margin: 15px;
+}
+.react__api__desc > p {
+    font-family: var(--font-kor);
+    font-size: var(--font-size18);
+    font-weight: 100;
+    text-align: center;
+    margin-top: 3vw;
+}
+.react__api__img {
+    width: 50%;
+}
+.react__api__img > img {
+    height: 1080px;
+}
+
+.react__youtube {
+    display: flex;
+}
+.react__youtube__img {
+    width: 50%;
+}
+.react__youtube__img > img {
+    height: 1080px;
+}
+.react__youtube__desc {
+    width: 50%;
+    display: grid;
+    place-content: center;
+}
+.react__youtube__desc > div {
+    font-weight: 500;
+    font-size: var(--font-size60);
+    margin-bottom: 3vw;
+    text-align: center;
+}
+.react__youtube__desc > h2 {
+    font-weight: 500;
+    font-size: var(--font-size80);
+    position: relative;
+    text-align: center;
+}
+.react__youtube__desc > h2::before {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 1px;
+    background: var(--colorW);
+    left: 0;
+    top: 160%;
+    left: 33%;
+}
+.react__youtube__desc > h3 {
+    margin-top: 7vw;
+    text-align: center;
+}
+.react__youtube__desc > h3 a {
+    color: var(--colorW);
+    font-weight: 100;
+    font-size: var(--font-size40);
+    margin: 15px;
+}
+.react__youtube__desc > p {
+    font-family: var(--font-kor);
+    font-size: var(--font-size18);
+    font-weight: 100;
+    text-align: center;
+    margin-top: 3vw;
+}
