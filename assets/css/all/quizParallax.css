@@ -9,6 +9,7 @@
     font-size: var(--font-size100);
     font-weight: 500;
     color: var(--colorB);
+    margin-left: 2.6%;
 }
 .quizParallax__tum > h2 {
     font-size: var(--font-size300);
@@ -28,8 +29,8 @@
     color: var(--colorB);
     line-height: 1.4;
     position: absolute;
-    right: 0;
-    top: 34%;
+    right: 3%;
+    top: 20%;
 }
 
 /* quiz */
@@ -62,18 +63,18 @@
 /* parallax */
 .parallax {
     margin-top: 380px;
-    position: absolute;
     right: 0;
 }
 .parallax__img {
     width: 80%;
     margin-left: 20%;
+    position: relative;
 }
 .parallax__desc {
     text-align: right;
     position: absolute;
     right: 6%;
-    bottom: -21%;
+    bottom: -6%;
 }
 .parallax__desc h2 {
     font-size: var(--font-size120);
