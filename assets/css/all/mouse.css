@@ -40,15 +40,13 @@
     color: var(--colorB);
 }
 .mouse__right > img:nth-child(1) {
-    width: 900px;
-    height: 1200px;
+    width: 90%;
 }
 .mouse__right > img:nth-child(2) {
-    width: 100px;
-    height: 100px;
+    width: 5%;
     position: absolute;
-    top: 50%;
-    right: 20%;
+    top: 48%;
+    right: 18%;
 }
 .mouse__right > h2 {
     font-size: var(--font-size120);

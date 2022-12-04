@@ -20,8 +20,7 @@
     z-index: -1;
 }
 .responsive__img > img {
-    width: 950px;
-    height: 1200px;
+    width: 100%;
 }
 .responsive__desc {
     margin-right: 50px;

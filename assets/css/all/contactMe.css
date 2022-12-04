@@ -59,6 +59,7 @@
 .contact__your #contactName {
     border-radius: 3px;
     padding: 10px 105px 10px 20px;
+    margin-right: 20px;
 }
 .contact__your #contactName::placeholder {
     font-size: var(--font-size16);
@@ -87,7 +88,7 @@
 }
 .contact__mes #contactMes {
     border-radius: 3px;
-    padding: 20px 1420px 160px 20px;
+    padding: 20px 88% 160px 20px;
 }
 .contact__mes #contactMes::placeholder {
     font-size: var(--font-size16);

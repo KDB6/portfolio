@@ -47,8 +47,7 @@
 }
 .gameMouseTum__list__one > img {
     margin-top: 13px;
-    width: 300px;
-    height: 300px;
+    width: 120%;
 }
 .gameMouseTum__list__two {
     border-left: 1px solid var(--colorB);
@@ -61,8 +60,7 @@
     font-size: var(--font-size20);
 }
 .gameMouseTum__list__two > img {
-    width: 300px;
-    height: 300px;
+    width: 120%;
     margin-top: 13px;
 }
 .gameMouseTum__list__two > img:last-child {

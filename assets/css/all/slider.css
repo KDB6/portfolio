@@ -22,8 +22,7 @@
     margin-top: 2px;
 }
 .slider__img {
-    width: 1054px;
-    height: 496px;
+    width: 87%;
     font-family: var(--font-sub);
     font-size: var(--font-size14);
     font-weight: 400;

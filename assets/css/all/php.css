@@ -141,6 +141,9 @@
     margin-right: 10px;
 }
 
+.phpProject {
+    border-bottom: 1px solid var(--colorW);
+}
 .phpProject__title {
     background: var(--colorW);
     color: var(--colorB);

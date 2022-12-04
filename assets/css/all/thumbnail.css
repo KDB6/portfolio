@@ -54,3 +54,7 @@
     bottom: 5%;
     z-index: 3;
 }
+.thumbnail__info > p span {
+    text-decoration-line: line-through;
+    text-decoration-thickness: 1px;
+}
