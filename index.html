@@ -99,9 +99,9 @@
         <!-- about -->
         <section id="about">
             <div class="about__title">
-                <h2>Passion</h2>
-                <h2>Creative</h2>
-                <h2>Shining</h2>
+                <div class="Passion">Passion</div>
+                <div class="Creative">Creative</div>
+                <div class="Shining">Shining</div>
             </div>
             <div class="about__img">
                 <img src="assets/img/about.png" alt="어바웃사진">
@@ -245,7 +245,7 @@
                     </div>
                     <div class="music__window">
                         <img src="assets/img/music.svg" alt="뮤직아이콘">
-                        <h2>music</h2>
+                        <h2>MUSIC</h2>
                     </div>
                 </div>
     
@@ -714,5 +714,26 @@
 
     </main>
     <!-- //main -->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        const sections = gsap.utils.toArray(".Passion");
+
+        gsap.to(sections, {
+            xPercent: -150 * (sections.length -+5),
+            ease: "none",
+            scrollTrigger: {
+                trigger: "#about",
+                pin: true,
+                scrub: 1,
+                end: "+=1080",
+                markers: true,
+            }
+        })
+    </script>
 </body>
 </html>

@@ -34,7 +34,7 @@
     align-self: flex-end;
 }
 .gameMouseTum__list {
-    height: 48vh;
+    height: 50vh;
 }
 .gameMouseTum__list__one {
     border-left: 1px solid var(--colorB);

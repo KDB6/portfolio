@@ -3,23 +3,23 @@
     font-family: var(--font-main);
 }
 
-.about__title > h2 {
+.about__title > div {
     color: var(--colorB);
     font-size: var(--font-size200);
     font-weight: 100;
 }
-.about__title > h2:nth-child(1) {
+.about__title > div:nth-child(1) {
     position: absolute;
     margin-left: 20%;
 }
-.about__title > h2:nth-child(2) {
+.about__title > div:nth-child(2) {
     font-size: var(--font-size180);
     font-weight: 100;
     position: absolute;
     margin-left: 35%;
     margin-top: 9.5%;
 }
-.about__title > h2:nth-child(3) {
+.about__title > div:nth-child(3) {
     position: absolute;
     margin-left: 11%;
     margin-top: 16%;
