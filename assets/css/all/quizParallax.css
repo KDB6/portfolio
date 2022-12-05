@@ -1,5 +1,5 @@
 #quizParallax {
-    margin-top: 469px;
+    margin-top: 25%;
     font-family: var(--font-main);
     position: relative;
 }
@@ -17,11 +17,11 @@
     color: #ddd;
 }
 .quizParallax__tum > h2 {
-    margin-left: -5vw;
-    margin-top: -3vw;
+    margin-left: -4%;
+    margin-top: -3%;
 }
 .quizParallax__tum > h2:nth-child(3) {
-    margin-top: -5vw;
+    margin-top: -3%;
 }
 .quizParallax__tum > p {
     font-family: var(--font-sub);
@@ -35,7 +35,7 @@
 
 /* quiz */
 .quiz {
-    margin-top: 409px;
+    margin-top: 20%;
     position: relative;
 }
 .quiz__img {
@@ -57,12 +57,12 @@
     font-size: var(--font-size14);
     color: var(--colorB);
     display: inline;
-    margin-left: 5px;
+    margin-left: 0.5px;
 }
 
 /* parallax */
 .parallax {
-    margin-top: 380px;
+    margin-top: 18%;
     right: 0;
 }
 .parallax__img {
@@ -93,5 +93,5 @@
     text-decoration: underline;
     color: var(--colorB);
     display: inline;
-    margin-left: 5px;
+    margin-left: 0.5%;
 }

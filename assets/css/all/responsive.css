@@ -1,6 +1,6 @@
 #responsive {
     font-family: var(--font-main);
-    margin-top: 900px;
+    margin-top: 50%;
     position: relative;
 }
 .responsive {
@@ -23,7 +23,7 @@
     width: 100%;
 }
 .responsive__desc {
-    margin-right: 50px;
+    margin-right: 3%;
 }
 .responsive__desc > h3 {
     font-size: var(--font-size120);
@@ -45,7 +45,7 @@
     text-decoration: underline;
 }
 .responsive__desc > p:last-child span {
-    margin-left: 10px;
+    margin-left: 1.5%;
 }
 .responsive__desc > p:last-child span a {
     color: var(--colorB);

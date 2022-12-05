@@ -1,5 +1,5 @@
 #slider {
-    margin-top: 269px;
+    margin-top: 15%;
     margin-left: 37vw;
 }
 #slider > h2 {
@@ -10,7 +10,7 @@
     letter-spacing: 1.09em;
 }
 .slider__top {
-    margin-bottom: 20px;
+    margin-bottom: 2%;
 }
 .slider__top div {
     font-family: var(--font-sub);
@@ -19,7 +19,7 @@
     color: var(--colorB);
 }
 .slider__top div:nth-child(2) {
-    margin-top: 2px;
+    margin-top: 0.2%;
 }
 .slider__img {
     width: 87%;
@@ -33,15 +33,15 @@
     justify-content: space-between;
 }
 .slider__bot__left {
-    margin-top: 20px;
+    margin-top: 2%;
 }
 .slider__bot__left > div:nth-child(2) {
-    margin-top: 2px;
+    margin-top: 0.2%;
 }
 .slider__bot__right {
-    margin-top: 20px;
+    margin-top: 2%;
     text-align: right;
 }
 .slider__bot__right > div:nth-child(2) {
-    margin-top: 2px;
+    margin-top: 0.2%;
 }

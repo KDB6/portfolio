@@ -10,38 +10,37 @@
 }
 .about__title > h2:nth-child(1) {
     position: absolute;
-    margin-left: 357px;
+    margin-left: 20%;
 }
 .about__title > h2:nth-child(2) {
     font-size: var(--font-size180);
     font-weight: 100;
     position: absolute;
-    margin-left: 663px;
-    margin-top: 170px;
+    margin-left: 35%;
+    margin-top: 9.5%;
 }
 .about__title > h2:nth-child(3) {
     position: absolute;
-    margin-left: 203px;
-    margin-top: 272px;
+    margin-left: 11%;
+    margin-top: 16%;
 }
 
 .about__img > img {
-    width: 600px;
-    height: 600px;
+    width: 35%;
     object-fit: cover;
-    margin-left: 1137px;
-    margin-top: 190px;
+    margin-left: 60%;
+    margin-top: 9%;
 }
 
 .about__desc {
-    margin-left: 357px;
+    margin-left: 22%;
     bottom: 100px;
     position: relative;
 }
 .about__desc::before {
     content: '';
     position: absolute;
-    width: 133px;
+    width: 10%;
     height: 1px;
     background: var(--colorB);
     left: 0;

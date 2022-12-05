@@ -1,5 +1,5 @@
 #search {
-    margin-top: 469px;
+    margin-top: 25%;
     margin-left: 7vw;
 }
 #search > h2 {
@@ -10,7 +10,7 @@
     letter-spacing: 1em;
 }
 .search__top {
-    margin-bottom: 20px;
+    margin-bottom: 2%;
 }
 .search__top div {
     font-family: var(--font-sub);
@@ -19,7 +19,7 @@
     color: var(--colorB);
 }
 .search__top div:nth-child(2) {
-    margin-top: 2px;
+    margin-top: 0.2%;
 }
 .search__img {
     width: 59%;
@@ -33,15 +33,15 @@
     justify-content: space-between;
 }
 .search__bot__left {
-    margin-top: 20px;
+    margin-top: 2%;
 }
 .search__bot__left > div:nth-child(2) {
-    margin-top: 2px;
+    margin-top: 0.2%;
 }
 .search__bot__right {
-    margin-top: 20px;
+    margin-top: 2%;
     text-align: right;
 }
 .search__bot__right > div:nth-child(2) {
-    margin-top: 2px;
+    margin-top: 0.2%;
 }

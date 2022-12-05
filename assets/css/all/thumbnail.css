@@ -3,7 +3,7 @@
     color: var(--colorB);
     background: var(--colorW);
     width: 100%;
-    height: 1080px;
+    height: 100vh;
     position: relative;
 }
 .category {

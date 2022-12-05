@@ -1,8 +1,8 @@
 #gameMouseTum {
     font-family: var(--font-main);
     width: 100%;
-    height: 1050px;
-    margin-top: 300px;
+    height: 100vh;
+    margin-top: 15%;
     border-top: 1px solid var(--colorB);
     border-bottom: 1px solid var(--colorB);
     display: flex;
@@ -14,8 +14,8 @@
     color: var(--colorB);
     font-size: var(--font-size120);
     font-weight: 100;
-    padding-top: 50px;
-    padding-left: 50px;
+    padding-top: 6%;
+    padding-left: 6%;
 }
 .gameMouseTum__list {
     display: flex;
@@ -25,34 +25,34 @@
 .gameMouseTum__left > p {
     font-family: var(--font-sub);
     font-weight: 100;
-    margin-top: 20px;
+    margin-top: 2%;
     font-size: var(--font-size14);
-    padding-left: 50px;
+    padding-left: 6%;
 }
 .gameMouseTum__right {
     width: 50%;
     align-self: flex-end;
 }
 .gameMouseTum__list {
-    height: 500px;
+    height: 48vh;
 }
 .gameMouseTum__list__one {
     border-left: 1px solid var(--colorB);
-    padding-left: 20px;
-    margin-right: 140px;
+    padding-left: 2%;
+    margin-right: 13%;
 }
 .gameMouseTum__list__one > h2 {
     color: var(--colorB);
     font-size: var(--font-size20);
 }
 .gameMouseTum__list__one > img {
-    margin-top: 13px;
+    margin-top: 5%;
     width: 120%;
 }
 .gameMouseTum__list__two {
     border-left: 1px solid var(--colorB);
-    padding-left: 20px;
-    margin-right: 170px;
+    padding-left: 2%;
+    margin-right: 15%;
     position: relative;
 }
 .gameMouseTum__list__two > h2 {
@@ -61,11 +61,10 @@
 }
 .gameMouseTum__list__two > img {
     width: 120%;
-    margin-top: 13px;
+    margin-top: 2%;
 }
 .gameMouseTum__list__two > img:last-child {
-    width: 30px;
-    height: 30px;
+    width: 8%;
     position: absolute;
     right: 20%;
     top: 20%;

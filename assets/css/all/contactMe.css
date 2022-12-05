@@ -1,5 +1,5 @@
 #contactMe {
-    padding-top: 285px;
+    padding-top: 15%;
     font-family: var(--font-main);
     color: var(--colorW);
     background: var(--colorB);
@@ -25,31 +25,31 @@
     text-align: center;
     font-weight: 400;
     font-size: var(--font-size20);
-    margin-top: 30px;
+    margin-top: 2%;
 }
 #contactMe > div:last-child {
     font-family: var(--font-sub);
     font-size: var(--font-size14);
     text-align: center;
-    margin-top: 50px;
-    padding-bottom: 50px;
+    margin-top: 2%;
+    padding-bottom: 2%;
 }
 .contactMe {
     padding: 0 6%;
-    margin-top: 86px;
+    margin-top: 4.5%;
 }
 .contactMe > h2 {
     font-family: var(--font-sub);
     font-weight: 400;
     font-size: var(--font-size40);
     border-bottom: 1px solid var(--colorW);
-    padding-bottom: 10px;
+    padding-bottom: 0.5%;
 }
 .contact__info {
-    margin-top: 20px;
+    margin-top: 1%;
 }
 .contact__your {
-    margin-bottom: 20px;
+    margin-bottom: 1%;
 }
 .contact__your input {
     outline: none;
@@ -59,7 +59,7 @@
 .contact__your #contactName {
     border-radius: 3px;
     padding: 10px 105px 10px 20px;
-    margin-right: 20px;
+    margin-right: 1%;
 }
 .contact__your #contactName::placeholder {
     font-size: var(--font-size16);

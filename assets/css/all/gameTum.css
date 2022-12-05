@@ -1,5 +1,5 @@
 #gameTum {
-    margin-top: 300px;
+    margin-top: 15%;
     position: relative;
 }
 #gameTum > h2 {
@@ -12,9 +12,8 @@
     bottom: -14.5%;
 }
 .gameImg {
-    margin-left: 50px;
+    margin-left: 6%;
 }
 .gameImg > img {
     width: 83%;
-    height: 713px;
 }

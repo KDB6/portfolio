@@ -3,7 +3,7 @@
     color: var(--colorB);
     background: var(--colorW);
     width: 100%;
-    height: 1080px;
+    height: 100vh;
     display: flex;
     position: relative;
 }
@@ -17,7 +17,7 @@
 .phpStart__left__top > h2 {
     font-size: var(--font-size100);
     text-decoration-line: line-through;
-    text-decoration-thickness: 5px;
+    text-decoration-thickness: 5%;
     font-weight: 100;
     margin-top: 1vw;
 }
@@ -123,7 +123,7 @@
 .phpStudy__desc > h2 {
     font-size: var(--font-size20);
     font-weight: 500;
-    margin-bottom: 5px;
+    margin-bottom: 0.5%;
 }
 .phpStudy__desc > p {
     font-family: var(--font-kor);
@@ -138,7 +138,7 @@
     color: var(--colorW);
     font-size: var(--font-size16);
     font-weight: 100;
-    margin-right: 10px;
+    margin-right: 1.5%;
 }
 
 .phpProject {
@@ -198,12 +198,12 @@
     justify-content: flex-end;
 }
 .phpProject__desc {
-    padding: 50px;
+    padding: 3%;
 }
 .phpProject__desc > h2 {
     font-size: var(--font-size20);
     font-weight: 500;
-    margin-bottom: 5px;
+    margin-bottom: 0.5%;
 }
 .phpProject__desc > p {
     font-family: var(--font-kor);
@@ -218,5 +218,5 @@
     color: var(--colorW);
     font-size: var(--font-size16);
     font-weight: 100;
-    margin-right: 10px;
+    margin-right: 1.5%;
 }

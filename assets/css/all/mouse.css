@@ -1,6 +1,6 @@
 #mouse {
     font-family: var(--font-main);
-    margin-top: 300px;
+    margin-top: 15%;
     display: flex;
     align-items: flex-end;
     position: relative;
@@ -18,7 +18,7 @@
     font-weight: 100;
     font-size: var(--font-size40);
     color: var(--colorB);
-    margin-bottom: 10px;
+    margin-bottom: 1.5%;
 }
 .mouse__desc > p {
     font-family: var(--font-kor);
@@ -34,7 +34,7 @@
     text-decoration: underline;
 }
 .mouse__desc > p:last-child span {
-    margin-right: 10px;
+    margin-right: 1.5%;
 }
 .mouse__desc > p:last-child span a {
     color: var(--colorB);
@@ -60,9 +60,9 @@
     font-size: var(--font-size16);
     position: absolute;
     top: 6%;
-    margin-left: 5px;
+    margin-left: 0.5%;
 }
 .mouse__right > p span a {
     color: var(--colorW);
-    margin-right: 10px;
+    margin-right: 1.5%;
 }

@@ -1,16 +1,16 @@
 #front {
     font-family: var(--font-main);
     color: var(--colorW);
-    margin-top: 500px;
+    margin-top: 25%;
     width: 100%;
     background: var(--colorB);
-    padding-bottom: 300px;
+    padding-bottom: 15%;
 }
 
 /* frontStart */
 #frontStart {
     width: 100%;
-    height: 1080px;
+    height: 100vh;
     display: grid;
     place-content: center;
     justify-content: start;
@@ -49,7 +49,7 @@
     display: flex;
     align-items: flex-end;
     margin-left: 2.5%;
-    margin-bottom: 20px;
+    margin-bottom: 2%;
 }
 .reactSite__desc > h2 {
     font-size: var(--font-size120);
@@ -64,7 +64,7 @@
 .reactSite__desc ul li a {
     color: var(--colorW);
     font-size: var(--font-size20);
-    margin-right: 10px;
+    margin-left: 1vh;
 }
 .reactSite__img {
     margin-left: 2.5%;
@@ -84,7 +84,7 @@
 
 /* reactView */
 #reactView {
-    margin-top: 300px;
+    margin-top: 15%;
 }
 .react__api {
     display: flex;
@@ -109,12 +109,12 @@
 .react__api__desc > h2::before {
     content: '';
     position: absolute;
-    width: 200px;
+    width: 40%;
     height: 1px;
     background: var(--colorW);
     left: 0;
     top: 160%;
-    left: 33%;
+    left: 30%;
 }
 .react__api__desc > h3 {
     margin-top: 7vw;
@@ -124,7 +124,7 @@
     color: var(--colorW);
     font-weight: 100;
     font-size: var(--font-size40);
-    margin: 15px;
+    margin: 1.5%;
 }
 .react__api__desc > p {
     font-family: var(--font-kor);
@@ -169,12 +169,12 @@
 .react__youtube__desc > h2::before {
     content: '';
     position: absolute;
-    width: 200px;
+    width: 40%;
     height: 1px;
     background: var(--colorW);
     left: 0;
     top: 160%;
-    left: 33%;
+    left: 30%;
 }
 .react__youtube__desc > h3 {
     margin-top: 7vw;
@@ -184,7 +184,7 @@
     color: var(--colorW);
     font-weight: 100;
     font-size: var(--font-size40);
-    margin: 15px;
+    margin: 1.5%;
 }
 .react__youtube__desc > p {
     font-family: var(--font-kor);
@@ -196,13 +196,13 @@
 
 /* vueView */
 #vueView {
-    margin-top: 276px;
+    margin-top: 15%;
 }
 #vueView > h2 {
     font-size: var(--font-size100);
     font-weight: 500;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 2%;
 }
 .vueSite__top {
     display: flex;
@@ -249,7 +249,7 @@
     border-right: 1px solid var(--colorW);
 }
 .vueSite__viewSite > h2 {
-    padding: 47px 0;
+    padding: 3% 0;
     text-align: center;
 }
 .vueSite__viewSite > h2 a {
@@ -261,7 +261,7 @@
     width: 50%;
 }
 .vueSite__viewCode > h2 {
-    padding: 47px 0;
+    padding: 3% 0;
     text-align: center;
 }
 .vueSite__viewCode > h2 a {
@@ -317,7 +317,7 @@
     border-right: 1px solid var(--colorW);
 }
 .vueApi__viewSite > h2 {
-    padding: 47px 0;
+    padding: 3% 0;
     text-align: center;
 }
 .vueApi__viewSite > h2 a {
@@ -329,7 +329,7 @@
     width: 50%;
 }
 .vueApi__viewCode > h2 {
-    padding: 47px 0;
+    padding: 3% 0;
     text-align: center;
 }
 .vueApi__viewCode > h2 a {

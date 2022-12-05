@@ -12,12 +12,11 @@
     opacity: 0.06;
     position: absolute;
     right: 0;
-    bottom: 550px;
+    bottom: 60%;
     z-index: -1;
 }
 .webStandard__img > img {
     width: 90%;
-    height: 889px;
     left: 0;
 }
 .webStandard__desc {

@@ -1,5 +1,5 @@
 #searchSliderTum {
-    margin-top: 469px;
+    margin-top: 25%;
     font-family: var(--font-main);
     display: grid;
     place-content: center;
@@ -15,14 +15,14 @@
     font-size: var(--font-size14);
     font-weight: 100;
     position: relative;
-    margin-top: 15px;
+    margin-top: 2%;
 }
 #searchSliderTum > p::before {
     content: '';
     position: absolute;
-    width: 150px;
+    width: 20%;
     height: 1px;
     background: var(--colorB);
     left: 0;
-    top: -15px;
+    top: -30%;
 }
