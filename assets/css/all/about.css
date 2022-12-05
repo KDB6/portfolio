@@ -26,15 +26,15 @@
 }
 
 .about__img > img {
-    width: 35%;
+    width: 30%;
     object-fit: cover;
     margin-left: 60%;
     margin-top: 9%;
 }
 
 .about__desc {
-    margin-left: 22%;
-    bottom: 100px;
+    margin-left: 20%;
+    bottom: 6vh;
     position: relative;
 }
 .about__desc::before {
