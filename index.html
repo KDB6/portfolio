@@ -722,10 +722,18 @@
     <script>
         gsap.registerPlugin(ScrollTrigger);
 
-        let tl = gsap.timeline({delay: 0.3});
+        let t1 = gsap.timeline({delay: 0.3});
         let t2 = gsap.timeline({delay: 0.3});
+        let t3 = gsap.timeline({delay: 0.3});
+
+        t1.from('.category', {
+            y: -20,
+            opacity: 0,
+            duration: 1.5,
+            ease: 'power4'
+        })
     
-        tl.from('.line', {
+        t2.from('.line', {
             x: 100,
             width: 0,
             duration: 1.5,
@@ -733,7 +741,7 @@
         })
 
         
-        tl.from('.portfolio', {
+        t2.from('.portfolio', {
             y: 20,
             opacity: 0,
             duration: 1,
@@ -741,14 +749,14 @@
         })
         
         
-        tl.from('.developer', {
+        t2.from('.developer', {
             y: -20,
             opacity: 0,
             duration: 1.2,
             ease: 'power4'
         })
         
-        t2.from('.thumbnail__info > p', {
+        t3.from('.thumbnail__info > p', {
             opacity: 0,
             duration: 1,
             ease: 'power4'
