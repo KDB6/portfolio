@@ -725,7 +725,6 @@
         let t1 = gsap.timeline({delay: 0.3});
         let t2 = gsap.timeline({delay: 0.3});
         let t3 = gsap.timeline({delay: 0.5});
-        let t4 = gsap.timeline({delay: 0.5});
 
         // thumbnail
         t1.from('.category', {
@@ -742,7 +741,6 @@
             ease: 'power4'
         })
 
-        
         t2.from('.portfolio', {
             y: 20,
             opacity: 0,
@@ -763,7 +761,10 @@
             ease: 'power4'
         })
 
-        t4.from('.Passion', {
+        // about
+        let a1 = gsap.timeline({delay: 0.5});
+
+        a1.from('.Passion', {
             scrollTrigger: {
                 trigger: "#about",
                 start: "10% 60%",
