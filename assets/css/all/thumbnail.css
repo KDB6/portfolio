@@ -82,7 +82,8 @@
 
 
 .thumbnail__info2 {
-    font-size: var(--font-size150);
+    color: var(--colorW);
+    font-size: var(--font-size120);
     font-weight: 100;
     /* display: flex;
     flex-wrap: wrap;
@@ -92,4 +93,70 @@
 }
 .thumbnail__info2 > div {
     line-height: 1.2;
+}
+.thumbnail__info2 > div:nth-child(1) {
+    margin-right: 20vw;
+}
+.thumbnail__info2 > div:nth-child(2) {
+    margin-right: 20vw;
+}
+.thumbnail__info2 > div:nth-child(3) {
+    margin-right: 20vw;
+}
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
+
+.reveal {
+  position: relative;
+  display: flex;
+  color: var(--colorW);
+  font-size: var(--font-size120);
+  letter-spacing: 3px;
+  /* text-transform: uppercase; */
+  white-space: pre;
+  font-weight: 100;
+}
+.reveal span {
+  opacity: 0;
+  transform: scale(0);
+  animation: fadeIn 2.4s forwards;
+}
+.reveal::before, .reveal::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  height: 100%;
+  background: var(--colorW);
+  opacity: 0;
+  transform: scale(0);
+}
+.reveal::before {
+  left: 50%;
+  animation: slideLeft 1.5s cubic-bezier(0.7, -0.6, 0.3, 1.5) forwards;
+}
+.reveal::after {
+  right: 50%;
+  animation: slideRight 1.5s cubic-bezier(0.7, -0.6, 0.3, 1.5) forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes slideLeft {
+  to {
+    left: -6%;
+    opacity: 1;
+    transform: scale(0.9);
+  }
+}
+@keyframes slideRight {
+  to {
+    right: -6%;
+    opacity: 1;
+    transform: scale(0.9);
+  }
 }
