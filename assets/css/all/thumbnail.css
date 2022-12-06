@@ -47,7 +47,6 @@
     bottom: 5%;
     z-index: 2;
     background: var(--colorW);
-    border-top: 1px solid var(--colorB);
 }
 .thumbnail__info > p {
     font-size: var(--font-size16);
@@ -60,4 +59,12 @@
 .thumbnail__info > p span {
     text-decoration-line: line-through;
     text-decoration-thickness: 1px;
+}
+.line {
+    width: 91%;
+    height: 1px;
+    background: var(--colorB);
+    position: absolute;
+    top: 69.4%;
+    right: 0;
 }

@@ -77,16 +77,17 @@
                 <h2><a href="#">portfolio.</a></h2>
                 <div class="list">
                     <ul>
-                        <li><a href="#">web</a></li>
-                        <li><a href="#">javascript</a></li>
-                        <li><a href="#">react&vue</a></li>
-                        <li><a href="#">php</a></li>
+                        <li><a href="#webStart">web</a></li>
+                        <li><a href="#javascriptStart">javascript</a></li>
+                        <li><a href="#front">react&vue</a></li>
+                        <li><a href="#php">php</a></li>
                     </ul>
                 </div>
             </div>
             <div class="thumbnail__info">
-                <div>&developer</div>
-                <div>portfolio.</div>
+                <div class="developer">&developer</div>
+                <div class="portfolio">portfolio.</div>
+                <div class="line"></div>
                 <p>
                     first <span>step</span> towards<br>
                     developer and my <span>passion</span><br>
@@ -721,19 +722,35 @@
     <script>
         gsap.registerPlugin(ScrollTrigger);
 
-        const sections = gsap.utils.toArray(".Passion");
-
-        let tl = gsap.timeline({delay: 0.5});
+        let tl = gsap.timeline({delay: 0.3});
+        let t2 = gsap.timeline({delay: 0.3});
     
-        tl.from('.Passion', {
-            scrollTrigger: {
-                trigger: "#about",
-                pin: false,
-                markers: true,
-            },
+        tl.from('.line', {
+            x: 100,
+            width: 0,
+            duration: 1.5,
+            ease: 'power4'
+        })
+
+        
+        tl.from('.portfolio', {
             y: 20,
             opacity: 0,
-            duration: 3,
+            duration: 1,
+            ease: 'power4'
+        })
+        
+        
+        tl.from('.developer', {
+            y: -20,
+            opacity: 0,
+            duration: 1.2,
+            ease: 'power4'
+        })
+        
+        t2.from('.thumbnail__info > p', {
+            opacity: 0,
+            duration: 1,
             ease: 'power4'
         })
         
