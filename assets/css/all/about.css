@@ -56,5 +56,8 @@
 
 /* gsap */
 .Passion {
-    /* display: none; */
+    overflow: hidden;
+}
+.Creative {
+    z-index: 1;
 }

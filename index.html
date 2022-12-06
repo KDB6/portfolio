@@ -65,6 +65,15 @@
     <link rel="stylesheet" href="assets/css/all/contactMe.css">
 
     <style>
+        .change-color {
+  position:fixed;
+  right:20px;
+  bottom: 20px;
+  padding: 15px;
+  background-color: #fff;
+  color: white;
+  cursor:pointer
+}
     </style>
 </head>
 <body>
@@ -72,8 +81,8 @@
     <main id="main">
         
         <!-- thumbnail -->
-        <section id="thumbnail">
-            <div class="category">
+        <section id="thumbnail" class="backColor" data-color="#121212">
+            <!-- <div class="category">
                 <h2><a href="#">portfolio.</a></h2>
                 <div class="list">
                     <ul>
@@ -83,8 +92,8 @@
                         <li><a href="#php">php</a></li>
                     </ul>
                 </div>
-            </div>
-            <div class="thumbnail__info">
+            </div> -->
+            <!-- <div class="thumbnail__info">
                 <div class="developer">&developer</div>
                 <div class="portfolio">portfolio.</div>
                 <div class="line"></div>
@@ -93,12 +102,17 @@
                     developer and my <span>passion</span><br>
                     for this portfolio.
                 </p>
+            </div> -->
+            <div class="thumbnail__info2">
+                <div>growing </div>
+                <div>&developer</div>
+                <div>portfolio.</div>
             </div>
         </section>
         <!-- //thumbnail -->
     
         <!-- about -->
-        <section id="about">
+        <section id="about" class="backColor" data-color="#eee">
             <div class="about__title">
                 <div class="Passion">Passion</div>
                 <div class="Creative">Creative</div>
@@ -768,15 +782,99 @@
             scrollTrigger: {
                 trigger: "#about",
                 start: "10% 60%",
-                end: "120%",
+                end: "60%",
                 markers: true,
-                stagger: 0.1
+                scrub: 1,
             },
-            x: -20,
+            x: -100,
+            opacity: 0,
+            ease: 'power4',
+            duration: 2,
+        }, 0)
+
+        a1.from('.Creative', {
+            scrollTrigger: {
+                trigger: "#about",
+                start: "20% 60%",
+                end: "80%",
+                markers: true,
+                scrub: 1,
+            },
+            x: 80,
+            // bottom: -0,
             opacity: 0,
             duration: 2,
             ease: "power4",
-        }, 1)
+        }, 0)
+
+        a1.from('.Shining', {
+            scrollTrigger: {
+                trigger: "#about",
+                start: "40% 60%",
+                end: "80%",
+                markers: true,
+                scrub: 1,
+            },
+            x: -80,
+            opacity: 0,
+            duration: 10,
+            ease: "power4",
+        }, 0.5)
+
+        a1.from('.about__desc > p', {
+            scrollTrigger: {
+                trigger: "#about",
+                start: "80% 90%",
+                end: "100%",
+                markers: true,
+                scrub: 1,
+            },
+            // x: -100,
+            opacity: 0,
+            duration: 2,
+            ease: "power4",
+        }, 0)
+        a1.from('.about__img > img', {
+            scrollTrigger: {
+                trigger: "#about",
+                start: "30% 80%",
+                end: "100%",
+                markers: true,
+                scrub: 1,
+            },
+            y: -50,
+            opacity: 0,
+            duration: 2,
+            ease: "power4",
+        }, 0)
+
+        gsap.utils.toArray(".backColor").forEach((elem) => {
+
+        let color = elem.getAttribute('data-color');
+
+        ScrollTrigger.create({
+            trigger: elem,
+            start: 'top 5%',
+            end: 'bottom 5%',
+            markers: true,
+                onEnter: () => gsap.to('main', {
+                    backgroundColor: color,
+                    duration: 1
+                }),
+                onLeave: () => gsap.to('main', {
+                    backgroundColor: '#fff',
+                    duration: 1
+                }),
+                onLeaveBack: () => gsap.to('main', {
+                    backgroundColor: '#fff',
+                    duration: 1
+                }),
+                onEnterBack: () => gsap.to('main', {
+                    backgroundColor: color,
+                    duration: 1
+                }),
+            });
+        });
     </script>
 </body>
 </html>
