@@ -99,7 +99,7 @@
     
         <!-- about -->
         <section id="about">
-            <div class="about__title col__content-title">
+            <div class="about__title">
                 <div class="Passion">Passion</div>
                 <div class="Creative">Creative</div>
                 <div class="Shining">Shining</div>
@@ -725,6 +725,7 @@
         let t1 = gsap.timeline({delay: 0.3});
         let t2 = gsap.timeline({delay: 0.3});
         let t3 = gsap.timeline({delay: 0.5});
+        let t4 = gsap.timeline({delay: 0.5});
 
         // thumbnail
         t1.from('.category', {
@@ -761,7 +762,20 @@
             duration: 1,
             ease: 'power4'
         })
-        
+
+        t4.from('.Passion', {
+            scrollTrigger: {
+                trigger: "#about",
+                start: "10% 60%",
+                end: "120%",
+                markers: true,
+                stagger: 0.1
+            },
+            x: -20,
+            opacity: 0,
+            duration: 2,
+            ease: "power4",
+        }, 1)
     </script>
 </body>
 </html>
