@@ -39,6 +39,7 @@
 
     --font-main: "PP Eiko";
     --font-sub: "PP Neue Montreal";
+    --font-sub2: "Abel";
     --font-kor: "SCoreDream";
     --font-kor2: "NanumMyeongjo";
 
@@ -126,6 +127,9 @@
 }
 .nanum {
     font-family: "NanumMyeongjo";
+}
+.abel {
+    font-family: "Abel";
 }
 
 /* 배경 */
