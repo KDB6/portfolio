@@ -724,8 +724,9 @@
 
         let t1 = gsap.timeline({delay: 0.3});
         let t2 = gsap.timeline({delay: 0.3});
-        let t3 = gsap.timeline({delay: 0.3});
+        let t3 = gsap.timeline({delay: 0.5});
 
+        // thumbnail
         t1.from('.category', {
             y: -20,
             opacity: 0,
@@ -747,7 +748,6 @@
             duration: 1,
             ease: 'power4'
         })
-        
         
         t2.from('.developer', {
             y: -20,
