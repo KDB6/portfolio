@@ -43,7 +43,7 @@
     text-decoration: underline;
 }
 .webStandard__desc > p:last-child span {
-    margin-left: 10px;
+    margin-left: 1vh;
 }
 .webStandard__desc > p:last-child span a {
     color: var(--colorB);

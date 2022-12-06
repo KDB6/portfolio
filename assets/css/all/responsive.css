@@ -45,7 +45,7 @@
     text-decoration: underline;
 }
 .responsive__desc > p:last-child span {
-    margin-left: 1.5%;
+    margin-left: 1vh;
 }
 .responsive__desc > p:last-child span a {
     color: var(--colorB);
