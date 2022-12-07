@@ -85,23 +85,18 @@
     color: var(--colorW);
     font-size: var(--font-size120);
     font-weight: 100;
-    /* display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    flex-direction: column;
-    align-content: center; */
 }
 .thumbnail__info2 > div {
     line-height: 1.2;
 }
 .thumbnail__info2 > div:nth-child(1) {
-    margin-right: 20vw;
+
 }
 .thumbnail__info2 > div:nth-child(2) {
-    margin-right: 20vw;
+  font-weight: 400;
 }
 .thumbnail__info2 > div:nth-child(3) {
-    margin-right: 20vw;
+
 }
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
 

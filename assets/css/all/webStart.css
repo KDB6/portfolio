@@ -19,6 +19,7 @@
     font-size: var(--font-size200);
     left: 15%;
     top: 68%;
+    opacity: 1;
 }
 #webStart > p {
     position: absolute;

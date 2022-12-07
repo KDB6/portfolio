@@ -87,9 +87,11 @@
 body {
     overflow: overlay;
     overflow-x: hidden;
-    background: #eee;
+    background: var(--colorW);
 }
-
+#main {
+    background: var(--colorW);
+}
 /* fixed */
 body.fixed {
     height: 100vh;
