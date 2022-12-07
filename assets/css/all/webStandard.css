@@ -71,8 +71,8 @@
     position: absolute;
     z-index: 2;
     opacity: 0;
-    margin-top: -20%;
-    margin-left: 40%;
+    margin-top: -7vw;
+    margin-left: 17vw;
     transform: scale(0.3);
 }
 .menu__item-image.living, .menu__item-image.resting {
