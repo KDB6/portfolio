@@ -9,54 +9,22 @@
     justify-content: center;
     text-align: center;
 }
-.category {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px 0 50px;
-    position: fixed;
-    z-index: 5;
-}
-.category > h2 {
-    font-family: var(--font-sub2);
-    font-size: var(--font-size24);
-    font-weight: 400;
+.thumbnail__info {
     color: var(--colorW);
-}
-.category > h2 a {
-    color: var(--colorW);
-}
-.list ul li {
-    display: inline;
-    font-family: var(--font-sub2);
-    font-size: var(--font-size14);
-    font-weight: 100; 
-    padding: 0 25px;
-}
-.list ul li a {
-    color: var(--colorW);
-}
-.list ul li:last-child {
-    padding-left: 25px;
-}
-.thumbnail__info > div:nth-child(1) {
-    position: absolute;
     font-size: var(--font-size120);
     font-weight: 100;
-    right: 22%;
-    bottom: 25%;
-    z-index: 1;
+}
+.thumbnail__info > div {
+    line-height: 1.2;
+}
+.thumbnail__info > div:nth-child(1) {
+  
 }
 .thumbnail__info > div:nth-child(2) {
-    position: absolute;
-    padding: 0 3.5% 0 50%;
-    font-size: var(--font-size180);
-    font-weight: 100;
-    right: 0%;
-    bottom: 5%;
-    z-index: 2;
-    background: var(--colorB);
+  font-weight: 400;
+}
+.thumbnail__info > div:nth-child(3) {
+
 }
 .thumbnail__info > p {
     font-size: var(--font-size16);
@@ -70,34 +38,9 @@
     text-decoration-line: line-through;
     text-decoration-thickness: 1px;
 }
-.line {
-    width: 91%;
-    height: 1px;
-    background: var(--colorW);
-    position: absolute;
-    top: 69.4%;
-    right: 0;
-}
 
 
 
-.thumbnail__info2 {
-    color: var(--colorW);
-    font-size: var(--font-size120);
-    font-weight: 100;
-}
-.thumbnail__info2 > div {
-    line-height: 1.2;
-}
-.thumbnail__info2 > div:nth-child(1) {
-  
-}
-.thumbnail__info2 > div:nth-child(2) {
-  font-weight: 400;
-}
-.thumbnail__info2 > div:nth-child(3) {
-
-}
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
 
 .reveal {
