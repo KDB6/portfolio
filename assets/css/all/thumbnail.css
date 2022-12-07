@@ -3,98 +3,96 @@
     color: var(--colorW);
     width: 100%;
     height: 100vh;
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
-}
-.thumbnail__info {
-    color: var(--colorW);
-    font-size: var(--font-size120);
-    font-weight: 100;
 }
 .thumbnail__info > div {
-    line-height: 1.2;
+  font-size: var(--font-size14);
+  font-weight: 100;
+  word-break: 2;
 }
-.thumbnail__info > div:nth-child(1) {
-  
-}
-.thumbnail__info > div:nth-child(2) {
+.thumbnail__info > div span {
   font-weight: 400;
 }
-.thumbnail__info > div:nth-child(3) {
-
-}
-.thumbnail__info > p {
-    font-size: var(--font-size16);
-    font-weight: 100;
-    position: absolute;
-    left: 8.8%;
-    bottom: 5%;
-    z-index: 3;
-}
-.thumbnail__info > p span {
-    text-decoration-line: line-through;
-    text-decoration-thickness: 1px;
+.thumbnail__info > div:nth-child(1) {
+  margin-bottom: 1vw;
+  font-size: var(--font-size24);
 }
 
-
-
-@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
-
-.reveal {
-  position: relative;
-  display: flex;
-  color: var(--colorW);
-  font-size: var(--font-size120);
-  letter-spacing: 3px;
-  /* text-transform: uppercase; */
-  white-space: pre;
-  font-weight: 100;
+.thumbnail__rotate {
+  position: fixed;
+  z-index: 10;
 }
-.reveal span {
-  opacity: 0;
-  transform: scale(0);
-  animation: fadeIn 2.4s forwards;
-}
-.reveal::before, .reveal::after {
+.link {
+  width: 7rem;
+  height: 7rem;
+  display: inline-block;
+  font-family: var(--font-main);
+  word-spacing: 20px;
+  font-size: var(--font-size20);
+  letter-spacing: 0.7175em;
+  word-spacing: 1em;
   position: absolute;
-  content: "";
-  top: 0;
-  bottom: 0;
-  width: 2px;
-  height: 100%;
-  background: var(--colorW);
-  opacity: 0;
-  transform: scale(0);
+  right: -66vw;
+  bottom: -20vw;
 }
-.reveal::before {
-  left: 50%;
-  animation: slideLeft 1.5s cubic-bezier(0.7, -0.6, 0.3, 1.5) forwards;
+.link__svg {
+  width: 100%;
+  height: auto;
+  transform-box: fill-box;
+  fill: var(--colorB);
+  stroke: var(--colorB);
+  stroke-width: 0.05em;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
-.reveal::after {
-  right: 50%;
-  animation: slideRight 1.5s cubic-bezier(0.7, -0.6, 0.3, 1.5) forwards;
+.link__cloud {
+  transform-origin: 50% 50%;
+  -webkit-animation: rotate normal infinite 60s linear;
+          animation: rotate normal infinite 60s linear;
+  fill: rgba(255, 255, 255, 0.15);
+}
+.link__face, .link__arrow {
+  transform-origin: 50% 50%;
+  transition: transform 0.15s cubic-bezier(0.32, 0, 0.67, 0);
+}
+.link:hover .link__face, .link:hover .link__arrow {
+  transform: scale(1.1);
+  transition: transform 0.3s cubic-bezier(0.33, 1, 0.68, 1);
+}
+.link__arrow {
+  stroke-width: 0.075em;
+}
+.link__text {
+  -webkit-animation: rotateReverse normal infinite 20s linear;
+          animation: rotateReverse normal infinite 20s linear;
+  transform-origin: 50% 50%;
+  color: var(--colorW);
+}
+.link:hover .link__text {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
 }
 
-@keyframes fadeIn {
+@-webkit-keyframes rotate {
   to {
-    opacity: 1;
-    transform: scale(1);
+    transform: rotate(360deg);
   }
 }
-@keyframes slideLeft {
+
+@keyframes rotate {
   to {
-    left: -6%;
-    opacity: 1;
-    transform: scale(0.9);
+    transform: rotate(360deg);
   }
 }
-@keyframes slideRight {
+@-webkit-keyframes rotateReverse {
   to {
-    right: -6%;
-    opacity: 1;
-    transform: scale(0.9);
+    transform: rotate(-360deg);
+  }
+}
+@keyframes rotateReverse {
+  to {
+    transform: rotate(-360deg);
   }
 }
