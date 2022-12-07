@@ -17,7 +17,10 @@
     position: absolute;
     top: -55%;
     left: 20%;
-    z-index: -1;
+    /* z-index: -1; */
+}
+.responsive__img {
+    z-index: 1;
 }
 .responsive__img > img {
     width: 100%;

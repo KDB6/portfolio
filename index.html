@@ -141,12 +141,13 @@
     
         <!-- webStandard -->
         <section id="webStandard">
-            <h2>01</h2>
+            <h2 class="webStandardH1">01</h2>
             <div class="webStandard__img reveal">
                 <img class="webStandardImg" src="assets/img/webStandard.jpg" alt="웹스탠다드사진">
             </div>
             <div class="webStandard__desc">
-                <h3>web standard</h3>
+                <h3 class="webStandard__descH3">web standard</h3>
+                <div class="menu__item-image living"></div>
                 <p>
                     코딩에 대한 첫걸음을 딛은 웹표준 사이트입니다. 차별없이 모든 사용자들이 불편함없이<br>
                     접근할 수 있도록 웹접근성을 기준으로 하여금 제작을 하였습니다. 슬라이드 구현에는<br>
@@ -926,8 +927,25 @@
             ease: "power4",
         }, 0)
 
-        webStandard
-        wS1.from('.webStandardImg', {
+        // webStandard
+        let wSt1 = gsap.timeline({delay: 2});
+
+        wSt1.from('.webStandardH1', {
+            scrollTrigger: {
+                trigger: "#webStandard",
+                start: "-100% 00%",
+                end: "0%",
+                markers: true,
+                scrub: 1,
+            },
+            textShadow: 0,
+            color: "#121212",
+            opacity: 1,
+            duration: 1,
+            ease: "power4",
+        }, 0)
+
+        wSt1.from('.webStandardImg', {
             scrollTrigger: {
                 trigger: "#webStandard",
                 start: "-50% 20%",
@@ -944,7 +962,6 @@
             root: null,
             rootMargin: "0px",
             threshold: 1,
-            scale: 1,
         };
 
         let revealCallback = (entries, self) => {
@@ -962,26 +979,19 @@
                 container,
                 {
                 clipPath: "polygon(0 0, 0 0, 0 100%, 0% 100%)",
-                // webkitClipPath: "polygon(0 0, 0 0, 0 100%, 0% 100%)"
+                webkitClipPath: "polygon(0 0, 0 0, 0 100%, 0% 100%)"
                 },
                 {
                 clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
-                // webkitClipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
+                webkitClipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
                 duration: 1,
                 ease: easeInOut
                 }
             );
-            revealAnim.from(img, 2, {
+            revealAnim.from(img, 4, {
                 scale: 1.4,
                 ease: easeInOut,
-                delay: 1,
-                scrollTrigger: {
-                    trigger: "#webStandard",
-                    start: "-50% 00%",
-                    end: "100%",
-                markers: true,
-                scrub: 1,
-            },
+                delay: -1
             });
             self.unobserve(entry.target);
             }
@@ -992,6 +1002,43 @@
 
         document.querySelectorAll(".reveal").forEach((reveal) => {
         revealObserver.observe(reveal);
+        });
+
+
+
+        let menuItem = document.querySelectorAll(".webStandard__descH3");
+        let menuImage = document.querySelectorAll(".menu__item-image");
+
+        // adding eventListeners to all the menuItems.
+        for (let i = 0; i < 6; i++) {
+        //   image reveal animation
+        const animation = gsap.to(menuImage[i], {
+            opacity: 1,
+            duration: 0.2,
+            scale: 1,
+            ease: "ease-in-out"
+        });
+
+        menuItem[i].addEventListener("mouseenter", () => animation.play());
+        menuItem[i].addEventListener("mouseleave", () => animation.reverse());
+
+        //   initialization
+        animation.reverse();
+        }
+
+        //   to move image along with cursor
+        function moveText(e) {
+        gsap.to([...menuImage], {
+            css: {
+            left: e.pageX + 50,
+            top: e.pageY,
+            },
+            duration: 0.3,
+        });
+        }
+
+        menuItem.forEach((el) => {
+        el.addEventListener("mousemove", moveText);
         });
     </script>
 
