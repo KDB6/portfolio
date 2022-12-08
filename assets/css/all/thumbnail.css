@@ -3,96 +3,144 @@
     color: var(--colorW);
     width: 100%;
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    font-weight: 100;
+    position: relative;
 }
-.thumbnail__info > div {
-  font-size: var(--font-size14);
-  font-weight: 100;
-  word-break: 2;
+.artMain {
+    width: 14%;
+    position: absolute;
+    left: 29%;
+    top: 24%;
+    z-index: 1;
 }
-.thumbnail__info > div span {
-  font-weight: 400;
+.artCir1 {
+     width: 9%;
+     position: absolute;
+     left: 26%;
+     top: 40%
 }
-.thumbnail__info > div:nth-child(1) {
-  margin-bottom: 1vw;
-  font-size: var(--font-size24);
+.artCir2 {
+    width: 12%;
+    position: absolute;
+    left: 33.5%;
+    top: 22%;
+}
+.artCir3 {
+    width: 8%;
+    position: absolute;
+    top: 49%;
+    left: 35%;
+}
+.tum__inner {
+}
+.portfolio {
+    font-size: var(--font-size40);
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    text-align: center;
+    letter-spacing: 0.2em;
+    position: absolute;
+    top: 21%;
+    left: 47.5%;
+}
+.developer {
+    font-size: var(--font-size40);
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    text-align: center;
+    letter-spacing: 0.2em;
+    position: absolute;
+    top: 36%;
+    left: 52.5%;
+    border-right: 1px solid var(--colorW);
+    padding-right: 2vw;
+}
+.tum__desc {
+    /* font-family: var(--font-sub); */
+    font-size: var(--font-size14);
+    position: absolute;
+    right: 23vw;
+    bottom: 7.5vw;
+}
+.tum__museum {
+    font-size: var(--font-size14);
+    position: absolute;
+    right: 3vw;
+    bottom: 2vw;
 }
 
-.thumbnail__rotate {
-  position: fixed;
-  z-index: 10;
-}
+/* rotate */
 .link {
-  width: 7rem;
-  height: 7rem;
-  display: inline-block;
-  font-family: var(--font-main);
-  word-spacing: 20px;
-  font-size: var(--font-size20);
-  letter-spacing: 0.7175em;
-  word-spacing: 1em;
-  position: absolute;
-  right: -66vw;
-  bottom: -20vw;
+    width: 7rem;
+    height: 7rem;
+    display: inline-block;
+    font-family: var(--font-main);
+    word-spacing: 20px;
+    font-size: var(--font-size20);
+    font-weight: 100;
+    letter-spacing: 0.7175em;
+    word-spacing: 1em;
+    position: fixed;
+    right: 2.5vw;
+    bottom: 1.5vw;
+    z-index: 10;
 }
 .link__svg {
-  width: 100%;
-  height: auto;
-  transform-box: fill-box;
-  fill: var(--colorB);
-  stroke: var(--colorB);
-  stroke-width: 0.05em;
-  stroke-linecap: round;
-  stroke-linejoin: round;
+    width: 100%;
+    height: auto;
+    transform-box: fill-box;
+    fill: var(--colorB);
+    stroke: var(--colorB);
+    stroke-width: 0.05em;
+    stroke-linecap: round;
+    stroke-linejoin: round;
 }
 .link__cloud {
-  transform-origin: 50% 50%;
-  -webkit-animation: rotate normal infinite 60s linear;
-          animation: rotate normal infinite 60s linear;
-  fill: rgba(255, 255, 255, 0.15);
+    transform-origin: 50% 50%;
+    -webkit-animation: rotate normal infinite 60s linear;
+            animation: rotate normal infinite 60s linear;
+    fill: rgba(255, 255, 255, 0.15);
 }
 .link__face, .link__arrow {
-  transform-origin: 50% 50%;
-  transition: transform 0.15s cubic-bezier(0.32, 0, 0.67, 0);
+    transform-origin: 50% 50%;
+    transition: transform 0.15s cubic-bezier(0.32, 0, 0.67, 0);
 }
 .link:hover .link__face, .link:hover .link__arrow {
-  transform: scale(1.1);
-  transition: transform 0.3s cubic-bezier(0.33, 1, 0.68, 1);
+    transform: scale(1.1);
+    transition: transform 0.3s cubic-bezier(0.33, 1, 0.68, 1);
 }
 .link__arrow {
-  stroke-width: 0.075em;
+    stroke-width: 0.075em;
 }
 .link__text {
   -webkit-animation: rotateReverse normal infinite 20s linear;
-          animation: rotateReverse normal infinite 20s linear;
-  transform-origin: 50% 50%;
-  color: var(--colorW);
+            animation: rotateReverse normal infinite 20s linear;
+    transform-origin: 50% 50%;
+    color: var(--colorW);
 }
 .link:hover .link__text {
-  -webkit-animation-play-state: paused;
-          animation-play-state: paused;
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
 }
 
 @-webkit-keyframes rotate {
-  to {
-    transform: rotate(360deg);
-  }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 @keyframes rotate {
-  to {
-    transform: rotate(360deg);
-  }
+    to {
+        transform: rotate(360deg);
+    }
 }
 @-webkit-keyframes rotateReverse {
-  to {
-    transform: rotate(-360deg);
-  }
+    to {
+        transform: rotate(-360deg);
+    }
 }
 @keyframes rotateReverse {
-  to {
-    transform: rotate(-360deg);
-  }
+    to {
+        transform: rotate(-360deg);
+    }
 }

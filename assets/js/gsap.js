@@ -7,7 +7,7 @@ ScrollTrigger.create({
     trigger: elem,
     start: 'top 5%',
     end: 'bottom 5%',
-    markers: true,
+    markers: false,
         onEnter: () => gsap.to('main', {
             backgroundColor: color,
             duration: 1
@@ -27,6 +27,40 @@ ScrollTrigger.create({
     });
 });
 
+// rotate
+gsap.utils.toArray(".rotate").forEach((elem2) => {
+
+    let fill = elem2.getAttribute('data-fill');
+    let stroke = elem2.getAttribute('data-stroke');
+    
+    ScrollTrigger.create({
+        trigger: elem2,
+        start: 'top 5%',
+        end: 'bottom 5%',
+        markers: false,
+            onEnter: () => gsap.to('.link__svg', {
+                fill: fill,
+                stroke: stroke,
+                duration: 1
+            }),
+            onLeave: () => gsap.to('.link__svg', {
+                fill: '#121212',
+                stroke: '#121212',
+                duration: 1
+            }),
+            onLeaveBack: () => gsap.to('.link__svg', {
+                fill: '#eee',
+                stroke: '#eee',
+                duration: 1
+            }),
+            onEnterBack: () => gsap.to('.link__svg', {
+                fill: fill,
+                stroke: stroke,
+                duration: 1
+            }),
+        });
+    });
+
 // 글씨 gsap
 gsap.registerPlugin(ScrollTrigger);
 
@@ -35,87 +69,11 @@ let t1 = gsap.timeline({delay: 0.5});
 let t2 = gsap.timeline({delay: 0.8});
 let t3 = gsap.timeline({delay: 2});
 
-t1.from('.portfolio', {
-    opacity: 0,
-    ease: 'power4',
-    duration: 2,
-}, 0)
-t1.from('.developer', {
-    opacity: 0,
-    ease: 'power4',
-    duration: 2,
-}, 0)
-t2.from('.info', {
-    opacity: 0,
-    ease: 'power4',
-    duration: 2,
-}, 0)
 t3.from('.thumbnail__rotate', {
     opacity: 0,
     ease: 'power4',
     duration: 2,
-    scale: 0.5,
 }, 0)
-t2.from('.link__svg', {
-    scrollTrigger: {
-        trigger: "#about",
-        markers: true,
-    },
-    fill: "#eee",
-    stroke: "#eee",
-    ease: 'power4',
-    duration: 2,
-}, 0)
-t2.from('.link__svg', {
-    scrollTrigger: {
-        trigger: "#javascriptBasic",
-        markers: true,
-    },
-    fill: "#121212",
-    stroke: "#121212",
-    ease: 'power4',
-    duration: 2,
-}, 0)
-t2.from('.link__svg', {
-    scrollTrigger: {
-        trigger: "#gameMouseTum",
-        markers: true,
-    },
-    fill: "#eee",
-    stroke: "#eee",
-    ease: 'power4',
-    duration: 2,
-}, 0)
-t2.from('.link__svg', {
-    scrollTrigger: {
-        trigger: "#front",
-        markers: true,
-    },
-    fill: "#121212",
-    stroke: "#121212",
-    ease: 'power4',
-    duration: 2,
-}, 0)
-t2.from('.link__svg', {
-    scrollTrigger: {
-        trigger: "#phpStart",
-        markers: true,
-    },
-    fill: "#eee",
-    stroke: "#eee",
-    ease: 'power4',
-    duration: 2,
-}, 0)
-// t2.from('.link__svg', {
-//     scrollTrigger: {
-//         trigger: "#phpStudy",
-//         markers: true,
-//     },
-//     fill: "#121212",
-//     stroke: "#121212",
-//     ease: 'power4',
-//     duration: 2,
-// }, 0)
 
 // about
 let a1 = gsap.timeline({delay: 0.5});
@@ -125,7 +83,7 @@ a1.from('.Passion', {
         trigger: "#about",
         start: "10% 60%",
         end: "50%",
-        markers: true,
+        markers: false,
         scrub: 1,
     },
     x: -100,
@@ -138,7 +96,7 @@ a1.from('.Creative', {
         trigger: "#about",
         start: "20% 60%",
         end: "50%",
-        markers: true,
+        markers: false,
         scrub: 1,
     },
     x: 80,
@@ -151,7 +109,7 @@ a1.from('.Shining', {
         trigger: "#about",
         start: "40% 60%",
         end: "50%",
-        markers: true,
+        markers: false,
         scrub: 1,
     },
     x: -80,
@@ -164,7 +122,7 @@ a1.from('.about__desc > p', {
         trigger: "#about",
         start: "80% 90%",
         end: "100%",
-        markers: true,
+        markers: false,
         scrub: 1,
     },
     opacity: 0,
@@ -176,7 +134,7 @@ a1.from('.about__img > img', {
         trigger: "#about",
         start: "30% 80%",
         end: "100%",
-        markers: true,
+        markers: false,
         scrub: 1,
     },
     y: -50,
@@ -193,7 +151,7 @@ wS1.from('.webStartH2', {
         trigger: "#webStart",
         start: "30% 80%",
         end: "50%",
-        markers: true,
+        markers: false,
         scrub: 1,
     },
     opacity: 0.5,
@@ -205,7 +163,7 @@ wS1.from('.webStartH3', {
         trigger: ".webStartH2",
         start: "50% 80%",
         end: "70%",
-        markers: true,
+        markers: false,
         scrub: 1,
     },
     opacity: 0,
@@ -217,7 +175,7 @@ wS1.from('.webStartP', {
         trigger: ".webStartH2",
         start: "50% 80%",
         end: "70%",
-        markers: true,
+        markers: false,
         scrub: 1,
     },
     opacity: 0,
@@ -233,7 +191,7 @@ wSt1.from('.webStandardH1', {
         trigger: "#webStandard",
         start: "-100% 00%",
         end: "0%",
-        markers: true,
+        markers: false,
         scrub: 1,
     },
     textShadow: 0,
@@ -247,11 +205,23 @@ wSt1.from('.webStandardImg', {
         trigger: "#webStandard",
         start: "-50% 20%",
         end: "0%",
-        markers: true,
+        markers: false,
         scrub: 1,
     },
     opacity: 0,
     duration: 1,
+    ease: "power4",
+}, 0)
+wSt1.from('.webStandard__descP', {
+    scrollTrigger: {
+        trigger: ".webStandard__img",
+        start: "40% 100%",
+        end: "100%",
+        markers: true,
+        scrub: 1,
+    },
+    opacity: 0,
+    duration: 2,
     ease: "power4",
 }, 0)
 
@@ -286,8 +256,8 @@ entries.forEach((entry) => {
                 ease: easeInOut
             }
         );
-        revealAnim.from(img, 1, {
-            scale: 1.4,
+        revealAnim.from(img, 2, {
+            scale: 1.7,
             ease: easeInOut,
             delay: -1
         });
@@ -303,7 +273,7 @@ document.querySelectorAll(".reveal").forEach((reveal) => {
 
 
 // 글씨 호버시 이미지 나오게
-let menuItem = document.querySelectorAll(".viewsite");
+let menuItem = document.querySelectorAll(".view");
 let menuImage = document.querySelectorAll(".menu__item-image");
 
 // adding eventListeners to all the menuItems.
