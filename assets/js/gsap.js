@@ -65,15 +65,30 @@ gsap.utils.toArray(".rotate").forEach((elem2) => {
 gsap.registerPlugin(ScrollTrigger);
 
 // thumbnail
-let t1 = gsap.timeline({delay: 0.5});
+let svg1 = document.querySelector(".artMainLine" + 1);
+let tl = new TimelineMax({ repeat: -1, yoyo: true });
+
+//create a timeline with 2 tweens that draw 2 separate strokes
+tl.add(createLineTween(svg1));
+
+//this function creates a single tween that animates the stroke of an svg
+function createLineTween(svg) {
+  var pathObject = { length: 0, pathLength: svg.getTotalLength() };
+  var tween = TweenLite.to(pathObject, 2, {
+    length: pathObject.pathLength,
+    onUpdate: drawLine,
+    onUpdateParams: [pathObject, svg],
+    immediateRender: true
+  });
+  return tween;
+}
+//update stroke
+function drawLine(obj, svg) {
+  svg.style.strokeDasharray = [obj.length, obj.pathLength].join(" ");
+}
+
 let t2 = gsap.timeline({delay: 0.8});
 let t3 = gsap.timeline({delay: 2});
-
-t3.from('.thumbnail__rotate', {
-    opacity: 0,
-    ease: 'power4',
-    duration: 2,
-}, 0)
 
 // about
 let a1 = gsap.timeline({delay: 0.5});
