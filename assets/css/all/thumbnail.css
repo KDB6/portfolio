@@ -85,8 +85,8 @@
     word-spacing: 20px;
     font-size: var(--font-size20);
     font-weight: 100;
-    letter-spacing: 0.7175em;
-    word-spacing: 1em;
+    letter-spacing: 0.68em;
+    word-spacing: 0.0005em;
     position: fixed;
     right: 2.5vw;
     bottom: 1.5vw;
