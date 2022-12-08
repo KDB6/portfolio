@@ -8,26 +8,26 @@
 }
 .artMain {
     position: absolute;
-    left: 29%;
+    left: 28%;
     top: 15%;
     z-index: 1;
 }
 .artCir1 {
      width: 9%;
      position: absolute;
-     left: 27%;
+     left: 26%;
      top: 40%
 }
 .artCir2 {
     width: 12%;
     position: absolute;
-    left: 33.5%;
+    left: 32.5%;
     top: 14%;
 }
 .artCir3 {
     width: 10%;
     position: absolute;
-    top: 46%;
+    top: 45%;
     left: 35.5%;
 }
 .tum__inner {
@@ -52,6 +52,7 @@
     top: 31%;
     left: 52.5%;
     border-right: 1px solid var(--colorW);
+    border-right-width: 40px;
     padding-right: 2vw;
 }
 .tum__desc {
