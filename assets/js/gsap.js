@@ -30,32 +30,89 @@ ScrollTrigger.create({
 // rotate
 gsap.utils.toArray(".rotate").forEach((elem2) => {
 
-    let fill = elem2.getAttribute('data-fill');
-    let stroke = elem2.getAttribute('data-stroke');
+let fill = elem2.getAttribute('data-fill');
+let stroke = elem2.getAttribute('data-stroke');
+
+ScrollTrigger.create({
+    trigger: elem2,
+    start: 'top 5%',
+    end: 'bottom 5%',
+    markers: false,
+        onEnter: () => gsap.to('.link__svg', {
+            fill: fill,
+            stroke: stroke,
+            duration: 1
+        }),
+        onLeave: () => gsap.to('.link__svg', {
+            fill: '#121212',
+            stroke: '#121212',
+            duration: 1
+        }),
+        onLeaveBack: () => gsap.to('.link__svg', {
+            fill: '#eee',
+            stroke: '#eee',
+            duration: 1
+        }),
+        onEnterBack: () => gsap.to('.link__svg', {
+            fill: fill,
+            stroke: stroke,
+            duration: 1
+        }),
+    });
+});
+
+// header KDB6
+gsap.utils.toArray(".hedaerColor").forEach((elem3) => {
+
+let color = elem3.getAttribute('data-color2');
+
+ScrollTrigger.create({
+    trigger: elem3,
+    start: 'top 5%',
+    end: 'bottom 5%',
+    markers: false,
+        onEnter: () => gsap.to('.KDB6 > a', {
+            color: color,
+            duration: 1
+        }),
+        onLeave: () => gsap.to('.KDB6 > a', {
+            color: '#121212',
+            duration: 1
+        }),
+        onLeaveBack: () => gsap.to('.KDB6 > a', {
+            color: '#eee',
+            duration: 1
+        }),
+        onEnterBack: () => gsap.to('.KDB6 > a', {
+            color: color,
+            duration: 1
+        }),
+    });
+});
+// header ul li a
+gsap.utils.toArray(".hedaerColor").forEach((elem3) => {
+
+    let color = elem3.getAttribute('data-color2');
     
     ScrollTrigger.create({
-        trigger: elem2,
+        trigger: elem3,
         start: 'top 5%',
         end: 'bottom 5%',
         markers: false,
-            onEnter: () => gsap.to('.link__svg', {
-                fill: fill,
-                stroke: stroke,
+            onEnter: () => gsap.to('.list__inner ul li > a', {
+                color: color,
                 duration: 1
             }),
-            onLeave: () => gsap.to('.link__svg', {
-                fill: '#121212',
-                stroke: '#121212',
+            onLeave: () => gsap.to('.list__inner ul li > a', {
+                color: '#121212',
                 duration: 1
             }),
-            onLeaveBack: () => gsap.to('.link__svg', {
-                fill: '#eee',
-                stroke: '#eee',
+            onLeaveBack: () => gsap.to('.list__inner ul li > a', {
+                color: '#eee',
                 duration: 1
             }),
-            onEnterBack: () => gsap.to('.link__svg', {
-                fill: fill,
-                stroke: stroke,
+            onEnterBack: () => gsap.to('.list__inner ul li > a', {
+                color: color,
                 duration: 1
             }),
         });
@@ -66,13 +123,32 @@ gsap.registerPlugin(ScrollTrigger);
 
 // thumbnail
 
-let t2 = gsap.timeline({delay: 1.3});
-let t3 = gsap.timeline({delay: 2.8});
-let t4 = gsap.timeline({delay: 2});
-let t5 = gsap.timeline({delay: 6});
-let t6 = gsap.timeline({delay: 4});
+let t1 = gsap.timeline({delay: 1});
+let t2 = gsap.timeline({delay: 1.5});
+let t3 = gsap.timeline({delay: 1.8});
+let t4 = gsap.timeline({delay: 4});
 
-t6.from('.link', {
+t1.from('.header__inner', {
+    opacity: 0,
+    ease: 'power4',
+    duration: 2,
+}, 0)
+t1.from('.tum__inner > h2', {
+    opacity: 0,
+    ease: 'power4',
+    duration: 2,
+}, 0)
+t2.from('.tum__inner__top', {
+    opacity: 0,
+    ease: 'power4',
+    duration: 2,
+}, 0)
+t3.from('.tum__inner__bot', {
+    opacity: 0,
+    ease: 'power4',
+    duration: 2,
+}, 0)
+t4.from('.link', {
     opacity: 0,
     duration: 2,
     ease: "power4",
@@ -120,6 +196,18 @@ a1.from('.Shining', {
     duration: 10,
     ease: "power4",
 }, 0.5)
+// a1.from('.about__desc::before', {
+//     scrollTrigger: {
+//         trigger: "#about",
+//         start: "80% 90%",
+//         end: "100%",
+//         markers: false,
+//         scrub: 1,
+//     },
+//     width: "0%",
+//     duration: 2,
+//     ease: "power4",
+// }, 0)
 a1.from('.about__desc > p', {
     scrollTrigger: {
         trigger: "#about",
@@ -259,7 +347,7 @@ entries.forEach((entry) => {
                 ease: easeInOut
             }
         );
-        revealAnim.from(img, 2, {
+        revealAnim.from(img, 1, {
             scale: 1.7,
             ease: easeInOut,
             delay: -1
@@ -281,7 +369,7 @@ let menuImage = document.querySelectorAll(".menu__item-image");
 
 // adding eventListeners to all the menuItems.
 for (let i = 0; i < 6; i++) {
-//   image reveal animation
+// image reveal animation
 const animation = gsap.to(menuImage[i], {
     opacity: 1,
     duration: 0.2,

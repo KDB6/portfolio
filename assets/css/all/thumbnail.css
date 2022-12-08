@@ -30,11 +30,13 @@
 }
 .tum__inner > h2 {
     font-size: var(--font-size24);
-    margin-bottom: 2vw;
+    margin-bottom: 1.5vw;
+    z-index: 5;
 }
 .tum__inner__top {
     font-size: var(--font-size40);
     z-index: 5;
+    line-height: 1.4;
 }
 .tum__inner__bot {
     font-family: var(--font-sub);
@@ -59,8 +61,8 @@
     word-spacing: 20px;
     font-size: var(--font-size20);
     font-weight: 100;
-    letter-spacing: 0.68em;
-    word-spacing: 0.0005em;
+    letter-spacing: 0.7vw;
+    word-spacing: 1.2vw;
     position: fixed;
     right: 2.5vw;
     bottom: 1.5vw;
