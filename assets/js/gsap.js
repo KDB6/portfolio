@@ -92,31 +92,31 @@ ScrollTrigger.create({
 // header ul li a
 gsap.utils.toArray(".hedaerColor").forEach((elem3) => {
 
-    let color = elem3.getAttribute('data-color2');
-    
-    ScrollTrigger.create({
-        trigger: elem3,
-        start: 'top 5%',
-        end: 'bottom 5%',
-        markers: false,
-            onEnter: () => gsap.to('.list__inner ul li > a', {
-                color: color,
-                duration: 1
-            }),
-            onLeave: () => gsap.to('.list__inner ul li > a', {
-                color: '#121212',
-                duration: 1
-            }),
-            onLeaveBack: () => gsap.to('.list__inner ul li > a', {
-                color: '#eee',
-                duration: 1
-            }),
-            onEnterBack: () => gsap.to('.list__inner ul li > a', {
-                color: color,
-                duration: 1
-            }),
-        });
+let color = elem3.getAttribute('data-color2');
+
+ScrollTrigger.create({
+    trigger: elem3,
+    start: 'top 5%',
+    end: 'bottom 5%',
+    markers: false,
+        onEnter: () => gsap.to('.list__inner ul li > a', {
+            color: color,
+            duration: 1
+        }),
+        onLeave: () => gsap.to('.list__inner ul li > a', {
+            color: '#121212',
+            duration: 1
+        }),
+        onLeaveBack: () => gsap.to('.list__inner ul li > a', {
+            color: '#eee',
+            duration: 1
+        }),
+        onEnterBack: () => gsap.to('.list__inner ul li > a', {
+            color: color,
+            duration: 1
+        }),
     });
+});
 
 // 글씨 gsap
 gsap.registerPlugin(ScrollTrigger);

@@ -32,11 +32,21 @@
     font-size: var(--font-size24);
     margin-bottom: 1.5vw;
     z-index: 5;
+    color: transparent; 
+    text-shadow: 0 0 2px #eee;
+}
+.tum__inner > h2:hover {
+    text-shadow: 0 0 0px #eee;
 }
 .tum__inner__top {
     font-size: var(--font-size40);
     z-index: 5;
     line-height: 1.4;
+    color: transparent; 
+    text-shadow: 0 0 3px #eee;
+}
+.tum__inner__top:hover {
+    text-shadow: 0 0 0px #eee;
 }
 .tum__inner__bot {
     font-family: var(--font-sub);
@@ -46,7 +56,11 @@
     z-index: 5;
 }
 .tum__inner__bot > div a {
-    color: var(--colorW);
+    color: transparent; 
+    text-shadow: 0 0 2px #eee;
+}
+.tum__inner__bot > div a:hover {
+    text-shadow: 0 0 0px #eee;
 }
 .tum__inner__bot > div:nth-child(2) {
     margin-left: 20vw;
