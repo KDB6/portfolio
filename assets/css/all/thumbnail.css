@@ -51,9 +51,16 @@
     position: absolute;
     top: 31%;
     left: 52.5%;
-    border-right: 1px solid var(--colorW);
-    border-right-width: 40px;
     padding-right: 2vw;
+}
+.developer::after {
+    content: '';
+    height: 100%;
+    width: 1px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: var(--colorW);
 }
 .tum__desc {
     /* font-family: var(--font-sub); */

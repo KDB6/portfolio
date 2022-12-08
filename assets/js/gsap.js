@@ -65,6 +65,8 @@ gsap.utils.toArray(".rotate").forEach((elem2) => {
 gsap.registerPlugin(ScrollTrigger);
 
 // thumbnail
+
+// art
 let svg1 = document.querySelector(".artMainLine" + 1);
 let tl = new TimelineMax({ repeat: 0, yoyo: true });
 
@@ -74,7 +76,7 @@ tl.add(createLineTween(svg1));
 //this function creates a single tween that animates the stroke of an svg
 function createLineTween(svg) {
   var pathObject = { length: 0, pathLength: svg.getTotalLength() };
-  var tween = TweenLite.to(pathObject, 10, {
+  var tween = TweenLite.to(pathObject, 15, {
     length: pathObject.pathLength,
     onUpdate: drawLine,
     onUpdateParams: [pathObject, svg],
@@ -90,7 +92,7 @@ function drawLine(obj, svg) {
 let t2 = gsap.timeline({delay: 1.3});
 let t3 = gsap.timeline({delay: 2.8});
 let t4 = gsap.timeline({delay: 2});
-let t5 = gsap.timeline({delay: 3});
+let t5 = gsap.timeline({delay: 6});
 let t6 = gsap.timeline({delay: 4});
 
 t2.from('.portfolio', {
@@ -102,7 +104,17 @@ t3.from('.developer', {
     opacity: 0,
     duration: 2,
     ease: "power4",
-    borderRightWidth: "0",
+    height: "0%",
+}, 0)
+t6.from(".tum__desc", {
+    opacity: 0,
+    duration: 2,
+    ease: "power4",
+});
+t3.from('.tum__museum', {
+    opacity: 0,
+    duration: 2,
+    ease: "power4",
 }, 0)
 t4.from('.artCir1', {
     opacity: 0,
@@ -117,6 +129,11 @@ t5.from('.artCir2', {
     width: "10%",
 }, 0)
 t6.from('.artCir3', {
+    opacity: 0,
+    duration: 2,
+    ease: "power4",
+}, 0)
+t6.from('.link', {
     opacity: 0,
     duration: 2,
     ease: "power4",
