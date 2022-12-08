@@ -7,146 +7,174 @@
     <title>Document</title>
 
     <style>
-        @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap");
-        a {
-        color: inherit;
-        text-decoration: none;
-        }
-
-        body {
-        background-color: #2b2b2b;
-        }
-
-        .menu__item-container {
-        display: flex;
-        flex-direction: column;
-        }
-        .menu__item {
-        font-size: 50px;
-        list-style-type: none;
-        font-family: "Cinzel", serif;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        }
-        .menu__item-text {
-        line-height: 100px;
-        display: inline-flex;
-        height: 100px;
-        color: rgba(255, 255, 255, 0.3);
-        position: relative;
-        z-index: 1;
-        }
-        .menu__item-text:hover {
-        color: white;
-        position: relative;
-        z-index: 3;
-        }
-        .menu__item-image {
-        height: 300px;
-        width: 240px;
-        background-size: cover;
-        position: absolute;
-        z-index: 2;
-        opacity: 0;
-        margin-top: -150px;
-        transform: scale(0.4);
-        }
-        .menu__item-image.living, .menu__item-image.resting {
-        background-image: url("https://images.unsplash.com/photo-1589834390005-5d4fb9bf3d32?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
-        }
-        .menu__item-image.dining {
-        background-image: url("https://images.unsplash.com/photo-1565996939960-f42172c9e2bd?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80");
-        }
-        .menu__item-image.endulging {
-        background-image: url("https://images.unsplash.com/photo-1513161455079-7dc1de15ef3e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=634&q=80");
-        }
-        .menu__item-image.floorplans {
-        background-image: url("https://images.unsplash.com/photo-1575204015311-0fe377370780?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80");
-        }
-        .menu__item-image.enquiring {
-        background-image: url("https://images.unsplash.com/photo-1540759772348-12e90305e8f4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
-        }
+        #canvas1 {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+  top: 0;
+  left: 0;
+	z-index: -4;
+  filter:url(#goo);
+  opacity: 1;
+}
+#canvas2 {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+  top: 0;
+  left: 0;
+	z-index: -5;
+  opacity: 1;
+}
     </style>
-
 </head>
 <body>
-    
-    <ul class="menu__item-container">
-        <li class="menu__item">
-          <a href="#">
-            <span class="menu__item-text">Living</span>
-            <div class="menu__item-image living"></div>
-          </a>
-        </li>
-        <li class="menu__item">
-          <a href="#">
-            <span class="menu__item-text">Dining</span>
-            <div class="menu__item-image dining"></div>
-          </a>
-        </li>
-        <li class="menu__item">
-          <a href="#">
-            <span class="menu__item-text">Endulging</span>
-            <div class="menu__item-image endulging"></div>
-          </a>
-        </li>
-        <li class="menu__item">
-          <a href="#">
-            <span class="menu__item-text">Resting</span>
-            <div class="menu__item-image resting"></div>
-          </a>
-        </li>
-        <li class="menu__item">
-          <a href="#">
-            <span class="menu__item-text">Floorplans</span>
-            <div class="menu__item-image floorplans"></div>
-          </a>
-        </li>
-        <li class="menu__item">
-          <a href="#">
-            <span class="menu__item-text">Enquiring</span>
-            <div class="menu__item-image enquiring"></div>
-          </a>
-        </li>
-    </ul>
+    <canvas id="canvas1"></canvas>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
-        <script>
-            let menuItem = document.querySelectorAll(".menu__item-text");
-            let menuImage = document.querySelectorAll(".menu__item-image");
+<canvas id="canvas2"></canvas>
+<script>
+    window.addEventListener("load", function () {
+  const canvas = document.getElementById("canvas1");
+  const ctx1 = canvas.getContext("2d");
+  ctx1.canvas.width = window.innerWidth;
+  ctx1.canvas.height = window.innerHeight;
+  ctx1.fillStyle = "black";
+  ctx1.strokeStyle = "yellow";
 
-            // adding eventListeners to all the menuItems.
-            for (let i = 0; i < 6; i++) {
-            //   image reveal animation
-            const animation = gsap.to(menuImage[i], {
-                opacity: 1,
-                duration: 0.2,
-                scale: 1,
-                ease: "ease-in-out"
-            });
+  const canvas2 = document.getElementById("canvas2");
+  const ctx2 = canvas2.getContext("2d");
+  ctx2.canvas.width = window.innerWidth;
+  ctx2.canvas.height = window.innerHeight;
+  ctx2.fillStyle = "blue";
+  ctx2.strokeStyle = "red";
 
-            menuItem[i].addEventListener("mouseenter", () => animation.play());
-            menuItem[i].addEventListener("mouseleave", () => animation.reverse());
+  let particleArray = [];
+  let canvasCenterX = window.innerWidth / 2;
+  let canvasCenterY = window.innerHeight / 2;
+  let radius = window.innerWidth / 5;
+  let angle = 0;
 
-            //   initialization
-            animation.reverse();
-            }
+  // GET MOUSE POSITION ///////////////////////////////
+  const mouse = {
+    x: null,
+    y: null
+  };
+  window.addEventListener("mousemove", function (event) {
+    mouse.x = event.x;
+    mouse.y = event.y;
+    //console.log(mouse);
+  });
+  // SET MOUSE POSITION AS UNDEFINED EVERY 5 SEC(to prevent effect getting stuck in corners when mouse leaves window)//////
+  setInterval(function () {
+    mouse.x = undefined;
+    mouse.y = undefined;
+  }, 10);
 
-            //   to move image along with cursor
-            function moveText(e) {
-            gsap.to([...menuImage], {
-                css: {
-                left: e.pageX + 50,
-                top: e.pageY,
-                },
-                duration: 0.3,
-            });
-            }
+  // CREATE PARTICLE OBJECT ///////////////////
+  class Particle {
+    constructor(x, y, size, color, weight) {
+      this.x = x;
+      this.y = y;
+      this.size = size;
+      this.minSize = size;
+      this.color = color;
+      this.weight = weight;
+    }
+    draw() {
+      ctx1.beginPath();
+      ctx1.arc(this.x, this.y, this.size, 0, Math.PI * 2, false);
+      ctx1.fill();
+      ctx1.closePath();
+    }
+    update() {
+      // autopilot when mouse leaves canvas
+      if (mouse.x == undefined && mouse.y == undefined) {
+        let newX = radius * 2 * Math.cos(angle * (Math.PI / 180));
+        let newY = radius * 0.9 * Math.sin(angle * (Math.PI / 90));
+        mouse.x = newX + canvasCenterX;
+        mouse.y = newY + canvasCenterY;
+      }
 
-            menuItem.forEach((el) => {
-            el.addEventListener("mousemove", moveText);
-            });
-        </script>
+      angle += Math.random() * 0.02 + 0.001; //0.001 - 0.021
+      this.size -= 0.15;
+      if (this.size < 0) {
+        this.x = mouse.x + (Math.random() * 20 - 10);
+        this.y = mouse.y + (Math.random() * 20 - 10);
+        this.size = Math.random() * 25;
+        this.weight = Math.random() * 2 + 0.1;
+      }
+      this.y += this.weight;
+      this.weight += 0.05;
+
+      // if it reaches bottom bounce
+      if (this.y > canvas.height - this.size) {
+        this.weight *= -0.5;
+      }
+    }
+  }
+
+  function init() {
+    particleArray = [];
+    for (let i = 0; i < 150; i++) {
+      let size = Math.random() * 10 + 5;
+      let x = Math.random() * (innerWidth - size * 2) + size;
+      let y = Math.random() * (innerHeight - size * 2) + size;
+      let color = "black";
+      let weight = 1;
+      particleArray.push(new Particle(x, y, size, color, weight));
+    }
+  }
+
+  function animate() {
+    ctx1.clearRect(0, 0, canvas.width, canvas.height);
+    ctx2.clearRect(0, 0, canvas.width, canvas.height);
+    for (let i = 0; i < particleArray.length; i++) {
+      particleArray[i].update();
+      particleArray[i].draw();
+    }
+    connect();
+    requestAnimationFrame(animate);
+  }
+  init();
+  animate();
+
+  // check if particles are close enough to draw line between them
+  function connect() {
+    let opacityValue = 1;
+    for (let a = 0; a < particleArray.length; a++) {
+      for (let b = a; b < particleArray.length; b++) {
+        let distance = Math.sqrt(
+          (particleArray[a].x - particleArray[b].x) *
+            (particleArray[a].x - particleArray[b].x) +
+            (particleArray[a].y - particleArray[b].y) *
+              (particleArray[a].y - particleArray[b].y)
+        );
+        if (distance < 110) {
+          opacityValue = 1 - distance / 100;
+          ctx2.strokeStyle = "rgba(0,0,0," + opacityValue + ")";
+          ctx2.beginPath();
+          ctx2.lineWidth = 2;
+          ctx2.moveTo(particleArray[a].x, particleArray[a].y);
+          ctx2.lineTo(particleArray[b].x, particleArray[b].y);
+          ctx2.stroke();
+        }
+      }
+    }
+  }
+  window.addEventListener("resize", function () {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    canvasCenterX = window.innerWidth / 2;
+    canvasCenterY = window.innerHeight / 2;
+    radius = window.innerWidth / 5;
+    ctx1.canvas.width = window.innerWidth;
+    ctx1.canvas.height = window.innerHeight;
+    ctx2.canvas.width = window.innerWidth;
+    ctx2.canvas.height = window.innerHeight;
+    init();
+  });
+});
+
+</script>
 </body>
 </html>

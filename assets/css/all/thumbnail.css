@@ -4,76 +4,50 @@
     width: 100%;
     height: 100vh;
     font-weight: 100;
-    position: relative;
 }
-.artMain {
+#canvas1 {
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+    top: 0;
+    left: 0;
+    filter:url(#goo);
+    opacity: 1;
+}
+#canvas2 {
     position: absolute;
-    left: 28%;
-    top: 15%;
-    z-index: 1;
-}
-.artCir1 {
-     width: 9%;
-     position: absolute;
-     left: 26%;
-     top: 40%
-}
-.artCir2 {
-    width: 12%;
-    position: absolute;
-    left: 32.5%;
-    top: 14%;
-}
-.artCir3 {
-    width: 10%;
-    position: absolute;
-    top: 45%;
-    left: 35.5%;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    opacity: 1;
 }
 .tum__inner {
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    margin-right: 10vw;
 }
-.portfolio {
+.tum__inner > h2 {
+    font-size: var(--font-size24);
+    margin-bottom: 2vw;
+}
+.tum__inner__top {
     font-size: var(--font-size40);
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-    text-align: center;
-    letter-spacing: 0.4em;
-    position: absolute;
-    top: 13%;
-    left: 47.5%;
+    z-index: 5;
 }
-.developer {
-    font-size: var(--font-size40);
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-    text-align: center;
-    letter-spacing: 0.4em;
-    position: absolute;
-    top: 31%;
-    left: 52.5%;
-    padding-right: 2vw;
-}
-.developer::after {
-    content: '';
-    height: 100%;
-    width: 1px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    background: var(--colorW);
-}
-.tum__desc {
-    /* font-family: var(--font-sub); */
+.tum__inner__bot {
+    font-family: var(--font-sub);
     font-size: var(--font-size14);
-    position: absolute;
-    right: 23vw;
-    bottom: 6vw;
+    display: flex;
+    margin-top: 5vw;
+    z-index: 5;
 }
-.tum__museum {
-    font-size: var(--font-size14);
-    position: absolute;
-    right: 3vw;
-    bottom: 2vw;
+.tum__inner__bot > div a {
+    color: var(--colorW);
+}
+.tum__inner__bot > div:nth-child(2) {
+    margin-left: 20vw;
 }
 
 /* rotate */

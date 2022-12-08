@@ -15,7 +15,7 @@
     font-size: var(--font-size18);
 }
 .list__inner {
-    margin-left: 4vw;
+    margin-left: 5vw;
 }
 .list__inner ul li { 
     display: inline;
