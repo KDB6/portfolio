@@ -89,6 +89,7 @@ ScrollTrigger.create({
         }),
     });
 });
+
 // header ul li a
 gsap.utils.toArray(".hedaerColor").forEach((elem3) => {
 
@@ -118,11 +119,12 @@ ScrollTrigger.create({
     });
 });
 
+
+
 // 글씨 gsap
 gsap.registerPlugin(ScrollTrigger);
 
 // thumbnail
-
 let t1 = gsap.timeline({delay: 1});
 let t2 = gsap.timeline({delay: 1.5});
 let t3 = gsap.timeline({delay: 1.8});
@@ -153,6 +155,8 @@ t4.from('.link', {
     duration: 2,
     ease: "power4",
 }, 0)
+
+
 
 // about
 let a1 = gsap.timeline({delay: 0.5});
@@ -234,6 +238,8 @@ a1.from('.about__img > img', {
     ease: "power4",
 }, 0)
 
+
+
 // webStart
 let wS1 = gsap.timeline({delay: 2});
 
@@ -274,6 +280,8 @@ wS1.from('.webStartP', {
     ease: "power4",
 }, 0)
 
+
+
 // webStandard
 let wSt1 = gsap.timeline({delay: 2});
 
@@ -303,16 +311,30 @@ wSt1.from('.webStandardImg', {
     duration: 1,
     ease: "power4",
 }, 0)
-wSt1.from('.webStandard__descP', {
+wSt1.from('.webStandard__descH3', {
     scrollTrigger: {
         trigger: ".webStandard__img",
-        start: "40% 100%",
-        end: "100%",
+        start: "30% 20%",
+        end: "40%",
+        markers: true,
+        scrub: 1,
+    },
+    textShadow: "-1px 0 #121212, 0 1px #121212, 1px 0 #121212, 0 -1px #121212",
+    color: "#eee",
+    opacity: 0,
+    duration: 1,
+    ease: "power4",
+}, 0)
+wS1.from('.webStandard__descP', {
+    scrollTrigger: {
+        trigger: ".webStandard__img",
+        start: "40% 20%",
+        end: "50%",
         markers: true,
         scrub: 1,
     },
     opacity: 0,
-    duration: 2,
+    duration: 1,
     ease: "power4",
 }, 0)
 
@@ -361,6 +383,7 @@ let revealObserver = new IntersectionObserver(revealCallback, options);
 document.querySelectorAll(".reveal").forEach((reveal) => {
     revealObserver.observe(reveal);
 });
+
 
 
 // 글씨 호버시 이미지 나오게
