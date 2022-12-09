@@ -60,4 +60,5 @@
     animation-delay: 0s;
     animation-duration: 2s;
     animation-iteration-count: infinite;
+    transition: all 0.5s;
 }
