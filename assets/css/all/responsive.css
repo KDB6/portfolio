@@ -53,3 +53,7 @@
 .responsive__desc > p:last-child span a {
     color: var(--colorB);
 }
+.reveal2 {
+    visibility: hidden;
+    width: 100%;
+}

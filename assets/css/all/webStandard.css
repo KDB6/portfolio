@@ -31,12 +31,6 @@
     z-index: 1;
     transition: all 0.5s;
 }
-.webStandard__desc > h3:hover {
-    position: relative;
-    z-index: 3;
-    text-shadow: -1px 0 var(--colorB), 0 1px var(--colorB), 1px 0 var(--colorB), 0 -1px var(--colorB);
-    color: var(--colorW);   
-  }
 .webStandard__desc > p {
     font-size: var(--font-size14);
     font-weight: 200;

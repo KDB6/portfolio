@@ -282,10 +282,10 @@ wS1.from('.webStartP', {
 
 
 
-// webStandard
-let wSt1 = gsap.timeline({delay: 2});
+// webStandard & responsive
+let wR1 = gsap.timeline({delay: 1.5});
 
-wSt1.from('.webStandardH1', {
+wR1.from('.webStandardH2', {
     scrollTrigger: {
         trigger: "#webStandard",
         start: "-100% 00%",
@@ -299,7 +299,7 @@ wSt1.from('.webStandardH1', {
     duration: 1,
     ease: "power4",
 }, 0)
-wSt1.from('.webStandardImg', {
+wR1.from('.webStandardImg', {
     scrollTrigger: {
         trigger: "#webStandard",
         start: "-50% 20%",
@@ -311,12 +311,12 @@ wSt1.from('.webStandardImg', {
     duration: 1,
     ease: "power4",
 }, 0)
-wSt1.from('.webStandard__descH3', {
+wR1.from('.webStandard__descH3', {
     scrollTrigger: {
         trigger: ".webStandard__img",
         start: "30% 20%",
         end: "40%",
-        markers: true,
+        markers: false,
         scrub: 1,
     },
     textShadow: "-1px 0 #121212, 0 1px #121212, 1px 0 #121212, 0 -1px #121212",
@@ -325,19 +325,18 @@ wSt1.from('.webStandard__descH3', {
     duration: 1,
     ease: "power4",
 }, 0)
-wS1.from('.webStandard__descP', {
+wR1.from('.webStandard__descP', {
     scrollTrigger: {
         trigger: ".webStandard__img",
         start: "40% 20%",
         end: "50%",
-        markers: true,
+        markers: false,
         scrub: 1,
     },
     opacity: 0,
     duration: 1,
     ease: "power4",
 }, 0)
-
 const options = {
     root: null,
     rootMargin: "0px",
@@ -381,6 +380,104 @@ entries.forEach((entry) => {
 let revealObserver = new IntersectionObserver(revealCallback, options);
 
 document.querySelectorAll(".reveal").forEach((reveal) => {
+    revealObserver.observe(reveal);
+});
+
+wR1.from('.responsiveH2', {
+    scrollTrigger: {
+        trigger: ".webStandard__desc",
+        start: "100% 20%",
+        end: "150%",
+        markers: false,
+        scrub: 1,
+    },
+    textShadow: 0,
+    color: "#121212",
+    opacity: 1,
+    duration: 1,
+    ease: "power4",
+}, 0)
+wR1.from('.responsive__descH3', {
+    scrollTrigger: {
+        trigger: ".responsiveH2",
+        start: "20% 20%",
+        end: "100%",
+        markers: false,
+        scrub: 1,
+    },
+    textShadow: "-1px 0 #121212, 0 1px #121212, 1px 0 #121212, 0 -1px #121212",
+    color: "#eee",
+    opacity: 0,
+    duration: 1,
+    ease: "power4",
+}, 0)
+wR1.from('.responsive__descP', {
+    scrollTrigger: {
+        trigger: ".responsiveH2",
+        start: "30% 20%",
+        end: "100%",
+        markers: false,
+        scrub: 1,
+    },
+    opacity: 0,
+    duration: 1,
+    ease: "power4",
+}, 0)
+wR1.from('.responsiveImg', {
+    scrollTrigger: {
+        trigger: ".responsiveH2",
+        start: "40% 20%",
+        end: "80%",
+        markers: false,
+        scrub: 1,
+    },
+    opacity: 0,
+    duration: 1,
+    ease: "power4",
+}, 0)
+const options2 = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 1,
+};
+// responsive img
+let revealCallback2 = (entries, self) => {
+entries.forEach((entry) => {
+    let container = entry.target;
+    let img = entry.target.querySelector("img");
+
+    const easeInOut = "power3.out";
+    const revealAnim = gsap.timeline({ ease: easeInOut });
+
+    if (entry.isIntersecting) {
+        revealAnim.set(container, {
+            visibility: "visible"
+    });
+        revealAnim.fromTo(
+            container,
+            {
+                clipPath: "polygon(0 0, 0 0, 0 100%, 0% 100%)",
+                webkitClipPath: "polygon(0 0, 0 0, 0 100%, 0% 100%)"
+            },
+            {
+                clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
+                webkitClipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
+                duration: 1,
+                ease: easeInOut
+            }
+        );
+        revealAnim.from(img, 1, {
+            scale: 1.7,
+            ease: easeInOut,
+            delay: -1
+        });
+            self.unobserve(entry.target);
+        }
+    });
+};
+let revealObserver2 = new IntersectionObserver(revealCallback2, options2);
+
+document.querySelectorAll(".reveal2").forEach((reveal) => {
     revealObserver.observe(reveal);
 });
 
