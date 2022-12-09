@@ -47,12 +47,17 @@
     color: var(--colorW);
 }
 .javascriptBasic__right {
-    width: 54%;
+    width: 32%;
     display: grid;
     place-content: center;
-    justify-content: start;
+    justify-content: center;
 }
 .javascriptBasic__right > h2 {
     font-size: var(--font-size150);
     font-weight: 500;
+}
+.method__change {
+    animation-delay: 0s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }

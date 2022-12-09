@@ -24,6 +24,7 @@
 }
 .responsive__img > img {
     width: 100%;
+    opacity: 1;
 }
 .responsive__desc {
     margin-right: 3%;
@@ -33,6 +34,7 @@
     font-size: var(--font-size120);
     font-weight: 500;
     color: var(--colorB);
+    margin-bottom: 1vw;
 }
 .responsive__desc > p {
     font-family: var(--font-kor);
@@ -57,4 +59,5 @@
 }
 .reveal2 {
     visibility: hidden;
+    position: relative;
 }

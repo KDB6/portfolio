@@ -119,10 +119,18 @@ ScrollTrigger.create({
     });
 });
 
-
-
 // 글씨 gsap
 gsap.registerPlugin(ScrollTrigger);
+const lenis = new Lenis({
+    duration: 1.2,
+    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou
+    smooth: true,
+});
+function raf(time) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+}
+requestAnimationFrame(raf);
 
 // thumbnail
 let t1 = gsap.timeline({delay: 1});
@@ -232,7 +240,7 @@ a1.from('.about__img > img', {
         markers: false,
         scrub: 1,
     },
-    y: -50,
+    y: 100,
     opacity: 0,
     duration: 2,
     ease: "power4",
@@ -358,12 +366,10 @@ let revealCallback = (entries, self) => {
         revealAnim.fromTo(
             container,
             {
-                clipPath: "polygon(0 0, 0 0, 0 100%, 0% 100%)",
-                webkitClipPath: "polygon(0 0, 0 0, 0 100%, 0% 100%)"
+                clipPath: "polygon(0 0, 0 0, 0 100%, 0% 100%)"
             },
             {
                 clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
-                webkitClipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
                 duration: 1,
                 ease: easeInOut
             }
@@ -378,7 +384,6 @@ let revealCallback = (entries, self) => {
     });
 };
 let revealObserver = new IntersectionObserver(revealCallback, options);
-
 document.querySelectorAll(".reveal").forEach((reveal) => {
     revealObserver.observe(reveal);
 });
@@ -427,7 +432,7 @@ wR1.from('.responsiveImg', {
     scrollTrigger: {
         trigger: ".responsiveH2",
         start: "60% 20%",
-        end: "100%",
+        end: "70%",
         markers: false,
         scrub: 1,
     },
@@ -437,38 +442,36 @@ wR1.from('.responsiveImg', {
 }, 0)
 const options2 = {
     root: null,
-    rootMargin: "0px",
+    rootMargin: "500px",
     threshold: 1,
 };
-// responsive img
+// webStandard img
 let revealCallback2 = (entries, self) => {
     entries.forEach((entry) => {
     let container = entry.target;
     let img = entry.target.querySelector(".responsiveImg");
 
-    const easeInOut2 = "power3.out";
-    const revealAnim2 = gsap.timeline({ ease: easeInOut2 });
+    const easeInOut = "power3.out";
+    const revealAnim = gsap.timeline({ ease: easeInOut });
 
     if (entry.isIntersecting) {
-        revealAnim2.set(container, {
+        revealAnim.set(container, {
             visibility: "visible"
     });
-        revealAnim2.fromTo(
+        revealAnim.fromTo(
             container,
             {
-                clipPath: "polygon(0 100%, 0% 100%, 0 0, 0 0)",
-                webkitClipPath: "polygon(0 100%, 0% 100%, 0 0, 0 0)"
+                clipPath: "polygon(0 0, 0 0, 0 100%, 0% 100%)"
             },
             {
-                clipPath: "polygon(0 100%, 0% 100%, 0 0, 0 0)",
-                webkitClipPath: "polygon(0 100%, 0% 100%, 0 0, 0 0)",
+                clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
                 duration: 1,
-                ease: easeInOut2
+                ease: easeInOut
             }
         );
-        revealAnim2.from(img, 1, {
-            scale: 1.7,
-            ease: easeInOut2,
+        revealAnim.from(img, 1, {
+            scale: 1.8,
+            ease: easeInOut,
             delay: -1
         });
             self.unobserve(entry.target);
@@ -476,9 +479,8 @@ let revealCallback2 = (entries, self) => {
     });
 };
 let revealObserver2 = new IntersectionObserver(revealCallback2, options2);
-
 document.querySelectorAll(".reveal2").forEach((reveal) => {
-    revealObserver.observe(reveal);
+    revealObserver2.observe(reveal);
 });
 
 
@@ -516,5 +518,5 @@ function moveText(e) {
 }
 
 menuItem.forEach((el) => {
-el.addEventListener("mousemove", moveText);
+    el.addEventListener("mousemove", moveText);
 });

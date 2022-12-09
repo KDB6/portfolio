@@ -225,7 +225,7 @@
                 </div>
             </div>
             <div class="javascriptBasic__right">
-                <h2>Method</h2>
+                <h2 id="method__change">Method</h2>
             </div>
         </section>
         <!-- // javascriptBasic -->
@@ -752,6 +752,7 @@
     </main>
     <!-- // main -->
     
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@latest/bundled/lenis.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
     <script src="assets/js/gsap.js"></script>
@@ -899,6 +900,24 @@
                 init();
             });
         });
+    </script>
+
+    <!-- javascriptBasic text change -->
+    <script>
+        let text = ['toUpperCase', 'toLowerCase', 'slice', 'substr', 'split', 'replace', 'repeat' , 'match', 'push', 'reverse', 'reduce', 'splice', 'find', 'filter', 'map', 'Math.ceil', 'Math.floor', 'Math.sqrt'];
+
+        let index = 0;
+
+        function changeText() {
+            document.getElementById("method__change").innerText = text[index];
+            index = (index + 1) % 18;
+        }
+
+        let interval = window.setInterval(changeText, 1000);
+
+        window.onunload = function () {
+        window.clearInterval(interval);
+        }
     </script>
 </body>
 </html>
