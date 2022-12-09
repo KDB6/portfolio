@@ -344,7 +344,7 @@ const options = {
 };
 // webStandard img
 let revealCallback = (entries, self) => {
-entries.forEach((entry) => {
+    entries.forEach((entry) => {
     let container = entry.target;
     let img = entry.target.querySelector("img");
 
@@ -442,18 +442,18 @@ const options2 = {
 };
 // responsive img
 let revealCallback2 = (entries, self) => {
-entries.forEach((entry) => {
+    entries.forEach((entry) => {
     let container = entry.target;
     let img = entry.target.querySelector("img");
 
-    const easeInOut = "power3.out";
-    const revealAnim = gsap.timeline({ ease: easeInOut });
+    const easeInOut2 = "power3.out";
+    const revealAnim2 = gsap.timeline({ ease: easeInOut2 });
 
     if (entry.isIntersecting) {
-        revealAnim.set(container, {
+        revealAnim2.set(container, {
             visibility: "visible"
     });
-        revealAnim.fromTo(
+        revealAnim2.fromTo(
             container,
             {
                 clipPath: "polygon(0 0, 0 0, 0 100%, 0% 100%)",
@@ -463,12 +463,12 @@ entries.forEach((entry) => {
                 clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
                 webkitClipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
                 duration: 1,
-                ease: easeInOut
+                ease: easeInOut2
             }
         );
-        revealAnim.from(img, 1, {
+        revealAnim2.from(img, 1, {
             scale: 1.7,
-            ease: easeInOut,
+            ease: easeInOut2,
             delay: -1
         });
             self.unobserve(entry.target);
