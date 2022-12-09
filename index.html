@@ -68,11 +68,16 @@
     <link rel="stylesheet" href="assets/css/all/contactMe.css">
 
     <style>
+        .mouse {
+            position: absolute;
 
+        }
     </style>
 </head>
 
 <body>
+    <div class="mouse"></div>
+
     <!-- header -->
     <header id="header">
         <div class="header__inner">
@@ -93,7 +98,7 @@
     <main id="main">
 
         <!-- thumbnail -->
-        <section id="thumbnail" class="backColor" data-color="#505050" data-color2="#eee">
+        <section id="thumbnail" class="backColor rotate" data-color="#252525" data-fill="#252525" data-stroke="#252525">
             <canvas id="canvas1"></canvas>
             <canvas id="canvas2"></canvas>
             <div class="tum__inner">
@@ -754,6 +759,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
     <script src="assets/js/gsap.js"></script>
+
+    
     
     <!-- thumbnail Animation -->
     <script>
