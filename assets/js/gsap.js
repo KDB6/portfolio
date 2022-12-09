@@ -27,6 +27,67 @@ ScrollTrigger.create({
     });
 });
 
+
+
+// header KDB6
+gsap.utils.toArray(".hedaerColor").forEach((elem3) => {
+
+let color = elem3.getAttribute('data-color2');
+
+ScrollTrigger.create({
+    trigger: elem3,
+    start: 'top 5%',
+    end: 'bottom 5%',
+    markers: false,
+        onEnter: () => gsap.to('.KDB6 > a', {
+            color: color,
+            duration: 1
+        }),
+        onLeave: () => gsap.to('.KDB6 > a', {
+            color: '#121212',
+            duration: 1
+        }),
+        onLeaveBack: () => gsap.to('.KDB6 > a', {
+            color: '#eee',
+            duration: 1
+        }),
+        onEnterBack: () => gsap.to('.KDB6 > a', {
+            color: color,
+            duration: 1
+        }),
+    });
+});
+// header ul li a
+gsap.utils.toArray(".hedaerColor").forEach((elem3) => {
+
+let color = elem3.getAttribute('data-color2');
+
+ScrollTrigger.create({
+    trigger: elem3,
+    start: 'top 5%',
+    end: 'bottom 5%',
+    markers: false,
+        onEnter: () => gsap.to('.list__inner ul li > a', {
+            color: color,
+            duration: 1
+        }),
+        onLeave: () => gsap.to('.list__inner ul li > a', {
+            color: '#121212',
+            duration: 1
+        }),
+        onLeaveBack: () => gsap.to('.list__inner ul li > a', {
+            color: '#eee',
+            duration: 1
+        }),
+        onEnterBack: () => gsap.to('.list__inner ul li > a', {
+            color: color,
+            duration: 1
+        }),
+    });
+});
+
+
+
 // rotate
 gsap.utils.toArray(".rotate").forEach((elem2) => {
 
@@ -61,63 +122,7 @@ ScrollTrigger.create({
     });
 });
 
-// header KDB6
-gsap.utils.toArray(".hedaerColor").forEach((elem3) => {
 
-let color = elem3.getAttribute('data-color2');
-
-ScrollTrigger.create({
-    trigger: elem3,
-    start: 'top 5%',
-    end: 'bottom 5%',
-    markers: false,
-        onEnter: () => gsap.to('.KDB6 > a', {
-            color: color,
-            duration: 1
-        }),
-        onLeave: () => gsap.to('.KDB6 > a', {
-            color: '#121212',
-            duration: 1
-        }),
-        onLeaveBack: () => gsap.to('.KDB6 > a', {
-            color: '#eee',
-            duration: 1
-        }),
-        onEnterBack: () => gsap.to('.KDB6 > a', {
-            color: color,
-            duration: 1
-        }),
-    });
-});
-
-// header ul li a
-gsap.utils.toArray(".hedaerColor").forEach((elem3) => {
-
-let color = elem3.getAttribute('data-color2');
-
-ScrollTrigger.create({
-    trigger: elem3,
-    start: 'top 5%',
-    end: 'bottom 5%',
-    markers: false,
-        onEnter: () => gsap.to('.list__inner ul li > a', {
-            color: color,
-            duration: 1
-        }),
-        onLeave: () => gsap.to('.list__inner ul li > a', {
-            color: '#121212',
-            duration: 1
-        }),
-        onLeaveBack: () => gsap.to('.list__inner ul li > a', {
-            color: '#eee',
-            duration: 1
-        }),
-        onEnterBack: () => gsap.to('.list__inner ul li > a', {
-            color: color,
-            duration: 1
-        }),
-    });
-});
 
 // 글씨 gsap
 gsap.registerPlugin(ScrollTrigger);
@@ -164,8 +169,6 @@ t4.from('.link', {
     ease: "power4",
 }, 0)
 
-
-
 // about
 let a1 = gsap.timeline({delay: 0.5});
 
@@ -208,18 +211,6 @@ a1.from('.Shining', {
     duration: 10,
     ease: "power4",
 }, 0.5)
-// a1.from('.about__desc::before', {
-//     scrollTrigger: {
-//         trigger: "#about",
-//         start: "80% 90%",
-//         end: "100%",
-//         markers: false,
-//         scrub: 1,
-//     },
-//     width: "0%",
-//     duration: 2,
-//     ease: "power4",
-// }, 0)
 a1.from('.about__desc > p', {
     scrollTrigger: {
         trigger: "#about",
@@ -245,8 +236,6 @@ a1.from('.about__img > img', {
     duration: 2,
     ease: "power4",
 }, 0)
-
-
 
 // webStart
 let wS1 = gsap.timeline({delay: 2});
@@ -288,11 +277,9 @@ wS1.from('.webStartP', {
     ease: "power4",
 }, 0)
 
-
-
 // webStandard & responsive
 let wR1 = gsap.timeline({delay: 1.5});
-
+// webStandard
 wR1.from('.webStandardH2', {
     scrollTrigger: {
         trigger: "#webStandard",
@@ -387,7 +374,7 @@ let revealObserver = new IntersectionObserver(revealCallback, options);
 document.querySelectorAll(".reveal").forEach((reveal) => {
     revealObserver.observe(reveal);
 });
-
+// responsive
 wR1.from('.responsiveH2', {
     scrollTrigger: {
         trigger: ".webStandard__desc",
@@ -445,7 +432,7 @@ const options2 = {
     rootMargin: "500px",
     threshold: 1,
 };
-// webStandard img
+// responsive img
 let revealCallback2 = (entries, self) => {
     entries.forEach((entry) => {
     let container = entry.target;
@@ -483,40 +470,56 @@ document.querySelectorAll(".reveal2").forEach((reveal) => {
     revealObserver2.observe(reveal);
 });
 
+// javascriptStart
+let jS1 = gsap.timeline({delay: 1.5});
 
-
-// 글씨 호버시 이미지 나오게
-let menuItem = document.querySelectorAll(".view");
-let menuImage = document.querySelectorAll(".menu__item-image");
-
-// adding eventListeners to all the menuItems.
-for (let i = 0; i < 6; i++) {
-// image reveal animation
-const animation = gsap.to(menuImage[i], {
-    opacity: 1,
-    duration: 0.2,
-    scale: 1,
-    ease: "ease-in-out"
-});
-
-menuItem[i].addEventListener("mouseenter", () => animation.play());
-menuItem[i].addEventListener("mouseleave", () => animation.reverse());
-
-//   initialization
-animation.reverse();
-}
-
-//   to move image along with cursor
-function moveText(e) {
-    gsap.to([...menuImage], {
-        css: {
-            left: e.pageX + 50,
-            top: e.pageY,
-        },
-        duration: 0.3,
-    });
-}
-
-menuItem.forEach((el) => {
-    el.addEventListener("mousemove", moveText);
-});
+jS1.from('#javascriptStart > h2', {
+    scrollTrigger: {
+        trigger: ".responsiveImg",
+        start: "100% 20%",
+        end: "150%",
+        markers: false,
+        scrub: 1,
+    },
+    opacity: 0.7,
+    duration: 1,
+    ease: "power4",
+}, 0)
+jS1.from('#javascriptStart > h3', {
+    scrollTrigger: {
+        trigger: "#javascriptStart > h2",
+        start: "10% 20%",
+        end: "30%",
+        markers: false,
+        scrub: 1,
+    },
+    x: -100,
+    opacity: 0,
+    duration: 1,
+    ease: "power4",
+}, 0)
+jS1.from('#javascriptStart > h4', {
+    scrollTrigger: {
+        trigger: "#javascriptStart > h2",
+        start: "0% 20%",
+        end: "30%",
+        markers: false,
+        scrub: 1,
+    },
+    x: 100,
+    opacity: 0,
+    duration: 1,
+    ease: "power4",
+}, 0)
+jS1.from('#javascriptStart > p', {
+    scrollTrigger: {
+        trigger: "#javascriptStart > h2",
+        start: "20% 20%",
+        end: "50%",
+        markers: false,
+        scrub: 1,
+    },
+    opacity: 0,
+    duration: 1,
+    ease: "power4",
+}, 5)
