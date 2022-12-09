@@ -34,7 +34,9 @@
 
 /* roof */
 :root {
-    --colorW: #eeeeee;
+    --bg: #F8F4ED;
+    --colorW: #eee;
+    --colorE: #F8F4ED;
     --colorB: #121212;
 
     --font-main: "PP Eiko";
@@ -87,10 +89,10 @@
 body {
     overflow: overlay;
     overflow-x: hidden;
-    background: var(--colorW);
+    background: var(--bg);
 }
 #main {
-    background: var(--colorW);
+    background: var(--bg);
 }
 /* fixed */
 body.fixed {

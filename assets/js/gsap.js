@@ -13,11 +13,11 @@ ScrollTrigger.create({
             duration: 1
         }),
         onLeave: () => gsap.to('main', {
-            backgroundColor: '#eee',
+            backgroundColor: '#F8F4ED',
             duration: 1
         }),
         onLeaveBack: () => gsap.to('main', {
-            backgroundColor: '#eee',
+            backgroundColor: '#F8F4ED',
             duration: 1
         }),
         onEnterBack: () => gsap.to('main', {
@@ -295,7 +295,7 @@ wR1.from('.webStandardH2', {
     },
     textShadow: 0,
     color: "#121212",
-    opacity: 1,
+    opacity: 0.7,
     duration: 1,
     ease: "power4",
 }, 0)
@@ -328,8 +328,8 @@ wR1.from('.webStandard__descH3', {
 wR1.from('.webStandard__descP', {
     scrollTrigger: {
         trigger: ".webStandard__img",
-        start: "40% 20%",
-        end: "50%",
+        start: "50% 20%",
+        end: "70%",
         markers: false,
         scrub: 1,
     },
@@ -346,7 +346,7 @@ const options = {
 let revealCallback = (entries, self) => {
     entries.forEach((entry) => {
     let container = entry.target;
-    let img = entry.target.querySelector("img");
+    let img = entry.target.querySelector(".webStandardImg");
 
     const easeInOut = "power3.out";
     const revealAnim = gsap.timeline({ ease: easeInOut });
@@ -393,7 +393,7 @@ wR1.from('.responsiveH2', {
     },
     textShadow: 0,
     color: "#121212",
-    opacity: 1,
+    opacity: 0.7,
     duration: 1,
     ease: "power4",
 }, 0)
@@ -426,8 +426,8 @@ wR1.from('.responsive__descP', {
 wR1.from('.responsiveImg', {
     scrollTrigger: {
         trigger: ".responsiveH2",
-        start: "40% 20%",
-        end: "80%",
+        start: "60% 20%",
+        end: "100%",
         markers: false,
         scrub: 1,
     },
@@ -444,7 +444,7 @@ const options2 = {
 let revealCallback2 = (entries, self) => {
     entries.forEach((entry) => {
     let container = entry.target;
-    let img = entry.target.querySelector("img");
+    let img = entry.target.querySelector(".responsiveImg");
 
     const easeInOut2 = "power3.out";
     const revealAnim2 = gsap.timeline({ ease: easeInOut2 });
@@ -456,12 +456,12 @@ let revealCallback2 = (entries, self) => {
         revealAnim2.fromTo(
             container,
             {
-                clipPath: "polygon(0 0, 0 0, 0 100%, 0% 100%)",
-                webkitClipPath: "polygon(0 0, 0 0, 0 100%, 0% 100%)"
+                clipPath: "polygon(0 100%, 0% 100%, 0 0, 0 0)",
+                webkitClipPath: "polygon(0 100%, 0% 100%, 0 0, 0 0)"
             },
             {
-                clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
-                webkitClipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
+                clipPath: "polygon(0 100%, 0% 100%, 0 0, 0 0)",
+                webkitClipPath: "polygon(0 100%, 0% 100%, 0 0, 0 0)",
                 duration: 1,
                 ease: easeInOut2
             }

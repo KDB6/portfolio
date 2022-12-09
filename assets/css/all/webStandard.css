@@ -6,7 +6,7 @@
 #webStandard > h2 {
     font-family: var(--font-main);
     text-shadow: -1px 0 var(--colorB), 0 1px var(--colorB), 1px 0 var(--colorB), 0 -1px var(--colorB);
-    color: var(--colorW);
+    color: var(--colorE);
     font-weight: 100;
     font-size: 40vw;
     opacity: 0.06;
@@ -37,6 +37,7 @@
     font-family: var(--font-kor);
     color: var(--colorB);
     text-align: right;
+    line-height: 1.5;
 }
 .webStandard__desc > p:last-child {
     font-size: var(--font-size16);
