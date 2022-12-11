@@ -22,11 +22,17 @@
     align-items: flex-end;
 }
 .front__title > h2 {
+    width: 41vw;
     line-height: 1;
     font-size: var(--font-size150);
     font-weight: 100;
-    border-right: 1px solid var(--colorW);
+    border-right: 0px solid var(--colorW);
     padding-right: 4%;
+}
+.front__title__h2 {
+    word-spacing: -2vw;
+}
+.front__title__h2 span {
 }
 .front__title > h3 {
     margin-left: 4%;
@@ -43,6 +49,7 @@
 /* reactSite */
 #reactSite {
     position: relative;
+    margin-top: 2vw;
 }
 .reactSite__desc {
     display: flex;
@@ -68,9 +75,18 @@
 .reactSite__img {
     margin-left: 2.5%;
     position: relative;
+    z-index: 2;
 }
 .reactSite__img > img {
     width: 80%;
+}
+.reactSite1 {
+
+}
+.reactSite2 {
+    position: absolute;
+    top: 1.05vw;
+    right: -1vw;
 }
 .reactSite__side {
     rotate: 90deg;
@@ -85,8 +101,16 @@
 #reactView {
     margin-top: 15%;
 }
+.box {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+}
 .react__api {
     display: flex;
+    width: 100%;
+    height: 100vh;
 }
 .react__api__desc {
     width: 50%;
@@ -138,9 +162,11 @@
 .react__api__img > img {
     width: 100%;
 }
-
 .react__youtube {
     display: flex;
+    background: var(--colorB);
+    width: 100%;
+    height: 100vh;
 }
 .react__youtube__img {
     width: 50%;

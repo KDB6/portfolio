@@ -17,3 +17,7 @@
 .gameImg > img {
     width: 83%;
 }
+.reveal3 {
+    visibility: hidden;
+    position: relative;
+}

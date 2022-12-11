@@ -5,8 +5,8 @@ let color = elem.getAttribute('data-color');
 
 ScrollTrigger.create({
     trigger: elem,
-    start: 'top 5%',
-    end: 'bottom 5%',
+    start: 'top 1%',
+    end: 'bottom 1%',
     markers: false,
         onEnter: () => gsap.to('main', {
             backgroundColor: color,
@@ -211,7 +211,7 @@ a1.from('.Shining', {
     duration: 10,
     ease: "power4",
 }, 0.5)
-a1.from('.about__desc > p', {
+a1.from('.about__desc', {
     scrollTrigger: {
         trigger: "#about",
         start: "80% 90%",
@@ -332,12 +332,24 @@ wR1.from('.webStandard__descP', {
     duration: 1,
     ease: "power4",
 }, 0)
+wR1.from('.view', {
+    scrollTrigger: {
+        trigger: ".webStandard__img",
+        start: "60% 20%",
+        end: "70%",
+        markers: false,
+        scrub: 1,
+    },
+    opacity: 0,
+    duration: 1,
+    ease: "power4",
+}, 0)
+// webStandard img
 const options = {
     root: null,
-    rootMargin: "0px",
+    rootMargin: "200px",
     threshold: 1,
 };
-// webStandard img
 let revealCallback = (entries, self) => {
     entries.forEach((entry) => {
     let container = entry.target;
@@ -364,7 +376,7 @@ let revealCallback = (entries, self) => {
         revealAnim.from(img, 1, {
             scale: 1.7,
             ease: easeInOut,
-            delay: -1
+            delay: -1,
         });
             self.unobserve(entry.target);
         }
@@ -427,12 +439,24 @@ wR1.from('.responsiveImg', {
     duration: 1,
     ease: "power4",
 }, 0)
+wR1.from('.viewR', {
+    scrollTrigger: {
+        trigger: ".responsiveH2",
+        start: "60% 20%",
+        end: "70%",
+        markers: false,
+        scrub: 1,
+    },
+    opacity: 0,
+    duration: 1,
+    ease: "power4",
+}, 0)
+// responsive img
 const options2 = {
     root: null,
     rootMargin: "500px",
     threshold: 1,
 };
-// responsive img
 let revealCallback2 = (entries, self) => {
     entries.forEach((entry) => {
     let container = entry.target;
@@ -469,6 +493,8 @@ let revealObserver2 = new IntersectionObserver(revealCallback2, options2);
 document.querySelectorAll(".reveal2").forEach((reveal) => {
     revealObserver2.observe(reveal);
 });
+
+
 
 // javascriptStart
 let jS1 = gsap.timeline({delay: 1.5});
@@ -523,3 +549,759 @@ jS1.from('#javascriptStart > p', {
     duration: 1,
     ease: "power4",
 }, 5)
+
+
+
+// gameMouseTum
+let gMT1 = gsap.timeline({delay: 1.5});
+
+gMT1.from('.gameMouseTumH2', {
+    scrollTrigger: {
+        trigger: ".javascriptBasic__right",
+        start: "120% 20%",
+        end: "150%",
+        markers: false,
+        scrub: 1,
+    },
+    opacity: 0,
+    duration: 1,
+    ease: "power4",
+}, 0)
+gMT1.from('#gameMouseTum', {
+    scrollTrigger: {
+        trigger: ".javascriptBasic__right",
+        start: "100% 20%",
+        end: "130%",
+        markers: false,
+        scrub: 1,
+    },
+    width: 0,
+    duration: 1,
+    ease: "power4",
+}, 0)
+gMT1.from('.gameMouseTum__list', {
+    scrollTrigger: {
+        trigger: ".javascriptBasic__right",
+        start: "100% 20%",
+        end: "130%",
+        markers: false,
+        scrub: 1,
+    },
+    opacity: 0,
+    duration: 1,
+    ease: "power4",
+}, 0)
+gMT1.from('.gameMouseTumP', {
+    scrollTrigger: {
+        trigger: ".javascriptBasic__right",
+        start: "120% 20%",
+        end: "150%",
+        markers: false,
+        scrub: 1,
+    },
+    opacity: 0,
+    duration: 1,
+    ease: "power4",
+}, 0)
+gMT1.from('.gameTumImg', {
+    scrollTrigger: {
+        trigger: ".javascriptBasic__right",
+        start: "120% 20%",
+        end: "150%",
+        markers: false,
+        scrub: 1,
+    },
+    opacity: 0,
+    duration: 1,
+    ease: "power4",
+}, 0)
+gMT1.from('.mouseImg1', {
+    scrollTrigger: {
+        trigger: ".javascriptBasic__right",
+        start: "120% 20%",
+        end: "150%",
+        markers: false,
+        scrub: 1,
+    },
+    opacity: 0,
+    duration: 1,
+    ease: "power4",
+}, 0)
+gMT1.from('.mouseImg2', {
+    scrollTrigger: {
+        trigger: ".javascriptBasic__right",
+        start: "120% 20%",
+        end: "150%",
+        markers: false,
+        scrub: 1,
+    },
+    opacity: 0,
+    duration: 1,
+    ease: "power4",
+}, 0)
+
+
+
+// gameTum
+let gT1 = gsap.timeline({delay: 1.5});
+
+gT1.from('.gameImgGsap', {
+    scrollTrigger: {
+        trigger: "#gameMouseTum",
+        start: "70% 20%",
+        end: "150%",
+        markers: false,
+        scrub: 1,
+    },
+    opacity: 0,
+    duration: 1,
+    ease: "power4",
+}, 0)
+gT1.from('.gameTumH2', {
+    scrollTrigger: {
+        trigger: ".gameImg",
+        start: "-30% 20%",
+        end: "-10%",
+        markers: false,
+        scrub: 1,
+    },
+    y: -300,
+    opacity: 0,
+    duration: 1,
+    ease: "power4",
+}, 0)
+
+
+
+// gameList
+let gL1 = gsap.timeline({delay: 1.5});
+let gL2 = gsap.timeline({delay: 0.5});
+
+gL1.from('.gameList__left', {
+    scrollTrigger: {
+        trigger: "#gameList",
+        start: "-30% 20%",
+        end: "00%",
+        markers: true,
+        scrub: 1,
+    },
+    opacity: 0,
+    duration: 1,
+    ease: "power4",
+}, 0)
+gL2.from('.music', {
+    scrollTrigger: {
+        trigger: "#gameList",
+        start: "0% 60%",
+        end: "-10%",
+        markers: false,
+        scrub: 1,
+    },
+    y: 200,
+    opacity: 0,
+    duration: 1,
+    ease: "power4",
+}, 0)
+gL2.from('.search', {
+    scrollTrigger: {
+        trigger: "#gameList",
+        start: "26% 60%",
+        end: "20%",
+        markers: false,
+        scrub: 1,
+    },
+    y: 200,
+    opacity: 0,
+    duration: 1,
+    ease: "power4",
+}, 0)
+gL2.from('.card', {
+    scrollTrigger: {
+        trigger: "#gameList",
+        start: "51% 60%",
+        end: "50%",
+        markers: false,
+        scrub: 1,
+    },
+    y: 200,
+    opacity: 0,
+    duration: 1,
+    ease: "power4",
+}, 0)
+gL2.from('.tetris', {
+    scrollTrigger: {
+        trigger: "#gameList",
+        start: "77% 60%",
+        end: "70%",
+        markers: false,
+        scrub: 1,
+    },
+    y: 200,
+    opacity: 0,
+    duration: 1,
+    ease: "power4",
+}, 0)
+
+
+
+// mouse
+let m1 = gsap.timeline({delay: 1.5});
+
+m1.from('.mouseH2', {
+    scrollTrigger: {
+        trigger: "#mouse",
+        start: "-50% 00%",
+        end: "20%",
+        markers: false,
+        scrub: 1,
+    },
+    opacity: 0,
+    duration: 1,
+    ease: "power4",
+}, 0)
+m1.from('.mouse__desc__h2', {
+    scrollTrigger: {
+        trigger: "#mouse",
+        start: "20% 0%",
+        end: "40%",
+        markers: true,
+        scrub: 1,
+    },
+    opacity: 0,
+    duration: 1,
+    ease: "power4",
+}, 0)
+m1.from('.mouse__desc__p', {
+    scrollTrigger: {
+        trigger: "#mouse",
+        start: "20% 0%",
+        end: "40%",
+        markers: true,
+        scrub: 1,
+    },
+    opacity: 0,
+    duration: 1,
+    ease: "power4",
+}, 0)
+m1.from('.mouse__desc__view', {
+    scrollTrigger: {
+        trigger: "#mouse",
+        start: "20% 0%",
+        end: "40%",
+        markers: true,
+        scrub: 1,
+    },
+    opacity: 0,
+    duration: 1,
+    ease: "power4",
+}, 0)
+m1.from('.mouseBg', {
+    scrollTrigger: {
+        trigger: "#mouse",
+        start: "-10% 00%",
+        end: "10%",
+        markers: false,
+        scrub: 1,
+    },
+    opacity: 0,
+    duration: 1,
+    ease: "power4",
+}, 0)
+m1.from('.mouseCircle', {
+    scrollTrigger: {
+        trigger: "#mouse",
+        start: "-10% 00%",
+        end: "10%",
+        markers: false,
+        scrub: 1,
+    },
+    opacity: 0,
+    duration: 1,
+    ease: "power4",
+}, 0)
+
+
+
+// searchSliderTum
+let sST1 = gsap.timeline({delay: 1.5});
+
+gsap.fromTo('.searchSliderTumH2 span', {
+        x: 50,
+        opacity: 0,
+    },
+    {
+        scrollTrigger: {
+            trigger: "#searchSliderTum",
+            start: "-250% 00%",
+            end: "-100%",
+            markers: false,
+            scrub: 1,
+        },
+        delay: 1,
+        duration: 1,
+        x: 0,
+        opacity: 1,
+        ease: 'power2.easeOut',
+        stagger: {
+            from: 'start',
+            amount: 0.5,
+    },
+})
+sST1.from('.searchSliderTumP', {
+    scrollTrigger: {
+        trigger: "#searchSliderTum",
+        start: "-250% 00%",
+        end: "-200%",
+        markers: false,
+        scrub: 1,
+    },
+    opacity: 0,
+    duration: 1,
+    ease: "power4",
+}, 0)
+
+
+
+// search
+let se1 = gsap.timeline({delay: 1.5});
+
+// se1.from('#search', {
+//     scrollTrigger: {
+//         trigger: "#search",
+//         start: "-13% 00%",
+//         end: "+=1000",
+//         markers: false,
+//         scrub: 1,
+//         pin: true
+//     },
+//     duration: 1,
+//     ease: "power4",
+// }, 0)
+se1.from('.searchH2', {
+    scrollTrigger: {
+        trigger: "#search",
+        start: "-50% 00%",
+        end: "00%",
+        markers: false,
+        scrub: 1,
+    },
+    opacity: 0,
+    letterSpacing: 0,
+    duration: 1,
+    ease: "power4",
+}, 0)
+se1.from('.search__top__div', {
+    scrollTrigger: {
+        trigger: "#search",
+        start: "-50% 00%",
+        end: "00%",
+        markers: false,
+        scrub: 1,
+    },
+    opacity: 0,
+    letterSpacing: "0.5vw",
+    duration: 1,
+    ease: "power4",
+}, 0)
+se1.from('.searchImg', {
+    scrollTrigger: {
+        trigger: "#search",
+        start: "-50% 00%",
+        end: "00%",
+        markers: false,
+        scrub: 1,
+    },
+    opacity: 0,
+    duration: 1,
+    ease: "power4",
+}, 0)
+se1.from('.search__bot__div', {
+    scrollTrigger: {
+        trigger: "#search",
+        start: "-50% 00%",
+        end: "00%",
+        markers: false,
+        scrub: 1,
+    },
+    opacity: 0,
+    duration: 1,
+    ease: "power4",
+}, 0)
+
+
+
+// slider
+let sL1 = gsap.timeline({delay: 1.5});
+
+// sL1.from('#slider', {
+//     scrollTrigger: {
+//         trigger: "#slider",
+//         start: "-13% 00%",
+//         end: "+=000",
+//         markers: false,
+//         scrub: 1,
+//         pin: true,
+//     },
+//     duration: 1,
+//     ease: "power4",
+// }, 0)
+sL1.from('.sliderH2', {
+    scrollTrigger: {
+        trigger: "#slider",
+        start: "-50% 00%",
+        end: "00%",
+        markers: false,
+        scrub: 1,
+    },
+    opacity: 0,
+    letterSpacing: "0",
+    duration: 1,
+    ease: "power4",
+}, 0)
+sL1.from('.slider__top__div', {
+    scrollTrigger: {
+        trigger: "#slider",
+        start: "-50% 00%",
+        end: "00%",
+        markers: false,
+        scrub: 1,
+    },
+    opacity: 0,
+    letterSpacing: "0.5vw",
+    duration: 1,
+    ease: "power4",
+}, 0)
+sL1.from('.sliderImg', {
+    scrollTrigger: {
+        trigger: "#slider",
+        start: "-50% 00%",
+        end: "00%",
+        markers: false,
+        scrub: 1,
+    },
+    opacity: 0,
+    duration: 1,
+    ease: "power4",
+}, 0)
+sL1.from('.slider__bot__div', {
+    scrollTrigger: {
+        trigger: "#slider",
+        start: "-50% 00%",
+        end: "00%",
+        markers: false,
+        scrub: 1,
+    },
+    opacity: 0,
+    duration: 1,
+    ease: "power4",
+}, 0)
+
+
+
+// quizParallax
+let textWrapper = document.querySelector('.quizParallax__tum__first');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+tl = new TimelineMax();
+tl.staggerFrom('.quizParallax__tum__first .letter', 1.5, {
+    scrollTrigger: {
+        trigger: ".quizParallax__tum",
+        start: "-40% 00%",
+        end: "-10%",
+        markers: false,
+        scrub: 1,
+    },
+    opacity: 0,
+    ease: Power4.easeInOut
+}, 0.05, 0.2);
+
+let qP1 = gsap.timeline({delay: 1.5});
+
+qP1.from('.quizParallax__tum__second', {
+    scrollTrigger: {
+        trigger: ".quizParallax__tum",
+        start: "-40% 00%",
+        end: "-10%",
+        markers: false,
+        scrub: 1,
+    },
+    opacity: 0,
+    x: 400,
+    duration: 1,
+    ease: "power4",
+}, 0)
+qP1.from('.quizParallax__tum__third', {
+    scrollTrigger: {
+        trigger: ".quizParallax__tum",
+        start: "-40% 00%",
+        end: "-10%",
+        markers: false,
+        scrub: 1,
+    },
+    opacity: 0,
+    x: -200,
+    duration: 1,
+    ease: "power4",
+}, 0)
+qP1.from('.quizParallax__tum__four', {
+    scrollTrigger: {
+        trigger: ".quizParallax__tum",
+        start: "-20% 00%",
+        end: "-10%",
+        markers: false,
+        scrub: 1,
+    },
+    opacity: 0,
+    duration: 1,
+    ease: "power4",
+}, 0)
+qP1.from('.quiz1', {
+    scrollTrigger: {
+        trigger: ".quiz",
+        start: "-100% 00%",
+        end: "-20%",
+        markers: false,
+        scrub: 1,
+    },
+    x: -180,
+    duration: 1,
+    ease: "power4.in",
+}, 0)
+qP1.from('.quiz2', {
+    scrollTrigger: {
+        trigger: ".quiz",
+        start: "-90% 00%",
+        end: "-20%",
+        markers: false,
+        scrub: 1,
+    },
+    x: 120,
+    duration: 1,
+    ease: "power4.in",
+}, 0)
+qP1.from('.quiz3', {
+    scrollTrigger: {
+        trigger: ".quiz",
+        start: "-80% 00%",
+        end: "-20%",
+        markers: false,
+        scrub: 1,
+    },
+    x: -80,
+    duration: 1,
+    ease: "power4.in",
+}, 0)
+qP1.from('.quiz4', {
+    scrollTrigger: {
+        trigger: ".quiz",
+        start: "-70% 00%",
+        end: "-20%",
+        markers: false,
+        scrub: 1,
+    },
+    x: 100,
+    duration: 1,
+    ease: "power4.in",
+}, 0)
+qP1.from('.quiz5', {
+    scrollTrigger: {
+        trigger: ".quiz",
+        start: "-60% 00%",
+        end: "-20%",
+        markers: false,
+        scrub: 1,
+    },
+    x: -200,
+    duration: 1,
+    ease: "power4.in",
+}, 0)
+qP1.from('.quiz__desc__h2', {
+    scrollTrigger: {
+        trigger: ".quiz",
+        start: "-30% 00%",
+        end: "-10%",
+        markers: false,
+        scrub: 1,
+    },
+    opacity: 0,
+    duration: 1,
+    ease: "power4.in",
+}, 0)
+qP1.from('.quizView', {
+    scrollTrigger: {
+        trigger: ".quiz",
+        start: "-20% 00%",
+        end: "-10%",
+        markers: false,
+        scrub: 1,
+    },
+    opacity: 0,
+    duration: 1,
+    ease: "power4.in",
+}, 0)
+qP1.from('.parallax__img', {
+    scrollTrigger: {
+        trigger: ".parallax",
+        start: "-100% 00%",
+        end: "-50%",
+        markers: true,
+        scrub: 1,
+    },
+    opacity: 0,
+    duration: 1,
+    ease: "power4.in",
+}, 0)
+qP1.from('.parallax__desc__h2', {
+    scrollTrigger: {
+        trigger: ".parallax",
+        start: "-10% 00%",
+        end: "10%",
+        markers: false,
+        scrub: 1,
+    },
+    opacity: 0,
+    duration: 1,
+    ease: "power4.in",
+}, 0)
+qP1.from('.parallax__desc__p', {
+    scrollTrigger: {
+        trigger: ".parallax",
+        start: "-10% 00%",
+        end: "15%",
+        markers: false,
+        scrub: 1,
+    },
+    opacity: 0,
+    duration: 1,
+    ease: "power4.in",
+}, 0)
+qP1.from('.parallaxView', {
+    scrollTrigger: {
+        trigger: ".parallax",
+        start: "-10% 00%",
+        end: "20%",
+        markers: false,
+        scrub: 1,
+    },
+    opacity: 0,
+    duration: 1,
+    ease: "power4.in",
+}, 0)
+
+
+
+// front
+gsap.fromTo('.front__title__h2 span', {
+    x: 50,
+    opacity: 0,
+},
+{
+    scrollTrigger: {
+        trigger: "#frontStart",
+        start: "-10% 00%",
+        end: "20%",
+        markers: true,
+        scrub: 1,
+    },
+    delay: 1,
+    duration: 1,
+    x: 0,
+    opacity: 1,
+    ease: 'power2.easeOut',
+    stagger: {
+        from: 'start',
+        amount: 0.5,
+},
+})
+
+let f1 = gsap.timeline({delay: 1.5});
+
+// qP1.from('.front__title__h3', {
+//     scrollTrigger: {
+//         trigger: "#frontStart",
+//         start: "-50% 00%",
+//         end: "00%",
+//         markers: false,
+//         scrub: 1,
+//     },
+//     opacity: 0,
+//     duration: 1,
+//     ease: "power4.in",
+// }, 0)
+
+f1.to('.reactSite2', {
+    scrollTrigger: {
+        trigger: "#reactSite",
+        start: "-100% 00%",
+        end: "100%",
+        markers: true,
+        scrub: 1,
+    },
+    x: -7500,
+    duration: 1,
+    ease: "power4.in",
+}, 0)
+f1.from('.reactSite__desc__h2', {
+    scrollTrigger: {
+        trigger: "#reactSite",
+        start: "-50% 00%",
+        end: "0%",
+        markers: true,
+        scrub: 1,
+    },
+    opacity: 0,
+    duration: 1,
+    ease: "power4.in",
+}, 0)
+f1.from('.reactSite__desc__ul', {
+    scrollTrigger: {
+        trigger: "#reactSite",
+        start: "-50% 00%",
+        end: "0%",
+        markers: true,
+        scrub: 1,
+    },
+    opacity: 0,
+    duration: 1,
+    ease: "power4.in",
+}, 0)
+f1.from('.reactSite__side', {
+    scrollTrigger: {
+        trigger: "#reactSite",
+        start: "-50% 00%",
+        end: "0%",
+        markers: true,
+        scrub: 1,
+    },
+    x: -100,
+    opacity: 0,
+    duration: 1,
+    ease: "power4.in",
+}, 0)
+f1.from('.front__desc__p', {
+    scrollTrigger: {
+        trigger: "#frontStart",
+        start: "-50% 00%",
+        end: "00%",
+        markers: false,
+        scrub: 1,
+    },
+    opacity: 0,
+    duration: 1,
+    ease: "power4.in",
+}, 0)
+ScrollTrigger.create({
+    trigger: ".react__api",
+    pin: ".react__api",
+    markers: true,
+    start: "top top",
+    end: "bottom top",
+  });
+
+ScrollTrigger.create({
+    trigger: ".react__api",
+    pin: ".react__youtube",
+    markers: true,
+    start: "top top",
+    end: "bottom top",
+});

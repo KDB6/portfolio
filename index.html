@@ -190,7 +190,7 @@
                     </p>
                     <div class="menu__item-image living"></div>
                     <div class="menu__item-image dining"></div>
-                    <p><span class="view"><a href="#">view site</a></span><span class="view"><a href="#">view code</a></span></p>
+                    <p><span class="viewR"><a href="#">view site</a></span><span class="viewR"><a href="#">view code</a></span></p>
                 </div>
                 <div class="responsive__img reveal2">
                     <img class="responsiveImg" src="assets/img/responsive.jpg" alt="웹반응형사진">
@@ -233,8 +233,8 @@
         <!-- gameMouseTum -->
         <section id="gameMouseTum">
             <div class="gameMouseTum__left">
-                <h2>game&mouse</h2>
-                <p>
+                <h2 class="gameMouseTumH2">game&mouse</h2>
+                <p class="gameMouseTumP">
                     Various games and mouse effects were created using JavaScript,<br>
                     an object-based script programming language. This course was made<br>
                     using what I had learned.</p>
@@ -243,12 +243,12 @@
                 <div class="gameMouseTum__list">
                     <div class="gameMouseTum__list__one">
                         <h2>&game</h2>
-                        <img src="assets/img/gameMouseTum__1.png" alt="게임썸네일">
+                        <img class="gameTumImg" src="assets/img/gameMouseTum__1.png" alt="게임썸네일">
                     </div>
                     <div class="gameMouseTum__list__two">
                         <h2>&mouse</h2>
-                        <img src="assets/img/gameMouseTum__2.svg" alt="마우스썸네일">
-                        <img src="assets/img/gameMouseTum__cir.svg" alt="마우스원">
+                        <img class="mouseImg1" src="assets/img/gameMouseTum__2.svg" alt="마우스썸네일">
+                        <img class="mouseImg2" src="assets/img/gameMouseTum__cir.svg" alt="마우스원">
                     </div>
                 </div>
             </div>
@@ -258,16 +258,16 @@
         <!-- gameTum -->
         <section id="gameTum">
             <div class="gameImg">
-                <img src="assets/img/game.jpg" alt="게임이미지">
+                <img class="gameImgGsap reveal" src="assets/img/game.jpg" alt="게임이미지">
             </div>
-            <h2>&game</h2>
+            <h2 class="gameTumH2">&game</h2>
         </section>
         <!-- // gameTum -->
     
         <!-- gameList -->
         <section id="gameList">
             <div class="gameList__left">
-                <h2>play game</h2>
+                <h2 class="gameList__left__h2">play game</h2>
             </div>
             <div class="gameList__right">
                 <!-- music -->
@@ -341,8 +341,8 @@
         <section id="mouse">
             <div class="mouse__left">
                 <div class="mouse__desc">
-                    <h2>&mouse</h2>
-                    <p>
+                    <h2 class="mouse__desc__h2">&mouse</h2>
+                    <p class="mouse__desc__p">
                         자바스크립트를 이용하여 기초적인 마우스의 이펙트를 구현화 시켰습니다.<br>
                         해당 과정에서는 자바스크립트에 대한 배움을 토대로 제작하였으며,<br>
                         각 종 기본적인 구조와 메서드들을 활용하였습니다.
@@ -351,18 +351,32 @@
                 </div>
             </div>
             <div class="mouse__right">
-                <img src="assets/img/mouse.svg" alt="마우스화면">
-                <img src="assets/img/mouse__cir.svg" alt="마우스">
-                <h2>&mouse</h2>
-                <p><span><a href="#">view site</a></span><span><a href="#">view code</a></span></p>
+                <img class="mouseBg reveal" src="assets/img/mouse.svg" alt="마우스화면">
+                <img class="mouseCircle" src="assets/img/mouse__cir.svg" alt="마우스">
+                <h2 class="mouseH2">&mouse</h2>
+                <p class="mouse__desc__view"><span><a href="#">view site</a></span><span><a href="#">view code</a></span></p>
             </div>
         </section>
         <!-- // mouse -->
     
         <!-- searchSliderTum -->
         <section id="searchSliderTum">
-            <h2>search&slider</h2>
-            <p>
+            <h2 class="searchSliderTumH2">
+                <span>s</span>
+                <span>e</span>
+                <span>a</span>
+                <span>r</span>
+                <span>c</span>
+                <span>h</span>
+                <span>&</span>
+                <span>s</span>
+                <span>l</span>
+                <span>i</span>
+                <span>d</span>
+                <span>e</span>
+                <span>r</span>
+            </h2>
+            <p class="searchSliderTumP">
                 Each search function and slide function were implemented and the effects<br>
                 were based on the basic structure. In this process, I implemented each function<br>
                 based on knowledge in JavaScript that I learned.
@@ -372,22 +386,22 @@
     
         <!-- search -->
         <section id="search">
-            <h2><a href="#">search</a></h2>
+            <h2 class="searchH2"><a href="#">search</a></h2>
             <div class="search__top">
-                <div>@Made in Dabin</div>
-                <div>design by korea kdb6</div>
+                <div class="search__top__div">@Made in Dabin</div>
+                <div class="search__top__div">design by korea kdb6</div>
             </div>
             <div class="search__img">
-                <a href="#"><img src="assets/img/search.jpg" alt="서치"></a>
+                <a href="#"><img class="searchImg" src="assets/img/search.jpg" alt="서치"></a>
 
                 <div class="search__bot__left">
-                    <div>Javascript of effect by search</div>
-                    <div>October 2022</div>
+                    <div class="search__bot__div">Javascript of effect by search</div>
+                    <div class="search__bot__div">October 2022</div>
                 </div>
 
                 <div class="search__bot__right">
-                    <div><a href="#">view site</a></div>
-                    <div><a href="#">view code</a></div>
+                    <div class="search__bot__div"><a href="#">view site</a></div>
+                    <div class="search__bot__div"><a href="#">view code</a></div>
                 </div>
             </div>
         </section>
@@ -395,22 +409,22 @@
     
         <!-- slider -->
         <section id="slider">
-            <h2><a href="#">slider</a></h2>
+            <h2 class="sliderH2"><a href="#">slider</a></h2>
             <div class="slider__top">
-                <div>@Made in Dabin</div>
-                <div>design by korea kdb6</div>
+                <div class="slider__top__div">@Made in Dabin</div>
+                <div class="slider__top__div">design by korea kdb6</div>
             </div>
             <div class="slider__img">
-                <a href="#"><img src="assets/img/slider.jpg" alt="슬라이드"></a>
+                <a href="#"><img class="sliderImg" src="assets/img/slider.jpg" alt="슬라이드"></a>
 
                 <div class="slider__bot__left">
-                    <div>Javascript of effect by slider</div>
-                    <div>October 2022</div>
+                    <div class="slider__bot__div">Javascript of effect by slider</div>
+                    <div class="slider__bot__div">October 2022</div>
                 </div>
 
                 <div class="slider__bot__right">
-                    <div><a href="#">view site</a></div>
-                    <div><a href="#">view code</a></div>
+                    <div class="slider__bot__div"><a href="#">view site</a></div>
+                    <div class="slider__bot__div"><a href="#">view code</a></div>
                 </div>
             </div>
         </section>
@@ -420,10 +434,10 @@
         <section id="quizParallax">
             <!-- quizParallax__tum -->
             <div class="quizParallax__tum">
-                <h3>quiz&<span>parallax</span></h3>
-                <h2>QUESTION</h2>
-                <h2>MOVE</h2>
-                <p>
+                <h3 class="quizParallax__tum__first">quiz&<span>parallax</span></h3>
+                <h2 class="quizParallax__tum__second">QUESTION</h2>
+                <h2 class="quizParallax__tum__third">MOVE</h2>
+                <p class="quizParallax__tum__four">
                     I'd like to show you the results of creating a quiz effect and a parallax effect that<br>
                     brings the atmosphere to life on the website. I was able to share the code for the process<br>
                     of creating the effect and show the results I have learned and produce them.
@@ -435,18 +449,18 @@
             <div class="quiz">
                 <div class="quiz__img">
                     <a href="#">
-                        <img src="assets/img/quiz1.jpg" alt="퀴즈조각1">
-                        <img src="assets/img/quiz2.jpg" alt="퀴즈조각2">
-                        <img src="assets/img/quiz3.jpg" alt="퀴즈조각3">
-                        <img src="assets/img/quiz4.jpg" alt="퀴즈조각4">
-                        <img src="assets/img/quiz5.jpg" alt="퀴즈조각5">
+                        <img class="quiz1" src="assets/img/quiz1.jpg" alt="퀴즈조각1">
+                        <img class="quiz2" src="assets/img/quiz2.jpg" alt="퀴즈조각2">
+                        <img class="quiz3" src="assets/img/quiz3.jpg" alt="퀴즈조각3">
+                        <img class="quiz4" src="assets/img/quiz4.jpg" alt="퀴즈조각4">
+                        <img class="quiz5" src="assets/img/quiz5.jpg" alt="퀴즈조각5">
                     </a>
                 </div>
                 <div class="quiz__desc">
-                    <h2>&quiz</h2>
+                    <h2 class="quiz__desc__h2">&quiz</h2>
                     <ul>
-                        <li><a href="#">quiz view</a></li>
-                        <li><a href="#">code view</a></li>
+                        <li class="quizView"><a href="#">quiz view</a></li>
+                        <li class="quizView"><a href="#">code view</a></li>
                     </ul>
                 </div>
             </div>
@@ -454,7 +468,7 @@
 
             <!-- parallax -->
             <div class="parallax">
-                <div class="parallax__img">
+                <div class="parallax__img reveal">
                     <a href="#">
                         <img src="assets/img/parallax1.jpg" alt="페럴렉스1">
                         <img src="assets/img/parallax2.jpg" alt="페럴렉스2">
@@ -462,15 +476,15 @@
                     </a>
                 </div>
                 <div class="parallax__desc">
-                    <h2>&<span>parallax</span></h2>
-                    <p>
+                    <h2 class="parallax__desc__h2">&<span>parallax</span></h2>
+                    <p class="parallax__desc__p">
                         단조로울 수 있는 웹사이트에 숨결을 불어넣기 위한 생각으로 페럴렉스 이펙트를 제작해보았습니다.<br>
                         해당 과정에서 제가 배워온 자바스크립트에 대한 기본적인 지식과 메서드를 활용하여 구조화를 시켰으며,<br>
                         하나의 형태의 자바스크립트가 아닌 가능성을 열어둔 여러 자바스크립트 형태를 사용했습니다.
                     </p>
                     <ul>
-                        <li><a href="#">quiz view</a></li>
-                        <li><a href="#">code view</a></li>
+                        <li class="parallaxView"><a href="#">quiz view</a></li>
+                        <li class="parallaxView"><a href="#">code view</a></li>
                     </ul>
                 </div>
             </div>
@@ -484,10 +498,20 @@
             <div id="frontStart">
                 <div class="front__desc">
                     <div class="front__title">
-                        <h2>Front.end</h2>
-                        <h3>React&Vue</h3>
+                        <h2 class="front__title__h2">
+                            <span>F</span>
+                            <span>r</span>
+                            <span>o</span>
+                            <span>n</span>
+                            <span>t</span>
+                            <span>.</span>
+                            <span>e</span>
+                            <span>n</span>
+                            <span>d</span>
+                        </h2>
+                        <!-- <h3 class="front__title__h3">React&Vue</h3> -->
                     </div>
-                    <p>
+                    <p class="front__desc__p">
                         I think the front end is the beginning of the developer. Although it is weak,<br>
                         I would like to show you the portfolio of websites that I have collected and organized various data by applying<br>
                         API to the react and vue I have learned, and I would like to announce the beginning of my development.
@@ -500,14 +524,15 @@
             <div id="reactSite">
                 <div class="reactSite">
                     <div class="reactSite__desc">
-                        <h2>react site</h2>
-                        <ul>
+                        <h2 class="reactSite__desc__h2">react site</h2>
+                        <ul class="reactSite__desc__ul">
                             <li><a href="#">site view</a></li>
                             <li><a href="#">code view</a></li>
                         </ul>
                     </div>
                     <div class="reactSite__img">
-                        <img src="assets/img/reactSite.jpg" alt="리액트사이트사진">
+                        <img class="reactSite1" src="assets/img/reactSite1.jpg" alt="리액트사이트사진">
+                        <img class="reactSite2" src="assets/img/reactSite2.jpg" alt="리액트사이트사진">
                     </div>
                 </div>
                 <div class="reactSite__side">Foundation</div>
@@ -516,7 +541,7 @@
 
             <!-- reactView -->
             <div id="reactView">
-                <div class="react__api">
+                <div class="react__api box">
                     <div class="react__api__desc">
                         <div>1</div>
                         <h2>react api</h2>
@@ -532,7 +557,7 @@
                     </div>
                 </div>
 
-                <div class="react__youtube">
+                <div class="react__youtube box">
                     <div class="react__youtube__img">
                         <img src="assets/img/reactYoutube.jpg" alt="리액트유튜브사진">
                     </div>
@@ -918,6 +943,18 @@
         window.onunload = function () {
         window.clearInterval(interval);
         }
+    </script>
+
+    <script>
+        const circle = document.querySelector(".mouseCircle");
+
+        document.addEventListener("mousemove", (e) => {
+
+            const mouseX = e.clientX;
+            const mouseY = e.clientY;
+            circle.style.left = mouseX + 'px';
+            circle.style.top = mouseY + 'px';
+        });
     </script>
 </body>
 </html>
