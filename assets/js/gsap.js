@@ -552,6 +552,48 @@ jS1.from('#javascriptStart > p', {
 
 
 
+// javascriptBasic
+let jB1 = gsap.timeline({delay: 1.5});
+
+jB1.from('.javascriptBasic__title__h2', {
+    scrollTrigger: {
+        trigger: "#javascriptBasic",
+        start: "10% 20%",
+        end: "20%",
+        markers: true,
+        scrub: 1,
+    },
+    opacity: 0,
+    duration: 1,
+    ease: "power4",
+}, 0)
+jB1.from('#method__change', {
+    scrollTrigger: {
+        trigger: "#javascriptBasic",
+        start: "10% 20%",
+        end: "20%",
+        markers: true,
+        scrub: 1,
+    },
+    opacity: 0,
+    duration: 1,
+    ease: "power4",
+}, 0)
+jB1.from('.javascriptBasic__desc', {
+    scrollTrigger: {
+        trigger: "#javascriptBasic",
+        start: "10% 20%",
+        end: "20%",
+        markers: true,
+        scrub: 1,
+    },
+    opacity: 0,
+    duration: 1,
+    ease: "power4",
+}, 0)
+
+
+
 // gameMouseTum
 let gMT1 = gsap.timeline({delay: 1.5});
 
@@ -1232,12 +1274,12 @@ let f1 = gsap.timeline({delay: 1.5});
 f1.to('.reactSite2', {
     scrollTrigger: {
         trigger: "#reactSite",
-        start: "-100% 00%",
-        end: "100%",
+        start: "-200% 00%",
+        end: "75%",
         markers: true,
         scrub: 1,
     },
-    x: -7500,
+    x: -10000,
     duration: 1,
     ease: "power4.in",
 }, 0)
@@ -1246,7 +1288,7 @@ f1.from('.reactSite__desc__h2', {
         trigger: "#reactSite",
         start: "-50% 00%",
         end: "0%",
-        markers: true,
+        markers: false,
         scrub: 1,
     },
     opacity: 0,
