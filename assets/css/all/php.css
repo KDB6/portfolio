@@ -16,7 +16,7 @@
 .phpStart__left__top > h2 {
     font-size: var(--font-size100);
     text-decoration-line: line-through;
-    text-decoration-thickness: 5%;
+    text-decoration-thickness: 4%;
     font-weight: 100;
     margin-top: 1vw;
 }

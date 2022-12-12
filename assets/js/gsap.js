@@ -1401,3 +1401,21 @@ ScrollTrigger.create({
     start: "top top",
     end: "bottom top",
 });
+
+
+
+// php
+let pS1 = gsap.timeline({delay: 1.5});
+
+pS1.from('#phpStart', {
+    scrollTrigger: {
+        trigger: "#phpStart",
+        start: "0% 00%",
+        end: "+=1000",
+        markers: true,
+        pin: true,
+        scrub: 1,
+    },
+    duration: 1,
+    ease: "power4.in",
+}, 0)
