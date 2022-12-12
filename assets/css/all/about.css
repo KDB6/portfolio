@@ -43,7 +43,7 @@
     height: 1px;
     background: var(--colorB);
     left: 0;
-    top: -10px;
+    top: -1vw;
 }
 .about__desc > p {
     font-family: "SCoreDream";

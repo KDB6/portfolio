@@ -341,8 +341,8 @@ wR1.from('.view', {
 // webStandard img
 const options = {
     root: null,
-    rootMargin: "200px",
-    threshold: 1,
+    rootMargin: "0px",
+    threshold: 0.9,
 };
 let revealCallback = (entries, self) => {
     entries.forEach((entry) => {
@@ -362,15 +362,15 @@ let revealCallback = (entries, self) => {
                 clipPath: "polygon(0 0, 0 0, 0 100%, 0% 100%)"
             },
             {
-                clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
-                duration: 1,
+                clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)",
+                duration: 1.5,
                 ease: easeInOut
             }
         );
-        revealAnim.from(img, 1, {
-            scale: 1.7,
+        revealAnim.from(img, 4, {
+            scale: 1.6,
             ease: easeInOut,
-            delay: -1,
+            delay: -1.5,
         });
             self.unobserve(entry.target);
         }
@@ -449,7 +449,7 @@ wR1.from('.viewR', {
 const options2 = {
     root: null,
     rootMargin: "500px",
-    threshold: 1,
+    threshold: 0.9,
 };
 let revealCallback2 = (entries, self) => {
     entries.forEach((entry) => {
@@ -470,14 +470,14 @@ let revealCallback2 = (entries, self) => {
             },
             {
                 clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
-                duration: 1,
+                duration: 1.5,
                 ease: easeInOut
             }
         );
-        revealAnim.from(img, 1, {
-            scale: 1.8,
+        revealAnim.from(img, 4, {
+            scale: 1.6,
             ease: easeInOut,
-            delay: -1
+            delay: -1.5,
         });
             self.unobserve(entry.target);
         }
@@ -547,14 +547,6 @@ jS1.from('#javascriptStart > p', {
 
 
 // javascriptBasic
-ScrollTrigger.create({
-    trigger: "#javascriptBasic",
-    start: "5% 00%",
-    pin: "#javascriptBasic",
-    markers: false,
-    end: "bottom top",
-});
-
 let jB1 = gsap.timeline({delay: 1.5});
 
 jB1.from('#method__change', {
@@ -592,7 +584,7 @@ gMT1.from('#gameMouseTum', {
         trigger: ".javascriptBasic__right",
         start: "110% 20%",
         end: "126%",
-        markers: true,
+        markers: false,
         scrub: 1,
     },
     width: 0,
@@ -1171,7 +1163,7 @@ qP1.from('.quizView', {
     duration: 1,
     ease: "power4.in",
 }, 0)
-qP1.from('.parallax__img', {
+qP1.from('.parallax1', {
     scrollTrigger: {
         trigger: ".parallax",
         start: "-100% 00%",
@@ -1179,6 +1171,7 @@ qP1.from('.parallax__img', {
         markers: false,
         scrub: 1,
     },
+    y: 100,
     opacity: 0,
     duration: 1,
     ease: "power4.in",
