@@ -553,6 +553,14 @@ jS1.from('#javascriptStart > p', {
 
 
 // javascriptBasic
+ScrollTrigger.create({
+    trigger: "#javascriptBasic",
+    start: "5% 00%",
+    pin: "#javascriptBasic",
+    markers: true,
+    end: "bottom top",
+});
+
 let jB1 = gsap.timeline({delay: 1.5});
 
 jB1.from('.javascriptBasic__title__h2', {
@@ -560,7 +568,7 @@ jB1.from('.javascriptBasic__title__h2', {
         trigger: "#javascriptBasic",
         start: "10% 20%",
         end: "20%",
-        markers: true,
+        markers: false,
         scrub: 1,
     },
     opacity: 0,
@@ -572,7 +580,7 @@ jB1.from('#method__change', {
         trigger: "#javascriptBasic",
         start: "10% 20%",
         end: "20%",
-        markers: true,
+        markers: false,
         scrub: 1,
     },
     opacity: 0,
@@ -584,7 +592,7 @@ jB1.from('.javascriptBasic__desc', {
         trigger: "#javascriptBasic",
         start: "10% 20%",
         end: "20%",
-        markers: true,
+        markers: false,
         scrub: 1,
     },
     opacity: 0,
@@ -1334,7 +1342,6 @@ r1.from('.front__desc__p', {
 }, 0)
 ScrollTrigger.create({
     trigger: ".react__api",
-    start: "-50% 00%",
     pin: ".react__api",
     markers: false,
     start: "top top",
@@ -1342,7 +1349,6 @@ ScrollTrigger.create({
   });
 ScrollTrigger.create({
     trigger: ".react__api",
-    start: "-50% 00%",
     pin: ".react__youtube",
     markers: false,
     start: "top top",
@@ -1376,7 +1382,6 @@ gsap.fromTo('.vueView__h2 span', {
 })
 ScrollTrigger.create({
     trigger: ".vueSite",
-    start: "-50% 00%",
     pin: ".vueSite",
     markers: true,
     start: "top top",
@@ -1384,7 +1389,6 @@ ScrollTrigger.create({
   });
 ScrollTrigger.create({
     trigger: ".vueApi",
-    start: "-50% 00%",
     pin: ".vueApi",
     markers: true,
     start: "top top",
