@@ -129,7 +129,7 @@ gsap.registerPlugin(ScrollTrigger);
 const lenis = new Lenis({
     duration: 1.2,
     easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou
-    smooth: true,
+    smooth: false,
 });
 function raf(time) {
     lenis.raf(time);
@@ -557,7 +557,7 @@ ScrollTrigger.create({
     trigger: "#javascriptBasic",
     start: "5% 00%",
     pin: "#javascriptBasic",
-    markers: true,
+    markers: false,
     end: "bottom top",
 });
 
@@ -605,6 +605,18 @@ jB1.from('.javascriptBasic__desc', {
 // gameMouseTum
 let gMT1 = gsap.timeline({delay: 1.5});
 
+gMT1.from('#gameMouseTum', {
+    scrollTrigger: {
+        trigger: ".javascriptBasic__right",
+        start: "110% 20%",
+        end: "126%",
+        markers: true,
+        scrub: 1,
+    },
+    width: 0,
+    duration: 1,
+    ease: "power4",
+}, 0)
 gMT1.from('.gameMouseTumH2', {
     scrollTrigger: {
         trigger: ".javascriptBasic__right",
@@ -614,18 +626,6 @@ gMT1.from('.gameMouseTumH2', {
         scrub: 1,
     },
     opacity: 0,
-    duration: 1,
-    ease: "power4",
-}, 0)
-gMT1.from('#gameMouseTum', {
-    scrollTrigger: {
-        trigger: ".javascriptBasic__right",
-        start: "100% 20%",
-        end: "130%",
-        markers: false,
-        scrub: 1,
-    },
-    width: 0,
     duration: 1,
     ease: "power4",
 }, 0)
@@ -732,7 +732,7 @@ gL1.from('.gameList__left', {
         trigger: "#gameList",
         start: "-30% 20%",
         end: "00%",
-        markers: true,
+        markers: false,
         scrub: 1,
     },
     opacity: 0,
@@ -814,7 +814,7 @@ m1.from('.mouse__desc__h2', {
         trigger: "#mouse",
         start: "20% 0%",
         end: "40%",
-        markers: true,
+        markers: false,
         scrub: 1,
     },
     opacity: 0,
@@ -826,7 +826,7 @@ m1.from('.mouse__desc__p', {
         trigger: "#mouse",
         start: "20% 0%",
         end: "40%",
-        markers: true,
+        markers: false,
         scrub: 1,
     },
     opacity: 0,
@@ -838,7 +838,7 @@ m1.from('.mouse__desc__view', {
         trigger: "#mouse",
         start: "20% 0%",
         end: "40%",
-        markers: true,
+        markers: false,
         scrub: 1,
     },
     opacity: 0,
@@ -922,7 +922,7 @@ let se1 = gsap.timeline({delay: 1.5});
 //         end: "+=1000",
 //         markers: false,
 //         scrub: 1,
-//         pin: true
+//         pin: false
 //     },
 //     duration: 1,
 //     ease: "power4",
@@ -990,7 +990,7 @@ let sL1 = gsap.timeline({delay: 1.5});
 //         end: "+=000",
 //         markers: false,
 //         scrub: 1,
-//         pin: true,
+//         pin: false,
 //     },
 //     duration: 1,
 //     ease: "power4",
@@ -1279,23 +1279,11 @@ let r1 = gsap.timeline({delay: 1.5});
 //     duration: 1,
 //     ease: "power4.in",
 // }, 0)
-r1.to('.reactSite2', {
-    scrollTrigger: {
-        trigger: "#reactSite",
-        start: "-200% 00%",
-        end: "75%",
-        markers: false,
-        scrub: 1,
-    },
-    x: -10000,
-    duration: 1,
-    ease: "power4.in",
-}, 0)
 r1.from('.reactSite__desc__h2', {
     scrollTrigger: {
         trigger: "#reactSite",
         start: "-50% 00%",
-        end: "0%",
+        end: "-10%",
         markers: false,
         scrub: 1,
     },
@@ -1307,11 +1295,23 @@ r1.from('.reactSite__desc__ul', {
     scrollTrigger: {
         trigger: "#reactSite",
         start: "-50% 00%",
-        end: "0%",
+        end: "-10%",
         markers: false,
         scrub: 1,
     },
     opacity: 0,
+    duration: 1,
+    ease: "power4.in",
+}, 0)
+r1.to('.reactSite2', {
+    scrollTrigger: {
+        trigger: "#reactSite",
+        start: "-200% 00%",
+        end: "75%",
+        markers: false,
+        scrub: 1,
+    },
+    x: -10000,
     duration: 1,
     ease: "power4.in",
 }, 0)
@@ -1383,14 +1383,14 @@ gsap.fromTo('.vueView__h2 span', {
 ScrollTrigger.create({
     trigger: ".vueSite",
     pin: ".vueSite",
-    markers: true,
+    markers: false,
     start: "top top",
     end: "bottom top",
   });
 ScrollTrigger.create({
     trigger: ".vueApi",
     pin: ".vueApi",
-    markers: true,
+    markers: false,
     start: "top top",
     end: "bottom top",
 });
