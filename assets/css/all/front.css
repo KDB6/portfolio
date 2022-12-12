@@ -225,6 +225,12 @@
 #vueView {
     margin-top: 15%;
 }
+.box2 {
+    position: relative;
+    overflow: hidden;
+    height: 120vh;
+    width: 100%;
+}
 #vueView > h2 {
     font-size: var(--font-size100);
     font-weight: 500;
@@ -236,6 +242,7 @@
     justify-content: space-between;
     border-top: 1px solid var(--colorW);
     border-bottom: 1px solid var(--colorW);
+    height: 100vh;
 }
 .vueSite__desc {
     width: 50%;
@@ -266,6 +273,10 @@
 }
 .vueSite__img {
     width: 50%;
+}
+.vueSite__img > a img {
+    height: 99.8vh;
+    object-fit: cover;
 }
 .vueSite__bot {
     display: flex;
@@ -304,6 +315,11 @@
 }
 .vueApi__img {
     width: 50%;
+    border-right: 1px solid var(--colorW);
+}
+.vueApi__img > a img {
+    height: 99.8vh;
+    object-fit: cover;
 }
 .vueApi__desc {
     width: 50%;
@@ -311,7 +327,6 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
-    border-left: 1px solid var(--colorW);
 }
 .vueApi__desc__title {
     padding: 2vw;
