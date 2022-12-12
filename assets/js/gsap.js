@@ -570,18 +570,6 @@ ScrollTrigger.create({
 
 let jB1 = gsap.timeline({delay: 1.5});
 
-jB1.from('.javascriptBasic__title__h2', {
-    scrollTrigger: {
-        trigger: "#javascriptBasic",
-        start: "10% 20%",
-        end: "20%",
-        markers: false,
-        scrub: 1,
-    },
-    opacity: 0,
-    duration: 1,
-    ease: "power4",
-}, 0)
 jB1.from('#method__change', {
     scrollTrigger: {
         trigger: "#javascriptBasic",

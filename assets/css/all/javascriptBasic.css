@@ -10,7 +10,7 @@
     padding: 5% 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 .javascriptBasic__title {
     margin-left: 6%;
