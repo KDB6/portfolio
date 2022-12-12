@@ -1374,3 +1374,19 @@ gsap.fromTo('.vueView__h2 span', {
         amount: 0.5,
     },
 })
+ScrollTrigger.create({
+    trigger: ".vueSite",
+    start: "-50% 00%",
+    pin: ".vueSite",
+    markers: true,
+    start: "top top",
+    end: "bottom top",
+  });
+ScrollTrigger.create({
+    trigger: ".vueSite",
+    start: "-50% 00%",
+    pin: ".vueApi",
+    markers: true,
+    start: "top top",
+    end: "bottom top+=100%",
+});
