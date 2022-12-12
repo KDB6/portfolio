@@ -1383,10 +1383,10 @@ ScrollTrigger.create({
     end: "bottom top",
   });
 ScrollTrigger.create({
-    trigger: ".vueSite",
+    trigger: ".vueApi",
     start: "-50% 00%",
     pin: ".vueApi",
     markers: true,
     start: "top top",
-    end: "bottom top+=100%",
+    end: "bottom top",
 });
