@@ -237,7 +237,7 @@
     text-decoration: underline;
 }
 .tetris__desc > p:last-child span {
-    margin-right: 0.5%;
+    margin-right: 1.5%;
 }
 .tetris__desc > p:last-child span a {
     color: var(--colorB);

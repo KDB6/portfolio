@@ -1245,18 +1245,19 @@ gsap.fromTo('.front__title__h2 span', {
         markers: true,
         scrub: 1,
     },
-    delay: 1,
-    duration: 1,
-    x: 0,
-    opacity: 1,
-    ease: 'power2.easeOut',
-    stagger: {
-        from: 'start',
-        amount: 0.5,
-},
+        delay: 1,
+        duration: 1,
+        x: 0,
+        opacity: 1,
+        ease: 'power2.easeOut',
+        stagger: {
+            from: 'start',
+            amount: 0.5,
+    },
 })
 
-let f1 = gsap.timeline({delay: 1.5});
+// reactView
+let r1 = gsap.timeline({delay: 1.5});
 
 // qP1.from('.front__title__h3', {
 //     scrollTrigger: {
@@ -1270,8 +1271,7 @@ let f1 = gsap.timeline({delay: 1.5});
 //     duration: 1,
 //     ease: "power4.in",
 // }, 0)
-
-f1.to('.reactSite2', {
+r1.to('.reactSite2', {
     scrollTrigger: {
         trigger: "#reactSite",
         start: "-200% 00%",
@@ -1283,7 +1283,7 @@ f1.to('.reactSite2', {
     duration: 1,
     ease: "power4.in",
 }, 0)
-f1.from('.reactSite__desc__h2', {
+r1.from('.reactSite__desc__h2', {
     scrollTrigger: {
         trigger: "#reactSite",
         start: "-50% 00%",
@@ -1295,7 +1295,7 @@ f1.from('.reactSite__desc__h2', {
     duration: 1,
     ease: "power4.in",
 }, 0)
-f1.from('.reactSite__desc__ul', {
+r1.from('.reactSite__desc__ul', {
     scrollTrigger: {
         trigger: "#reactSite",
         start: "-50% 00%",
@@ -1307,7 +1307,7 @@ f1.from('.reactSite__desc__ul', {
     duration: 1,
     ease: "power4.in",
 }, 0)
-f1.from('.reactSite__side', {
+r1.from('.reactSite__side', {
     scrollTrigger: {
         trigger: "#reactSite",
         start: "-50% 00%",
@@ -1320,7 +1320,7 @@ f1.from('.reactSite__side', {
     duration: 1,
     ease: "power4.in",
 }, 0)
-f1.from('.front__desc__p', {
+r1.from('.front__desc__p', {
     scrollTrigger: {
         trigger: "#frontStart",
         start: "-50% 00%",
@@ -1340,7 +1340,6 @@ ScrollTrigger.create({
     start: "top top",
     end: "bottom top",
   });
-
 ScrollTrigger.create({
     trigger: ".react__api",
     start: "-50% 00%",
@@ -1349,3 +1348,29 @@ ScrollTrigger.create({
     start: "top top",
     end: "bottom top+=100%",
 });
+
+// vueView
+let v1 = gsap.timeline({delay: 1.5});
+
+gsap.fromTo('.vueView__h2 span', {
+    x: 50,
+    opacity: 0,
+},
+{
+    scrollTrigger: {
+        trigger: "#vueView",
+        start: "-30% 00%",
+        end: "00%",
+        markers: true,
+        scrub: 1,
+    },
+    delay: 1,
+    duration: 1,
+    x: 0,
+    opacity: 1,
+    ease: 'power2.easeOut',
+    stagger: {
+        from: 'start',
+        amount: 0.5,
+    },
+})
