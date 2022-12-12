@@ -70,6 +70,15 @@
     margin-left: 20%;
     position: relative;
 }
+.parallax1 {
+    z-index: 5;
+}
+.parallax2 {
+    z-index: 3;
+}
+.parallax1 {
+    z-index: 1;
+}
 .parallax__desc {
     text-align: right;
     position: absolute;

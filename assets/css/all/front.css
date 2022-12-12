@@ -85,8 +85,8 @@
 }
 .reactSite2 {
     position: absolute;
-    top: 1.05vw;
-    right: -100vw;
+    top: 1.025vw;
+    left: 0vw;
 }
 .reactSite__side {
     rotate: 90deg;

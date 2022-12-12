@@ -362,7 +362,7 @@ let revealCallback = (entries, self) => {
                 clipPath: "polygon(0 0, 0 0, 0 100%, 0% 100%)"
             },
             {
-                clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)",
+                clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
                 duration: 1.5,
                 ease: easeInOut
             }
@@ -1166,15 +1166,40 @@ qP1.from('.quizView', {
 qP1.from('.parallax1', {
     scrollTrigger: {
         trigger: ".parallax",
-        start: "-100% 00%",
-        end: "-50%",
+        start: "-60% 30%",
+        end: "-40%",
         markers: false,
         scrub: 1,
     },
-    y: 100,
     opacity: 0,
     duration: 1,
-    ease: "power4.in",
+    ease: "power4.out",
+}, 0)
+qP1.from('.parallax2', {
+    scrollTrigger: {
+        trigger: ".parallax",
+        start: "-40% 30%",
+        end: "-20%",
+        markers: false,
+        scrub: 1,
+    },
+    y: -200,
+    opacity: 0,
+    duration: 1,
+    ease: "power4.out",
+}, 0)
+qP1.from('.parallax3', {
+    scrollTrigger: {
+        trigger: ".parallax",
+        start: "-20% 30%",
+        end: "-0%",
+        markers: false,
+        scrub: 1,
+    },
+    y: -200,
+    opacity: 0,
+    duration: 1,
+    ease: "power4.out",
 }, 0)
 qP1.from('.parallax__desc__h2', {
     scrollTrigger: {
@@ -1278,15 +1303,15 @@ r1.from('.reactSite__desc__ul', {
     duration: 1,
     ease: "power4.in",
 }, 0)
-r1.to('.reactSite2', {
+r1.from('.reactSite2', {
     scrollTrigger: {
         trigger: "#reactSite",
-        start: "-200% 00%",
-        end: "75%",
-        markers: false,
+        start: "-50% 20%",
+        end: "20% 20%",
+        markers: true,
         scrub: 1,
     },
-    x: -10000,
+    x: 2000,
     duration: 1,
     ease: "power4.in",
 }, 0)

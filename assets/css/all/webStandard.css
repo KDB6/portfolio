@@ -16,7 +16,6 @@
     /* z-index: -1; */
 }
 .webStandard__img > img {
-    width: 90%;
     left: 0;
     opacity: 1;
 }
@@ -53,9 +52,9 @@
     color: var(--colorB);
 }
 .reveal {
-    visibility: hidden;
     position: relative;
-    width: 100%;
+    visibility: hidden;
+    width: 90%;
 }
 
 /* 이미지 호버시 */
