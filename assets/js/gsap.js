@@ -137,37 +137,44 @@ function raf(time) {
 }
 requestAnimationFrame(raf);
 
+
+
+// header
+let h1 = gsap.timeline({delay: 1});
+
+h1.from('.header__inner', {
+    opacity: 0,
+    ease: 'power4',
+    duration: 2,
+}, 0)
+
+
+
 // thumbnail
 let t1 = gsap.timeline({delay: 1});
-let t2 = gsap.timeline({delay: 1.5});
-let t3 = gsap.timeline({delay: 1.8});
-let t4 = gsap.timeline({delay: 4});
 
-t1.from('.header__inner', {
+// gsap.fromTo('.tum__inner__title span', {
+//     x: 50,
+//     opacity: 0,
+// },
+// {
+//     delay: 1,
+//     duration: 1,
+//     x: 0,
+//     opacity: 1,
+//     ease: 'power2.easeOut',
+//     stagger: {
+//         from: 'start',
+//         amount: 0.5,
+//     },
+// })
+t1.from('.tum__inner__title', {
     opacity: 0,
     ease: 'power4',
     duration: 2,
 }, 0)
-t1.from('.tum__inner > h2', {
-    opacity: 0,
-    ease: 'power4',
-    duration: 2,
-}, 0)
-t2.from('.tum__inner__top', {
-    opacity: 0,
-    ease: 'power4',
-    duration: 2,
-}, 0)
-t3.from('.tum__inner__bot', {
-    opacity: 0,
-    ease: 'power4',
-    duration: 2,
-}, 0)
-t4.from('.link', {
-    opacity: 0,
-    duration: 2,
-    ease: "power4",
-}, 0)
+
+
 
 // about
 let a1 = gsap.timeline({delay: 0.5});

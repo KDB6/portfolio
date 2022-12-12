@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>thumbnail</title>
+
+  <style>
+    #thumbnail {
+        font-family: var(--font-main);
+        color: var(--colorW);
+        width: 100%;
+        height: 100vh;
+        font-weight: 100;
+    }
+    #canvas1 {
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+        top: 0;
+        left: 0;
+        filter:url(#goo);
+        opacity: 1;
+    }
+    #canvas2 {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        opacity: 1;
+    }
+    .tum__inner {
+        display: grid;
+        place-content: center;
+        height: 100vh;
+        margin-right: 15vw;
+    }
+    .tum__inner > h2 {
+        font-size: var(--font-size24);
+        margin-bottom: 1.5vw;
+        z-index: 5;
+        color: transparent; 
+        text-shadow: 0 0 1px #eee;
+    }
+    .tum__inner > h2:hover {
+        text-shadow: 0 0 0px #eee;
+    }
+    .tum__inner__top {
+        font-size: var(--font-size40);
+        z-index: 5;
+        line-height: 1.4;
+        color: transparent; 
+        text-shadow: 0 0 2px #eee;
+    }
+    .tum__inner__top:hover {
+        text-shadow: 0 0 0px #eee;
+    }
+    .tum__inner__bot {
+        font-family: var(--font-sub);
+        font-size: var(--font-size14);
+        display: flex;
+        margin-top: 5vw;
+        z-index: 5;
+    }
+    .tum__inner__bot > div a {
+        color: transparent; 
+        text-shadow: 0 0 2px #eee;
+    }
+    .tum__inner__bot > div a:hover {
+        text-shadow: 0 0 0px #eee;
+    }
+    .tum__inner__bot > div:nth-child(2) {
+        margin-left: 20vw;
+    }
+
+    /* rotate */
+    .link {
+        width: 7rem;
+        height: 7rem;
+        display: inline-block;
+        font-family: var(--font-main);
+        word-spacing: 20px;
+        font-size: var(--font-size20);
+        font-weight: 100;
+        letter-spacing: 0.5vw;
+        word-spacing: 1.2vw;
+        position: fixed;
+        right: 2.5vw;
+        bottom: 1.5vw;
+        z-index: 10;
+    }
+    .link__svg {
+        width: 100%;
+        height: auto;
+        transform-box: fill-box;
+        fill: var(--colorB);
+        stroke: var(--colorB);
+        stroke-width: 0.05em;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+    }
+    .link__cloud {
+        transform-origin: 50% 50%;
+        -webkit-animation: rotate normal infinite 60s linear;
+                animation: rotate normal infinite 60s linear;
+        fill: rgba(255, 255, 255, 0.15);
+    }
+    .link__face, .link__arrow {
+        transform-origin: 50% 50%;
+        transition: transform 0.15s cubic-bezier(0.32, 0, 0.67, 0);
+    }
+    .link:hover .link__face, .link:hover .link__arrow {
+        transform: scale(1.1);
+        transition: transform 0.3s cubic-bezier(0.33, 1, 0.68, 1);
+    }
+    .link__arrow {
+        stroke-width: 0.075em;
+    }
+    .link__text {
+      -webkit-animation: rotateReverse normal infinite 20s linear;
+                animation: rotateReverse normal infinite 20s linear;
+        transform-origin: 50% 50%;
+        color: var(--colorW);
+    }
+    .link:hover .link__text {
+        -webkit-animation-play-state: paused;
+                animation-play-state: paused;
+    }
+
+    @-webkit-keyframes rotate {
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes rotate {
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    @-webkit-keyframes rotateReverse {
+        to {
+            transform: rotate(-360deg);
+        }
+    }
+    @keyframes rotateReverse {
+        to {
+            transform: rotate(-360deg);
+        }
+    }
+  </style>
+</head>
+<body>
+  <section id="thumbnail" class="backColor rotate" data-color="#121212" data-fill="#121212" data-stroke="#121212">
+    <canvas id="canvas1"></canvas>
+    <canvas id="canvas2"></canvas>
+    <div class="tum__inner">
+        <h2>Developer&port</h2>
+        <div class="tum__inner__top">
+            This portfolio is a collection of courses<br>
+            that I've learned so far. I'm still inexperienced,<br>
+            but I'm telling you that I'm growing
+        </div>
+        <div class="tum__inner__bot">
+            <div><a href="https://ipkg7210.tistory.com/">/ blog</a></div>
+            <div><a href="https://github.com/KDB6">&github</a></div>
+        </div>
+    </div>
+        <div class="thumbnail__rotate">
+            <a href="https://github.com/KDB6" class="link">
+                <svg viewBox='0 0 200 200' width='200' height='200' xmlns='http://www.w3.org/2000/svg' class="link__svg" aria-labelledby="link1-title link1-desc">
+                    <title id="link1-title">view thank you</title>
+                    <desc id="link1-desc"></desc>
+            
+                    <path id="link-circle" class="link__path" d="M 20, 100 a 80,80 0 1,1 160,0 a 80,80 0 1,1 -160,0" stroke="none" fill="none" />
+            
+                    <path class="link__arrow" d="M 75 100 L 125 100 L 110 85 M 125 100 L 110 115"  fill="none" />
+            
+                    <text class="link__text">
+                        <textPath href="#link-circle" stroke="none">
+                            &developer github view
+                        </textPath>
+                    </text>
+                </svg>
+            </a>
+        </div>
+    </div>
+</section>
+
+  <script>
+
+  </script>
+</body>
+</html>

@@ -23,47 +23,21 @@
     opacity: 1;
 }
 .tum__inner {
+    height: 100vh;
+    padding-bottom: 10vw;
     display: grid;
     place-content: center;
-    height: 100vh;
-    margin-right: 15vw;
 }
-.tum__inner > h2 {
-    font-size: var(--font-size24);
-    margin-bottom: 1.5vw;
-    z-index: 5;
-    color: transparent; 
-    text-shadow: 0 0 1px #eee;
+.tum__inner__title {
+    font-size: var(--font-size120);
+    word-spacing: -1.5vw;
 }
-.tum__inner > h2:hover {
-    text-shadow: 0 0 0px #eee;
+.tum__inner__title span:nth-child(10) {
+    margin-right: 1vw;
 }
-.tum__inner__top {
-    font-size: var(--font-size40);
-    z-index: 5;
-    line-height: 1.4;
-    color: transparent; 
-    text-shadow: 0 0 2px #eee;
-}
-.tum__inner__top:hover {
-    text-shadow: 0 0 0px #eee;
-}
-.tum__inner__bot {
-    font-family: var(--font-sub);
+.tum__inner__desc {
+    margin-top: 2vw;
     font-size: var(--font-size14);
-    display: flex;
-    margin-top: 5vw;
-    z-index: 5;
-}
-.tum__inner__bot > div a {
-    color: transparent; 
-    text-shadow: 0 0 2px #eee;
-}
-.tum__inner__bot > div a:hover {
-    text-shadow: 0 0 0px #eee;
-}
-.tum__inner__bot > div:nth-child(2) {
-    margin-left: 20vw;
 }
 
 /* rotate */
