@@ -125,19 +125,6 @@ ScrollTrigger.create({
 
 
 // 글씨 gsap
-gsap.registerPlugin(ScrollTrigger);
-const lenis = new Lenis({
-    duration: 1.2,
-    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // https://www.desmos.com/calculator/brs54l4xou
-    smooth: false,
-});
-function raf(time) {
-    lenis.raf(time);
-    requestAnimationFrame(raf);
-}
-requestAnimationFrame(raf);
-
-
 
 // header
 let h1 = gsap.timeline({delay: 1});
@@ -1383,11 +1370,11 @@ ScrollTrigger.create({
     end: "bottom top",
   });
 ScrollTrigger.create({
-    trigger: ".vueApi",
+    trigger: ".vueSite",
     pin: ".vueApi",
     markers: false,
     start: "top top",
-    end: "bottom top",
+    end: "bottom top+=100%",
 });
 
 

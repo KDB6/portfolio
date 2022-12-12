@@ -555,7 +555,7 @@
             <!-- //reactSite -->
 
             <!-- reactView -->
-            <div id="reactView">
+            <div id="reactView" class="backColor rotate hedaerColor" data-color="#F8F4ED" data-fill="#eee" data-stroke="#eee" data-color2="#eee">
                 <div class="react__api box">
                     <div class="react__api__desc">
                         <div>1</div>
@@ -608,27 +608,35 @@
                             <div class="vueSite__desc__info">
                                 <h2>&vue site</h2>
                                 <p>
-                                    뷰를 사용하요 기초적인 웹사이트를 제작하였습니다.<br>
-                                    해당 과정에서는 모든 사용자가 불편함을 느껴지지 않도록 웹접근성을<br>
-                                    기준으로 하여금 제작하였습니다.
+                                    뷰를 사용하여 기초적인 웹사이트를 제작하였습니다.<br>
+                                    해당 과정에서는 모든 사용자가 불편함을 느껴지지 않도록<br>
+                                    웹접근성을 기준으로 하여금 제작하였습니다.
                                 </p>
+                            </div>
+                            <div class="vueSiteView">
+                                <div class="vueSite__viewSite">
+                                    <h2><a href="#">view site</a></h2>
+                                </div>
+                                <div class="vueSite__viewCode">
+                                    <h2><a href="#">view code</a></h2>
+                                </div>
                             </div>
                         </div>
                         <div class="vueSite__img">
                             <a href="#"><img src="assets/img/vueSite.jpg" alt="뷰사이트"></a>
                         </div>
                     </div>
-                    <div class="vueSite__bot">
+                    <!-- <div class="vueSite__bot">
                         <div class="vueSite__viewSite">
                             <h2><a href="#">view site</a></h2>
                         </div>
                         <div class="vueSite__viewCode">
                             <h2><a href="#">view code</a></h2>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
 
-                <div class="vueApi">
+                <div class="vueApi box2">
                     <div class="vueApi__top">
                         <div class="vueApi__img">
                             <a href="#"><img src="assets/img/vueApi.jpg" alt="뷰에이피아이사이트"></a>
@@ -644,16 +652,24 @@
                                     뷰에 대한 기초적인 지식을 토대로 다양한 API 데이터를 불러와 제작했습니다.
                                 </p>
                             </div>
+                            <div class="vueApiView">
+                                <div class="vueApi__viewSite">
+                                    <h2><a href="#">view site</a></h2>
+                                </div>
+                                <div class="vueApi__viewCode">
+                                    <h2><a href="#">view code</a></h2>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="vueApi__bot">
+                    <!-- <div class="vueApi__bot">
                         <div class="vueApi__viewSite">
                             <h2><a href="#">view site</a></h2>
                         </div>
                         <div class="vueApi__viewCode">
                             <h2><a href="#">view code</a></h2>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <!-- //vueSite -->
@@ -661,9 +677,9 @@
         <!-- // front -->
 
         <!-- php -->
-        <section id="php">
+        <section id="php"  class="backColor rotate hedaerColor" data-color="#121212" data-fill="#eee" data-stroke="#eee" data-color2="#eee">
             <!-- phpStart -->
-            <div id="phpStart" class="backColor rotate hedaerColor" data-color="#F8F4ED" data-fill="#121212" data-stroke="#121212" data-color2="#121212">
+            <div id="phpStart">
                 <div class="phpStart__left">
                     <div class="phpStart__left__top">
                         <h2>Hypertext Preprocessor</h2>
@@ -688,7 +704,7 @@
             <!-- //phpStart -->
 
             <!-- phpStudy -->
-            <div id="phpView" class="backColor rotate hedaerColor" data-color="#121212" data-fill="#eee" data-stroke="#eee" data-color2="#eee">
+            <div id="phpView">
                 <div class="phpStudy">
                     <div class="phpStudy__title">
                         <h2>php study</h2>
@@ -802,6 +818,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
     <script src="assets/js/gsap.js"></script>
+
+    <script>
+        const lenis = new Lenis({
+            duration: 1.2,
+            easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+        })
+
+        function raf(time) {
+            lenis.raf(time)
+            requestAnimationFrame(raf)
+        }
+
+        requestAnimationFrame(raf)
+    </script>
     
     <!-- thumbnail Animation -->
     <script>
@@ -971,8 +1001,8 @@
 
         document.addEventListener("mousemove", (e) => {
 
-            const mouseX = e.clientX;
-            const mouseY = e.clientY;
+            const mouseX = window.innerWidth;
+            const mouseY =window.innerHeight;
             circle.style.left = mouseX + 'px';
             circle.style.top = mouseY + 'px';
         });

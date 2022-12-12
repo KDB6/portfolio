@@ -228,7 +228,7 @@
 .box2 {
     position: relative;
     overflow: hidden;
-    height: 120vh;
+    height: 100vh;
     width: 100%;
 }
 #vueView > h2 {
@@ -236,6 +236,9 @@
     font-weight: 500;
     text-align: center;
     margin-bottom: 2%;
+}
+.vueSite {
+    position: relative;
 }
 .vueSite__top {
     display: flex;
@@ -248,15 +251,16 @@
     width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-end;
+    align-items: flex-start;
     border-right: 1px solid var(--colorW);
-}
-.vueSite__desc__title {
-    padding: 2vw;
 }
 .vueSite__desc__title > h3 {
     font-size: var(--font-size20);
     font-weight: 100;
+    position: absolute;
+    top: 0;
+    padding: 2vw;
 }
 .vueSite__desc__info {
     padding: 2vw;
@@ -278,7 +282,30 @@
     height: 99.8vh;
     object-fit: cover;
 }
-.vueSite__bot {
+.vueSiteView {
+    width: 100%;
+    display: flex;
+}
+.vueSite__viewSite { 
+    width: 50%;
+    text-align: center;
+    padding: 1vw 0;
+    border-top: 1px solid var(--colorW);
+    border-right: 1px solid var(--colorW);
+}
+.vueSite__viewSite a {
+    color: var(--colorW);
+}
+.vueSite__viewCode {
+    width: 50%;
+    text-align: center;
+    padding: 1vw 0;
+    border-top: 1px solid var(--colorW);
+}
+.vueSite__viewCode a {
+    color: var(--colorW);
+}
+/* .vueSite__bot {
     display: flex;
     border-bottom: 1px solid var(--colorW);
 }
@@ -306,6 +333,11 @@
     font-size: var(--font-size40);
     color: var(--colorW);
     font-weight: 100;
+} */
+
+.vueApi {
+    position: absolute; 
+    background: var(--colorB);
 }
 .vueApi__top {
     display: flex;
@@ -325,11 +357,13 @@
     width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: flex-end;
 }
 .vueApi__desc__title {
     padding: 2vw;
+    position: absolute;
+    top: 0;
 }
 .vueApi__desc__title > h3 {
     font-size: var(--font-size20);
@@ -350,7 +384,30 @@
     font-weight: 200;
     text-align: right;
 }
-.vueApi__bot {
+.vueApiView {
+    width: 100%;
+    display: flex;
+}
+.vueApi__viewSite { 
+    width: 50%;
+    text-align: center;
+    padding: 1vw 0;
+    border-top: 1px solid var(--colorW);
+    border-right: 1px solid var(--colorW);
+}
+.vueApi__viewSite a {
+    color: var(--colorW);
+}
+.vueApi__viewCode {
+    width: 50%;
+    text-align: center;
+    padding: 1vw 0;
+    border-top: 1px solid var(--colorW);
+}
+.vueApi__viewCode a {
+    color: var(--colorW);
+}
+/* .vueApi__bot {
     display: flex;
     border-bottom: 1px solid var(--colorW);
 }
@@ -378,4 +435,4 @@
     font-size: var(--font-size40);
     color: var(--colorW);
     font-weight: 100;
-}
+} */
