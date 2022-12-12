@@ -1352,7 +1352,7 @@ ScrollTrigger.create({
     pin: ".react__api",
     markers: false,
     start: "top top",
-    end: "bottom top",
+    end: "+=1000",
   });
 ScrollTrigger.create({
     trigger: ".react__api",
