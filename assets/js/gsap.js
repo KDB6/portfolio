@@ -792,7 +792,7 @@ let m1 = gsap.timeline({delay: 1.5});
 m1.from('.mouseH2', {
     scrollTrigger: {
         trigger: "#mouse",
-        start: "-50% 00%",
+        start: "-20% 00%",
         end: "20%",
         markers: false,
         scrub: 1,
@@ -1334,6 +1334,7 @@ f1.from('.front__desc__p', {
 }, 0)
 ScrollTrigger.create({
     trigger: ".react__api",
+    start: "-50% 00%",
     pin: ".react__api",
     markers: true,
     start: "top top",
@@ -1342,8 +1343,9 @@ ScrollTrigger.create({
 
 ScrollTrigger.create({
     trigger: ".react__api",
+    start: "-50% 00%",
     pin: ".react__youtube",
     markers: true,
     start: "top top",
-    end: "bottom top",
+    end: "bottom top+=100%",
 });
