@@ -30,12 +30,12 @@ ScrollTrigger.create({
 
 
 // header KDB6
-gsap.utils.toArray(".heaederColor").forEach((elem3) => {
+gsap.utils.toArray(".heaederColor").forEach((elem2) => {
 
-let color = elem3.getAttribute('data-color2');
+let color = elem2.getAttribute('data-color2');
 
 ScrollTrigger.create({
-    trigger: elem3,
+    trigger: elem2,
     start: 'top 5%',
     end: 'bottom 5%',
     markers: false,
@@ -58,12 +58,12 @@ ScrollTrigger.create({
     });
 });
 // header ul li a
-gsap.utils.toArray(".hedaerColor").forEach((elem3) => {
+gsap.utils.toArray(".hedaerColor").forEach((elem2) => {
 
-let color = elem3.getAttribute('data-color2');
+let color = elem2.getAttribute('data-color2');
 
 ScrollTrigger.create({
-    trigger: elem3,
+    trigger: elem2,
     start: 'top 5%',
     end: 'bottom 5%',
     markers: false,
@@ -89,13 +89,13 @@ ScrollTrigger.create({
 
 
 // rotate
-gsap.utils.toArray(".rotate").forEach((elem2) => {
+gsap.utils.toArray(".rotate").forEach((elem3) => {
 
-let fill = elem2.getAttribute('data-fill');
-let stroke = elem2.getAttribute('data-stroke');
+let fill = elem3.getAttribute('data-fill');
+let stroke = elem3.getAttribute('data-stroke');
 
 ScrollTrigger.create({
-    trigger: elem2,
+    trigger: elem3,
     start: 'top 5%',
     end: 'bottom 5%',
     markers: false,
@@ -1462,9 +1462,10 @@ ScrollTrigger.create({
 
 
 // php
-let pS1 = gsap.timeline({delay: 1.5});
+let pH1 = gsap.timeline({delay: 1});
 
-pS1.from('#phpStart', {
+// phpstart
+pH1.from('#phpStart', {
     scrollTrigger: {
         trigger: "#phpStart",
         start: "0% 00%",
@@ -1473,6 +1474,42 @@ pS1.from('#phpStart', {
         pin: true,
         scrub: 1,
     },
+    duration: 1,
+    ease: "power4.in",
+}, 0)
+pH1.from('.phpStart__left__middle__frist', {
+    scrollTrigger: {
+        trigger: "#phpStart",
+        start: "-20% 10%",
+        end: "30%",
+        markers: true,
+        scrub: 1,
+    },
+    opacity: 0,
+    duration: 1,
+    ease: "power4.in",
+}, 0)
+pH1.from('.phpStart__left__middle__second', {
+    scrollTrigger: {
+        trigger: "#phpStart",
+        start: "-20% 10%",
+        end: "30%",
+        markers: true,
+        scrub: 1,
+    },
+    opacity: 0,
+    duration: 1,
+    ease: "power4.in",
+}, 0)
+pH1.from('.phpStart__left__middle__third', {
+    scrollTrigger: {
+        trigger: "#phpStart",
+        start: "-20% 10%",
+        end: "30%",
+        markers: true,
+        scrub: 1,
+    },
+    opacity: 0,
     duration: 1,
     ease: "power4.in",
 }, 0)

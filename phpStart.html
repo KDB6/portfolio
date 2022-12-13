@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>phpStart</title>
+
+    <style>
+        #phpStart {
+            font-family: var(--font-main);
+            color: var(--colorW);
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            position: relative;
+        }
+        .phpStart__left {
+            width: 60%;
+            display: grid;
+            place-content: center;
+            align-content: space-between;
+        }
+        .phpStart__left__top > h2 {
+            font-size: var(--font-size100);
+            text-decoration-line: line-through;
+            text-decoration-thickness: 3%;
+            font-weight: 100;
+            margin-top: 1vw;
+        }
+        .phpStart__left__middle {
+            margin-bottom: 6vw;
+        }
+        .phpStart__left__middle > h3:first-child {
+            font-size: var(--font-size150);
+            font-weight: 100;
+        }
+        .phpStart__left__middle > h3:last-child {
+            font-size: var(--font-size100);
+            font-weight: 100;
+            position: absolute;
+            left: 15.8%;
+            bottom: 37.5%;
+        }
+        .phpStart__left__bot {
+            margin-bottom: 2.5vw;
+        }
+        .phpStart__left__bot > h2 {
+            font-size: var(--font-size40);
+        }
+        .phpStart__left__bot > p {
+            font-family: var(--font-sub);
+            font-size: var(--font-size14);
+        }
+
+        .phpStart__right {
+            width: 40%;
+            height: 40%;
+            bottom: 0;
+            align-self: end;
+        }
+        .phpStart__right > p {
+            position: absolute;
+            bottom: 0;
+            font-family: var(--font-sub);
+            font-size: var(--font-size14);
+            margin-bottom: 2.5vw;
+            margin-left: 22vw;
+        }
+    </style>
+</head>
+<body>
+    <div id="phpStart">
+        <div class="phpStart__left">
+            <div class="phpStart__left__top">
+                <h2 class="phpStart__left__top__h2">Hypertext Preprocessor</h2>
+            </div>
+            <div class="phpStart__left__middle">
+                <h3 class="phpStart__left__middle__frist">study</h3>
+                <h3 class="phpStart__left__middle__second">&project</h3>
+            </div>
+            <div class="phpStart__left__bot">
+                <h2>PHP</h2>
+                <p>
+                    The website was implemented in the basic structure using php.<br>
+                    The function has been implemented such as login, membership, and writing,<br>
+                    and it has a flawless structure that does not interrupt the flow.
+                </p>
+            </div>
+        </div>
+        <div class="phpStart__right">
+            <p>study and team project with Hypertext Preprocessor</p>
+        </div>
+    </div>
+</body>
+</html>
