@@ -34,10 +34,9 @@
 
 /* roof */
 :root {
-    --bg: #F8F4ED;
-    --colorW: #eee;
-    --colorE: #F8F4ED;
-    --colorB: #121212;
+    --bg: #F4E8DB;
+    --colorW: #F4E8DB;
+    --colorB: #222125;
 
     --font-main: "PP Eiko";
     --font-sub: "PP Neue Montreal";

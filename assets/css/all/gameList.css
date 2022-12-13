@@ -28,6 +28,11 @@
     justify-content: space-between;
     align-items: flex-end;
     margin-right: 3.5%;
+    border-bottom: 1px solid var(--colorB);
+    border-top: 1px solid var(--colorB);
+}
+.music__desc {
+    margin-bottom: 1vw;
 }
 .music__desc > h2 {
     color: var(--colorB);
@@ -58,15 +63,15 @@
 .music__window {
     width: 52%;
     height: 40vh;
-    background: var(--colorB);
+    /* background: var(--colorW); */
     position: relative;
     transition: all 0.5s;
 }
-.music__window:hover {
+/* .music__window:hover {
     background-image: url(/assets/img/musicImg.png);
     background-position: center;
     background-size: cover;
-}
+} */
 .music__window > img {
     width: 5%;
     position: absolute;
@@ -74,7 +79,7 @@
     right: 4%;
 }
 .music__window > h2 {
-    color: var(--colorW);
+    color: var(--colorB);
     font-size: var(--font-size60);
     font-weight: 100;
     position: absolute;
@@ -90,6 +95,10 @@
     align-items: flex-end;
     margin-top: 3.5%;
     margin-right: 3.5%;
+    border-bottom: 1px solid var(--colorB);
+}
+.search__desc {
+    margin-bottom: 1vw;
 }
 .search__desc > h2 {
     color: var(--colorB);
@@ -120,15 +129,15 @@
 .search__window {
     width: 52%;
     height: 40vh;
-    background: var(--colorB);
+    /* background: var(--colorB); */
     position: relative;
     transition: all 0.5s;
 }
-.search__window:hover {
+/* .search__window:hover {
     background-image: url(/assets/img/searchImg.png);
     background-position: center;
     background-size: cover;
-}
+} */
 .search__window > img {
     width: 25%;
     position: absolute;
@@ -136,7 +145,7 @@
     right: 4%;
 }
 .search__window > h2 {
-    color: var(--colorW);
+    color: var(--colorB);
     font-size: var(--font-size60);
     font-weight: 100;
     position: absolute;
@@ -152,6 +161,11 @@
     align-items: flex-end;
     margin-top: 3.5%;
     margin-right: 3.5%;
+    margin-bottom: 1vw;
+    border-bottom: 1px solid var(--colorB);
+}
+.card__desc {
+    margin-bottom: 1vw;
 }
 .card__desc > h2 {
     color: var(--colorB);
@@ -182,15 +196,15 @@
 .card__window {
     width: 52%;
     height: 40vh;
-    background: var(--colorB);
+    /* background: var(--colorB); */
     position: relative;
     transition: all 0.5s;
 }
-.card__window:hover {
+/* .card__window:hover {
     background-image: url(/assets/img/cardImg.png);
     background-position: center;
     background-size: cover;
-}
+} */
 .card__window > img {
     width: 12%;
     position: absolute;
@@ -198,7 +212,7 @@
     right: 4%;
 }
 .card__window > h2 {
-    color: var(--colorW);
+    color: var(--colorB);
     font-size: var(--font-size60);
     font-weight: 100;
     position: absolute;
@@ -214,6 +228,10 @@
     align-items: flex-end;
     margin-top: 3.5%;
     margin-right: 3.5%;
+    border-bottom: 1px solid var(--colorB);
+}
+.tetris__desc {
+    margin-bottom: 1vw;
 }
 .tetris__desc > h2 {
     color: var(--colorB);
@@ -243,15 +261,15 @@
 .tetris__window {
     width: 52%;
     height: 40vh;
-    background: var(--colorB);
+    /* background: var(--colorB); */
     position: relative;
     transition: all 0.5s;
 }
-.tetris__window:hover {
+/* .tetris__window:hover {
     background-image: url(/assets/img/tetrisImg.png);
     background-position: center;
     background-size: cover;
-}
+} */
 .tetris__window > img {
     width: 10%;
     position: absolute;
@@ -259,7 +277,7 @@
     right: 4%;
 }
 .tetris__window > h2 {
-    color: var(--colorW);
+    color: var(--colorB);
     font-size: var(--font-size60);
     font-weight: 100;
     position: absolute;

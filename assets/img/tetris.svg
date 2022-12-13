@@ -1,6 +1,9 @@
 <svg width="80" height="120" viewBox="0 0 80 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="0.5" y="0.5" width="39" height="39" fill="#EEEEEE" stroke="#121212"/>
-<rect x="0.5" y="40.5" width="39" height="39" fill="#EEEEEE" stroke="#121212"/>
-<rect x="40.5" y="40.5" width="39" height="39" fill="#EEEEEE" stroke="#121212"/>
-<rect x="40.5" y="80.5" width="39" height="39" fill="#EEEEEE" stroke="#121212"/>
+<mask id="path-1-inside-1_507_4" fill="white">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M41 0H0V40V80H40V120H80V80V40H41V0Z"/>
+</mask>
+<path d="M0 0V-1H-1V0H0ZM41 0H42V-1H41V0ZM0 80H-1V81H0V80ZM40 80H41V79H40V80ZM40 120H39V121H40V120ZM80 120V121H81V120H80ZM80 40H81V39H80V40ZM41 40H40V41H41V40ZM0 1H41V-1H0V1ZM1 40V0H-1V40H1ZM1 80V40H-1V80H1ZM40 79H0V81H40V79ZM41 120V80H39V120H41ZM80 119H40V121H80V119ZM79 80V120H81V80H79ZM79 40V80H81V40H79ZM41 41H80V39H41V41ZM40 0V40H42V0H40Z" fill="#222125" mask="url(#path-1-inside-1_507_4)"/>
+<line x1="40" y1="40.5" y2="40.5" stroke="#222125"/>
+<line x1="40.5" y1="40" x2="40.5" y2="80" stroke="#222125"/>
+<line x1="40" y1="79.5" x2="80" y2="79.5" stroke="#222125"/>
 </svg>

@@ -52,7 +52,7 @@
 .mouse__right > h2 {
     font-size: var(--font-size120);
     font-weight: 500;
-    color: var(--colorE);
+    color: var(--colorW);
     position: absolute;
     top: -4.5%;
 }

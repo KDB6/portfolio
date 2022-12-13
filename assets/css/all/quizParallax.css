@@ -1,36 +1,21 @@
 #quizParallax {
-    margin-top: 25%;
+    margin-top: 18vw;
     font-family: var(--font-main);
     position: relative;
 }
 
 /* quizParallax__tum */
-.quizParallax__tum > h3 {
-    font-size: var(--font-size100);
-    font-weight: 500;
-    color: var(--colorB);
-    margin-left: 2.6%;
+.quizParallax__tum {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    background: #eee;
 }
-.quizParallax__tum > h2 {
-    font-size: var(--font-size300);
+.quizParallax__tum > div:nth-child(1) {
+    font-size: var(--font-size120);
     font-weight: 100;
-    color: #ddd;
-}
-.quizParallax__tum > h2 {
-    margin-left: -4%;
-    margin-top: -3%;
-}
-.quizParallax__tum > h2:nth-child(3) {
-    margin-top: -3%;
-}
-.quizParallax__tum > p {
-    font-family: var(--font-sub);
-    font-size: var(--font-size14);
     color: var(--colorB);
-    line-height: 1.4;
-    position: absolute;
-    right: 2vw;
-    top: 37vw;
 }
 
 /* quiz */

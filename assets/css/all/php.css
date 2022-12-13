@@ -1,5 +1,6 @@
 #php {
     background: var(--colorB);
+    position: relative;
 }
 #phpStart {
     font-family: var(--font-main);
@@ -29,7 +30,7 @@
     font-weight: 100;
     position: absolute;
     left: 0;
-    top: 17vw;
+    top: 18vw;
     left: 2.5VW;
 }
 .phpStart__left__middle > div:nth-child(2) {
@@ -37,14 +38,16 @@
     font-weight: 100;
     position: absolute;
     left: 17.5vw;
-    top: 22.5vw;
+    top: 23.5vw;
 }
 .phpStart__left__middle > div:nth-child(3) {
-    font-size: var(--font-size60);
-    font-weight: 100;
+    font-size: var(--font-size1000);
+    font-weight: 500;
     position: absolute;
-    left: 14.5vw;
-    top: 29vw;
+    left: 10vw;
+    top: -5vw;
+    line-height: 1;
+    opacity: 0.03;
 }
 
 .phpStart__right {
@@ -68,7 +71,9 @@
     width: 100%;
 }
 .phpStudy__title {
-    padding: 8px 50px 23px 50px;
+    width: 100%;
+    height: 6.5vw;
+    padding: 0vw 2vw 1.5vw 2vw;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -79,6 +84,7 @@
     font-weight: 100;
     font-size: var(--font-size80);
     color: var(--colorB);
+    line-height: 1;
 }
 .phpStudy__title > p {
     font-weight: 100;
@@ -147,19 +153,19 @@
     border-bottom: 1px solid var(--colorW);
 }
 .phpProject__title {
+    width: 100%;
     background: var(--colorW);
     color: var(--colorB);
-    padding: 8px 50px 23px 50px;
+    height: 6.5vw;
+    padding: 0vw 2vw 1.5vw 2vw;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    border-top: 1px solid var(--colorW);
-    border-bottom: 1px solid var(--colorW);
-    margin-bottom: 2vw;
 }
 .phpProject__title > h2 {
     font-weight: 100;
     font-size: var(--font-size80);
+    line-height: 1;
 }
 .phpProject__title > p {
     font-weight: 100;

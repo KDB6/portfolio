@@ -13,11 +13,11 @@ ScrollTrigger.create({
             duration: 1
         }),
         onLeave: () => gsap.to('main', {
-            backgroundColor: '#F8F4ED',
+            backgroundColor: '#F4E8DB',
             duration: 1
         }),
         onLeaveBack: () => gsap.to('main', {
-            backgroundColor: '#F8F4ED',
+            backgroundColor: '#F4E8DB',
             duration: 1
         }),
         onEnterBack: () => gsap.to('main', {
@@ -36,8 +36,8 @@ let color = elem2.getAttribute('data-color2');
 
 ScrollTrigger.create({
     trigger: elem2,
-    start: 'top 5%',
-    end: 'bottom 5%',
+    start: 'top 1%',
+    end: 'bottom 1%',
     markers: false,
         onEnter: () => gsap.to('.KDB6 > a', {
             color: color,
@@ -1041,44 +1041,6 @@ tl.staggerFrom('.quizParallax__tum__first .letter', 1.5, {
 
 let qP1 = gsap.timeline({delay: 1.5});
 
-qP1.from('.quizParallax__tum__second', {
-    scrollTrigger: {
-        trigger: ".quizParallax__tum",
-        start: "-40% 00%",
-        end: "-10%",
-        markers: false,
-        scrub: 1,
-    },
-    opacity: 0,
-    x: 400,
-    duration: 1,
-    ease: "power4",
-}, 0)
-qP1.from('.quizParallax__tum__third', {
-    scrollTrigger: {
-        trigger: ".quizParallax__tum",
-        start: "-40% 00%",
-        end: "-10%",
-        markers: false,
-        scrub: 1,
-    },
-    opacity: 0,
-    x: -200,
-    duration: 1,
-    ease: "power4",
-}, 0)
-qP1.from('.quizParallax__tum__four', {
-    scrollTrigger: {
-        trigger: ".quizParallax__tum",
-        start: "-20% 00%",
-        end: "-10%",
-        markers: false,
-        scrub: 1,
-    },
-    opacity: 0,
-    duration: 1,
-    ease: "power4",
-}, 0)
 qP1.from('.quiz1', {
     scrollTrigger: {
         trigger: ".quiz",
@@ -1468,9 +1430,9 @@ let pH1 = gsap.timeline({delay: 1});
 pH1.from('#phpStart', {
     scrollTrigger: {
         trigger: "#phpStart",
-        start: "0% 00%",
-        end: "+=1000",
-        markers: false,
+        start: "top top",
+        end: "bottom top",
+        markers: true,
         pin: true,
         scrub: 1,
     },
@@ -1482,7 +1444,7 @@ pH1.from('.phpStart__left__middle__frist', {
         trigger: "#phpStart",
         start: "-20% 10%",
         end: "30%",
-        markers: true,
+        markers: false,
         scrub: 1,
     },
     opacity: 0,
@@ -1492,9 +1454,9 @@ pH1.from('.phpStart__left__middle__frist', {
 pH1.from('.phpStart__left__middle__second', {
     scrollTrigger: {
         trigger: "#phpStart",
-        start: "-20% 10%",
-        end: "30%",
-        markers: true,
+        start: "-10% 10%",
+        end: "40%",
+        markers: false,
         scrub: 1,
     },
     opacity: 0,
@@ -1504,9 +1466,261 @@ pH1.from('.phpStart__left__middle__second', {
 pH1.from('.phpStart__left__middle__third', {
     scrollTrigger: {
         trigger: "#phpStart",
+        start: "00% 10%",
+        end: "50%",
+        markers: false,
+        scrub: 1,
+    },
+    opacity: 0,
+    duration: 1,
+    ease: "power4.in",
+}, 0)
+
+// phpstudy
+let pS1 = gsap.timeline({delay: 1});
+
+pS1.from('.phpStudy__title', {
+    scrollTrigger: {
+        trigger: ".phpStudy",
+        start: "-70% 10%",
+        end: "-30%",
+        markers: true,
+        scrub: 1,
+    },
+    width: 0,
+    height: "6.5vw",
+    opacity: 0,
+    duration: 1,
+    ease: "power4.in",
+}, 0)
+pS1.from('.phpStudy__title__h2', {
+    scrollTrigger: {
+        trigger: ".phpStudy",
+        start: "-50% 10%",
+        end: "-20%",
+        markers: true,
+        scrub: 1,
+    },
+    opacity: 0,
+    duration: 1,
+    ease: "power4.in",
+}, 0)
+pS1.from('.phpStudy__title__p', {
+    scrollTrigger: {
+        trigger: ".phpStudy",
+        start: "-50% 10%",
+        end: "-20%",
+        markers: false,
+        scrub: 1,
+    },
+    opacity: 0,
+    duration: 1,
+    ease: "power4.in",
+}, 0)
+pS1.from('.phpStudy__view__left__first', {
+    scrollTrigger: {
+        trigger: ".phpStudy",
+        start: "-40% 10%",
+        end: "-10%",
+        markers: false,
+        scrub: 1,
+    },
+    opacity: 0,
+    duration: 1,
+    ease: "power4.in",
+}, 0)
+pS1.from('.phpStudy__view__left__second', {
+    scrollTrigger: {
+        trigger: ".phpStudy",
+        start: "-35% 10%",
+        end: "-5%",
+        markers: false,
+        scrub: 1,
+    },
+    opacity: 0,
+    duration: 1,
+    ease: "power4.in",
+}, 0)
+pS1.from('.phpStudy__view__left__third', {
+    scrollTrigger: {
+        trigger: ".phpStudy",
+        start: "-30% 10%",
+        end: "0%",
+        markers: false,
+        scrub: 1,
+    },
+    opacity: 0,
+    duration: 1,
+    ease: "power4.in",
+}, 0)
+pS1.from('.phpStudy__view__img', {
+    scrollTrigger: {
+        trigger: ".phpStudy",
         start: "-20% 10%",
+        end: "10%",
+        markers: false,
+        scrub: 1,
+    },
+    opacity: 0,
+    duration: 1,
+    ease: "power4.in",
+}, 0)
+pS1.from('.phpStudy__desc__h2', {
+    scrollTrigger: {
+        trigger: ".phpStudy",
+        start: "-20% 10%",
+        end: "25%",
+        markers: true,
+        scrub: 1,
+    },
+    opacity: 0,
+    duration: 1,
+    ease: "power4.in",
+}, 0)
+pS1.from('.phpStudy__desc__p', {
+    scrollTrigger: {
+        trigger: ".phpStudy",
+        start: "-15% 10%",
         end: "30%",
         markers: true,
+        scrub: 1,
+    },
+    opacity: 0,
+    duration: 1,
+    ease: "power4.in",
+}, 0)
+pS1.from('.phpStudy__desc__view', {
+    scrollTrigger: {
+        trigger: ".phpStudy",
+        start: "-10% 10%",
+        end: "35%",
+        markers: true,
+        scrub: 1,
+    },
+    opacity: 0,
+    duration: 1,
+    ease: "power4.in",
+}, 0)
+
+// phpProject
+let pP1 = gsap.timeline({delay: 1});
+
+pP1.from('.phpProject__title', {
+    scrollTrigger: {
+        trigger: ".phpProject",
+        start: "-80% 10%",
+        end: "-30%",
+        markers: false,
+        scrub: 1,
+    },
+    width: 0,
+    height: "6.5vw",
+    opacity: 0,
+    duration: 1,
+    ease: "power4.in",
+}, 0)
+pP1.from('.phpProject__title__p', {
+    scrollTrigger: {
+        trigger: ".phpProject",
+        start: "-60% 10%",
+        end: "-20%",
+        markers: false,
+        scrub: 1,
+    },
+    opacity: 0,
+    duration: 1,
+    ease: "power4.in",
+}, 0)
+pP1.from('.phpProject__title__h2', {
+    scrollTrigger: {
+        trigger: ".phpProject",
+        start: "-60% 10%",
+        end: "-20%",
+        markers: false,
+        scrub: 1,
+    },
+    opacity: 0,
+    duration: 1,
+    ease: "power4.in",
+}, 0)
+pP1.from('.phpProject__desc__h2', {
+    scrollTrigger: {
+        trigger: ".phpProject",
+        start: "-30% 10%",
+        end: "25%",
+        markers: true,
+        scrub: 1,
+    },
+    opacity: 0,
+    duration: 1,
+    ease: "power4.in",
+}, 0)
+pP1.from('.phpProject__desc__p', {
+    scrollTrigger: {
+        trigger: ".phpProject",
+        start: "-25% 10%",
+        end: "30%",
+        markers: true,
+        scrub: 1,
+    },
+    opacity: 0,
+    duration: 1,
+    ease: "power4.in",
+}, 0)
+pP1.from('.phpProject__desc__view', {
+    scrollTrigger: {
+        trigger: ".phpProject",
+        start: "-20% 10%",
+        end: "40%",
+        markers: false,
+        scrub: 1,
+    },
+    opacity: 0,
+    duration: 1,
+    ease: "power4.in",
+}, 0)
+pP1.from('.phpProject__view__right__first', {
+    scrollTrigger: {
+        trigger: ".phpProject",
+        start: "-50% 10%",
+        end: "-10%",
+        markers: false,
+        scrub: 1,
+    },
+    opacity: 0,
+    duration: 1,
+    ease: "power4.in",
+}, 0)
+pP1.from('.phpProject__view__right__second', {
+    scrollTrigger: {
+        trigger: ".phpProject",
+        start: "-45% 10%",
+        end: "-5%",
+        markers: false,
+        scrub: 1,
+    },
+    opacity: 0,
+    duration: 1,
+    ease: "power4.in",
+}, 0)
+pP1.from('.phpProject__view__right__third', {
+    scrollTrigger: {
+        trigger: ".phpProject",
+        start: "-40% 10%",
+        end: "0%",
+        markers: false,
+        scrub: 1,
+    },
+    opacity: 0,
+    duration: 1,
+    ease: "power4.in",
+}, 0)
+pP1.from('.phpProject__view__img', {
+    scrollTrigger: {
+        trigger: ".phpProject",
+        start: "-30% 10%",
+        end: "10%",
+        markers: false,
         scrub: 1,
     },
     opacity: 0,
