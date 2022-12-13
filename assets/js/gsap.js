@@ -30,7 +30,7 @@ ScrollTrigger.create({
 
 
 // header KDB6
-gsap.utils.toArray(".hedaerColor").forEach((elem3) => {
+gsap.utils.toArray(".heaederColor").forEach((elem3) => {
 
 let color = elem3.getAttribute('data-color2');
 
@@ -896,7 +896,7 @@ let se1 = gsap.timeline({delay: 1.5});
 //         end: "+=1000",
 //         markers: false,
 //         scrub: 1,
-//         pin: false
+//         pin: true,
 //     },
 //     duration: 1,
 //     ease: "power4",
@@ -964,7 +964,7 @@ let sL1 = gsap.timeline({delay: 1.5});
 //         end: "+=000",
 //         markers: false,
 //         scrub: 1,
-//         pin: false,
+//         pin: true,
 //     },
 //     duration: 1,
 //     ease: "power4",
@@ -1449,7 +1449,7 @@ ScrollTrigger.create({
     pin: ".vueSite",
     markers: false,
     start: "top top",
-    end: "bottom top",
+    end: "bottom top",  
   });
 ScrollTrigger.create({
     trigger: ".vueSite",
@@ -1470,7 +1470,7 @@ pS1.from('#phpStart', {
         start: "0% 00%",
         end: "+=1000",
         markers: false,
-        pin: false,
+        pin: true,
         scrub: 1,
     },
     duration: 1,

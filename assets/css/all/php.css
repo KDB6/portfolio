@@ -1,6 +1,9 @@
+#php {
+    background: var(--colorB);
+}
 #phpStart {
     font-family: var(--font-main);
-    color: var(--colorB);
+    color: var(--colorW);
     width: 100%;
     height: 100vh;
     display: flex;
@@ -12,7 +15,6 @@
     place-content: center;
     align-content: space-between;
 }
-.phpStart__left__top {}
 .phpStart__left__top > h2 {
     font-size: var(--font-size100);
     text-decoration-line: line-through;
@@ -71,17 +73,19 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    border-bottom: 1px solid var(--colorW);
+    background: var(--colorW);
     margin-bottom: 2vw;
 }
 .phpStudy__title > h2 {
     font-weight: 100;
     font-size: var(--font-size80);
+    color: var(--colorB);
 }
 .phpStudy__title > p {
     font-weight: 100;
     font-family: var(--font-sub);
     font-size: var(--font-size20);
+    color: var(--colorB);
 }
 .phpStudy__view {
     display: flex;
