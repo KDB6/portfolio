@@ -454,7 +454,7 @@ const options2 = {
 let revealCallback2 = (entries, self) => {
     entries.forEach((entry) => {
     let container = entry.target;
-    let img = entry.target.querySelector(".responsiveImg");
+    let img = entry.target.querySelector(".responsiveImg", ".gameImgGsap");
 
     const easeInOut = "power3.out";
     const revealAnim = gsap.timeline({ ease: easeInOut });
