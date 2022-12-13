@@ -2,7 +2,7 @@
     padding-top: 15%;
     font-family: var(--font-main);
     color: var(--colorW);
-    background: var(--colorB);
+    /* background: var(--colorB); */
 }
 #contactMe > h2 {
     font-weight: 100;
@@ -54,7 +54,8 @@
 .contact__your input {
     outline: none;
     border: 1px solid var(--colorW);
-    background: var(--colorB);
+    /* background: var(--colorB); */
+    background: inherit;
 }
 .contact__your #contactName {
     border-radius: 3px;
@@ -84,7 +85,8 @@
 .contact__mes input {
     outline: none;
     border: 1px solid var(--colorW);
-    background: var(--colorB);
+    /* background: var(--colorB); */
+    background: inherit;
 }
 .contact__mes #contactMes {
     border-radius: 3px;

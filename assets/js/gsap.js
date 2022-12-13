@@ -1429,9 +1429,9 @@ gsap.fromTo('.vueView__h2 span', {
 {
     scrollTrigger: {
         trigger: "#vueView",
-        start: "-30% 00%",
-        end: "00%",
-        markers: false,
+        start: "-70% 00%",
+        end: "-40%",
+        markers: true,
         scrub: 1,
     },
     delay: 1,
