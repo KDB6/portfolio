@@ -1350,7 +1350,7 @@ ScrollTrigger.create({
 ScrollTrigger.create({
     trigger: ".react__api",
     pin: ".react__youtube",
-    markers: true,
+    markers: false,
     start: "top top",
     end: "bottom top+=100%",
 });
@@ -1431,7 +1431,7 @@ gsap.fromTo('.vueView__h2 span', {
         trigger: "#vueView",
         start: "-70% 00%",
         end: "-40%",
-        markers: true,
+        markers: false,
         scrub: 1,
     },
     delay: 1,
@@ -1469,8 +1469,8 @@ pS1.from('#phpStart', {
         trigger: "#phpStart",
         start: "0% 00%",
         end: "+=1000",
-        markers: true,
-        pin: true,
+        markers: false,
+        pin: false,
         scrub: 1,
     },
     duration: 1,
