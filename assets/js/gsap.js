@@ -521,7 +521,7 @@ jS1.from('#javascriptStart > h3', {
 jS1.from('#javascriptStart > h4', {
     scrollTrigger: {
         trigger: "#javascriptStart > h2",
-        start: "0% 20%",
+        start: "15% 20%",
         end: "30%",
         markers: false,
         scrub: 1,
@@ -579,34 +579,27 @@ jB1.from('.javascriptBasic__info', {
 // gameMouseTum
 let gMT1 = gsap.timeline({delay: 1.5});
 
-gsap.fromTo('.gameMouseTumH2 span', {
-    x: 50,
-    opacity: 0,
-},
-{
+let textWrapperGM = document.querySelector('.gameMouseTumH2');
+textWrapperGM.innerHTML = textWrapperGM.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+gMT1 = new TimelineMax();
+gMT1.staggerFrom('.gameMouseTumH2 .letter', 1.5, {
     scrollTrigger: {
         trigger: "#gameMouseTum",
-        start: "-20% 00%",
+        start: "-40% 00%",
         end: "10%",
-        markers: false,
+        markers: true,
         scrub: 1,
     },
-    delay: 1,
-    duration: 1,
-    x: 0,
-    opacity: 1,
-    ease: 'power2.easeOut',
-    stagger: {
-        from: 'start',
-        amount: 0.5,
-},
-})
+    opacity: 0,
+    ease: Power4.easeInOut
+}, 0.05, 0.2);
 gMT1.from('.gameMouseTumP', {
     scrollTrigger: {
         trigger: "#gameMouseTum",
-        start: "-20% 00%",
-        end: "20%",
-        markers: true,
+        start: "-10% 00%",
+        end: "30%",
+        markers: false,
         scrub: 1,
     },
     opacity: 0,
@@ -799,33 +792,26 @@ m1.from('.mouseCircle', {
 // searchSliderTum
 let sST1 = gsap.timeline({delay: 1.5});
 
-gsap.fromTo('.searchSliderTumH2 span', {
-        x: 50,
-        opacity: 0,
+let textWrapperSS = document.querySelector('.searchSliderTumH2');
+textWrapperSS.innerHTML = textWrapperSS.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+sST1 = new TimelineMax();
+sST1.staggerFrom('.searchSliderTumH2 .letter', 1.5, {
+    scrollTrigger: {
+        trigger: "#searchSliderTum",
+        start: "-40% 00%",
+        end: "10%",
+        markers: true,
+        scrub: 1,
     },
-    {
-        scrollTrigger: {
-            trigger: "#searchSliderTum",
-            start: "-250% 00%",
-            end: "-100%",
-            markers: false,
-            scrub: 1,
-        },
-        delay: 1,
-        duration: 1,
-        x: 0,
-        opacity: 1,
-        ease: 'power2.easeOut',
-        stagger: {
-            from: 'start',
-            amount: 0.5,
-    },
-})
+    opacity: 0,
+    ease: Power4.easeInOut
+}, 0.05, 0.2);
 sST1.from('.searchSliderTumP', {
     scrollTrigger: {
         trigger: "#searchSliderTum",
-        start: "-250% 00%",
-        end: "-200%",
+        start: "-10% 00%",
+        end: "30%",
         markers: false,
         scrub: 1,
     },
@@ -973,24 +959,38 @@ sL1.from('.slider__bot__div', {
 
 
 // quizParallax
-let textWrapper = document.querySelector('.quizParallax__tum__first');
-textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+let qP1 = gsap.timeline({delay: 1.5});
 
-tl = new TimelineMax();
-tl.staggerFrom('.quizParallax__tum__first .letter', 1.5, {
+// quizParallax__tum
+let textWrapperQP = document.querySelector('.quizParallax__tum__h2');
+textWrapperQP.innerHTML = textWrapperQP.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+qP1 = new TimelineMax();
+qP1.staggerFrom('.quizParallax__tum__h2 .letter', 1.5, {
     scrollTrigger: {
         trigger: ".quizParallax__tum",
-        start: "-40% 00%",
-        end: "-10%",
-        markers: false,
+        start: "-30% 00%",
+        end: "20%",
+        markers: true,
         scrub: 1,
     },
     opacity: 0,
     ease: Power4.easeInOut
 }, 0.05, 0.2);
+qP1.from('.quizParallax__tum__p', {
+    scrollTrigger: {
+        trigger: ".quizParallax__tum",
+        start: "-20% 00%",
+        end: "10%",
+        markers: true,
+        scrub: 1,
+    },
+    opacity: 0,
+    duration: 1,
+    ease: "power4.in",
+}, 0)
 
-let qP1 = gsap.timeline({delay: 1.5});
-
+// quiz
 qP1.from('.quiz1', {
     scrollTrigger: {
         trigger: ".quiz",

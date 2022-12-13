@@ -1,5 +1,6 @@
 #searchSliderTum {
-    margin-top: 25%;
+    margin-top: 20vw;
+    height: 100vh;
     font-family: var(--font-main);
     display: grid;
     place-content: center;
@@ -25,7 +26,4 @@
     background: var(--colorB);
     left: 0;
     top: -30%;
-}
-.searchSliderTumH2 {
-    word-spacing: -1.5vw;
 }
