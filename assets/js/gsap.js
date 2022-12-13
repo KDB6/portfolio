@@ -1249,7 +1249,7 @@ gsap.fromTo('.front__title__h2 span', {
     scrollTrigger: {
         trigger: "#frontStart",
         start: "-10% 00%",
-        end: "20%",
+        end: "12%",
         markers: false,
         scrub: 1,
     },
