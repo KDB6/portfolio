@@ -1308,7 +1308,7 @@ r1.from('.reactSite2', {
         trigger: "#reactSite",
         start: "-50% 20%",
         end: "20% 20%",
-        markers: true,
+        markers: false,
         scrub: 1,
     },
     x: 2000,
@@ -1345,15 +1345,79 @@ ScrollTrigger.create({
     pin: ".react__api",
     markers: false,
     start: "top top",
-    end: "+=1000",
+    end: "bottom top",
   });
 ScrollTrigger.create({
     trigger: ".react__api",
     pin: ".react__youtube",
-    markers: false,
+    markers: true,
     start: "top top",
     end: "bottom top+=100%",
 });
+
+// reactApi
+let rA1 = gsap.timeline({delay: 1.5});
+
+rA1.from('.react__api__desc__one', {
+    scrollTrigger: {
+        trigger: "#reactView",
+        start: "-50% 00%",
+        end: "00% 50%",
+        markers: false,
+        scrub: 1,
+    },
+    opacity: 0,
+    duration: 1,
+    ease: "power4.in",
+}, 0)
+rA1.from('.react__api__desc__h2', {
+    scrollTrigger: {
+        trigger: "#reactView",
+        start: "-40% 00%",
+        end: "10% 50%",
+        markers: false,
+        scrub: 1,
+    },
+    opacity: 0,
+    duration: 1,
+    ease: "power4.in",
+}, 0)
+rA1.from('.react__api__desc__view', {
+    scrollTrigger: {
+        trigger: "#reactView",
+        start: "-30% 00%",
+        end: "20% 50%",
+        markers: false,
+        scrub: 1,
+    },
+    opacity: 0,
+    duration: 1,
+    ease: "power4.in",
+}, 0)
+rA1.from('.react__api__desc__p', {
+    scrollTrigger: {
+        trigger: "#reactView",
+        start: "-20% 00%",
+        end: "10% 30%",
+        markers: false,
+        scrub: 1,
+    },
+    opacity: 0,
+    duration: 1,
+    ease: "power4.in",
+}, 0)
+rA1.from('.react__api__img__img', {
+    scrollTrigger: {
+        trigger: "#reactView",
+        start: "-50% 00%",
+        end: "00% 50%",
+        markers: false,
+        scrub: 1,
+    },
+    opacity: 0,
+    duration: 1,
+    ease: "power4.in",
+}, 0)
 
 // vueView
 let v1 = gsap.timeline({delay: 1.5});
