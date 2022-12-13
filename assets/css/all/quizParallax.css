@@ -17,13 +17,12 @@
     font-weight: 100;
     color: var(--colorB);
     z-index: 1;
-    mix-blend-mode: difference;
 }
 .quizParallax__tum > div:nth-child(2) {
     position: absolute;
-    right: -60vw;
+    right: -10vw;
     bottom: 15vw;
-    font-size: var(--font-size180);
+    font-size: var(--font-size100);
     font-weight: 500;
     color: var(--colorB);
     opacity: 0.05;

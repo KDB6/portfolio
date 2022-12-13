@@ -1,37 +1,24 @@
 #javascriptBasic {
     width: 100%;
-    height: 110vh;
+    height: 100vh;
     font-family: var(--font-main);
     color: var(--colorW);
     display: flex;
-}
-.javascriptBasic__left {
-    width: 46%;
-    padding: 5% 0;
-    display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-}
-.javascriptBasic__title {
-    margin-left: 6%;
-}
-.javascriptBasic__title > h2 {
-    font-size: var(--font-size40);
-    font-weight: 100;
-}
-.javascriptBasic__desc {
-    margin-left: 6%;
+    align-items: center;
+    justify-content: center;
 }
 .javascriptBasic__desc > h2 {
     font-family: var(--font-kor2);
-    font-size: var(--font-size24);
+    font-size: var(--font-size40);
     font-weight: 400;
-    margin-bottom: 1%;
+    margin-bottom: 0.5vw;
 }
 .javascriptBasic__desc > p {
     font-family: var(--font-kor);
     font-size: var(--font-size14);
     font-weight: 200;
+    text-align: center;
 }
 .javascriptBasic__desc > p:last-child {
     font-size: var(--font-size16);
@@ -41,20 +28,20 @@
     text-decoration: underline;
 }
 .javascriptBasic__desc > p:last-child span {
-    margin-right: 1.5%;
+    margin-right: 0.5vw;
 }
 .javascriptBasic__desc > p:last-child span a {
     color: var(--colorW);
 }
-.javascriptBasic__right {
-    width: 32%;
-    display: grid;
-    place-content: center;
-    justify-content: center;
+.javascriptBasic__method {
+    text-align: center;
 }
-.javascriptBasic__right > h2 {
+.javascriptBasic__method > h2 {
     font-size: var(--font-size150);
-    font-weight: 500;
+    font-weight: 100;
+}
+.javascriptBasic__info {
+    margin-top: 5vw;
 }
 .method__change {
     animation-delay: 0s;

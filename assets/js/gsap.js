@@ -561,7 +561,7 @@ jB1.from('#method__change', {
     duration: 1,
     ease: "power4",
 }, 0)
-jB1.from('.javascriptBasic__desc', {
+jB1.from('.javascriptBasic__info', {
     scrollTrigger: {
         trigger: "#javascriptBasic",
         start: "10% 20%",
@@ -579,84 +579,34 @@ jB1.from('.javascriptBasic__desc', {
 // gameMouseTum
 let gMT1 = gsap.timeline({delay: 1.5});
 
-gMT1.from('#gameMouseTum', {
-    scrollTrigger: {
-        trigger: ".javascriptBasic__right",
-        start: "110% 20%",
-        end: "126%",
-        markers: false,
-        scrub: 1,
-    },
-    width: 0,
-    duration: 1,
-    ease: "power4",
-}, 0)
-gMT1.from('.gameMouseTumH2', {
-    scrollTrigger: {
-        trigger: ".javascriptBasic__right",
-        start: "120% 20%",
-        end: "150%",
-        markers: false,
-        scrub: 1,
-    },
+gsap.fromTo('.gameMouseTumH2 span', {
+    x: 50,
     opacity: 0,
-    duration: 1,
-    ease: "power4",
-}, 0)
-gMT1.from('.gameMouseTum__list', {
+},
+{
     scrollTrigger: {
-        trigger: ".javascriptBasic__right",
-        start: "100% 20%",
-        end: "130%",
+        trigger: "#gameMouseTum",
+        start: "-20% 00%",
+        end: "10%",
         markers: false,
         scrub: 1,
     },
-    opacity: 0,
+    delay: 1,
     duration: 1,
-    ease: "power4",
-}, 0)
+    x: 0,
+    opacity: 1,
+    ease: 'power2.easeOut',
+    stagger: {
+        from: 'start',
+        amount: 0.5,
+},
+})
 gMT1.from('.gameMouseTumP', {
     scrollTrigger: {
-        trigger: ".javascriptBasic__right",
-        start: "120% 20%",
-        end: "150%",
-        markers: false,
-        scrub: 1,
-    },
-    opacity: 0,
-    duration: 1,
-    ease: "power4",
-}, 0)
-gMT1.from('.gameTumImg', {
-    scrollTrigger: {
-        trigger: ".javascriptBasic__right",
-        start: "120% 20%",
-        end: "150%",
-        markers: false,
-        scrub: 1,
-    },
-    opacity: 0,
-    duration: 1,
-    ease: "power4",
-}, 0)
-gMT1.from('.mouseImg1', {
-    scrollTrigger: {
-        trigger: ".javascriptBasic__right",
-        start: "120% 20%",
-        end: "150%",
-        markers: false,
-        scrub: 1,
-    },
-    opacity: 0,
-    duration: 1,
-    ease: "power4",
-}, 0)
-gMT1.from('.mouseImg2', {
-    scrollTrigger: {
-        trigger: ".javascriptBasic__right",
-        start: "120% 20%",
-        end: "150%",
-        markers: false,
+        trigger: "#gameMouseTum",
+        start: "-20% 00%",
+        end: "20%",
+        markers: true,
         scrub: 1,
     },
     opacity: 0,
