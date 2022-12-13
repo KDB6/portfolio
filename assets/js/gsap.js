@@ -1634,7 +1634,7 @@ pP1.from('.phpProject__title__p', {
 pP1.from('.phpProject__title__h2', {
     scrollTrigger: {
         trigger: ".phpProject",
-        start: "-60% 10%",
+        start: "-40% 10%",
         end: "-20%",
         markers: false,
         scrub: 1,
@@ -1671,7 +1671,7 @@ pP1.from('.phpProject__desc__view', {
     scrollTrigger: {
         trigger: ".phpProject",
         start: "-20% 10%",
-        end: "40%",
+        end: "30%",
         markers: false,
         scrub: 1,
     },

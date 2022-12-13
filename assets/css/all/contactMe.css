@@ -1,8 +1,10 @@
 #contactMe {
-    padding-top: 15%;
+    height: 100vh;
     font-family: var(--font-main);
     color: var(--colorW);
     background: var(--colorB);
+    display: grid;
+    place-content: center;
 }
 #contactMe > h2 {
     font-weight: 100;
@@ -35,68 +37,17 @@
     padding-bottom: 2%;
 }
 .contactMe {
-    padding: 0 6%;
-    margin-top: 4.5%;
+    border-top: 1px solid var(--colorW);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
 }
-.contactMe > h2 {
-    font-family: var(--font-sub);
-    font-weight: 400;
-    font-size: var(--font-size40);
-    border-bottom: 1px solid var(--colorW);
-    padding-bottom: 0.5%;
+.contactMe > div {
+    font-weight: 100;
+    font-size: var(--font-size60);
 }
-.contact__info {
-    margin-top: 1%;
-}
-.contact__your {
-    margin-bottom: 1%;
-}
-.contact__your input {
-    outline: none;
-    border: 1px solid var(--colorW);
-    /* background: var(--colorB); */
-    background: inherit;
-}
-.contact__your #contactName {
-    border-radius: 3px;
-    padding: 10px 105px 10px 20px;
-    margin-right: 1%;
-}
-.contact__your #contactName::placeholder {
-    font-size: var(--font-size16);
-    color: var(--colorW);
-}
-.contact__your #contactName:required {
-    color: var(--colorW);
-    font-size: var(--font-size16);
-}
-.contact__your #contactMail {
-    border-radius: 3px;
-    padding: 10px 105px 10px 20px;
-}
-.contact__your #contactMail::placeholder {
-    font-size: var(--font-size16);
-    color: var(--colorW);
-}
-.contact__your #contactMail:required {
-    color: var(--colorW);
-    font-size: var(--font-size16);
-}
-.contact__mes input {
-    outline: none;
-    border: 1px solid var(--colorW);
-    /* background: var(--colorB); */
-    background: inherit;
-}
-.contact__mes #contactMes {
-    border-radius: 3px;
-    padding: 20px 88% 160px 20px;
-}
-.contact__mes #contactMes::placeholder {
-    font-size: var(--font-size16);
-    color: var(--colorW);
-}
-.contact__mes #contactMes:required {
-    color: var(--colorW);
-    font-size: var(--font-size16);
+.contactMe > div:nth-child(1) {
+    margin-bottom: 1vw;
 }

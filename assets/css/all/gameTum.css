@@ -10,6 +10,7 @@
     font-size: var(--font-size120);
     left: 10%;
     bottom: -14.5%;
+    mix-blend-mode: difference;
 }
 .gameImg {
     margin-left: 6%;
