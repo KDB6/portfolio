@@ -1,83 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-
-  <style>
-    .box {
-      position: relative;
-      overflow: hidden;
-      height: 100vh;
-      width: 100vw;
-    }
-    .pinSection {
-      height: 100%;
-      width: 100%;
-    }
-    .image {
-      top: -50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      position: absolute;
-      background-size: contain;
-      height: 750px;
-      width: 500px;
-    }
-    .pin-spacer {
-      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    }
-
-    .event1 {
-      background-color: #fbc531;
-    }
-    .event1 .image {
-      top: 50%;
-      background-image: url(https://images.unsplash.com/photo-1625328335968-32be9268a352?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyODA2ODMxOQ&ixlib=rb-1.2.1&q=85);
-    }
-
-    .event2 {
-      background-color: #273c75;
-    }
-    .event2 .image {
-      background-image: url(https://images.unsplash.com/photo-1625570969099-7882fdf525c6?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyODA2ODMxOQ&ixlib=rb-1.2.1&q=85);
-    }
-  </style>
+  <title>text</title>
 </head>
 <body>
-  <div class="box event1">
-    <div class="pinSection">
-        <div class="image"></div>
-    </div>
-  </div>
-
-  <div class="box event2">
-      <div class="pinSection">
-          <div class="image"></div>
-      </div>
-  </div>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
-
-  <script>
-    ScrollTrigger.create({
-      trigger: ".event1",
-      pin: ".event1 .pinSection",
-      markers: true,
-      start: "top top",
-      end: "bottom top",
-    });
-
-    ScrollTrigger.create({
-      trigger: ".event1",
-      pin: ".event2 .pinSection",
-      markers: true,
-      start: "top top",
-      end: "bottom top-=50%",
-    });
-  </script>
+  
 </body>
 </html>
