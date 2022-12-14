@@ -1,1 +1,100 @@
-#section3 {}
+#section3 {
+    color: var(--colorB);
+    margin-top: var(--mg-15vw);
+}
+
+
+
+/* javascript__main */
+#javascript__main {
+    height: 100vh;
+    position: relative;
+}
+
+.javascript__main-text > div:nth-child(1) {
+    font-size: var(--font-size150);
+    line-height: var(--eng-height);
+    position: absolute;
+    top: 23vw;
+    left: 5vw;
+}
+.javascript__main-text > div:nth-child(2) {
+    font-size: var(--font-size100);
+    font-weight: 100;
+    line-height: var(--eng-height);
+    position: absolute;
+    top: 30.5vw;
+    left: 17.5vw;
+}
+.javascript__main-text > div:nth-child(3) {
+    font-size: var(--font-size40);
+    font-weight: 100;
+    line-height: var(--eng-height);
+    position: absolute;
+    top: 36vw;
+    left: 13vw;
+}
+
+.javascript__main-back > div {
+    font-size: var(--font-size1000);
+    line-height: var(--eng-height);
+    opacity: 0.03;
+    position: absolute;
+    top: 0;
+    right: -5vw;
+}
+
+
+
+/* javascript__basic */
+#javascript__basic {
+    height: 100vh;
+    background: var(--colorB);
+    color: var(--colorW);
+    margin-top: var(--mg-15vw);
+    display: grid;
+    place-content: center;
+}
+
+.basic__method {
+    font-size: var(--font-size150);
+    font-weight: 100;
+    line-height: var(--eng-height);
+    text-align: center;
+}
+
+.basic__desc > div:nth-child(1) {
+    font-size: var(--font-size40);
+    font-weight: 100;
+    line-height: var(--eng-height);
+    text-align: center;
+    margin-top: 4vw;
+}
+
+.basic__view {
+    display: flex;
+    justify-content: center;
+    margin-top: 1vw;
+}
+.basic__view > div a {
+    font-size: var(--font-size16);
+    font-weight: 100;
+    line-height: var(--eng-height);
+    color: var(--colorW);
+    margin: 0.4vw;
+    position: relative;
+}
+.basic__view > div a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: var(--colorW);
+    transform: scaleX(0);
+    transition: all 0.3s ease;
+  }
+  .basic__view > div a:hover::before {
+    transform: scaleX(1);
+  }

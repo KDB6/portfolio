@@ -1,12 +1,12 @@
 #section2 {
     color: var(--colorB);
+    margin-top: var(--mg-15vw);
 }
 
 
 
 /* web__main */
 #web__main {
-    margin-top: var(--mg-15vw);
     position: relative;
     height: 100vh;
 }
@@ -27,7 +27,7 @@
     left: 15vw;
 }
 
-.web__main-back {
+.web__main-back > div {
     font-size: var(--font-size1000);
     line-height: var(--eng-height);
     opacity: 0.03;
@@ -39,7 +39,6 @@
 
 /* web__standard */
 #web__standard {
-    color: var(--colorB);
     margin-top: 45vw;
     position: relative;
 }
@@ -110,7 +109,6 @@
 
   /* responsive */
   #web__responsive {
-    color: var(--colorB);
     margin-top: 45vw;
     position: relative;
   }
