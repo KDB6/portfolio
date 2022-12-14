@@ -167,64 +167,29 @@ t1.from('.tum__inner__title', {
 let a1 = gsap.timeline({delay: 0.5});
 
 a1.from('.Passion', {
-    scrollTrigger: {
-        trigger: "#about",
-        start: "10% 60%",
-        end: "50%",
-        markers: false,
-        scrub: 1,
-    },
     x: -100,
     opacity: 0,
     ease: 'power4',
     duration: 2,
 }, 0)
 a1.from('.Creative', {
-    scrollTrigger: {
-        trigger: "#about",
-        start: "20% 60%",
-        end: "50%",
-        markers: false,
-        scrub: 1,
-    },
     x: 80,
     opacity: 0,
     duration: 2,
     ease: "power4",
 }, 0)
 a1.from('.Shining', {
-    scrollTrigger: {
-        trigger: "#about",
-        start: "40% 60%",
-        end: "50%",
-        markers: false,
-        scrub: 1,
-    },
     x: -80,
     opacity: 0,
-    duration: 10,
+    duration: 3,
     ease: "power4",
 }, 0.5)
 a1.from('.about__desc', {
-    scrollTrigger: {
-        trigger: "#about",
-        start: "80% 90%",
-        end: "100%",
-        markers: false,
-        scrub: 1,
-    },
     opacity: 0,
     duration: 2,
     ease: "power4",
 }, 0)
 a1.from('.about__img > img', {
-    scrollTrigger: {
-        trigger: "#about",
-        start: "30% 80%",
-        end: "100%",
-        markers: false,
-        scrub: 1,
-    },
     y: 100,
     opacity: 0,
     duration: 2,
