@@ -1,1 +1,33 @@
-#section2 {}
+#section2 {
+    color: var(--colorB);
+}
+
+/* web__main */
+#web__main {
+    margin-top: var(--mg-15vw);
+    position: relative;
+}
+
+.web__main-text > div:nth-child(1) {
+    font-size: var(--font-size60);
+    font-weight: 100;
+    line-height: var(--eng-height);
+    position: absolute;
+    top: 24.5vw;
+    left: 10vw;
+}
+.web__main-text > div:nth-child(2) {
+    font-size: var(--font-size200);
+    line-height: var(--eng-height);
+    position: absolute;
+    top: 25vw;
+    left: 15vw;
+}
+
+.web__main-back {
+    font-size: var(--font-size1000);
+    line-height: var(--eng-height);
+    opacity: 0.03;
+    position: absolute;
+    left: -4vw;
+}
