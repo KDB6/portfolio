@@ -24,17 +24,11 @@
 
 /* 컨테이너 */
 .container {
-    width: 100%;
-    max-width: 1160px;
-    padding: 0 20px;
-    margin: 0 auto;
-    box-sizing: border-box;
+
 }
-@media (max-width: 1200px) {}
 
 /* roof */
 :root {
-    --bg: #F4E8DB;
     --colorW: #F4E8DB;
     --colorB: #222125;
 
@@ -88,11 +82,9 @@
 body {
     overflow: overlay;
     overflow-x: hidden;
-    background: var(--bg);
+    background: var(--colorW);
 }
-#main {
-    background: var(--bg);
-}
+
 /* fixed */
 body.fixed {
     height: 100vh;
@@ -100,7 +92,7 @@ body.fixed {
 }
 
 /* 간격 셋팅 */
-.mb9 {margin-bottom: 0 !important;}
+.mb0 {margin-bottom: 0 !important;}
 .mb10 {margin-bottom: 10px !important;}
 .mb20 {margin-bottom: 20px !important;}
 .mb30 {margin-bottom: 30px !important;}
@@ -109,7 +101,7 @@ body.fixed {
 .mb60 {margin-bottom: 60px !important;}
 .mb70 {margin-bottom: 70px !important;}
 
-.mt9 {margin-top: 0 !important;}
+.mt0 {margin-top: 0 !important;}
 .mt10 {margin-top: 10px !important;}
 .mt20 {margin-top: 20px !important;}
 .mt30 {margin-top: 30px !important;}
@@ -124,11 +116,11 @@ body.fixed {
     height: 4px;
 }
 ::-webkit-scrollbar-track {
-    background: #121212;
+    background: #222125;
     border-radius: 0px;
 }
 ::-webkit-scrollbar-thumb {
-    background: #cecece;
+    background: #F4E8DB;
     border-radius: 2px;
 }
 ::-webkit-scrollbar-thumb:hover {

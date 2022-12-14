@@ -1,0 +1,20 @@
+#header {
+    position: fixed;
+    font-family: var(--font-sub2);
+    color: var(--colorB);
+    padding: 1vw 2vw;
+}
+.header {
+    display: flex;
+}
+.header div:nth-child(1) {
+    font-size: var(--font-size16);
+}
+.header div:nth-child(2) {
+    margin-left: 5vw;
+}
+.header ul li {
+    display: inline;
+    font-size: var(--font-size14);
+    padding: 1vw;
+}
