@@ -100,19 +100,19 @@
     background: var(--colorB);
     transform: scaleX(0);
     transition: all 0.3s ease;
-  }
-  .standard__view > div a:hover::before {
+}
+.standard__view > div a:hover::before {
     transform: scaleX(1);
-  }
+}
 
 
 
-  /* responsive */
-  #web__responsive {
+/* responsive */
+#web__responsive {
     margin-top: 45vw;
     position: relative;
-  }
-  #web__responsive > div:nth-child(1) {
+}
+#web__responsive > div:nth-child(1) {
     font-size: var(--font-size800);
     font-weight: 100;
     color: var(--colorW);
@@ -136,6 +136,7 @@
 .responsive__desc > div:nth-child(1) {
     font-size: var(--font-size120);
     line-height: var(--eng-height);
+    text-align: right;
 }
 .responsive__desc > div:nth-child(2) {
     font-family: var(--font-kor);
@@ -171,11 +172,56 @@
     background: var(--colorB);
     transform: scaleX(0);
     transition: all 0.3s ease;
-  }
-  .responsive__view > div a:hover::before {
+}
+.responsive__view > div a:hover::before {
     transform: scaleX(1);
-  }
+}
 
-  .responsive__img > a img {
-    width: 100%;
-  }
+.responsive__img {
+    width: 50%;
+}
+
+
+
+/* 반응형 */
+@media (max-width: 820px) {
+    /* web__main */
+    #web__main {
+        height: 50vh;
+    }
+    .web__main-text > div:nth-child(1) {
+        top: 34.5vw;
+    }
+    .web__main-text > div:nth-child(2) {
+        font-size: var(--font-size200);
+        line-height: var(--eng-height);
+        position: absolute;
+        top: 35vw;
+        left: 15vw;
+    }
+    .web__main-back > div {
+        font-size: var(--font-size1000);
+        line-height: var(--eng-height);
+        opacity: 0.03;
+        position: absolute;
+        top: 10vw;
+        left: -4vw;
+    }
+
+
+
+    /* web_standard */
+    .standard__view {
+        margin-top: -1vw;
+    }
+
+
+
+    /* web__responsive */
+    .responsive__inner {
+        
+    }
+    .responsive__img {
+        width: 50%;
+    }
+}
