@@ -38,9 +38,11 @@
     --font-kor: "SCoreDream";
     --font-kor2: "NanumMyeongjo";
 
-    --font-height: 1.5;
+    --eng-height: 1;
+    --kor-height: 1.5;
 
     --font-size1000: 52.1vw;
+    --font-size800: 41.7vw;
     --font-size300: 15.62vw;
     --font-size200: 10.4vw;
     --font-size180: 9.4vw;
@@ -56,6 +58,9 @@
     --font-size18: 0.94vw;
     --font-size16: 0.85vw;
     --font-size14: 0.73vw;
+
+    --mg-15vw: 15vw;
+    --pd-10vw: 10vw;
 }
 
 /*  폰트 */

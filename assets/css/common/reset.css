@@ -54,7 +54,7 @@ select,
 table,
 textarea {
     color: #000;
-    font-family: 'ScoreDream';
+    font-family: var(--font-main);
 }
 
 /* 가로 모드 초기화 */
