@@ -184,6 +184,8 @@
 
 
 /* 반응형 */
+
+/* 1024px */
 @media (max-width: 1024px) {
     /* web__main */
     #web__main {
@@ -226,8 +228,21 @@
     }
 }
 
-@media (max-width: 769px) {
+
+
+/* 768px */
+@media (max-width: 768px) {
+    /* web__main */
+    #web__main {
+        height: 70vh;
+    }
+
+
+
     /* web__standard */
+    #web__standard {
+        margin-top: var(---30vw);
+    }
     .standard__desc > div:nth-child(2) {
         line-height: 1.3;
         margin-top: -2vw;
@@ -242,6 +257,9 @@
 
 
     /* web__responsive */
+    #web__responsive > div:nth-child(1) {
+        left: 5vw;
+    }
     .responsive__inner {
         display: flex;
         flex-direction: column-reverse;

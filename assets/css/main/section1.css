@@ -68,6 +68,8 @@
 
 
 /* 반응형 */
+
+/* 1024px */
 @media (max-width: 1024px) {
     .about__main-img {
         top: 60vw;
@@ -78,6 +80,9 @@
     }
 }
 
+
+
+/* 768px */
 @media (max-width: 768px) {
     #about {
         display: grid;
