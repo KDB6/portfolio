@@ -121,7 +121,7 @@
     line-height: var(--eng-height);
     white-space: pre-line;
     position: relative;
-    margin-top: 2vw;
+    margin-top: 2.3vw;
 }
 .GM__desc::before {
     content: '';
@@ -680,7 +680,7 @@
     line-height: var(--eng-height);
     white-space: pre-line;
     position: relative;
-    margin-top: 2vw;
+    margin-top: 2.2vw;
 }
 .QP__desc::before {
     content: '';
