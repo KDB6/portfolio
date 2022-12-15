@@ -59,8 +59,13 @@
     --font-size16: 0.85vw;
     --font-size14: 0.73vw;
 
-    --mg-15vw: 15vw;
-    --pd-10vw: 10vw;
+    ---10vw: 10vw;
+    ---12vw: 12vw;
+    ---15vw: 15vw;
+    ---20vw: 20vw;
+    ---25vw: 25vw;
+    ---30vw: 30vw;
+    ---45vw: 45vw;
 }
 
 /*  폰트 */
@@ -130,4 +135,11 @@ body.fixed {
 }
 ::-webkit-scrollbar-thumb:hover {
     background: #fff;
+}
+
+/* 반응형 */
+@media (max-width: 820px) {
+    body {
+        overflow-x: none;
+    }
 }

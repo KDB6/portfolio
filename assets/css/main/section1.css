@@ -33,7 +33,7 @@
 }
 .about__main-text > div:nth-child(3) {
     font-size: var(--font-size200);
-    line-height: 0.6;
+    line-height: 0.5;
     font-weight: 100;
     margin-right: 50vw;
 }

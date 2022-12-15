@@ -1,0 +1,74 @@
+.link {
+    width: 7vw;
+    height: 7vw;
+    display: inline-block;
+    font-family: var(--font-main);
+    word-spacing: 20px;
+    font-size: var(--font-size20);
+    font-weight: 100;
+    letter-spacing: 0.5vw;
+    word-spacing: 1.2vw;
+    position: fixed;
+    right: 2.5vw;
+    bottom: 1.5vw;
+    z-index: 10;
+}
+.link__svg {
+    width: 100%;
+    height: auto;
+    transform-box: fill-box;
+    fill: var(--colorB);
+    stroke: var(--colorB);
+    stroke-width: 0.05em;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+.link__cloud {
+    transform-origin: 50% 50%;
+    -webkit-animation: rotate normal infinite 60s linear;
+            animation: rotate normal infinite 60s linear;
+    fill: rgba(255, 255, 255, 0.15);
+}
+.link__face, .link__arrow {
+    transform-origin: 50% 50%;
+    transition: transform 0.15s cubic-bezier(0.32, 0, 0.67, 0);
+}
+.link:hover .link__face, .link:hover .link__arrow {
+    transform: scale(1.1);
+    transition: transform 0.3s cubic-bezier(0.33, 1, 0.68, 1);
+}
+.link__arrow {
+    stroke-width: 0.075em;
+}
+.link__text {
+  -webkit-animation: rotateReverse normal infinite 20s linear;
+            animation: rotateReverse normal infinite 20s linear;
+    transform-origin: 50% 50%;
+    color: var(--colorW);
+}
+.link:hover .link__text {
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
+}
+
+@-webkit-keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
+@-webkit-keyframes rotateReverse {
+    to {
+        transform: rotate(-360deg);
+    }
+}
+@keyframes rotateReverse {
+    to {
+        transform: rotate(-360deg);
+    }
+}

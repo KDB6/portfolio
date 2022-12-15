@@ -1,6 +1,6 @@
 #section2 {
     color: var(--colorB);
-    margin-top: var(--mg-15vw);
+    margin-top: var(---15vw);
 }
 
 
@@ -39,7 +39,7 @@
 
 /* web__standard */
 #web__standard {
-    margin-top: 45vw;
+    margin-top: var(---45vw);
     position: relative;
 }
 
@@ -87,11 +87,11 @@
     font-size: var(--font-size16);
     line-height: var(--eng-height);
     font-weight: 100;
-    margin-left: 0.8vw;
+    margin-left: 0.4vw;
     position: relative;
 }
 .standard__view > div a::before {
-    content: "";
+    content: '';
     position: absolute;
     left: 0;
     bottom: 0;
@@ -159,11 +159,11 @@
     font-size: var(--font-size16);
     line-height: var(--eng-height);
     font-weight: 100;
-    margin-left: 0.8vw;
+    margin-left: 0.4vw;
     position: relative;
 }
 .responsive__view > div a::before {
-    content: "";
+    content: '';
     position: absolute;
     left: 0;
     bottom: 0;
