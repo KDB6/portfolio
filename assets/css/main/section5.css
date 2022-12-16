@@ -10,19 +10,22 @@
 #php__main {
     width: 100%;
     height: 100vh;
-    justify-content: center;
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
     position: relative;
 }
 .php__main-text >div:nth-child(1) {
     font-size: var(--font-size120);
     line-height: var(--eng-height);
     font-weight: 100;
+    margin-left: 5vw;
 }
 .php__main-text >div:nth-child(2) {
     font-size: var(--font-size120);
-    line-height: var(--eng-height);
+    line-height: 0.8;
     font-weight: 100;
+    margin-left: 15vw;
 }
 
 .php__main-back {
@@ -31,4 +34,22 @@
     opacity: 0.02;
     position: absolute;
     top: 0;
+    left: 13vw;
+}
+
+
+
+/* php__study */
+.php__study-title {
+    display: flex;
+    justify-content: space-between;
+}
+.php__study-title > div:nth-child(1) {
+    font-size: var(--font-size100);
+    line-height: var(--eng-height);
+}
+.php__study-title > div:nth-child(2) {
+    font-family: var(--font-sub);
+    font-size: var(--font-size24);
+    line-height: var(--eng-height);
 }
