@@ -1,12 +1,12 @@
 .link {
-    width: 7vw;
-    height: 7vw;
+    width: 5vw;
+    height: 5vw;
     display: inline-block;
     font-family: var(--font-main);
-    word-spacing: 20px;
+    word-spacing: 2vw;
     font-size: var(--font-size20);
     font-weight: 100;
-    letter-spacing: 0.5vw;
+    letter-spacing: 0.3vw;
     word-spacing: 1.2vw;
     position: fixed;
     right: 2.5vw;
