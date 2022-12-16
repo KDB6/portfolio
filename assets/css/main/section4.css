@@ -417,7 +417,6 @@
 .vue__api-view {
     display: flex;
     border-top: 1px solid var(--colorW);
-    border-bottom: 1px solid var(--colorW);
 }
 .vue__api-view > div:nth-child(1) {
     text-align: center;
