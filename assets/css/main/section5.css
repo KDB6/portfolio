@@ -1,0 +1,34 @@
+#section5 {
+    color: var(--colorW);
+    background: var(--colorB);
+    padding-top: var(---25vw);
+}
+
+
+
+/* php__main */
+#php__main {
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    display: flex;
+    position: relative;
+}
+.php__main-text >div:nth-child(1) {
+    font-size: var(--font-size120);
+    line-height: var(--eng-height);
+    font-weight: 100;
+}
+.php__main-text >div:nth-child(2) {
+    font-size: var(--font-size120);
+    line-height: var(--eng-height);
+    font-weight: 100;
+}
+
+.php__main-back {
+    font-size: var(--font-size1000);
+    line-height: var(--eng-height);
+    opacity: 0.02;
+    position: absolute;
+    top: 0;
+}
