@@ -61,7 +61,21 @@
 
 
 @media (max-width: 768px) {
-    
+    #contact > div:nth-child(1) {
+        font-size: var(--font-size200);
+    }
+    .contact__info {
+        margin-top: 2.5vw;
+        display: flex;
+    }
+    .contact__info > div:nth-child(1) {
+        font-size: var(--font-size40);
+        margin-bottom: 0.3vw;
+    }
+    .contact__info > div:nth-child(2) a {
+        color: var(--colorW);
+        font-size: var(--font-size40);
+    }
 }
 
 

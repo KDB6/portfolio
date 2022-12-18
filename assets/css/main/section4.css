@@ -463,9 +463,6 @@
 /* 반응형 */
 @media (max-width: 1024px) {
     /* react__list */
-    #react__list {
-        background: #505050;
-    }
     .react__site-view {
         padding-bottom: 0.1vw;
     }
@@ -477,7 +474,34 @@
 
 
 @media (max-width: 768px) {
-    
+    /* front__main */
+    #front__main {
+    }
+    #front__main > div:nth-child(1) {
+        font-size: var(--font-size300);
+    }
+    #front__main > div:nth-child(2) {
+        font-size: var(--font-size40);
+        width: 60%;
+        white-space: normal;
+        margin-top: 1vw;
+    }
+
+
+
+    /* react__site */
+    .react__site-title {
+        margin-bottom: 1vw;
+    }
+    .react__site-img {
+        width: 90%;
+    }
+    .react__site > div:nth-child(3) {
+        font-size: var(--font-size60);
+        transform: rotate(0);
+        top: 58.5vw;
+        right: 8vw;
+    }
 }
 
 
