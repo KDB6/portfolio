@@ -1225,3 +1225,35 @@
         margin-left: 2vw;
     }
 }
+
+
+
+/* 480px */
+@media (max-width: 480px) {
+    /* javascript__main */
+    #javascript__main {
+
+    }
+
+    .javascript__main-text > div:nth-child(1) {
+        font-size: var(--font-size300);
+        top: 90vw;
+        left: 5vw;
+    }
+    .javascript__main-text > div:nth-child(2) {
+        font-size: var(--font-size150);
+        top: 106vw;
+        left: 38vw;
+    }
+    .javascript__main-text > div:nth-child(3) {
+        font-size: var(--font-size100);
+        top: 114vw;
+        left: 25vw;
+    }
+
+    .javascript__main-back > div {
+        font-size: 80vw;
+        top: 60vw;
+        right: -20vw;
+    }
+}
