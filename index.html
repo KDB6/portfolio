@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ko">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,819 +14,729 @@
 
     <!-- skip -->
     <div id="skip">
-        <a href="#thumbnail">메인</a>
-        <a href="#about">자기 소개</a>
-        <a href="#webStart">웹 시작점</a>
-        <a href="#webStandard">웹 기본</a>
-        <a href="#responsive">웹 반응형</a>
-        <a href="#javascriptStart">자바스크립트 시작점</a>
-        <a href="#javascriptBasic">자바스크립트 기본</a>
-        <a href="#gameMouseTum">게임, 마우스 시작점</a>
-        <a href="#gameTum">게임 시작점</a>
-        <a href="#gameList">게임 리스트</a>
-        <a href="#mouse">마우스</a>
-        <a href="#searchSliderTum">서치, 슬라이드 시작점</a>
-        <a href="#search">서치</a>
-        <a href="#quizParallax">퀴즈, 페럴랙스</a>
-        <a href="#front">프론트앤드 과정</a>
-        <a href="#php">피에이치피 과정</a>
-        <a href="#contactMe">컨텍미</a>
+        <a href="#section1">자기소개</a>
+        <a href="#section2">웹</a>
+        <a href="#section3">자바스크립트</a>
+        <a href="#section4">프론트엔드</a>
+        <a href="#section5">PHP</a>
     </div>
 
-    <!-- 공통 -->
+    <!-- common -->
     <link rel="stylesheet" href="assets/css/common/common.css">
-    <link rel="stylesheet" href="assets/css/font/font.css">
     <link rel="stylesheet" href="assets/css/common/reset.css">
+    <link rel="stylesheet" href="assets/css/font/font.css">
 
     <!-- section -->
-    <link rel="stylesheet" href="assets/css/ex1/header.css">
-    <link rel="stylesheet" href="assets/css/ex1/thumbnail.css">
-    <link rel="stylesheet" href="assets/css/ex1/about.css">
-
-    <link rel="stylesheet" href="assets/css/ex1/webStart.css">
-    <link rel="stylesheet" href="assets/css/ex1/webStandard.css">
-    <link rel="stylesheet" href="assets/css/ex1/responsive.css">
-
-    <link rel="stylesheet" href="assets/css/ex1/javascriptStart.css">
-    <link rel="stylesheet" href="assets/css/ex1/javascriptBasic.css">
-
-    <link rel="stylesheet" href="assets/css/ex1/gameMouseTum.css">
-    <link rel="stylesheet" href="assets/css/ex1/gameTum.css">
-    <link rel="stylesheet" href="assets/css/ex1/gameList.css">
-    <link rel="stylesheet" href="assets/css/ex1/mouse.css">
-
-    <link rel="stylesheet" href="assets/css/ex1/searchSliderTum.css">
-    <link rel="stylesheet" href="assets/css/ex1/search.css">
-    <link rel="stylesheet" href="assets/css/ex1/slider.css">
-
-    <link rel="stylesheet" href="assets/css/ex1/quizParallax.css">
-
-    <link rel="stylesheet" href="assets/css/ex1/front.css">
-
-    <link rel="stylesheet" href="assets/css/ex1/php.css">
-
-    <link rel="stylesheet" href="assets/css/ex1/contactMe.css">
-
-    <style>
-    </style>
+    <link rel="stylesheet" href="assets/css/main/header.css">
+    <link rel="stylesheet" href="assets/css/main/rotate.css">
+    <link rel="stylesheet" href="assets/css/main/section1.css">
+    <link rel="stylesheet" href="assets/css/main/section2.css">
+    <link rel="stylesheet" href="assets/css/main/section3.css">
+    <link rel="stylesheet" href="assets/css/main/section4.css">
+    <link rel="stylesheet" href="assets/css/main/section5.css">
+    <link rel="stylesheet" href="assets/css/main/section6.css">
 </head>
-
 <body>
     <!-- header -->
     <header id="header">
-        <div class="header__inner">
-            <div class="KDB6"><a href="#">KDB6</a></div>
-            <div class="list__inner">
+        <nav class="header">
+            <div><a href="#">PORT</a></div>
+            <div>
                 <ul>
-                    <li><a href="#webStart">web</a></li>
-                    <li><a href="#javascriptStart">javascript</a></li>
-                    <li><a href="#front">react&vue</a></li>
-                    <li><a href="#php">php</a></li>
+                    <li><a href="#web__main">web</a></li>
+                    <li><a href="#javascript__main">javascript</a></li>
+                    <li><a href="#front__main">react&vue</a></li>
+                    <li><a href="#php__main">php</a></li>
                 </ul>
             </div>
-        </div>
+        </nav>
     </header>
     <!-- // header -->
+
+
+
+    <!-- rotate -->
+    <div class="thumbnail__rotate">
+        <a href="https://github.com/KDB6" class="link">
+            <svg viewBox='0 0 200 200' width='200' height='200' xmlns='http://www.w3.org/2000/svg' class="link__svg"
+                aria-labelledby="link1-title link1-desc">
+                <title id="link1-title">view thank you</title>
+                <desc id="link1-desc"></desc>
+
+                <path id="link-circle" class="link__path" d="M 20, 100 a 80,80 0 1,1 160,0 a 80,80 0 1,1 -160,0"
+                    stroke="none" fill="none" />
+
+                <path class="link__arrow" d="M 75 100 L 125 100 L 110 85 M 125 100 L 110 115" fill="none" />
+
+                <text class="link__text">
+                    <textPath href="#link-circle" stroke="none">
+                        &developer github view
+                    </textPath>
+                </text>
+            </svg>
+        </a>
+    </div>
+    <!-- // rotate -->
+
+
 
     <!-- main -->
     <main id="main">
 
-        <!-- thumbnail -->
-        <!-- <section id="thumbnail" class="backColor rotate" data-color="#222125" data-fill="#222125" data-stroke="#222125">
-            <canvas id="canvas1"></canvas>
-            <canvas id="canvas2"></canvas>
-            <div class="tum__inner">
-                <div class="tum__inner__title">
-                    <span>D</span>
-                    <span>e</span>
-                    <span>v</span>
-                    <span>e</span>
-                    <span>l</span>
-                    <span>o</span>
-                    <span>p</span>
-                    <span>e</span>
-                    <span>r</span>
-                    <span>.</span>
-                    <span>&</span>
-                    <span>p</span>
-                    <span>o</span>
-                    <span>r</span>
-                    <span>t</span>
-                    <span>f</span>
-                    <span>o</span>
-                    <span>l</span>
-                    <span>i</span>
-                    <span>o</span>
+        <!-- section1 -->
+        <section id="section1">
+            <article id="about">
+                <div class="about__main">
+                    <div class="about__main-text">
+                        <div>Passion</div>
+                        <div>Creative</div>
+                        <div>Shining</div>
+                    </div>
+                    <div class="about__main-img">
+                        <img src="assets/img/about.png" alt="어바웃사진">
+                    </div>
                 </div>
-                <div class="tum__inner__desc">
-                    무엇을 할까요 어떻게 할까요~
-                    This portfolio is a collection of courses<br>
-                    that I've learned so far. I'm still inexperienced,<br>
-                    but I'm telling you that I'm growing
-                </div>
-            </div>
-        </section> -->
-        <!-- // thumbnail -->
-
-        <div class="thumbnail__rotate">
-            <a href="https://github.com/KDB6" class="link">
-                <svg viewBox='0 0 200 200' width='200' height='200' xmlns='http://www.w3.org/2000/svg' class="link__svg"
-                    aria-labelledby="link1-title link1-desc">
-                    <title id="link1-title">view thank you</title>
-                    <desc id="link1-desc"></desc>
-
-                    <path id="link-circle" class="link__path" d="M 20, 100 a 80,80 0 1,1 160,0 a 80,80 0 1,1 -160,0"
-                        stroke="none" fill="none" />
-
-                    <path class="link__arrow" d="M 75 100 L 125 100 L 110 85 M 125 100 L 110 115" fill="none" />
-
-                    <text class="link__text">
-                        <textPath href="#link-circle" stroke="none">
-                            &developer github view
-                        </textPath>
-                    </text>
-                </svg>
-            </a>
-        </div>
-
-        <!-- about -->
-        <section id="about" class="backColor rotate heaederColor" data-color="#F4E8DB" data-fill="#222125"
-            data-stroke="#222125" data-color2="#222125">
-            <div class="about__title">
-                <div class="Passion">Passion</div>
-                <div class="Creative">Creative</div>
-                <div class="Shining">Shining</div>
-            </div>
-            <div class="about__img">
-                <img src="assets/img/about.png" alt="어바웃사진">
-            </div>
-            <div class="about__desc">
-                <p>
-                    개발 언어와 글씨로 무언가를 창조를 하는 것에 흥미를 느끼고, 시작하게 되었습니다.<br>
-                    해당 포트폴리오는 제가 개발자가 되기 위한 첫 걸음을 나아가는 포트폴리오이며,<br>
-                    저의 배움의 집합체입니다. 미약하지만, 제가 점점 인생에 새기는 발자국을 재밌게 봐주셨으면 감사합니다.
-                </p>
-            </div>
-        </section>
-        <!-- // about -->
-
-        <!-- webStart -->
-        <section id="webStart">
-            <h2 class="webStartH2">&</h2>
-            <h3 class="webStartH3">web site</h3>
-            <p class="webStartP">first. portfolio</p>
-        </section>
-        <!-- // webStart -->
-
-        <!-- webStandard -->
-        <section id="webStandard">
-            <h2 class="webStandardH2">01</h2>
-            <div class="webStandard__img reveal">
-                <img class="webStandardImg" src="assets/img/webStandard.jpg" alt="웹스탠다드사진">
-            </div>
-            <div class="webStandard__desc">
-                <h3 class="webStandard__descH3">web standard</h3>
-                <p class="webStandard__descP">
-                    코딩에 대한 첫걸음을 딛은 웹표준 사이트입니다. 차별없이 모든 사용자들이 불편함없이<br>
-                    접근할 수 있도록 웹접근성을 기준으로 하여금 제작을 하였습니다. 슬라이드 구현에는<br>
-                    스와이프를 사용하였으며, 기본적인 구조를 활용하여 제작을 했습니다.
-                </p>
-                <div class="menu__item-image living"></div>
-                <div class="menu__item-image dining"></div>
-                <p><span class="view"><a href="https://kdb6.github.io/codingclass/site/site1/index.html">view
-                            site</a></span><span class="view"><a
-                            href="https://github.com/KDB6/codingclass/blob/main/site/site1/index.html">view
-                            code</a></span></p>
-            </div>
-        </section>
-        <!-- // webStandard -->
-
-        <!-- responsive -->
-        <section id="responsive">
-            <h2 class="responsiveH2">02</h2>
-            <div class="responsive">
-                <div class="responsive__desc">
-                    <h3 class="responsive__descH3">responsive</h3>
-                    <p class="responsive__descP">
-                        웹 스탠다드 사이트를 기준으로 하여금 제작한 반응형 사이트입니다.<br>
-                        모든 사용자들이 차별없이 이용할 수 있도록 웹접근성을 고려하여 제작을 했습니다.<br>
-                        미디어쿼리를 이용하여 어떤 기기든 유연하게 대처할 수 있도록 진행했습니다.
+                <div class="about__desc">
+                    <p>
+                        개발 언어와 글씨로 무언가를 창조를 하는 것에 흥미를 느끼고, 시작하게 되었습니다.
+                        해당 포트폴리오는 제가 개발자가 되기 위한 첫 걸음을 나아가는 포트폴리오이며,
+                        저의 배움의 집합체입니다. 미약하지만, 제가 점점 인생에 새기는 발자국을 재밌게 봐주셨으면 감사합니다.
                     </p>
-                    <div class="menu__item-image living"></div>
-                    <div class="menu__item-image dining"></div>
-                    <p><span class="viewR"><a href="https://kdb6.github.io/codingclass/site/site2/index.html">view
-                                site</a></span><span class="viewR"><a
-                                href="https://github.com/KDB6/codingclass/blob/main/site/site2/index.html">view
-                                code</a></span></p>
                 </div>
-                <div class="responsive__img reveal2">
-                    <img class="responsiveImg" src="assets/img/responsive.jpg" alt="웹반응형사진">
+            </article>
+        </section>
+        <!-- // section1 -->
+
+
+
+        <!-- section2 -->
+        <section id="section2">
+            <!-- web__main -->
+            <article id="web__main">
+                <div class="web__main-text">
+                    <div>first.portfolio</div>
+                    <div>web Site</div>
                 </div>
-            </div>
-        </section>
-        <!-- // responsiveg -->
-
-        <!-- javascriptStart -->
-        <section id="javascriptStart">
-            <h2>&ef</h2>
-            <h3>javascript</h3>
-            <h4>basic&effect</h4>
-            <p>second. portfolio</p>
-        </section>
-        <!-- // javascriptStart -->
-
-        <!-- javascriptBasic -->
-        <section id="javascriptBasic" class="backColor rotate heaederColor" data-color="#222125" data-fill="#F4E8DB"
-            data-stroke="#F4E8DB" data-color2="#F4E8DB">
-            <div class="javascriptBasic__method">
-                <h2 id="method__change">Method</h2>
-            </div>
-            <div class="javascriptBasic__info">
-                <div class="javascriptBasic__desc">
-                    <h2>javascript basic</h2>
-                    <p><span><a href="https://kdb6.github.io/codingclass/javascript/index.html">view
-                                site</a></span><span><a href="https://ipkg7210.tistory.com/">view blog</a></span></p>
+                <div class="web__main-back">
+                    <div>&</div>
                 </div>
-            </div>
-        </section>
-        <!-- // javascriptBasic -->
+            </article>
+            <!-- // web__main -->
 
-        <!-- gameMouseTum -->
-        <section id="gameMouseTum">
-            <h2 class="gameMouseTumH2">
-                <span>game&mouse</span>
-            </h2>
-            <p class="gameMouseTumP">
-                Various games and mouse effects were created using JavaScript,<br>
-                an object-based script programming language. This course was made<br>
-                using what I had learned.
-            </p>
-        </section>
-        <!-- // gameMouseTum -->
-
-        <!-- gameTum -->
-        <section id="gameTum">
-            <div class="gameImg reveal2">
-                <img class="gameImgGsap" src="assets/img/game.jpg" alt="게임이미지">
-            </div>
-            <h2 class="gameTumH2">&game</h2>
-        </section>
-        <!-- // gameTum -->
-
-        <!-- gameList -->
-        <section id="gameList">
-            <div class="gameList__left">
-                <h2 class="gameList__left__h2">play game</h2>
-            </div>
-            <div class="gameList__right">
-                <!-- music -->
-                <div class="music">
-                    <div class="music__desc">
-                        <h2>&music</h2>
-                        <p>
-                            자바스크립트를 사용하여 뮤직 플레이어를 제작하였습니다.<br>
-                            함수와 각 개체를 지정하여 플레이어 내 각 기능을 구현하였습니다.
-                        </p>
-                        <p><span><a href="https://kdb6.github.io/codingclass/javascript/effect/gameEffect01.html">play
-                                    music</a></span><span><a
-                                    href="https://github.com/KDB6/codingclass/blob/main/javascript/assets/js/music.js">view
-                                    code</a></span></p>
+            <!-- web__standard -->
+            <article id="web__standard">
+                <div>01</div>
+                <div class="standard__img reveal">
+                    <a href="https://kdb6.github.io/codingclass/site/site1/index.html"><img src="assets/img/webStandard.jpg" alt="웹표준사진"></a>
+                </div>
+                <div class="standard__desc">
+                    <div>web standard</div>
+                    <div>
+                        코딩에 대한 첫걸음을 딛은 웹표준 사이트입니다. 차별없이 모든 사용자들이 불편함없이
+                        접근할 수 있도록 웹접근성을 기준으로 하여금 제작을 하였습니다. 슬라이드 구현에는
+                        스와이프를 사용하였으며, 기본적인 구조를 활용하여 제작을 했습니다.
                     </div>
-                    <div class="music__window">
-                        <img src="assets/img/music.svg" alt="뮤직아이콘">
-                        <h2>MUSIC</h2>
+                    <div class="standard__view">
+                        <div><a href="https://kdb6.github.io/codingclass/site/site1/index.html">view site</a></div>
+                        <div><a href="https://github.com/KDB6/codingclass/blob/main/site/site1/index.html">view code</a></div>
                     </div>
                 </div>
+            </article>
+            <!-- // web__standard -->
 
+            <!-- web__responsive -->
+            <article id="web__responsive">
+                <div>02</div>
+                <div class="responsive__inner">
+                    <div class="responsive__desc">
+                        <div>responsive</div>
+                        <div>
+                            웹 스탠다드 사이트를 기준으로 하여금 제작한 반응형 사이트입니다.
+                            모든 사용자들이 차별없이 이용할 수 있도록 웹접근성을 고려하여 제작하였으며,
+                            미디어쿼리를 이용하여 어떤 기기든 유연하게 대처할 수 있도록 진행했습니다.
+                        </div>
+                        <div class="responsive__view">
+                            <div><a href="https://kdb6.github.io/codingclass/site/site2/index.html">view site</a></div>
+                            <div><a href="https://github.com/KDB6/codingclass/blob/main/site/site2/index.html">view code</a></div>
+                        </div>
+                    </div>
+                    <div class="responsive__img reveal2">
+                        <a href="https://kdb6.github.io/codingclass/site/site2/index.html"><img src="assets/img/responsive.jpg" alt="반응형사진"></a>
+                    </div>
+                </div>
+            </article>
+            <!-- // web__responsive -->
+        </section>
+        <!-- // section2 -->
+
+
+
+        <!-- section3 -->
+        <section id="section3">
+            <!-- javascript__main -->
+            <article id="javascript__main">
+                <div class="javascript__main-text">
+                    <div>javascript</div>
+                    <div>basic&effect</div>
+                    <div>second.portfolio</div>
+                </div>
+                <div class="javascript__main-back">
+                    <div>&ef</div>
+                </div>
+            </article>
+            <!-- // javascript__main -->
+
+
+            <!-- javascript__basic -->
+            <article id="javascript__basic" class="backColor headerColor rotateColor" data-color="#222125" header-color="#F4E8DB" data-fill="#F4E8DB" data-stroke="#F4E8DB">
+                <div class="basic__inner">
+                    <div id="basic__method" class="basic__method">method</div>
+                    <div class="basic__desc">
+                        <div>javascript basic</div>
+                        <div class="basic__view">
+                            <div><a href="https://kdb6.github.io/codingclass/javascript/index.html">view site</a></div>
+                            <div><a href="https://ipkg7210.tistory.com/">view blog</a></div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <!-- // javascript__basic -->
+
+
+            <!-- javascript-GM__main -->
+            <article id="javascript-GM__main">
+                <div class="GM__title">
+                    <span>game&mouse</span>
+                </div>
+                <div class="GM__desc">
+                    Various games and mouse effects were created using JavaScript,
+                    an object-based script programming language. This course was made
+                    using what I had learned.
+                </div>
+            </article>
+            <!-- // javascript__GM -->
+
+
+            <!-- javascript-game__mouse -->
+            <article id="javascript-game__mouse">
+                <!-- game__main -->
+                <div class="game__main">
+                    <div class="game__img reveal2">
+                        <img src="assets/img/game.jpg" alt="게임메인사진">
+                    </div>
+                    <div>&game</div>
+                </div>
+
+                <!-- game__list -->
+                <div class="game__list">
+                    <div class="list__left">
+                        <div>play game</div>
+                    </div>
+
+                    <div class="list__right">
+                        <div class="music">
+                            <div class="music__desc">
+                                <div>&music</div>
+                                <div>
+                                    자바스크립트를 사용하여 뮤직 플레이어를 제작하였습니다.
+                                    함수와 각 개체를 지정하여 플레이어 내 각 기능을 구현하였습니다.
+                                </div>
+                                <div class="music__view">
+                                    <div><a href="https://kdb6.github.io/codingclass/javascript/effect/game/gameEffect01.html">play music</a></div>
+                                    <div><a href="https://github.com/KDB6/codingclass/blob/main/javascript/assets/js/music.js">view code</a></div>
+                                </div>
+                            </div>
+                            <div class="music__icon">
+                                <div><a href="https://kdb6.github.io/codingclass/javascript/effect/game/gameEffect01.html">MUSIC</a></div>
+                                <div>
+                                    <img src="assets/img/music.svg" alt="뮤직아이콘">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="game-search">
+                            <div class="game-search__desc">
+                                <div>&search</div>
+                                <div>
+                                    자바스크립트를 사용하여 뮤직 플레이어를 제작하였습니다.
+                                    함수와 각 개체를 지정하여 플레이어 내 각 기능을 구현하였습니다.
+                                </div>
+                                <div class="game-search__view">
+                                    <div><a href="https://kdb6.github.io/codingclass/javascript/effect/game/gameEffect01.html">play game</a></div>
+                                    <div><a href="https://github.com/KDB6/codingclass/blob/main/javascript/assets/js/gameSearch.js">view code</a></div>
+                                </div>
+                            </div>
+                            <div class="game-search__icon">
+                                <div><a href="https://kdb6.github.io/codingclass/javascript/effect/game/gameEffect01.html">SEARCH</a></div>
+                                <div>
+                                    <img src="assets/img/search.svg" alt="뮤직아이콘">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="card__desc">
+                                <div>&card</div>
+                                <div>
+                                    자바스크립트를 사용하여 뮤직 플레이어를 제작하였습니다.
+                                    함수와 각 개체를 지정하여 플레이어 내 각 기능을 구현하였습니다.
+                                </div>
+                                <div class="card__view">
+                                    <div><a href="https://kdb6.github.io/codingclass/javascript/effect/game/gameEffect01.html">play game</a></div>
+                                    <div><a href="https://github.com/KDB6/codingclass/blob/main/javascript/assets/js/memory.js">view code</a></div>
+                                </div>
+                            </div>
+                            <div class="card__icon">
+                                <div><a href="https://kdb6.github.io/codingclass/javascript/effect/game/gameEffect01.html">CARD</a></div>
+                                <div>
+                                    <img src="assets/img/card.svg" alt="뮤직아이콘">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tetris">
+                            <div class="tetris__desc">
+                                <div>&tetris</div>
+                                <div>
+                                    자바스크립트를 사용하여 뮤직 플레이어를 제작하였습니다.
+                                    함수와 각 개체를 지정하여 플레이어 내 각 기능을 구현하였습니다.
+                                </div>
+                                <div class="tetris__view">
+                                    <div><a href="https://kdb6.github.io/codingclass/javascript/effect/game/gameEffect01.html">play game</a></div>
+                                    <div><a href="https://github.com/KDB6/codingclass/blob/main/javascript/assets/js/tetris.js">view code</a></div>
+                                </div>
+                            </div>
+                            <div class="tetris__icon">
+                                <div><a href="https://kdb6.github.io/codingclass/javascript/effect/game/gameEffect01.html">TETRIS</a></div>
+                                <div>
+                                    <img src="assets/img/tetris.svg" alt="뮤직아이콘">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- mouse -->
+                <div class="mouse">
+                    <div class="mouse__left">
+                        <div>&mouse</div>
+                        <div>
+                            자바스크립트를 이용하여 기초적인 마우스의 이펙트를 구현화 시켰습니다.
+                            해당 과정에서는 자바스크립트에 대한 배움을 토대로 제작하였으며,
+                            각 종 기본적인 구조와 메서드들을 활용하였습니다.
+                        </div>
+                        <div class="mouse__view">
+                            <div><a href="https://kdb6.github.io/codingclass/javascript/effect/mouse/mouseEffect01.html">view site</a></div>
+                            <div><a href="https://github.com/KDB6/codingclass/tree/main/javascript/effect/mouse">view code</a></div>
+                        </div>
+                    </div>
+                    <div class="mouse__right">
+                        <div><a href="https://kdb6.github.io/codingclass/javascript/effect/mouse/mouseEffect01.html">&mouse</a></div>
+                        <div class="mouse__img">
+                            <div class="mouse__img1 reveal2">
+                                <img src="assets/img/mouse.svg" alt="마우스배경사진">
+                            </div>
+                            <div class="mouse__img2">
+                                <img src="assets/img/mouse__cir.svg" alt="마우스원사진">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <!-- // javascript__game -->
+
+
+            <!-- javascript-SS__main -->
+            <article id="javascript-SS__main">
+                <div class="SS__title">
+                    <span>search&slider</span>
+                </div>
+                <div class="SS__desc">
+                    Each search function and slide function were implemented and the effects
+                    were based on the basic structure. In this process, I implemented each function
+                    based on knowledge in JavaScript that I learned.
+                </div>
+            </article>
+            <!-- // javascript__SS -->
+
+
+            <!-- javascript-search__slider-->
+            <article id="javascript-search__slider">
                 <!-- search -->
                 <div class="search">
-                    <div class="search__desc">
-                        <h2>&search</h2>
-                        <p>
-                            CSS 사용되는 속성들을 입력하여 점수를 쌓아가는 게임을 제작하였으며,<br>
-                            객체 내 데이터를 불러오는 형식으로 기능을 구현했습니다.
-                        </p>
-                        <p><span><a href="https://kdb6.github.io/codingclass/javascript/effect/gameEffect01.html">play
-                                    game</a></span><span><a
-                                    href="https://github.com/KDB6/codingclass/blob/main/javascript/assets/js/gameSearch.js">view
-                                    code</a></span></p>
+                    <div>search</div>
+                    <div class="search__desc1">
+                        <div>@made in Dabin</div>
+                        <div>design by korea kdb6</div>
                     </div>
-                    <div class="search__window">
-                        <img src="assets/img/search.svg" alt="서치아이콘">
-                        <h2>SEARCH</h2>
+                    <div class="search__img">
+                        <a href="https://kdb6.github.io/codingclass/javascript/effect/search/searchEffect01.html"><img src="assets/img/search.jpg" alt="서치사진"></a>
                     </div>
-                </div>
-
-                <!-- card -->
-                <div class="card">
-                    <div class="card__desc">
-                        <h2>&card</h2>
-                        <p>
-                            같은 그림을 서로 짝지어 맞추는 카드 뒤집기 게임입니다.<br>
-                            객체 지정과 함수, 이벤트 메서드를 이용하여 게임의 각 기능을 구현했습니다.
-                        </p>
-                        <p><span><a href="https://kdb6.github.io/codingclass/javascript/effect/gameEffect01.html">play
-                                    game</a></span><span><a
-                                    href="https://github.com/KDB6/codingclass/blob/main/javascript/assets/js/memory.js">view
-                                    code</a></span></p>
-                    </div>
-                    <div class="card__window">
-                        <img src="assets/img/card.svg" alt="카드아이콘">
-                        <h2>CARD</h2>
+                    <div class="search__desc2">
+                        <div>
+                            <div>Javascript of effect by search</div>
+                            <div>October 2022</div>
+                        </div>
+                        <div class="search__view">
+                            <div><a href="https://kdb6.github.io/codingclass/javascript/effect/search/searchEffect01.html">view site</a></div>
+                            <div><a href="https://github.com/KDB6/codingclass/tree/main/javascript/effect/search">view code</a></div>
+                        </div>
                     </div>
                 </div>
 
-                <!-- tetris -->
-                <div class="tetris">
-                    <div class="tetris__desc">
-                        <h2>&tetris</h2>
-                        <p>
-                            자바스크립트를 이용하여 만든 테트리스 게임을 만들었습니다.<br>
-                            진행도에 따른 룰을 추가하는 형태로 테트리스 게임에 기능을 구현화 했습니다.
-                        </p>
-                        <p><span><a href="https://kdb6.github.io/codingclass/javascript/effect/gameEffect01.html">play
-                                    game</a></span><span><a
-                                    href="https://github.com/KDB6/codingclass/blob/main/javascript/assets/js/tetris.js">view
-                                    code</a></span></p>
+                <!-- slider -->
+                <div class="slider">
+                    <div>slider</div>
+                    <div class="slider__desc1">
+                        <div>@made in Dabin</div>
+                        <div>design by korea kdb6</div>
                     </div>
-                    <div class="tetris__window">
-                        <img src="assets/img/tetris.svg" alt="테트리스아이콘">
-                        <h2>TETRIS</h2>
+                    <div class="slider__img">
+                        <a href="https://kdb6.github.io/codingclass/javascript/effect/slider/sliderEffect01.html"><img src="assets/img/slider.jpg" alt="서치사진"></a>
+                    </div>
+                    <div class="slider__desc2">
+                        <div>
+                            <div>Javascript of effect by slider</div>
+                            <div>October 2022</div>
+                        </div>
+                        <div class="slider__view">
+                            <div><a href="https://kdb6.github.io/codingclass/javascript/effect/slider/sliderEffect01.html">view site</a></div>
+                            <div><a href="https://github.com/KDB6/codingclass/tree/main/javascript/effect/slider">view code</a></div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- // gameList -->
+            </article>
+            <!-- // javascript-search__slider-->
 
-        <!-- mouse -->
-        <section id="mouse">
-            <div class="mouse__left">
-                <div class="mouse__desc">
-                    <h2 class="mouse__desc__h2">&mouse</h2>
-                    <p class="mouse__desc__p">
-                        자바스크립트를 이용하여 기초적인 마우스의 이펙트를 구현화 시켰습니다.<br>
-                        해당 과정에서는 자바스크립트에 대한 배움을 토대로 제작하였으며,<br>
-                        각 종 기본적인 구조와 메서드들을 활용하였습니다.
-                    </p>
-                    <p><span><a href="https://kdb6.github.io/codingclass/javascript/effect/mouseEffect01.html">view
-                                site</a></span><span><a
-                                href="https://github.com/KDB6/codingclass/blob/main/javascript/effect/mouseEffect06.html">view
-                                code</a></span></p>
+
+            <!-- javascript-QP__main -->
+            <article id="javascript-QP__main">
+                <div class="QP__title">
+                    <span>quiz&<span>parallax</span></span>
                 </div>
-            </div>
-            <div class="mouse__right">
-                <img class="mouseBg reveal2" src="assets/img/mouse.svg" alt="마우스화면">
-                <img class="mouseCircle" src="assets/img/mouse__cir.svg" alt="마우스">
-                <h2 class="mouseH2">&mouse</h2>
-                <p class="mouse__desc__view"><span><a
-                            href="https://kdb6.github.io/codingclass/javascript/effect/mouseEffect01.html">view
-                            site</a></span><span><a
-                            href="https://github.com/KDB6/codingclass/blob/main/javascript/effect/mouseEffect06.html">view
-                            code</a></span></p>
-            </div>
-        </section>
-        <!-- // mouse -->
-
-        <!-- searchSliderTum -->
-        <section id="searchSliderTum">
-            <h2 class="searchSliderTumH2">
-                <span>search&slider</span>
-            </h2>
-            <p class="searchSliderTumP">
-                Each search function and slide function were implemented and the effects<br>
-                were based on the basic structure. In this process, I implemented each function<br>
-                based on knowledge in JavaScript that I learned.
-            </p>
-        </section>
-        <!-- // searchSliderTum -->
-
-        <!-- search -->
-        <section id="search">
-            <h2 class="searchH2"><a
-                    href="https://kdb6.github.io/codingclass/javascript/effect/searchEffect06.html">search</a></h2>
-            <div class="search__top">
-                <div class="search__top__div">@Made in Dabin</div>
-                <div class="search__top__div">design by korea kdb6</div>
-            </div>
-            <div class="search__img">
-                <a href="https://kdb6.github.io/codingclass/javascript/effect/searchEffect06.html"><img
-                        class="searchImg" src="assets/img/search.jpg" alt="서치"></a>
-
-                <div class="search__bot__left">
-                    <div class="search__bot__div">Javascript of effect by search</div>
-                    <div class="search__bot__div">October 2022</div>
-                </div>
-
-                <div class="search__bot__right">
-                    <div class="search__bot__div"><a
-                            href="https://kdb6.github.io/codingclass/javascript/effect/searchEffect06.html">view
-                            site</a></div>
-                    <div class="search__bot__div"><a
-                            href="https://github.com/KDB6/codingclass/blob/main/javascript/effect/searchEffect06.html">view
-                            code</a></div>
-                </div>
-            </div>
-        </section>
-        <!-- // search -->
-
-        <!-- slider -->
-        <section id="slider">
-            <h2 class="sliderH2"><a
-                    href="https://kdb6.github.io/codingclass/javascript/effect/sliderEffect06.html">slider</a></h2>
-            <div class="slider__top">
-                <div class="slider__top__div">@Made in Dabin</div>
-                <div class="slider__top__div">design by korea kdb6</div>
-            </div>
-            <div class="slider__img">
-                <a href="https://kdb6.github.io/codingclass/javascript/effect/sliderEffect06.html"><img
-                        class="sliderImg" src="assets/img/slider.jpg" alt="슬라이드"></a>
-
-                <div class="slider__bot__left">
-                    <div class="slider__bot__div">Javascript of effect by slider</div>
-                    <div class="slider__bot__div">October 2022</div>
-                </div>
-
-                <div class="slider__bot__right">
-                    <div class="slider__bot__div"><a
-                            href="https://kdb6.github.io/codingclass/javascript/effect/sliderEffect06.html">view
-                            site</a></div>
-                    <div class="slider__bot__div"><a
-                            href="https://github.com/KDB6/codingclass/blob/main/javascript/effect/sliderEffect06.html">view
-                            code</a></div>
-                </div>
-            </div>
-        </section>
-        <!-- // slider -->
-
-        <!-- quizParallax -->
-        <section id="quizParallax">
-            <!-- quizParallax__tum -->
-            <div class="quizParallax__tum">
-                <h2 class="quizParallax__tum__h2">quiz&<span>parallax</span></h2>
-                <p class="quizParallax__tum__p">
-                    We created different types of quizzes based on different methods and JavaScript foundations,<br>
+                <div class="QP__desc">
+                    We created different types of quizzes based on different methods and JavaScript foundations,
                     and we also created a parallelx effect that breathes into websites that can be monotonous.
-                </p>
-            </div>
-            <!-- //quizParallax__tum -->
+                </div>
+            </article>
+            <!-- // javascript__MG -->
 
-            <!-- quiz -->
-            <div class="quiz">
-                <div class="quiz__img">
-                    <a href="https://kdb6.github.io/codingclass/javascript/effect/quizEffect06.html">
-                        <img class="quiz1" src="assets/img/quiz1.jpg" alt="퀴즈조각1">
-                        <img class="quiz2" src="assets/img/quiz2.jpg" alt="퀴즈조각2">
-                        <img class="quiz3" src="assets/img/quiz3.jpg" alt="퀴즈조각3">
-                        <img class="quiz4" src="assets/img/quiz4.jpg" alt="퀴즈조각4">
-                        <img class="quiz5" src="assets/img/quiz5.jpg" alt="퀴즈조각5">
-                    </a>
-                </div>
-                <div class="quiz__desc">
-                    <h2 class="quiz__desc__h2">&quiz</h2>
-                    <ul>
-                        <li class="quizView"><a
-                                href="https://kdb6.github.io/codingclass/javascript/effect/quizEffect06.html">quiz
-                                view</a></li>
-                        <li class="quizView"><a
-                                href="https://github.com/KDB6/codingclass/blob/main/javascript/effect/quizEffect06.html">code
-                                view</a></li>
-                    </ul>
-                </div>
-            </div>
-            <!-- //quiz -->
 
-            <!-- parallax -->
-            <div class="parallax">
-                <div class="parallax__img">
-                    <a href="https://kdb6.github.io/codingclass/javascript/effect/parallaxEffect07.html">
-                        <img class="parallax1" src="assets/img/parallax1.jpg" alt="페럴렉스1">
-                        <img class="parallax2" src="assets/img/parallax2.jpg" alt="페럴렉스2">
-                        <img class="parallax3" src="assets/img/parallax3.jpg" alt="페럴렉스3">
-                    </a>
+            <!-- javascript-quiz__parallax -->
+            <article id="javascript-quiz__parallax">
+                <!-- quiz -->
+                <div class="quiz">
+                    <div class="quiz__img">
+                        <div><a href="https://kdb6.github.io/codingclass/javascript/effect/quiz/quizEffect01.html"><img src="assets/img/quiz1.jpg" alt="퀴즈사진1"></a></div>
+                        <div><a href="https://kdb6.github.io/codingclass/javascript/effect/quiz/quizEffect02.html"><img src="assets/img/quiz2.jpg" alt="퀴즈사진2"></a></div>
+                        <div><a href="https://kdb6.github.io/codingclass/javascript/effect/quiz/quizEffect03.html"><img src="assets/img/quiz3.jpg" alt="퀴즈사진3"></a></div>
+                        <div><a href="https://kdb6.github.io/codingclass/javascript/effect/quiz/quizEffect04.html"><img src="assets/img/quiz4.jpg" alt="퀴즈사진4"></a></div>
+                        <div><a href="https://kdb6.github.io/codingclass/javascript/effect/quiz/quizEffect05.html"><img src="assets/img/quiz5.jpg" alt="퀴즈사진5"></a></div>
+                    </div>
+                    <div class="quiz__desc">
+                        <div class="quiz__view">
+                            <div><a href="https://kdb6.github.io/codingclass/javascript/effect/quiz/quizEffect01.html">quiz view</a></div>
+                            <div><a href="https://github.com/KDB6/codingclass/tree/main/javascript/effect/quiz">code view</a></div>
+                        </div>
+                        <div>&quiz</div>
+                    </div>
                 </div>
-                <div class="parallax__desc">
-                    <h2 class="parallax__desc__h2">&<span>parallax</span></h2>
-                    <p class="parallax__desc__p">
-                        단조로울 수 있는 웹사이트에 숨결을 불어넣기 위한 생각으로 페럴렉스 이펙트를 제작해보았습니다.<br>
-                        해당 과정에서 제가 배워온 자바스크립트에 대한 기본적인 지식과 메서드를 활용하여 구조화를 시켰으며,<br>
-                        하나의 형태의 자바스크립트가 아닌 가능성을 열어둔 여러 자바스크립트 형태를 사용했습니다.
-                    </p>
-                    <ul>
-                        <li class="parallaxView"><a
-                                href="https://kdb6.github.io/codingclass/javascript/effect/parallaxEffect07.html">parallax
-                                view</a></li>
-                        <li class="parallaxView"><a
-                                href="https://github.com/KDB6/codingclass/blob/main/javascript/effect/parallaxEffect07.html">code
-                                view</a></li>
-                    </ul>
+
+                <!-- parallax -->
+                <div class="parallax">
+                    <div class="parallax__img">
+                        <div><a href="https://kdb6.github.io/codingclass/javascript/effect/parallaxEffect01.html"><img src="assets/img/parallax1.jpg" alt="페럴렉스사진1"></a></div>
+                        <div><a href="https://kdb6.github.io/codingclass/javascript/effect/parallaxEffect03.html"><img src="assets/img/parallax2.jpg" alt="페럴렉스사진2"></a></div>
+                        <div><a href="https://kdb6.github.io/codingclass/javascript/effect/parallaxEffect05.html"><img src="assets/img/parallax3.jpg" alt="페럴렉스사진3"></a></div>
+                    </div>
+                    <div class="parallax__desc">
+                        <div>&<span>parallax</span></div>
+                        <div class="parallax__view">
+                            <div><a href="https://kdb6.github.io/codingclass/javascript/effect/parallaxEffect01.html">parallax view</a></div>
+                            <div><a href="https://github.com/KDB6/codingclass/tree/main/javascript/effect/parallax">code view</a></div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <!-- //parallax -->
+            </article>
+            <!-- // javascript-quiz__parallax -->
         </section>
-        <!-- // quizParallax -->
+        <!-- // section3 -->
 
-        <!-- front -->
-        <section id="front" class="backColor rotate heaederColor" data-color="#222125" data-fill="#F4E8DB"
-            data-stroke="#F4E8DB" data-color2="#F4E8DB">
-            <!-- frontStart -->
-            <div id="frontStart">
-                <div class="front__desc">
-                    <div class="front__title">
-                        <h2 class="front__title__h2">
-                            <span>F</span>
-                            <span>r</span>
-                            <span>o</span>
-                            <span>n</span>
-                            <span>t</span>
-                            <span>.</span>
-                            <span>e</span>
-                            <span>n</span>
-                            <span>d</span>
-                        </h2>
-                        <!-- <h3 class="front__title__h3">React&Vue</h3> -->
-                    </div>
-                    <p class="front__desc__p">
-                        I think the front end is the beginning of the developer. Although it is weak,<br>
-                        I would like to show you the portfolio of websites that I have collected and organized various
-                        data by applying<br>
-                        API to the react and vue I have learned, and I would like to announce the beginning of my
-                        development.
-                    </p>
+
+
+        <div id="colorTrans" class="backColor headerColor rotateColor" data-color="#222125" header-color="#F4E8DB" data-fill="#F4E8DB" data-stroke="#F4E8DB">
+        <!-- section4 -->
+        <section id="section4">
+            <!-- front__main -->
+            <article id="front__main">
+                <div>Front.end</div>
+                <div>
+                    I think the front end is the beginning of the developer. Although it is weak,
+                    I would like to show you the portfolio of websites that I have collected and organized various data by applying
+                    API to the react and vue I have learned, and I would like to announce the beginning of my development.
                 </div>
-            </div>
-            <!-- //frontStart -->
+            </article>
 
-            <!-- reactSite -->
-            <div id="reactSite">
-                <div class="reactSite">
-                    <div class="reactSite__desc" class="backColor rotate heaederColor" data-color="#222125"
-                        data-fill="#eee" data-stroke="#eee" data-color2="#eee">
-                        <h2 class="reactSite__desc__h2">react site</h2>
-                        <ul class="reactSite__desc__ul">
-                            <li><a href="https://kdb6-react.netlify.app/">site view</a></li>
-                            <li><a href="https://github.com/KDB6/reactclass">code view</a></li>
-                        </ul>
+            
+            <!-- react__list -->
+            <article id="react__list">
+                <!-- react__site -->
+                <div class="react__site">
+                    <div class="react__site-title">
+                        <div>react site</div>
+                        <div class="react__site-view">
+                            <div><a href="https://kdb6-react.netlify.app/">site view</a></div>
+                            <div><a href="https://github.com/KDB6/reactclass">code view</a></div>
+                        </div>
                     </div>
-                    <div class="reactSite__img">
-                        <img class="reactSite1" src="assets/img/reactSite1.jpg" alt="리액트사이트사진">
-                        <img class="reactSite2" src="assets/img/reactSite2.jpg" alt="리액트사이트사진">
+                    <div class="react__site-img">
+                        <div><a href="https://kdb6-react.netlify.app/"><img src="assets/img/reactSite1.jpg" alt="리액트사이트사진1"></a></div>
+                        <div><a href="https://kdb6-react.netlify.app/"><img src="assets/img/reactSite2.jpg" alt="리액트사이트사진2"></a></div>
                     </div>
+                    <div>Foundation</div>
                 </div>
-                <div class="reactSite__side">Foundation</div>
-            </div>
-            <!-- //reactSite -->
 
-            <!-- reactView -->
-            <div id="reactView">
-                <div class="react__api box">
-                    <div class="react__api__desc">
-                        <div class="react__api__desc__one">1</div>
-                        <h2 class="react__api__desc__h2">react api</h2>
-                        <h3 class="react__api__desc__view"><a href="https://kdb6-reactapi.netlify.app/">view site</a><a
-                                href="https://github.com/KDB6/react_api">view code</a></h3>
-                        <p class="react__api__desc__p">
-                            리액트에 대한 기본적인 구조를 이해하고, 과정에 대한 흐름을 파악하여<br>
-                            다양한 API에 데이터를 불러와 웹사이트를 제작을 하였습니다.<br>
+
+                <!-- react__main -->
+                <div class="react__main">
+                    react&vue collection
+                </div>
+
+
+                <!-- react__api -->
+                <div class="react__api">
+                    <div class="react__api-left">
+                        <div>1</div>
+                        <div>REACT API</div>
+                        <div class="react__api-view">
+                            <div><a href="https://kdb6-reactapi.netlify.app/">view site</a></div>
+                            <div><a href="https://github.com/KDB6/react_api">view code</a></div>
+                        </div>
+                        <div>
+                            리액트에 대한 기본적인 구조를 이해하고, 과정에 대한 흐름을 파악하여
+                            다양한 API에 데이터를 불러와 웹사이트를 제작을 하였습니다.
                             과정 내에서 컴포넌트로 나눈 구조와 javascript를 사용하였습니다.
-                        </p>
+                        </div>
                     </div>
-                    <div class="react__api__img">
-                        <img class="react__api__img__img" src="assets/img/reactApi.jpg" alt="리액트에이피아이사진">
+                    <div class="react__api-right">
+                        <a href="https://kdb6-reactapi.netlify.app/"><img src="assets/img/reactApi.jpg" alt="리액트에이피아이사진"></a>
                     </div>
                 </div>
 
-                <div class="react__youtube box">
-                    <div class="react__youtube__img">
-                        <img class="react__youtube__img__img" src="assets/img/reactYoutube.jpg" alt="리액트유튜브사진">
+
+                <!-- react__youtube -->
+                <div class="react__youtube">
+                    <div class="react__youtube-left">
+                        <a href="https://kdb6react-youtube.netlify.app/"><img src="assets/img/reactYoutube.jpg" alt="리액트에이피아이사진"></a>
                     </div>
-                    <div class="react__youtube__desc">
-                        <div class="react__youtube__img__one">1</div>
-                        <h2 class="react__youtube__img__h2">react youtube</h2>
-                        <h3 class="react__youtube__img__view"><a href="https://kdb6react-youtube.netlify.app/">view
-                                site</a><a href="https://github.com/KDB6/react_youtube">view code</a></h3>
-                        <p class="react__youtube__img__p">
-                            리액트에 대한 기본적인 구조를 이해하고, 과정에 대한 흐름을 파악하여<br>
-                            다양한 API에 데이터를 불러와 웹사이트를 제작을 하였습니다.<br>
+                    <div class="react__youtube-right">
+                        <div>2</div>
+                        <div>REACT YOUTUBE</div>
+                        <div class="react__youtube-view">
+                            <div><a href="https://kdb6react-youtube.netlify.app/">view site</a></div>
+                            <div><a href="https://github.com/KDB6/react_youtube">view code</a></div>
+                        </div>
+                        <div>
+                            리액트에 대한 기본적인 구조를 이해하고, 과정에 대한 흐름을 파악하여
+                            YOUTUBE API에 데이터를 불러와 비슷한 구조에 웹사이트를 제작을 하였습니다.
                             과정 내에서 컴포넌트로 나눈 구조와 javascript를 사용하였습니다.
-                        </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- //reactView -->
 
-            <!-- vueView -->
-            <div id="vueView">
-                <h2 class="vueView__h2">
-                    <span>Vue</span>
-                    <span>of</span>
-                    <span>site</span>
-                    <span>&</span>
-                    <span>api</span>
-                </h2>
-                <div class="vueSite">
-                    <div class="vueSite__top">
-                        <div class="vueSite__desc">
-                            <div class="vueSite__desc__title">
-                                <h3>front-end vue</h3>
-                            </div>
-                            <div class="vueSite__desc__info">
-                                <h2>&vue site</h2>
-                                <p>
-                                    뷰를 사용하여 기초적인 웹사이트를 제작하였습니다.<br>
-                                    해당 과정에서는 모든 사용자가 불편함을 느껴지지 않도록<br>
+                
+                <!-- vue__main -->
+                <!-- <div class="vue__main">
+                    Vue of site & api
+                </div> -->
+
+
+                <!-- vue__site -->
+                <div class="vue__site">
+                    <div class="vue__site-left">
+                        <div>front-end vue</div>
+                        <div class="vue__site-info">
+                            <div class="vue__site-desc">
+                                <div>&vue site</div>
+                                <div>
+                                    뷰를 사용하여 기초적인 웹사이트를 제작하였습니다.
+                                    해당 과정에서는 모든 사용자가 불편함을 느껴지지 않도록
                                     웹접근성을 기준으로 하여금 제작하였습니다.
-                                </p>
-                            </div>
-                            <div class="vueSiteView">
-                                <div class="vueSite__viewSite">
-                                    <h2><a href="https://vueclass6.web.app/">view site</a></h2>
-                                </div>
-                                <div class="vueSite__viewCode">
-                                    <h2><a href="https://github.com/KDB6/vueclass">view code</a></h2>
                                 </div>
                             </div>
-                        </div>
-                        <div class="vueSite__img">
-                            <a href="https://vueclass6.web.app/"><img src="assets/img/vueSite.jpg" alt="뷰사이트"></a>
+                            <div class="vue__site-view">
+                                <div><a href="https://vueclass6.web.app/">view site</a></div>
+                                <div><a href="https://github.com/KDB6/vueclass">view code</a></div>
+                            </div>
                         </div>
                     </div>
-                    <!-- <div class="vueSite__bot">
-                        <div class="vueSite__viewSite">
-                            <h2><a href="#">view site</a></h2>
-                        </div>
-                        <div class="vueSite__viewCode">
-                            <h2><a href="#">view code</a></h2>
-                        </div>
-                    </div> -->
+                    <div class="vue__site-right">
+                        <a href="https://vueclass6.web.app/"><img src="assets/img/vueSite.jpg" alt="뷰사이트사진"></a>
+                    </div>
                 </div>
 
-                <div class="vueApi box2">
-                    <div class="vueApi__top">
-                        <div class="vueApi__img">
-                            <a href="https://kdb6-vueapi.netlify.app/"><img src="assets/img/vueApi.jpg"
-                                    alt="뷰에이피아이사이트"></a>
-                        </div>
-                        <div class="vueApi__desc">
-                            <div class="vueApi__desc__title">
-                                <h3>front-end vue</h3>
-                            </div>
-                            <div class="vueApi__desc__info">
-                                <h2>&vue api</h2>
-                                <p>
-                                    자바스크립트 프론트엔드 프레임워크인 뷰를 사용하여 만든 웹사이트 입니다.<br>
-                                    뷰에 대한 기초적인 지식을 토대로 다양한 API 데이터를 불러와 제작했습니다.
-                                </p>
-                            </div>
-                            <div class="vueApiView">
-                                <div class="vueApi__viewSite">
-                                    <h2><a href="https://kdb6-vueapi.netlify.app/">view site</a></h2>
+
+                <!-- vue__api -->
+                <div class="vue__api">
+                    <div class="vue__api-left">
+                        <a href="https://kdb6-vueapi.netlify.app/"><img src="assets/img/vueApi.jpg" alt="뷰에이피아이사진"></a>
+                    </div>
+                    <div class="vue__api-right">
+                        <div>front-end vue</div>
+                        <div class="vue__api-info">
+                            <div class="vue__api-desc">
+                                <div>&vue api</div>
+                                <div>
+                                    뷰를 사용하여 기초적인 웹사이트를 제작하였습니다.
+                                    해당 과정에서는 모든 사용자가 불편함을 느껴지지 않도록
+                                    웹접근성을 기준으로 하여금 제작하였습니다.
                                 </div>
-                                <div class="vueApi__viewCode">
-                                    <h2><a href="https://github.com/KDB6/vue_api">view code</a></h2>
-                                </div>
+                            </div>
+                            <div class="vue__api-view">
+                                <div><a href="https://kdb6-vueapi.netlify.app/">view site</a></div>
+                                <div><a href="https://github.com/KDB6/vue_api">view code</a></div>
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="vueApi__bot">
-                        <div class="vueApi__viewSite">
-                            <h2><a href="#">view site</a></h2>
-                        </div>
-                        <div class="vueApi__viewCode">
-                            <h2><a href="#">view code</a></h2>
-                        </div>
-                    </div> -->
                 </div>
-            </div>
-            <!-- //vueSite -->
+            </article>
+            <!-- // react__list -->
         </section>
-        <!-- // front -->
+        <!-- // section4 -->
 
-        <!-- php -->
-        <section id="php" class="backColor rotate heaederColor" data-color="#222125" data-fill="#F4E8DB"
-            data-stroke="#F4E8DB" data-color2="#F4E8DB">
-            <!-- phpStart -->
-            <div id="phpStart">
-                <div class="phpStart__info">
-                    <div class="phpStart__left__middle">
-                        <div class="phpStart__left__middle__frist">Hypertext</div>
-                        <div class="phpStart__left__middle__second">Preprocessor</div>
-                        <div class="phpStart__left__middle__third">&project</div>
-                    </div>
+
+
+        <!-- section5 -->
+        <section id="section5">
+            <!-- php__main -->
+            <article id="php__main">
+                <div class="php__main-text">
+                    <div>Hypertext</div>
+                    <div>Preprocessor</div>
                 </div>
-            </div>
-            <!-- //phpStart -->
-
-            <!-- phpStudy -->
-            <div id="phpView">
-                <div class="phpStudy">
-                    <div class="phpStudy__title">
-                        <h2 class="phpStudy__title__h2">php study</h2>
-                        <p class="phpStudy__title__p">created a php site with a basic structure.</p>
-                    </div>
-                    <div class="phpStudy__view">
-                        <div class="phpStudy__view__left">
-                            <ul class="phpStudy__view__left__first">
-                                <li>made</li>
-                                <li>October. 2022</li>
-                            </ul>
-                            <ul class="phpStudy__view__left__second">
-                                <li>programming</li>
-                                <li>php</li>
-                            </ul>
-                            <ul class="phpStudy__view__left__third">
-                                <li>function</li>
-                                <li>login. join. board etc.</li>
-                            </ul>
-                            <div class="phpStudy__view__img reveal2">
-                                <a href="http://ipkg72102.dothome.co.kr/phpclass/html/main.html"><img
-                                        src="assets/img/phpStudy.jpg" alt=""></a>
-                            </div>
-                        </div>
-                        <div class="phpStudy__view__right">
-                            <div class="phpStudy__desc">
-                                <h2 class="phpStudy__desc__h2">PHP STUDY</h2>
-                                <p class="phpStudy__desc__p">
-                                    PHP에 대한 지식을 토대로 서버에서 각 스크립트와 화면을 구현하였으며,<br>
-                                    MYSQL연동과 데이터베이스를 이용하여 각 회원 관리와 게시물 저장 등등<br>
-                                    여러가지 기능들을 구현하였습니다.
-                                </p>
-                                <ul class="phpStudy__desc__view">
-                                    <li><a href="http://ipkg72102.dothome.co.kr/phpclass/html/main.html">view site</a>
-                                    </li>
-                                    <li><a href="https://github.com/KDB6/codingclass/tree/main/phpclass">view code</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                <div class="php__main-back">
+                    <div>&pr</div>
                 </div>
+            </article>
 
-                <div class="phpProject">
-                    <div class="phpProject__title">
-                        <p class="phpProject__title__p">made a website using php as a team project.</p>
-                        <h2 class="phpProject__title__h2">php project</h2>
-                    </div>
-                    <div class="phpProject__view">
-                        <div class="phpProject__view__left">
-                            <div class="phpProject__desc">
-                                <h2 class="phpProject__desc__h2">PHP PROJECT</h2>
-                                <p class="phpProject__desc__p">
-                                    동물병원에 대한 주제를 가지고 PHP에 대한 기본적인 지식을 토대로 웹사이트를<br>
-                                    만들었으며, 스크립트 구현과 데이터베이스를 이용한 데이터 구성 및 회원 관리 및<br>
-                                    게시물등등 기능을 구현하였습니다.
-                                </p>
-                                <ul class="phpProject__desc__view">
-                                    <li><a href="http://ipkg72102.dothome.co.kr/project/php/main.php">view site</a></li>
-                                    <li><a href="https://github.com/KDB6/codingclass/tree/main/project">view code</a>
-                                    </li>
-                                </ul>
+
+            <!-- php__study -->
+            <div id="php__study">
+                <div class="php__study-title">
+                    <div>php study</div>
+                    <div>created a php site with a basic structure.</div>
+                </div>
+                <div class="php__study-inner">
+                    <div class="php__study-left">
+                        <div class="php__study-info">
+                            <div class="php__study-info1">
+                                <div>made</div>
+                                <div>October. 2022</div>
+                            </div>
+                            <div class="php__study-info2">
+                                <div>programming</div>
+                                <div>php</div>
+                            </div>
+                            <div class="php__study-info3">
+                                <div>function</div>
+                                <div>login. join. board etc.</div>
                             </div>
                         </div>
-                        <div class="phpProject__view__right">
-                            <ul class="phpProject__view__right__first">
-                                <li>November. 2022</li>
-                                <li>made</li>
-                            </ul>
-                            <ul class="phpProject__view__right__second">
-                                <li>Animal hospital</li>
-                                <li>topic</li>
-                            </ul>
-                            <ul class="phpProject__view__right__third">
-                                <li>login. join. board. view etc.</li>
-                                <li>function</li>
-                            </ul>
-                            <div class="phpProject__view__img reveal2">
-                                <a href="http://ipkg72102.dothome.co.kr/project/php/main.php"><img
-                                        src="assets/img/phpProject.jpg" alt=""></a>
-                            </div>
+                        <div class="php__study-img reveal">
+                            <a href="http://ipkg72102.dothome.co.kr/phpclass/html/main.html"><img src="assets/img/phpStudy.jpg" alt="피에이치피스터디사진"></a>
+                        </div>
+                    </div>
+                    <div class="php__study-right">
+                        <div>PHP STUDY</div>
+                        <div>
+                            PHP에 대한 지식을 토대로 서버에서 각 스크립트와 화면을 구현하였으며,
+                            MYSQL연동과 데이터베이스를 이용하여 각 회원 관리와 게시물 저장 등등
+                            여러가지 기능들을 구현하였습니다.
+                        </div>
+                        <div class="php__study-view">
+                            <div><a href="http://ipkg72102.dothome.co.kr/phpclass/html/main.html">view site</a></div>
+                            <div><a href="https://github.com/KDB6/codingclass/tree/main/phpclass">view code</a></div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- //phpStudy -->
+
+            <!-- php__project -->
+            <div id="php__project">
+                <div class="php__project-title">
+                    <div>php project</div>
+                    <div>made a website using php as a team project.</div>
+                </div>
+                <div class="php__project-inner">
+                    <div class="php__project-left">
+                        <div>PHP STUDY</div>
+                        <div>
+                            PHP에 대한 지식을 토대로 서버에서 각 스크립트와 화면을 구현하였으며,
+                            MYSQL연동과 데이터베이스를 이용하여 각 회원 관리와 게시물 저장 등등
+                            여러가지 기능들을 구현하였습니다.
+                        </div>
+                        <div class="php__project-view">
+                            <div><a href="http://ipkg72102.dothome.co.kr/project/php/main.php">view site</a></div>
+                            <div><a href="https://github.com/KDB6/codingclass/tree/main/project">view code</a></div>
+                        </div>
+                    </div>
+                    <div class="php__project-right">
+                        <div class="php__project-info">
+                            <div class="php__project-info1">
+                                <div>made</div>
+                                <div>November. 2022</div>
+                            </div>
+                            <div class="php__project-info2">
+                                <div>topic</div>
+                                <div>Animal hospital</div>
+                            </div>
+                            <div class="php__project-info3">
+                                <div>function</div>
+                                <div>login. join. board. view etc.</div>
+                            </div>
+                        </div>
+                        <div class="php__project-img reveal">
+                            <a href="http://ipkg72102.dothome.co.kr/project/php/main.php"><img src="assets/img/phpProject.jpg" alt="피에이치피프로젝트사진"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <!-- // php -->
+        <!-- // section5 -->
 
-        <!-- contactMe -->
-        <section id="contactMe">
-            <h2>Developer portfolio</h2>
-            <h1>thank you</h1>
-            <h3>for whatching</h3>
-            <div class="contactMe">
-                <div>ipkg7210@gmail.com</div>
-                <div>010 7239 1079</div>
-            </div>
-            <div>@2022 portfolio of dabin</div>
+
+
+        <!-- section6 -->
+        <section id="section6">
+            <!-- contact -->
+            <article id="contact">
+                <div id="contact__title">contact me</div>
+                <div class="contact__info">
+                    <div>PHONE. 010 7239 1379</div>
+                    <div><a href="mailto:ipkg7210@gmail.com">Email. ipkg7210@gmail.com</a></div>
+                </div>
+            </article>
         </section>
-        <!-- // contactMe -->
+        <!-- // section6 -->
+        </div>
 
     </main>
     <!-- // main -->
+    
 
+
+    <!-- script -->
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@latest/bundled/lenis.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
-    <script src="assets/js/gsapEx1.js"></script>
+    <script src="assets/js/effect.js"></script>
+    <script src="assets/js/commonGsap.js"></script>
+    <script src="assets/js/s1Gsap.js"></script>
+    <script src="assets/js/s2Gsap.js"></script>
+    <script src="assets/js/s3Gsap.js"></script>
+    <script src="assets/js/s4Gsap.js"></script>
+    <script src="assets/js/s5Gsap.js"></script>
+    <script src="assets/js/s6Gsap.js"></script>
 
     <!-- gsap smooth -->
     <script>
@@ -843,38 +752,5 @@
 
         requestAnimationFrame(raf)
     </script>
-
-    <!-- javascriptBasic text change -->
-    <script>
-        let text = ['Array.from', 'map', 'Math.trulc', 'substr', 'split', 'Math.ceil', 'Math.floor', 'Math.sqrt', 'replace', 'repeat', 'match', 'reduce', 'splice', 'filter'];
-        let index = 0;
-
-        function changeText() {
-            document.getElementById("method__change").innerText = text[index];
-            index = (index + 1) % 14;
-        }
-
-        let interval = window.setInterval(changeText, 1000)
-        window.onunload = function () {
-            window.clearInterval(interval);
-        }
-    </script>
-
-    <!-- mouse mousemove -->
-    <script>
-        const circle = document.querySelector(".mouseCircle");
-
-        document.addEventListener("mousemove", (e) => {
-
-            const mouseX = e.clientX;
-
-            const mouseY = e.clientY;
-
-            circle.style.top = mouseY - 10 + 'px';
-
-            circle.style.left = mouseX - 10 + 'px';
-        });
-    </script>
 </body>
-
 </html>
