@@ -7,6 +7,7 @@
 }
 .header {
     display: flex;
+    align-items: flex-end;
 }
 .header div:nth-child(1) a {
     font-size: var(--font-size16);
@@ -29,25 +30,26 @@
 /* 반응형 */
 @media (max-width: 1024px) {
     .header div:nth-child(1) a {
-        font-size: var(--font-size60);
-        color: var(--colorB);
-    }
-    .header div:nth-child(2) {
-        margin-left: 5vw;
+        font-size: var(--font-size40);
     }
     .header ul li {
-        font-size: 3vw;
+        font-size: 2vw;
     }
 }
 
 
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
     
 }
 
 
 
-@media (max-width: 1024px) {
-    
+@media (max-width: 480px) {
+    .header div:nth-child(1) a {
+        font-size: var(--font-size40);
+    }
+    .header ul li {
+        font-size: 2vw;
+    }
 }
