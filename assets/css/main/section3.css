@@ -74,7 +74,7 @@
 .basic__view {
     display: flex;
     justify-content: center;
-    margin-top: 1vw;
+    margin-top: 0.1vw;
 }
 .basic__view > div a {
     font-size: var(--font-size16);
@@ -498,11 +498,11 @@
 }
 .mouse__img2 {
     position: absolute;
-    top: 25vw;
-    right: 20vw;
+    top: 27vw;
+    right: 18vw;
 }
 .mouse__img2 > img {
-    width: 80%;
+    width: 40%;
 }
 
 

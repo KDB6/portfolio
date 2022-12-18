@@ -1,3 +1,18 @@
+const circle = document.querySelector(".mouse__img2 > img");
+
+document.addEventListener("mousemove", (e) => {
+
+    const mouseX = e.clientX;
+
+    const mouseY = e.clientY;
+
+    circle.style.top = mouseY - 10 + 'px';
+
+    circle.style.left = mouseX - 10 + 'px';
+});
+
+
+
 // javascript__basic
 let text = ['Array.from', 'map', 'Math.trulc', 'substr', 'split', 'Math.ceil', 'Math.floor', 'Math.sqrt', 'replace', 'repeat', 'match', 'reduce', 'splice', 'filter'];
 let index = 0;
@@ -14,7 +29,7 @@ window.onunload = function () {
 
 
 
-// javascript__basic
+// contact
 let text2 = ['now?', 'me', 'contact'];
 let index2 = 0;
 

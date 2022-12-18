@@ -36,7 +36,7 @@ s1.staggerFrom('.contact__info > div:nth-child(2) a .letter', 1.5, {
     scrollTrigger: {
         trigger: "#contact",
         start: "-30% 00%",
-        end: "10%",
+        end: "0%",
         markers: false,
         scrub: 1,
     },

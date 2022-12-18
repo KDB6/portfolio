@@ -3,11 +3,10 @@
     height: 5vw;
     display: inline-block;
     font-family: var(--font-main);
-    word-spacing: 2vw;
-    font-size: var(--font-size20);
+    font-size: var(--font-size40);
     font-weight: 100;
-    letter-spacing: 0.6vw;
-    word-spacing: 0.4vw;
+    letter-spacing: 0.7vw;
+    word-spacing: 2.5vw;
     position: fixed;
     right: 2.5vw;
     bottom: 1.5vw;
