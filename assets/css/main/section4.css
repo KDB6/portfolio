@@ -258,6 +258,8 @@
     transform: scaleX(1);
 }
 .react__youtube-right > div:nth-child(4) {
+    display: grid;
+    place-content: center;
     font-family: var(--font-kor);
     font-size: var(--font-size16);
     font-weight: 300;
@@ -512,5 +514,67 @@
 
 
 @media (max-width: 480px) {
+    .react__api {
+        flex-direction: column-reverse;
+    }
+    .react__api-left {
+        width: 100%;
+        height: 50vh;
+    }
+    .react__api-right {
+        width: 100%;
+    }
 
+
+
+    /* react__youtube */
+    .react__youtube {
+        flex-direction: column;
+    }
+    .react__youtube-left {
+        width: 100%;
+    }
+    .react__youtube-right {
+        width: 100%;
+        height: 50vh;
+    }
+
+
+
+    /* vue__site */
+    .vue__site {
+        flex-direction: column;
+    }
+    .vue__site-left {
+        width: 100%;
+        height: 50vh;
+    }
+    .vue__site-right {
+        width: 100%;
+    }
+    .vue__site-right > a img {
+        width: 100%;
+        height: 50vh;
+        object-fit: cover;
+    }
+
+
+
+    /* vue__api */
+    .vue__api {
+        flex-direction: column-reverse;
+    }
+    .vue__api-left > a img {
+        width: 100%;
+        height: 50vh;
+        object-fit: cover;
+    }
+    .vue__api-left {
+        width: 100%;
+        height: 50vh;
+    }
+    .vue__api-right {
+        width: 100%;
+        height: 50vh;
+    }
 }

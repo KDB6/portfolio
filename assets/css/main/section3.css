@@ -1433,7 +1433,7 @@
         margin-top: -1vw;
     }
     .quiz__view > div a {
-        font-size: var(--font-size60);
+        font-size: var(--font-size40);
     }
 
 
@@ -1447,6 +1447,6 @@
         margin-top: -1vw;
     }
     .parallax__view > div a {
-        font-size: var(--font-size60);
+        font-size: var(--font-size40);
     }
 }
