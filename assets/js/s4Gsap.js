@@ -76,7 +76,7 @@ s1.from('.react__site-img > div:nth-child(2) a img', {
     scrollTrigger: {
         trigger: ".react__site",
         start: "-50% 20%",
-        end: "20% 20%",
+        end: "10% 20%",
         markers: false,
         scrub: 1,
     },

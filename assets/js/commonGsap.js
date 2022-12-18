@@ -140,7 +140,7 @@ ScrollTrigger.create({
 // hedaer gsap
 let r1 = gsap.timeline({delay: 1});
 
-h1.from('.thumbnail__rotate', {
+h1.from('.rotate', {
     opacity: 0,
     ease: 'power4',
     duration: 1,
