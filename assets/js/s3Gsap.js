@@ -351,6 +351,19 @@ s1.from('.mouse__img1 > img', {
     ease: "power4",
 }, 0)
 
+s1.from('.mouse__img2 > img', {
+    scrollTrigger: {
+        trigger: ".mouse",
+        start: "00% 00%",
+        end: "60%",
+        markers: false,
+        scrub: 1,
+    },
+    opacity: 0,
+    duration: 1,
+    ease: "power4",
+}, 0)
+
 
 
 // javascript-SS__main

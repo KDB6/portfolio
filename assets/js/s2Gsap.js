@@ -58,7 +58,7 @@ s1.from('#web__standard > div:nth-child(1)', {
 
 const options = {
     root: null,
-    rootMargin: "0px",
+    rootMargin: "500px",
     threshold: 0.9,
 };
 let revealCallback = (entries, self) => {
