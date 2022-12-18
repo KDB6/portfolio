@@ -30,15 +30,15 @@ window.onunload = function () {
 
 
 // contact
-let text2 = ['now?', 'me', 'contact'];
+let text2 = ['contact', 'me', 'now?'];
 let index2 = 0;
 
-function changeText() {
-    document.getElementById("contact__title").innerText = text2[index];
-    index = (index + 1) % 3;
+function changeText2() {
+    document.getElementById("contact__title").innerText = text2[index2];
+    index2 = (index2 + 1) % 3;
 }
 
-let interval2 = window.setInterval(changeText, 1000)
+let interval2 = window.setInterval(changeText2, 1000)
 window.onunload = function () {
-    window.clearInterval(interval);
+    window.clearInterval(interval2);
 }
