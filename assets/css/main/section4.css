@@ -490,8 +490,13 @@
 
 
     /* react__site */
+    #section4 {
+        margin-bottom: 1vw;
+        background: #000;
+    }
     .react__site-title {
         margin-bottom: 1vw;
+        background: #000;
     }
     .react__site-img {
         width: 90%;

@@ -137,7 +137,7 @@
 /* 480px */
 @media (max-width: 480px) {
     .about__main-text {
-        margin-top: 30vw;
+        margin-top: 25vw;
     }
     .about__main-text > div:nth-child(1) {
         line-height: 1;
