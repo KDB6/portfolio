@@ -48,7 +48,7 @@
 }
 
 .about__desc {
-    width: 35%;
+    width: 36.5%;
     font-family: var(--font-kor);
     font-size: var(--font-size14);
     font-weight: 300;
@@ -134,11 +134,8 @@
 
 
 
-/* 768px */
+/* 480px */
 @media (max-width: 480px) {
-    #about {
-        display: grid;
-    }
     .about__main-text {
         margin-top: 30vw;
     }
@@ -156,6 +153,7 @@
         right: 25vw;
     }
     .about__desc {
+        font-family: var(--font-size60);
         width: 35%;
         font-weight: 300;
         margin-left: 50vw;
