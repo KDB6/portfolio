@@ -15,7 +15,7 @@ window.onunload = function () {
 
 
 // javascript__basic
-let text2 = ['now?', 'me', 'contact me'];
+let text2 = ['now?', 'me', 'contact'];
 let index2 = 0;
 
 function changeText() {
