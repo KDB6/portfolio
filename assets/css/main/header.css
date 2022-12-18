@@ -23,3 +23,31 @@
 .header ul li a {
     color: var(--colorB);
 }
+
+
+
+/* 반응형 */
+@media (max-width: 1024px) {
+    .header div:nth-child(1) a {
+        font-size: var(--font-size60);
+        color: var(--colorB);
+    }
+    .header div:nth-child(2) {
+        margin-left: 5vw;
+    }
+    .header ul li {
+        font-size: 3vw;
+    }
+}
+
+
+
+@media (max-width: 1024px) {
+    
+}
+
+
+
+@media (max-width: 1024px) {
+    
+}
