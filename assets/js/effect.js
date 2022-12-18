@@ -1,4 +1,4 @@
-const circle = document.querySelector(".mouse__img2 > img");
+const circle = document.querySelector(".mouseCircle");
 
 document.addEventListener("mousemove", (e) => {
 
