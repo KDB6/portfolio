@@ -360,7 +360,7 @@
 }
 .vue__site-right > a img {
     width: 100%;
-    height: 99.8vh;
+    height: 99.7vh;
     object-fit: cover;
 }
 
@@ -382,7 +382,7 @@
 }
 .vue__api-left > a img {
     width: 100%;
-    height: 99.8vh;
+    height: 99.7vh;
     object-fit: cover;
 }
 
@@ -456,4 +456,32 @@
 /* pin */
 .pin-spacer {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+
+
+/* 반응형 */
+@media (max-width: 1024px) {
+    /* react__list */
+    #react__list {
+        background: #505050;
+    }
+    .react__site-view {
+        padding-bottom: 0.1vw;
+    }
+    .react__site > div:nth-child(3) {
+        top: 45.5vw;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    
+}
+
+
+
+@media (max-width: 480px) {
+
 }

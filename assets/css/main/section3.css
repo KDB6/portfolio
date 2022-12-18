@@ -699,6 +699,9 @@
     margin-top: var(---15vw);
 }
 
+
+
+/* quiz */
 .quiz__img {
     width: 80%;
 }
@@ -742,6 +745,9 @@
 }
 
 
+
+
+/* parallax */
 .parallax {
     display: flex;
     flex-direction: column;
@@ -798,17 +804,19 @@
 /* 1024px */
 @media (max-width: 1024px) {
     /* javascript__main */
+    #javascript__main {
+    }
     .javascript__main-text > div:nth-child(1) {
-        top: 70vw;
+        top: 25vw;
     }
     .javascript__main-text > div:nth-child(2) {
-        top: 78vw;
+        top: 32vw;
     }
     .javascript__main-text > div:nth-child(3) {
-        top: 83.5vw;
+        top: 37vw;
     }
     .javascript__main-back > div {
-        top: 45vw;
+        top: 5vw;
     }
 
 
@@ -860,36 +868,43 @@
         margin-top: -1.4vw;
     }
     .music__view {
-        margin-top: -0.8vw;
+        margin-top: -0.6vw;
     }
 
     .game-search__desc > div:nth-child(2) {
         margin-top: -1.4vw;
     }
     .game-search__view {
-        margin-top: -0.8vw;
+        margin-top: -0.6vw;
     }
 
     .card__desc > div:nth-child(2) {
         margin-top: -1.4vw;
     }
     .card__view {
-        margin-top: -0.8vw;
+        margin-top: -0.6vw;
     }
 
     .tetris__desc > div:nth-child(2) {
         margin-top: -1.4vw;
     }
     .tetris__view {
-        margin-top: -0.8vw;
+        margin-top: -0.6vw;
     }
 
 
 
     /* mouse */
     .mouse__left > div:nth-child(2) {
-        width: 70%;
+        width: 80%;
         white-space: normal;
+    }
+    .mouse__left > div:nth-child(2) {
+        font-family: var(--font-kor);
+        margin-top: 0vw;
+    }
+    .mouse__view {
+        margin-top: -0.5vw;
     }
     .mouse__img2 {
         top: 27vw;
@@ -897,6 +912,20 @@
     }
     .mouse__img2 > img {
         width: 40%;
+    }
+
+
+
+    /* quiz */
+    .quiz__view {
+        margin-top: -0.5vw;
+    }
+
+
+
+    /* parallax */
+    .parallax__view {
+        margin-top: -0.5vw;
     }
 }
 

@@ -73,11 +73,8 @@
 
 /* 1024px */
 @media (max-width: 1024px) {
-    #about {
-        display: grid;
-    }
     .about__main-text {
-        margin-top: 30vw;
+        margin-bottom: 5vw;
     }
     .about__main-text > div:nth-child(1) {
         line-height: 1;
@@ -88,9 +85,9 @@
         margin-left: 70vw;
     }
     .about__main-img {
-        width: 40%;
-        top: 30vw;
-        right: 25vw;
+        width: 20%;
+        top: 10vw;
+        right: 20vw;
     }
     .about__desc {
         width: 35%;

@@ -48,3 +48,22 @@
 .contact__info > div:nth-child(2) a:hover::before {
     transform: scaleX(1);
 }
+
+
+
+/* 반응형 */
+@media (max-width: 1024px) {
+
+}
+
+
+
+@media (max-width: 768px) {
+    
+}
+
+
+
+@media (max-width: 480px) {
+
+}

@@ -293,3 +293,25 @@
 .php__project-img > a img {
     width: 100%;
 }
+
+
+
+/* 반응형 */
+@media (max-width: 1024px) {
+    /* php__main */
+    .php__main-back {
+        top: -5vw;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    
+}
+
+
+
+@media (max-width: 480px) {
+
+}
