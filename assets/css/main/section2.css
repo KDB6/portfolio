@@ -247,9 +247,30 @@
 
 /* 768px */
 @media (max-width: 768px) {
+    #section2 {
+        margin-top: 0;
+    }
+
+
+
     /* web__main */
     #web__main {
-        height: 70vh;
+        height: 85vh;
+    }
+    .web__main-text > div:nth-child(1) {
+        font-size: var(--font-size80);
+        top: 50vw;
+        left: 10vw;
+    }
+    .web__main-text > div:nth-child(2) {
+        font-size: var(--font-size300);
+        top: 50vw;
+        left: 15vw;
+    }   
+    .web__main-back > div {
+        font-size: 70vw;
+        top: 20vw;
+        left: -10vw;
     }
 
 
@@ -258,17 +279,23 @@
     #web__standard {
         margin-top: var(---30vw);
     }
+    .standard__img {
+        width: 100%;
+    }
     .standard__desc > div:nth-child(2) {
-        line-height: 1.3;
-        margin-top: -2vw;
+        font-size: var(--font-size32);
+        line-height: 1.2;
+        margin-top: -1vw;
     }
     .standard__desc {
-        margin-top: 2vw;
+        margin-top: 0.5vw;
     }
     .standard__view {
-        margin-top: -2vw;
+        margin-top: -0.3vw;
     }
-
+    .standard__view > div a {
+        font-size: var(--font-size40);
+    }
 
 
     /* web__responsive */
@@ -283,10 +310,15 @@
         margin-top: 2vw;
     }
     .responsive__desc > div:nth-child(2) {
-        margin-top: -2vw;
+        font-size: var(--font-size32);
+        line-height: 1.2;
+        margin-top: -0.5vw;
     }
     .responsive__view {
-        margin-top: -1.5vw;
+        margin-top: -0.3vw;
+    }
+    .responsive__view > div a {
+        font-size: var(--font-size40);
     }
     .responsive__img {
         width: 100%;

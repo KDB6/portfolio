@@ -933,6 +933,34 @@
 
 /* 768px */
 @media (max-width: 768px) {
+    /* javascript__main */
+    #javascript__main {
+        height: 100vh;
+    }
+
+    .javascript__main-text > div:nth-child(1) {
+        font-size: var(--font-size200);
+        top: 55vw;
+        left: 5vw;
+    }
+    .javascript__main-text > div:nth-child(2) {
+        font-size: var(--font-size150);
+        top: 64.5vw;
+        left: 19vw;
+    }
+    .javascript__main-text > div:nth-child(3) {
+        font-size: var(--font-size80);
+        top: 71.5vw;
+        left: 12vw;
+    }
+    .javascript__main-back > div {
+        font-size: 70vw;
+        top: 28vw;
+        right: 0vw;
+    }
+
+
+
     /* javascript__basic  */
     #javascript__basic {
         margin-top: 0;
@@ -943,6 +971,12 @@
     .basic__desc > div:nth-child(1) {
         font-size: var(--font-size80);
         margin-top: 6vw;
+    }
+    .basic__view {
+        margin-top: 1.5vw;
+    }
+    .basic__view > div a {
+        font-size: var(--font-size40);
     }
 
 
@@ -958,6 +992,7 @@
     }
 
     .GM__desc {
+        font-size: var(--font-size40);
         white-space: normal;
         margin-top: 5.5vw;
     }
@@ -966,11 +1001,11 @@
     }
 
 
+
     /* javascript__game */
     #javascript-game__mouse {
         margin: 0;
     }
-
     .game__main {
         margin-top: var(---15vw);
     }
@@ -982,93 +1017,145 @@
     .game__img {
         width: 100%;
     }
-
     .game__list {
         margin-top: var(---30vw);
         display: block;
     }
+
     .list__left {
         width: 100%;
         border-right: 0;
     }
     .list__left > div {
-        font-size: var(--font-size60);
+        font-size: var(--font-size80);
         font-weight: 500;
         transform: rotate(0);
         top: -6vw;
-        left: 0;
+        left: 2vw;
     }
 
     .list__right {
         width: 100%;
     }
 
+    .music__desc {
+        margin-left: 2vw;
+    }
     .music__desc > div:nth-child(1) {
         font-size: var(--font-size60);
         font-weight: 100;
     }
     .music__desc > div:nth-child(2) {
-        margin-top: -3vw;
+        margin-top: -1.5vw;
+        font-size: var(--font-size32);
+        line-height: 1.2;
     }
     .music__view {
-        margin-top: -2vw;
+        margin-top: -0.3vw;
     }
     .music__view > div a {
+        font-size: var(--font-size40);
         margin-right: 1vw;
     }
+    .music__icon {
+        margin-right: 2vw;
+    }
+    .music__icon > div:nth-child(1) {
+        font-size: var(--font-size80);
+    }
     .music__icon > div:nth-child(2) {
-
+        width: 23%;
+        top: -6.5vw;
     }
 
+    .game-search__desc {
+        margin-left: 2vw;
+    }
     .game-search__desc > div:nth-child(1) {
         font-size: var(--font-size60);
         font-weight: 100;
     }
     .game-search__desc > div:nth-child(2) {
-        margin-top: -3vw;
+        margin-top: -1.5vw;
+        font-size: var(--font-size32);
+        line-height: 1.2;
     }
     .game-search__view {
-        margin-top: -2vw;
+        margin-top: -0.3vw;
     }
     .game-search__view > div a {
+        font-size: var(--font-size40);
         margin-right: 1vw;
     }
+    .game-search__icon {
+        margin-right: 2vw;
+    }
+    .game-search__icon > div:nth-child(1) {
+        font-size: var(--font-size80);
+    }
     .game-search__icon > div:nth-child(2) {
-        top: -2.5vw;
+        width: 90%;
+        top: -2.3vw;
     }
 
+    .card__desc {
+        margin-left: 2vw;
+    }
     .card__desc > div:nth-child(1) {
         font-size: var(--font-size60);
         font-weight: 100;
     }
     .card__desc > div:nth-child(2) {
-        margin-top: -3vw;
+        margin-top: -1.5vw;
+        font-size: var(--font-size32);
+        line-height: 1.2;
     }
     .card__view {
-        margin-top: -2vw;
+        margin-top: -0.3vw;
     }
     .card__view > div a {
+        font-size: var(--font-size40);
         margin-right: 1vw;
     }
+    .card__icon {
+        margin-right: 2vw;
+    }
+    .card__icon > div:nth-child(1) {
+        font-size: var(--font-size80);
+    }
     .card__icon > div:nth-child(2) {
-        top: -7.3vw;
+        width: 50%;
+        top: -6.5vw;
     }
 
+    .tetris__desc {
+        margin-left: 2vw;
+    }
     .tetris__desc > div:nth-child(1) {
         font-size: var(--font-size60);
         font-weight: 100;
     }
     .tetris__desc > div:nth-child(2) {
-        margin-top: -3vw;
+        margin-top: -1.5vw;
+        font-size: var(--font-size32);
+        line-height: 1.2;
     }
     .tetris__view {
-        margin-top: -2vw;
+        margin-top: -0.3vw;
     }
     .tetris__view > div a {
+        font-size: var(--font-size40);
         margin-right: 1vw;
     }
+    .tetris__icon {
+        margin-right: 2vw;
+    }
+    .tetris__icon > div:nth-child(1) {
+        font-size: var(--font-size80);
+    }
     .tetris__icon > div:nth-child(2) {
-        top: -7.3vw;
+        width: 30%;
+        top: -8vw;
     }
 
 
@@ -1086,17 +1173,23 @@
         padding-left: 2vw;
     }
     .mouse__left > div:nth-child(1) {
-        font-size: var(--font-size60);
+        font-size: var(--font-size120);
         font-weight: 100;
+        text-align: center;
     }
     .mouse__left > div:nth-child(2) {
+        font-size: var(--font-size40);
+        margin-left: 10vw;
         white-space: normal;
-        margin-top: 0.5vw;
+        margin-top: 0.2vw;
+        text-align: center;
     }
     .mouse__view {
-        margin-top: -1.5vw;
+        margin-top: 0.5vw;
+        margin-left: 36vw;
     }
     .mouse__view > div a {
+        font-size: var(--font-size60);
         margin-right: 1vw;
     }
     
@@ -1135,6 +1228,7 @@
     .SS__desc {
         white-space: normal;
         margin-top: 5.5vw;
+        font-size: var(--font-size40);
     }
     .SS__desc::before {
         top: -1.5vw;
@@ -1207,6 +1301,7 @@
     .QP__desc {
         white-space: normal;
         margin-top: 5.5vw;
+        font-size: var(--font-size40);
     }
     .QP__desc::before {
         top: -1.5vw;
@@ -1227,7 +1322,7 @@
         bottom: 5vw;
     }
     .quiz__view {
-        margin-top: -2vw;
+        margin-top: -0.5vw;
         margin-right: 2vw;
     }
     
@@ -1250,7 +1345,7 @@
         bottom: 5vw;
     }
     .parallax__view {
-        margin-top: -2vw;
+        margin-top: -0.5vw;
         margin-left: 2vw;
     }
 }
