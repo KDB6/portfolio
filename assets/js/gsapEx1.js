@@ -248,7 +248,7 @@ wR1.from('.webStandardH2', {
         scrub: 1,
     },
     textShadow: 0,
-    color: "#121212",
+    color: "#222125",
     opacity: 0.7,
     duration: 1,
     ease: "power4",
@@ -1217,6 +1217,7 @@ r1.from('.front__desc__p', {
     duration: 1,
     ease: "power4.in",
 }, 0)
+
 ScrollTrigger.create({
     trigger: ".react__api",
     pin: ".react__api",

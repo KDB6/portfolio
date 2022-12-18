@@ -33,8 +33,8 @@
     line-height: var(--eng-height);
     opacity: 0.02;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -10vw;
+    left: 8vw;
 }
 
 
@@ -46,11 +46,10 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    margin-top: var(---30vw);
-    padding: 1vw 2vw 2vw 2vw;
+    padding: 0.7vw 2vw 1.4vw 2vw;
 }
 .php__study-title > div:nth-child(1) {
-    font-size: var(--font-size100);
+    font-size: var(--font-size80);
     line-height: var(--eng-height);
     font-weight: 100;
 }
@@ -177,10 +176,10 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding: 1vw 2vw 2vw 2vw;
+    padding: 0.7vw 2vw 1.4vw 2vw;
 }
 .php__project-title > div:nth-child(1) {
-    font-size: var(--font-size100);
+    font-size: var(--font-size80);
     line-height: var(--eng-height);
     font-weight: 100;
 }

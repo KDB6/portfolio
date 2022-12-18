@@ -49,7 +49,7 @@
 /* javascript__basic */
 #javascript__basic {
     height: 100vh;
-    background: var(--colorB);
+    /* background: var(--colorB); */
     color: var(--colorW);
     margin-top: var(---30vw);
     display: grid;

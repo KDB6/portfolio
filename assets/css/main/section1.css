@@ -30,6 +30,7 @@
     font-size: var(--font-size180);
     line-height: 0.9;
     font-weight: 100;
+    z-index: 1;
 }
 .about__main-text > div:nth-child(3) {
     font-size: var(--font-size200);
@@ -42,7 +43,6 @@
     position: absolute;
     top: 11vw;
     right: 12vw;
-    z-index: -1;
 }
 
 .about__desc {
