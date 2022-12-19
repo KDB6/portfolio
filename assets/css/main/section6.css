@@ -25,7 +25,7 @@
 }
 .contact__info > div:nth-child(1) {
     font-size: var(--font-size24);
-    line-height: 1.8;
+    line-height: var(--eng-height);
     margin-right: 1vw;
     position: relative;
 }
