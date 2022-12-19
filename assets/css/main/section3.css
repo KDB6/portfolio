@@ -803,6 +803,10 @@
 
 /* 1024px */
 @media (max-width: 1024px) {
+    body {
+        overflow-x: hidden;
+    }
+
     /* javascript__main */
     #javascript__main {
 
@@ -934,6 +938,10 @@
 
 /* 768px */
 @media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
     /* javascript__main */
     #javascript__main {
         height: 100vh;
@@ -1355,6 +1363,10 @@
 
 /* 480px */
 @media (max-width: 480px) {
+    body {
+        overflow-x: hidden;
+    }
+    
     /* javascript__main */
     #javascript__main {
 

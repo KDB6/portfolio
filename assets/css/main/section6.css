@@ -54,6 +54,10 @@
 
 /* 반응형 */
 @media (max-width: 1024px) {
+    body {
+        overflow-x: hidden;
+    }
+
     .contact__info {
         flex-direction: column;
     }
@@ -62,6 +66,10 @@
 
 
 @media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+    
     #contact > div:nth-child(1) {
         font-size: var(--font-size200);
     }
@@ -82,5 +90,7 @@
 
 
 @media (max-width: 480px) {
-
+    body {
+        overflow-x: hidden;
+    }
 }

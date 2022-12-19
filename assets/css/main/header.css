@@ -29,6 +29,10 @@
 
 /* 반응형 */
 @media (max-width: 1024px) {
+    body {
+        overflow-x: hidden;
+    }
+
     .header div:nth-child(1) a {
         font-size: var(--font-size24);
     }
@@ -40,6 +44,10 @@
 
 
 @media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
     .header div:nth-child(1) a {
         font-size: var(--font-size30);
     }
@@ -51,6 +59,10 @@
 
 
 @media (max-width: 480px) {
+    body {
+        overflow-x: hidden;
+    }
+    
     .header div:nth-child(1) a {
         font-size: var(--font-size40);
     }

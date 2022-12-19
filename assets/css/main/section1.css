@@ -73,6 +73,10 @@
 
 /* 1024px */
 @media (max-width: 1024px) {
+    body {
+        overflow-x: hidden;
+    }
+
     .about__main-text {
         margin-bottom: 5vw;
     }
@@ -103,6 +107,10 @@
 
 /* 768px */
 @media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
     #about {
         display: grid;
     }
@@ -136,6 +144,10 @@
 
 /* 480px */
 @media (max-width: 480px) {
+    body {
+        overflow-x: hidden;
+    }
+    
     .about__main-text {
         margin-top: 25vw;
     }
