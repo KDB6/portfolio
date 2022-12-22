@@ -194,7 +194,7 @@ let a2 = gsap.timeline({delay: 4.5});
 
 
 // img hover gsap
-let menuItem = document.querySelectorAll(".view__image");
+let menuItem = document.querySelectorAll(".view__text");
 let menuImage = document.querySelectorAll(".image__hover");
 
 // adding eventListeners to all the menuItems.
@@ -210,6 +210,8 @@ for (let i = 0; i < 6; i++) {
     menuItem[i].addEventListener("mouseenter", () => animation.play());
     menuItem[i].addEventListener("mouseleave", () => animation.reverse());
 
+    console.log(animation.play())
+
     //   initialization
     animation.reverse();
 }
@@ -218,8 +220,8 @@ for (let i = 0; i < 6; i++) {
 function moveText(e) {
     gsap.to([...menuImage], {
         css: {
-        left: e.pageX + 50,
-        top: e.pageY,
+            left: e.pageX + 50,
+            top: e.pageY,
         },
         duration: 0.3,
     });

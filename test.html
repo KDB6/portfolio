@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+.image__hover {
+  height: 300px;
+  width: 240px;
+  background-size: cover;
+  position: absolute;
+  z-index: 2;
+  opacity: 0;
+  margin-top: -150px;
+  transform: scale(0.4);
+}
+.image__hover.living, .image__hover.resting {
+  background-image: url("https://images.unsplash.com/photo-1589834390005-5d4fb9bf3d32?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
+}
+.image__hover.dining {
+  background-image: url("https://images.unsplash.com/photo-1565996939960-f42172c9e2bd?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80");
+}
+.image__hover.endulging {
+  background-image: url("https://images.unsplash.com/photo-1513161455079-7dc1de15ef3e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=634&q=80");
+}
+.image__hover.floorplans {
+  background-image: url("https://images.unsplash.com/photo-1575204015311-0fe377370780?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80");
+}
+.image__hover.enquiring {
+  background-image: url("https://images.unsplash.com/photo-1540759772348-12e90305e8f4?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80");
+}
+    </style>
+</head>
+<body>
+    <div class="view__text"><a href="https://kdb6.github.io/codingclass/site/site1/index.html">view site</a></div>
+    <div class="image__hover living"></div>
+
+    <div class="view__text"><a href="https://kdb6.github.io/codingclass/site/site1/index.html">view site</a></div>
+    <div class="image__hover living"></div>
+
+    <div class="view__text"><a href="https://kdb6.github.io/codingclass/site/site1/index.html">view site</a></div>
+    <div class="image__hover living"></div>
+
+    <div class="view__text"><a href="https://kdb6.github.io/codingclass/site/site1/index.html">view site</a></div>
+    <div class="image__hover floorplans"></div>
+
+    <div class="view__text"><a href="https://kdb6.github.io/codingclass/site/site1/index.html">view site</a></div>
+    <div class="image__hover enquiring"></div>
+
+    <div class="view__text"><a href="https://kdb6.github.io/codingclass/site/site1/index.html">view site</a></div>
+    <div class="image__hover enquiring"></div>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+      <script>
+          let menuItem = document.querySelectorAll(".view__text");
+let menuImage = document.querySelectorAll(".image__hover");
+
+// adding eventListeners to all the menuItems.
+for (let i = 0; i < 6; i++) {
+  //   image reveal animation
+  const animation = gsap.to(menuImage[i], {
+    opacity: 1,
+    duration: 0.2,
+    scale: 1,
+    ease: "ease-in-out"
+  });
+
+  menuItem[i].addEventListener("mouseenter", () => animation.play());
+  menuItem[i].addEventListener("mouseleave", () => animation.reverse());
+
+  //   initialization
+  animation.reverse();
+}
+
+//   to move image along with cursor
+function moveText(e) {
+  gsap.to([...menuImage], {
+    css: {
+      left: e.pageX + 50,
+      top: e.pageY
+    },
+    duration: 0.3
+  });
+}
+
+menuItem.forEach((el) => {
+  el.addEventListener("mousemove", moveText);
+});
+
+      </script>
+</body>
+</html>
