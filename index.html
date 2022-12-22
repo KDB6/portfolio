@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="assets/css/font/font.css">
 
     <!-- section -->
+    <link rel="stylesheet" href="assets/css/main/loading.css">
     <link rel="stylesheet" href="assets/css/main/header.css">
     <link rel="stylesheet" href="assets/css/main/rotate.css">
     <link rel="stylesheet" href="assets/css/main/section1.css">
@@ -37,6 +38,12 @@
     <link rel="stylesheet" href="assets/css/main/section6.css">
 </head>
 <body>
+    <!-- loading -->
+    <div class="progress poppins"><span class="progress-text">portfolio..</span></div>
+    <!-- // loading -->
+
+
+
     <!-- header -->
     <header id="header">
         <nav class="header">
@@ -725,11 +732,14 @@
     
 
 
+    <!-- loading -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+
     <!-- script common -->
     <script src="assets/js/effect.js"></script>
 
     <!-- script gsap -->
-    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@latest/bundled/lenis.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
     <script src="assets/js/commonGsap.js"></script>
@@ -739,8 +749,9 @@
     <script src="assets/js/s4Gsap.js"></script>
     <script src="assets/js/s5Gsap.js"></script>
     <script src="assets/js/s6Gsap.js"></script>
-
+    
     <!-- gsap smooth -->
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@latest/bundled/lenis.js"></script>
     <script>
         const lenis = new Lenis({
             duration: 1.2,

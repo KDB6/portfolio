@@ -1,0 +1,20 @@
+.progress {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 10000;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--colorB);
+    letter-spacing: 2px;
+    color: var(--colorW);
+    font-weight: 100;
+}
+.progress .progress-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: var(--font-size40);
+}
