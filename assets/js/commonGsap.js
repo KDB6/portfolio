@@ -246,7 +246,7 @@ ScrollTrigger.create({
 
 
 
-// hedaer gsap
+// rotate gsap
 let r1 = gsap.timeline({delay: 3.5});
 
 h1.from('.rotate', {
