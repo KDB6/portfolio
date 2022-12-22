@@ -1,5 +1,5 @@
 
-.image__hover {
+.view__hover {
     width: 35%;
     height: 20vw;
     background-size: cover;
@@ -13,9 +13,26 @@
     filter: grayscale(0%);
 }
 
-.image__hover.standard__hover {
+.view__hover__github {
+    width: 50%;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    margin-top: -7vw;
+    transform: scale(0.4);
+    filter: grayscale(0%);
+}
+
+
+
+/* web__standard */
+.view__hover.standard__hover {
     background-image: url("https://github.com/KDB6/portfolio/blob/main/assets/img/webStandardView.png?raw=true");
 }
-.image__hover.standard__github {
-    background-image: url("https://github.com/KDB6/portfolio/blob/main/assets/img/webStandardView.png?raw=true");
+.view__hover.standard__github {
+    background-image: url("https://github.com/KDB6/portfolio/blob/main/assets/img/github.png?raw=true");
 }

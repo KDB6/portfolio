@@ -194,23 +194,21 @@ let a2 = gsap.timeline({delay: 4.5});
 
 
 // img hover gsap
-let menuItem = document.querySelectorAll(".view__text");
-let menuImage = document.querySelectorAll(".image__hover");
+let viewText = document.querySelectorAll(".view__text");
+let viewHover = document.querySelectorAll(".view__hover");
 
-// adding eventListeners to all the menuItems.
+// adding eventListeners to all the viewTexts.
 for (let i = 0; i < 6; i++) {
     //   image reveal animation
-    const animation = gsap.to(menuImage[i], {
+    const animation = gsap.to(viewHover[i], {
         opacity: 1,
         duration: 0.2,
         scale: 1,
         ease: "ease-in-out"
     });
 
-    menuItem[i].addEventListener("mouseenter", () => animation.play());
-    menuItem[i].addEventListener("mouseleave", () => animation.reverse());
-
-    console.log(animation.play())
+    viewText[i].addEventListener("mouseenter", () => animation.play());
+    viewText[i].addEventListener("mouseleave", () => animation.reverse());
 
     //   initialization
     animation.reverse();
@@ -218,7 +216,7 @@ for (let i = 0; i < 6; i++) {
 
 //   to move image along with cursor
 function moveText(e) {
-    gsap.to([...menuImage], {
+    gsap.to([...viewHover], {
         css: {
             left: e.pageX + 50,
             top: e.pageY,
@@ -227,6 +225,6 @@ function moveText(e) {
     });
 }
 
-menuItem.forEach((el) => {
+viewText.forEach((el) => {
     el.addEventListener("mousemove", moveText);
 });
