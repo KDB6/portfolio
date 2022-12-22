@@ -453,7 +453,7 @@
 }
 .mouse__view {
     display: flex;
-    margin-top: 0.1vw;
+    margin-top: 0vw;
 }
 .mouse__view > div a {
     font-size: var(--font-size16);

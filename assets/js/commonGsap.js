@@ -199,7 +199,7 @@ ScrollTrigger.create({
 
 
 // hedaer gsap
-let h1 = gsap.timeline({delay: 1});
+let h1 = gsap.timeline({delay: 3});
 
 h1.from('#header', {
     y: -15,
@@ -247,7 +247,7 @@ ScrollTrigger.create({
 
 
 // hedaer gsap
-let r1 = gsap.timeline({delay: 1});
+let r1 = gsap.timeline({delay: 3.5});
 
 h1.from('.rotate', {
     opacity: 0,
@@ -258,5 +258,7 @@ h1.from('.rotate', {
 
 
 // section delay
+let a1 = gsap.timeline({delay: 3.5});
+let a2 = gsap.timeline({delay: 4.5});
 let s1 = gsap.timeline({delay: 1.5});
 let s2 = gsap.timeline({delay: 2.5});
