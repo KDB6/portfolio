@@ -1,16 +1,33 @@
 // web__main
-s1.from('.web__main-text > div:nth-child(1)', {
-    scrollTrigger: {
-        trigger: "#web__main",
-        start: "-40% 00%",
-        end: "20%",
-        markers: false,
-        scrub: 1,
-    },
-    opacity: 0,
-    duration: 1,
-    ease: "power4",
-}, 0)
+// s1.from('.web__main-text > div:nth-child(1)', {
+//     scrollTrigger: {
+//         trigger: "#web__main",
+//         start: "-40% 00%",
+//         end: "20%",
+//         markers: false,
+//         scrub: 1,
+//     },
+//     opacity: 0,
+//     duration: 1,
+//     ease: "power4",
+// }, 0)
+
+ScrollTrigger.create({
+    trigger: "#web__main",
+    start: "-40% 00%",
+    end: "20%",
+    markers: true,
+    scrub: 1,
+    animation: gsap.fromTo(
+        ".web__main-text > div:nth-child(1)",
+        {
+            opacity: 0,
+        },
+        {
+            opacity: 1,
+        }
+    ),
+});
 
 s1.from('.web__main-text > div:nth-child(2)', {
     scrollTrigger: {
