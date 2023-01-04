@@ -16,7 +16,7 @@ ScrollTrigger.create({
     trigger: "#web__main",
     start: "-40% 00%",
     end: "20%",
-    markers: true,
+    markers: false,
     scrub: 1,
     animation: gsap.fromTo(
         ".web__main-text > div:nth-child(1)",
