@@ -162,18 +162,19 @@
     }
     .about__main-text > div:nth-child(3) {
         line-height: 1;
-        margin-left: 70vw;
+        margin-left: 20vw;
     }
     .about__main-img {
         width: 40%;
-        top: 60vw;
-        right: 25vw;
+        top: 50vw;
+        right: 17vw;
     }
     .about__desc {
-        font-family: var(--font-size80);
-        width: 35%;
+        font-size: var(--font-size40);
+        width: 56%;
         font-weight: 300;
-        margin-left: 50vw;
+        margin-top: 3vw;
+        margin-left: 21.5vw;
     }
     .about__desc > p::before {
         top: -2vw;

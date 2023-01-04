@@ -1400,18 +1400,19 @@
 
     /* javascript__basic */
     .basic__method {
-        font-size: var(--font-size300);
+        font-size: var(--font-size200);
     }
 
     .basic__desc > div:nth-child(1) {
         font-size: var(--font-size80);
+        margin-top: 2.5vw;
     }
 
     .basic__view {
         margin-top: 0.5vw;
     }
     .basic__view > div a {
-        font-size: var(--font-size60);
+        font-size: var(--font-size40);
         margin: 0.8vw;
     }
 
