@@ -51,7 +51,7 @@
     line-height: var(--eng-height);
     opacity: 0.09;
     position: absolute;
-    right: 0;
+    right: 3vw;
     top: -30vw;
 }
 .standard__img {

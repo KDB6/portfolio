@@ -34,7 +34,7 @@
     opacity: 0.02;
     position: absolute;
     top: -8vw;
-    left: 8vw;
+    /* left: 8vw; */
 }
 
 
@@ -317,6 +317,7 @@
 
     /* php__main */
     #php__main {
+        overflow-x: hidden;
     }
     .php__main-text >div:nth-child(1) {
         font-size: var(--font-size200);

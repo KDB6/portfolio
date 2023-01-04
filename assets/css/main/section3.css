@@ -945,6 +945,7 @@
     /* javascript__main */
     #javascript__main {
         height: 100vh;
+        overflow-x: hidden;
     }
 
     .javascript__main-text > div:nth-child(1) {
@@ -975,14 +976,14 @@
         margin-top: 0;
     }
     .basic__method {
-        font-size: var(--font-size300);
+        font-size: var(--font-size200);
     }
     .basic__desc > div:nth-child(1) {
-        font-size: var(--font-size80);
+        font-size: var(--font-size60);
         margin-top: 6vw;
     }
     .basic__view {
-        margin-top: 1.5vw;
+        margin-top: 1vw;
     }
     .basic__view > div a {
         font-size: var(--font-size40);
@@ -1321,6 +1322,7 @@
     /* quiz */
     .quiz__img {
         width: 100%;
+        overflow-x: hidden;
     }
     
     .quiz__desc {

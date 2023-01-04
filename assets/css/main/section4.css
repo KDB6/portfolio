@@ -84,6 +84,7 @@
     width: 80%;
     position: relative;
     z-index: 1;
+    overflow: hidden;
 }
 .react__site-img > div:nth-child(2) a img {
     position: absolute;
