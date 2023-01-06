@@ -38,7 +38,7 @@ s1.from('.php__main-text > div:nth-child(2)', {
     ease: "power4.in",
 }, 0)
 
-s1.from('.php__main-back', {
+s1.from('.php__main-back > div:nth-child(1)', {
     scrollTrigger: {
         trigger: "#php__main",
         start: "00% 10%",

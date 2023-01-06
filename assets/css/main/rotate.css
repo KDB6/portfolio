@@ -82,3 +82,31 @@
         transform: rotate(-360deg);
     }
 }
+
+
+
+@media (max-width: 1024px) {
+    .link {
+        font-size: var(--font-size40);
+        letter-spacing: 1vw;
+        word-spacing: 1.1vw;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .link {
+        font-size: var(--font-size60);
+        letter-spacing: 1.2vw;
+        word-spacing: 1.1vw;
+    }
+}
+
+
+
+@media (max-width: 480px) {
+    .link {
+        display: none;
+    }
+}
