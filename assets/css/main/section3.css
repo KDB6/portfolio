@@ -1367,10 +1367,6 @@
     }
     
     /* javascript__main */
-    #javascript__main {
-
-    }
-
     .javascript__main-text > div:nth-child(1) {
         font-size: var(--font-size300);
         top: 90vw;
@@ -1411,6 +1407,13 @@
     .basic__view > div a {
         font-size: var(--font-size40);
         margin: 0.8vw;
+    }
+
+
+
+    /* javascript-GM__main */
+    #javascript-GM__main {
+        
     }
 
 
