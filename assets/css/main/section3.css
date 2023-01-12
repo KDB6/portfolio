@@ -1,6 +1,7 @@
 #section3 {
     color: var(--colorB);
     margin-top: var(---25vw);
+    overflow: hidden;
 }
 
 
@@ -803,10 +804,6 @@
 
 /* 1024px */
 @media (max-width: 1024px) {
-    body {
-        overflow-x: hidden;
-    }
-
     /* javascript__main */
     .javascript__main-text > div:nth-child(1) {
         top: 25vw;
@@ -935,10 +932,6 @@
 
 /* 768px */
 @media (max-width: 768px) {
-    body {
-        overflow-x: hidden;
-    }
-
     /* javascript__main */
     #javascript__main {
         height: 100vh;
@@ -1362,10 +1355,6 @@
 
 /* 480px */
 @media (max-width: 480px) {
-    body {
-        overflow-x: hidden;
-    }
-    
     /* javascript__main */
     .javascript__main-text > div:nth-child(1) {
         font-size: var(--font-size300);

@@ -1,6 +1,7 @@
 #section4 {
     color: var(--colorW);
     margin-top: var(---25vw);
+    overflow: hidden;
 }
 
 
@@ -465,10 +466,6 @@
 
 /* 반응형 */
 @media (max-width: 1024px) {
-    body {
-        overflow-x: hidden;
-    }
-
     /* react__list */
     .react__site-view {
         padding-bottom: 0.1vw;
@@ -481,10 +478,6 @@
 
 
 @media (max-width: 768px) {
-    body {
-        overflow-x: hidden;
-    }
-
     /* front__main */
     #front__main {
     }
@@ -620,7 +613,5 @@
 
 
 @media (max-width: 480px) {
-    body {
-        overflow-x: hidden;
-    }
+    
 }

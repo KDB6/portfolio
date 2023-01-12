@@ -1,6 +1,7 @@
 #section2 {
     color: var(--colorB);
     margin-top: var(---15vw);
+    overflow: hidden;
 }
 
 
@@ -201,10 +202,6 @@
 
 /* 1024px */
 @media (max-width: 1024px) {
-    body {
-        overflow-x: hidden;
-    }
-
     /* web__main */
     #web__main {
         height: 100vh;
@@ -253,10 +250,6 @@
 
 /* 768px */
 @media (max-width: 768px) {
-    body {
-        overflow-x: hidden;
-    }
-
     #section2 {
         margin-top: 0;
     }
@@ -339,10 +332,6 @@
 
 /* 480px */
 @media (max-width: 480px) {
-    body {
-        overflow-x: hidden;
-    }
-    
     #section2 {
         margin-top: var(---20vw);
     }
