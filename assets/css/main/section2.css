@@ -339,9 +339,6 @@
     
 
     /* web__main */
-    #web__main {
-
-    }
     .web__main-text > div:nth-child(1) {
         font-size: var(--font-size100);
         top: 24vw;
@@ -353,9 +350,9 @@
         left: 22vw;
     }
     .web__main-back > div {
-        font-size: 100vw;
-        top: -25vw;
-        left: -10vw;
+        font-size: var(--font-size1000);
+        top: 3vw;
+        left: -5vw;
     }
 
 
