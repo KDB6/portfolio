@@ -83,5 +83,7 @@
 
 
 @media (max-width: 480px) {
-    
+    .contact__info > div:nth-child(1) {
+        margin-bottom: -0.5vw;
+    }
 }

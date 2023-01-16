@@ -613,5 +613,57 @@
 
 
 @media (max-width: 480px) {
-    
+    /* react__site */
+    .react__site-title {
+        align-items: baseline;
+    }
+    .react__site-view > div a {
+        font-size: var(--font-size40);
+    }
+
+
+
+    /* react__api */
+    .react__api-left > div:nth-child(1) {
+        font-size: var(--font-size80);
+    }
+    .react__api-left > div:nth-child(2) {
+        font-size: var(--font-size100);
+    }
+    .react__api-view > div a {
+        font-size: var(--font-size40);
+    }
+    .react__api-left > div:nth-child(4) {
+        font-size: var(--font-size40);
+    }
+
+
+
+    /* react__youtube */
+    .react__youtube-left > div:nth-child(1) {
+        font-size: var(--font-size80);
+    }
+    .react__youtube-left > div:nth-child(2) {
+        font-size: var(--font-size100);
+    }
+    .react__youtube-view > div a {
+        font-size: var(--font-size40);
+    }
+    .react__youtube-left > div:nth-child(4) {
+        font-size: var(--font-size40);
+    }
+
+
+
+    /* vue__site */
+    .vue__site-view > div a {
+        font-size: var(--font-size40);
+    }
+
+
+
+    /* vue__api */
+    .vue__api-view > div a {
+        font-size: var(--font-size40);
+    }
 }

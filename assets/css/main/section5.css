@@ -377,7 +377,7 @@
 
 
 
-    /* php__study */
+    /* php__project */
     .php__project-inner {
         flex-direction: column-reverse;
     }
@@ -416,5 +416,42 @@
         position: absolute;
         top: 65vw;
         left: 8vw;
+    }
+
+
+    /* php__study */
+    .php__study-title > div:nth-child(2) {
+        font-size: var(--font-size40);
+    }
+    .php__study-info {
+        font-size: var(--font-size32);
+    }
+    .php__study-right > div:nth-child(1) {
+        margin-top: 1vw;
+    }
+    .php__study-right > div:nth-child(2) {
+        margin-top: -0.5vw;
+    }
+    .php__study-view > div a {
+        margin-top: -1vw;
+    }
+
+
+
+    /* php__project */
+    .php__project-title > div:nth-child(2) {
+        font-size: var(--font-size40);
+    }
+    .php__project-info {
+        font-size: var(--font-size32);
+    }
+    .php__project-right > div:nth-child(1) {
+        margin-top: 1vw;
+    }
+    .php__project-right > div:nth-child(2) {
+        margin-top: -0.5vw;
+    }
+    .php__project-view > div a {
+        margin-top: -1vw;
     }
 }
